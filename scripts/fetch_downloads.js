@@ -11,8 +11,8 @@ const repos = [
   { name: "GameHub Brasil", repo: "winlatorbrasil/gamehub-brasil", category: "GameHub", logo: "gamehub-brasil.jpg" },
   { name: "GameHub Lite (J4MCU-builds)", repo: "J4MCU-builds/Gamehub-Lite-RedMagic", category: "GameHub", logo: "gamehub.png" },
   { name: "BannerHub (The412Banner)", repo: "The412Banner/bannerhub", category: "GameHub", logo: "bannerhub.png" },
-  { name: "BannerHub v6 (The412Banner)", repo: "The412Banner/bannerhub-revanced", category: "GameHub", logo: "bannerhub.png" },
-  { name: "BannerHub Lite (The412Banner)", repo: "The412Banner/Bannerhub-Lite", category: "GameHub", logo: "bannerhub.png" },
+  { name: "BannerHub v6 (The412Banner)", repo: "The412Banner/bannerhub-revanced", category: "GameHub", logo: "bannerhub-v6.png" },
+  { name: "BannerHub Lite (The412Banner)", repo: "The412Banner/Bannerhub-Lite", category: "GameHub", logo: "bannerhub-lite.png" },
   { name: "Bannerlator (The412Banner)", repo: "The412Banner/Bannerlator", category: "GameHub", logo: "bannerlator.png" },
 
     // DRIVERS
