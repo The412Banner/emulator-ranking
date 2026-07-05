@@ -1,0 +1,54 @@
+name: Update Rankings
+
+on:
+  schedule:
+    - cron: "0 */1 * * *"   # a cada 1 hora
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies (if any)
+        run: npm ci || true
+
+      - name: Prepare folders
+        run: |
+          mkdir -p data
+          mkdir -p docs/data
+
+      - name: Fetch downloads
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch_downloads.js
+
+      - name: Move rankings to docs
+        run: |
+          if [ -f data/rankings.json ]; then
+            mv data/rankings.json docs/data/rankings.json
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add docs/data/rankings.json
+
+          git commit -m "Update rankings (auto)" || exit 0
+
+          git push
