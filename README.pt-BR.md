@@ -10,7 +10,7 @@
 ![Update](https://img.shields.io/badge/Atualizações-Horárias-ff0080?style=for-the-badge&logo=github)
 ![Style](https://img.shields.io/badge/Estilo-Cyberpunk-7f00ff?style=for-the-badge&logo=css3)
 
-[**⚠️ CLIQUE AQUI PARA ACESSAR O SITE HUB EMULATORS**](https://t3st31.github.io/Ranking-Emulators-Download/)
+[**⚠️ CLIQUE AQUI PARA ACESSAR O SITE HUB EMULATORS**](https://the412banner.github.io/emulator-ranking/)
 
 ---
 </div>
@@ -44,7 +44,9 @@ Bem-vindo ao **HUB EMULATORS**, um centro de comando automatizado projetado para
 
 ## ⚡ **Créditos**
 
-Desenvolvido por **FurulipoGames - GameHub Brazil** ⚡.
+Criado originalmente por **FurulipoGames - GameHub Brazil** ⚡ — todo o crédito pelo projeto original é deles.
+
+Este fork é mantido por **[The412Banner](https://github.com/The412Banner)** ([Bannerlator](https://github.com/The412Banner/Bannerlator)) e hospedado em **[the412banner.github.io/emulator-ranking](https://the412banner.github.io/emulator-ranking/)**.
 
 <div align="center">
   
