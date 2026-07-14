@@ -51,7 +51,7 @@ const repos = [
   { name: "Star (fork)", repo: "jacojayy/star", category: "Winlator", logo: "star.png" },
   { name: "Winlator Brasil", repo: "winlatorbrasil/Winlator-Brasil", category: "Winlator", logo: "winlator-brasil.png" },
   { name: "Steamlator", repo: "slaker222/Steamlator", category: "Winlator", logo: "winlator.png" },
-  { name: "WinNative (fork)", repo: "WinDroidEmulation/WinNative", category: "Winlator", logo: "winnative.jpeg" },
+  { name: "WinNative (fork)", repo: "WinNative-Emu/WinNative", category: "Winlator", logo: "winnative.jpeg" },
 
   // PC EMULATOR
   { name: "MiceWine", repo: "KreitinnSoftware/MiceWine-Application", category: "PC Emulator", logo: "micewine.png" },
