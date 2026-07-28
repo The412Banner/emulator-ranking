@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T15:25:26.647Z",
+  "updatedAt": "2026-07-28T17:39:14.625Z",
   "totalProjects": 65,
   "projectsWithReleases": 58,
   "projectsWithoutReleases": 7,
@@ -10,20 +10,20 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 14396476,
+      "downloads": 14396549,
       "releases": [
         {
           "name": "Winlator 11.1 (Final)",
           "tag": "v11.1.0",
           "date": "2026-06-12T19:47:47Z",
-          "downloads": 485526,
+          "downloads": 485597,
           "body": "**v11.1 (Final)**\r\n\r\n- Improved gamepad implementation\r\n- Improved Vortek (fixed exposed extensions and disabled some extensions for Mali devices)\r\n- Added option to install Steam Legacy to the Start Menu\r\n\r\n**v11.1 (Initial Release)**\r\n\r\n- Reworked gamepad implementation (for better compatibility and performance)\r\n- Improved experimental Gladio (more opengl games are working: Curse of the Dead Gods, The Binding of Isaac, ONI)\r\n- Added [D7VK](https://github.com/WinterSnowfall/d7vk) in DDraw Wrapper\r\n- Added new keyboard bindings in Input Controls (Volume Up/Down)\r\n- Added option to choose the Gamepad Model\r\n- Updated Win Components (XAudio)\r\n- Fixed Steam client startup",
           "prerelease": false,
           "assets": [
             {
               "name": "Winlator_11.1.apk",
               "size": 156943882,
-              "downloads": 485526,
+              "downloads": 485597,
               "url": "https://github.com/brunodev85/winlator/releases/download/v11.1.0/Winlator_11.1.apk"
             }
           ],
@@ -50,14 +50,14 @@
           "name": "Winlator 10.1 (Hotfix)",
           "tag": "v10.1.0",
           "date": "2025-07-08T18:12:38Z",
-          "downloads": 3068869,
+          "downloads": 3068871,
           "body": "**v10.1 (Hotfix)**\r\n\r\n- Added fixes for Steam Client startup\r\n- Added AdrenoTools to Vortek\r\n- Removed dgVoodoo from DX Wrappers\r\n- Other bug fixes and improvements\r\n\r\n**v10.1 (Initial Release)**\r\n\r\n- Implemented MIDI Input/Output\r\n- Added support for external MIDI controllers\r\n- Added new control types in Input Controls\r\n- Added option Move Mouse when pressing button (Input Controls)\r\n- Added a virtual CD-ROM drive [X:] (some old games need this)\r\n- Added basic support for ISO/BIN/CUE Images with [libcdio](https://github.com/libcdio/libcdio) (Can be loaded in [X:])\r\n- Added Active Windows to Side Menu\r\n- Added Picture-in-Picture (PiP) Mode to Side Menu\r\n- Improved XServer (fixed black screen in some old games)\r\n- Added Portuguese and Russian languages\r\n- Added dgVoodoo in DX Wrappers\r\n- Updated Box64 presets\r\n- Updated Box64 (v0.3.6 release)\r\n- Updated Mesa Turnip (v25.1.0 release)\r\n- Converted some parts of the app to native code for better performance\r\n\r\nVortek Changelogs\r\n\r\n- Implemented cached texture decoding for better loading time\r\n- Implemented parallel texture decoding for better performance\r\n- Implemented asynchronous pipeline creation\r\n- Improved performance",
           "prerelease": false,
           "assets": [
             {
               "name": "Winlator_10.1.apk",
               "size": 147778434,
-              "downloads": 3068869,
+              "downloads": 3068871,
               "url": "https://github.com/brunodev85/winlator/releases/download/v10.1.0/Winlator_10.1.apk"
             }
           ],
@@ -313,7 +313,7 @@
       "extensions": [
         ".zip"
       ],
-      "downloads": 9538682,
+      "downloads": 9538757,
       "releases": [
         {
           "name": "Qualcomm Driver v840",
@@ -1307,14 +1307,14 @@
           "name": "Adrenotools Drivers Downloader v1.2",
           "tag": "fetcher_v1.2",
           "date": "2025-05-28T11:55:23Z",
-          "downloads": 124609,
+          "downloads": 124684,
           "body": "Download drivers for Adrenotools from your favorite repositories!\r\n\r\nChangelog:\r\n\r\n- Initial Release.\r\n\r\nAuthor\r\nGodPow",
           "prerelease": false,
           "assets": [
             {
               "name": "adrenotools_driver_downloader.apk",
               "size": 22213975,
-              "downloads": 124609,
+              "downloads": 124684,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/fetcher_v1.2/adrenotools_driver_downloader.apk"
             }
           ],
@@ -2300,38 +2300,38 @@
       "category": "Nintendo 3DS",
       "logo": "citra.png",
       "extensions": null,
-      "downloads": 7826810,
+      "downloads": 7826840,
       "releases": [
         {
           "name": "Citra for Android",
           "tag": "20251112",
           "date": "2025-11-12T02:51:02Z",
-          "downloads": 850124,
+          "downloads": 850154,
           "body": "**Before:**\r\nemulator directory: \"citra-emu\"\r\n\r\n**Antutu**:\r\npackage name: com.antutu.ABenchMark\r\nThis is tricking the os thinks it's running a benchmark app, and will boost performance on some device.\r\n\r\n**Storage Access:**\r\nemulator directory: \"Android/data/org.citra.emu/files/citra-emu\"\r\nWARNING uninstall citra will remove directory, include games, dlcs, save datas.\r\n\r\ndirectory: \"citra-emu\\nand\\data\\00000000000000000000000000000000\\sysdata\\00010026\\00000000\\CEC\"\r\nDelete this directory if game could not works as before.\r\n\r\n**Try reset settings** if game does not work properly.",
           "prerelease": false,
           "assets": [
             {
               "name": "Citra_MMJ_20251112.apk",
               "size": 12166311,
-              "downloads": 624558,
+              "downloads": 624582,
               "url": "https://github.com/weihuoya/citra/releases/download/20251112/Citra_MMJ_20251112.apk"
             },
             {
               "name": "Citra_MMJ_20251112_Antutu.apk",
               "size": 12166355,
-              "downloads": 128531,
+              "downloads": 128532,
               "url": "https://github.com/weihuoya/citra/releases/download/20251112/Citra_MMJ_20251112_Antutu.apk"
             },
             {
               "name": "Citra_MMJ_20251112_StorageAccess.apk",
               "size": 12166507,
-              "downloads": 53739,
+              "downloads": 53742,
               "url": "https://github.com/weihuoya/citra/releases/download/20251112/Citra_MMJ_20251112_StorageAccess.apk"
             },
             {
               "name": "Citra_MMJ_20251112_StorageAccess_Antutu.apk",
               "size": 12166551,
-              "downloads": 43296,
+              "downloads": 43298,
               "url": "https://github.com/weihuoya/citra/releases/download/20251112/Citra_MMJ_20251112_StorageAccess_Antutu.apk"
             }
           ],
@@ -4603,13 +4603,13 @@
       "category": "Nintendo 3DS",
       "logo": "azahar.png",
       "extensions": null,
-      "downloads": 7009780,
+      "downloads": 7010038,
       "releases": [
         {
           "name": "Azahar 2126.0 Release Candidate 4",
           "tag": "2126.0-rc4",
           "date": "2026-07-25T21:29:41Z",
-          "downloads": 16772,
+          "downloads": 16779,
           "body": "<h3>⚠️Important Release Candidate Information⚠️</h3>\r\n<details>\r\n<summary>\r\n\tThis is a release candidate. Please expand this drop-down to read more about what this means before installing.\r\n</summary>\r\n<br>\r\nAs a release candidate, this build is not yet considered a stable release, but is instead a build which could be promoted to a stable release if it is sufficiently tested with no major issues being discovered. Ideally, the release candidate period will last for 7 days, however if major issues are discovered, this will be extended to allow for additional testing with a corrected release candidate.\r\n<br><br>\r\nDespite its status as a pre-release build, users are encouraged to test this version to help us catch any newly introduced issues before the build is promoted to a full release. If you do observe such issues, please report them to us on GitHub so we can evaluate them.\r\n<br><br>\r\nIf you are unwilling to tolerate potential minor issues, you may be better off waiting until a release candidate is promoted to a full release.\r\n<br><br>\r\nUsers are advised to back up their Azahar user data directory before using a pre-release build.\r\n</details>\r\n\r\n---\r\n\r\n> [!NOTE]\r\n> This changelog is relative to 2126.0-rc3. You can find the previous changelog [here](https://github.com/azahar-emu/azahar/releases/tag/2126.0-rc3).\r\n\r\n---\r\n\r\n# Azahar 2126.0-rc4 Changelog\r\n\r\n# All\r\n\r\n- Fixed a crash which could occur when using a controller which has a physical touchpad (e.g. PlayStation controller). | @DavidRGriswold #2314 #2346\r\n- Fixed an issue where having a PS4/PS5 controller connected could cause Azahar to hang when launched. | @DavidRGriswold #2345\r\n- Fixed an issue where auto-mapping could behave incorrectly with some controllers. | @DavidRGriswold #2317\r\n- Assorted minor fixes relating to analog input. | @DavidRGriswold #2348\r\n\r\n# Linux\r\n\r\n- Fixed an issue where analog inputs for certain controllers could be incorrectly centered. | @DavidRGriswold #2328 \r\n  - This fixes an issue on the Steam Deck where the L and R triggers were stuck pressed down. May also fix issues with other controllers.\r\n\r\n# Desktop\r\n\r\n- Fixed an issue relating to clearing bindings for hotkeys bound to controllers. | @DavidRGriswold #2325\r\n- Slightly adjusted tooltip for \"Disable Right Eye Rendering\" setting for increased clarity. | @72374 #2284\r\n\r\n# Android\r\n\r\n- Fixed a typo in the multiplayer room join message. | @OpenSauce04 #2326",
           "prerelease": true,
           "assets": [
@@ -4634,7 +4634,7 @@
             {
               "name": "azahar-android-vanilla-2126.0-rc4.apk",
               "size": 50149815,
-              "downloads": 1181,
+              "downloads": 1188,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2126.0-rc4/azahar-android-vanilla-2126.0-rc4.apk"
             },
             {
@@ -5110,7 +5110,7 @@
           "name": "Azahar 2125.1.3",
           "tag": "2125.1.3",
           "date": "2026-06-29T16:03:50Z",
-          "downloads": 364094,
+          "downloads": 364342,
           "body": "This is an unscheduled release which almost exclusively addresses issues in the macOS version of Azahar.\r\nPrimarily, it fixes an issue experienced by many users where Azahar could potentially freeze when opened.\r\n\r\nThis issue didn't affect all users, and whether or not it appeared was dependent on multiple factors such as the macOS version being run and the macOS version Azahar was built with, and the current state of the user's Azahar directory. Because of this, it took some time to determine the root cause of the issue. Apologies for any inconvenience this may have caused for any affected users.\r\n\r\n---\r\n\r\n# Azahar 2125.1.3 Changelog\r\n\r\n# macOS\r\n\r\n- Fixed an issue where Azahar could instantly freeze on boot depending on certain factors such as OS version and Azahar user data content. | @OpenSauce04 #2244 \r\n\r\n# Technical\r\n\r\n- Backported a fix for linker warnings when building with Discord rich presence on macOS, first introduced in 2126.0 Alpha 2. | @OpenSauce04 #2216\r\n  - The CMake option name change introduced in that PR has **not** been backported.\r\n- Introduced changes to dynarmic which fix a build issue introduced by MSYS2 package updates. | @PabloMK7 #2236",
           "prerelease": false,
           "assets": [
@@ -5123,7 +5123,7 @@
             {
               "name": "azahar-android-googleplay-2125.1.3.apk",
               "size": 49678171,
-              "downloads": 13769,
+              "downloads": 13777,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2125.1.3/azahar-android-googleplay-2125.1.3.apk"
             },
             {
@@ -5135,7 +5135,7 @@
             {
               "name": "azahar-android-vanilla-2125.1.3.apk",
               "size": 49678203,
-              "downloads": 101994,
+              "downloads": 102234,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2125.1.3/azahar-android-vanilla-2125.1.3.apk"
             },
             {
@@ -7589,7 +7589,7 @@
           "name": "Azahar 2124.3",
           "tag": "2124.3",
           "date": "2026-01-29T13:35:00Z",
-          "downloads": 520102,
+          "downloads": 520105,
           "body": "This update re-enables support for the .3ds extension, which was previously removed in Azahar's initial release.\r\n\r\nWe previously made this change as a clear motion to distance ourselves from the mass piracy that lead to the closure of Yuzu and Citra, however, we have now determined that this change is causing more harm than good.\r\n\r\nWe've noticed that the removal of the .3ds extension has caused unnecessary fragmentation in the 3DS emulation community. This led to the creation of dubiously safe forks, to which a portion of the Azahar userbase migrated. These forks used unsafe deployment practices, presented licensing concerns, and confused users as to whether the forks were part of the upstream Azahar project. These circumstances created an unhealthy open-source development environment, and we don't believe that this is in the best interest of the 3DS emulation scene.\r\n\r\nGiven that the removal of the .3ds extension was originally an act of project philosophy rather than a technical change, we don't want this decision to overshadow the very real leaps which have been made in Azahar over the last year. Because of this, we have decided that it's for the best of everyone that we revert the change.\r\n\r\nIt is important to note that support for encrypted ROMs is still disabled; This will not change for the foreseeable future. Unlike the .3ds extension, which is a matter of project philosophy, encrypted ROMs still present actual legal challenges that we do not want to take on.\r\n\r\nWe have decided to publish this change in its own Azahar release to avoid the change overshadowing additions made in the future 2125 update.\r\n\r\nWe hope that this change will help to bring the 3DS emulation community closer together.\r\n\r\n---\r\n\r\n# Azahar 2124.3 Changelog\r\n\r\n# All\r\n\r\n- Re-added support for the .3ds file extension. | @PabloMK7 #1701",
           "prerelease": false,
           "assets": [
@@ -7602,7 +7602,7 @@
             {
               "name": "azahar-2124.3-android-googleplay.apk",
               "size": 49206755,
-              "downloads": 35222,
+              "downloads": 35223,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2124.3/azahar-2124.3-android-googleplay.apk"
             },
             {
@@ -7614,7 +7614,7 @@
             {
               "name": "azahar-2124.3-android-vanilla.apk",
               "size": 49206791,
-              "downloads": 97427,
+              "downloads": 97429,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2124.3/azahar-2124.3-android-vanilla.apk"
             },
             {
@@ -10754,20 +10754,20 @@
       "category": "PSVITA",
       "logo": "vita3k.png",
       "extensions": null,
-      "downloads": 4261874,
+      "downloads": 4261882,
       "releases": [
         {
           "name": "Vita3K Android Release 12",
           "tag": "v12",
           "date": "2024-06-06T20:36:09Z",
-          "downloads": 2124883,
+          "downloads": 2124891,
           "body": "Vita3K Android release 12 Changelog (non exhaustive list):\r\n- SD card support: Allow any folder to be specified as the OS/game data folder (inspired by the PR from nurunuruslime)\r\n- Allow the overlay to be used at the same time as the touchscreen\r\n- Fix black bands appearing sometimes at the top and bottom of the application on some devices\r\n- Fix bug causing game installation to be 10x slower than expected\r\n- Fix accelerometer and gyroscope on android game consoles\r\n- Some crash fixes\r\n- Add controller opacity (dima)\r\n\r\n\r\n\r\nRebase on PC version:\r\n- Fix audio regression (bookmist)\r\n- Code cleanup, refractoring and small optimisations (bookmist, Nishinji and GermanAizek)\r\n- Improved error messages (croden)\r\n- GUI improvements (Zangetsu)\r\n- Improve depth-stencil retrieval, fix Ratchet and Clank (Macdu)\r\n- Add support for module unloading/reloading, allows FFX to be playable (Macdu)\r\n- Improve ffmpeg dependency (KhoraLee)\r\n- Improve Transfer downscale/copy, fix graphical issues in Phantasy Star Nova (Macdu)\r\n- Improve Polish localization (mavethee)",
           "prerelease": false,
           "assets": [
             {
               "name": "vita3k-android-release-12.apk",
               "size": 14823479,
-              "downloads": 2124883,
+              "downloads": 2124891,
               "url": "https://github.com/Vita3K/Vita3K-Android/releases/download/v12/vita3k-android-release-12.apk"
             }
           ],
@@ -10969,20 +10969,20 @@
       "category": "Emulator PS2",
       "logo": "nethersx2.png",
       "extensions": null,
-      "downloads": 3142946,
+      "downloads": 3143064,
       "releases": [
         {
           "name": "NetherSX2 v2.2n Net Dev Build",
           "tag": "2.2n",
           "date": "2025-12-25T12:22:12Z",
-          "downloads": 438508,
+          "downloads": 438626,
           "body": "Merry Christmas, Happy Holidays and a Happy New Year everyone!\r\n\r\nThis update adds experimental Online Multiplayer to NetherSX2 along with the usual updates!\r\nThanks to [IamLupo](https://github.com/IamLupo) for adding it to ARMSX2, and [zakilj3](https://www.youtube.com/user/zakilj3) for discovering the same settings work with NetherSX2!\r\n\r\n[VirusTotal Scan Report](https://www.virustotal.com/gui/file/2029e30dcc1ba1ecb8d73313f18b429b40e6044c7785c52af08b948ef94b3ddf)\r\n\r\n## How to use Online Multiplayer\r\n1. Go to your App Settings --> Settings and toggle on Enable DEV9 Ethernet\r\n2. Set API to Sockets, and Device to how you want to connect online with the default being WiFi. Set this to VPN if your phone uses a VPN, and to one of the two SIM DATA options if you want to use your Mobile Data Plan instead\r\n3. That should be enough to get you online using a guide like [this](https://youtu.be/dcOnZzzcbSc?si=WOf01r0Ln5ZVQkpf&t=278) by LogicalMacrochip\r\n\r\nYou can use the [Official List of PlayStation 2 Online Games (2024)](https://docs.google.com/spreadsheets/d/15pfhL36qmC-iKr8MNjNXNLwgacG4VOmkfvwVxV5vGzo/edit?gid=0#gid=0) to figure out what games work, get their DNAS bypass codes if needed and which private server you should be using\r\n\r\nFor more advanced options (or you want to use the second method from the guide by LogicalMacrochip), you can do the following:\r\n1. Set DNS1 Mode to Manual\r\n2. Under DNS1 select either [PS2 Online](https://ps2online.com) (called Cristian in the Official list) or [PSRewired](https://psrewired.com)\r\nNote: This can also be changed on a Per Game Settings and more servers will be added soon\r\nTo turn it off just set DNS1 Mode to Auto and DNS1 to 0.0.0.0\r\n\r\n[zakilj3](https://www.youtube.com/user/zakilj3) created a more [comprehensive guide](https://www.youtube.com/watch?v=uZzEXvNXUUU) to make it easier for people\r\n\r\n## Changelog\r\n* Bumped version to v2.2n\r\n* Added Networking section to System Settings\r\n### GameDB (converted from [PCSX2](https://pcsx2.net))\r\n* All-Star Fighters - Fixed inverted or broken character textures\r\n* Battle Gear 3 - Fixed broken splitscreen mode\r\n* Blokus Club with Bumpy Trot - Fixed channel shuffles, menu graphics, motion blur, aligned effects and improved post effects\r\n* Bomberman Kart DX - Fixed specific level infinite load screen\r\n* Castlevania: Curse of Darkness - Fixed post-processing alignment\r\n* Cool Girl - Fixed post-processing alignment\r\n* Coraline - Fixed post-processing alignment\r\n* Cy Girls - Fixed post-processing alignment\r\n* Final Fantasy X-2 - Fixed broken FMVs\r\n* George of the Jungle - Fixed post-processing alignment\r\n* George of the Jungle and the Search for the Secret - Fixed post-processing alignment\r\n* Guitar Hero: Greatest Hits - Fixed broken rainbow rendering, edge garbage, shadow definition and aligns post-processing\r\n* Harley-Davidson: Race to the Rally - Fixed post-processing alignment\r\n* Heatseeker - Fixed misalignment issues and lens flares going through objects\r\n* Iris no Atelier: Eternal Mana - Fixed horizontal lines in FMV and character portraits when upscaling\r\n* Killzone - Fixed internal FPS detection\r\n* Next Generation Tennis - Fixed broken pause menu graphics and image alignment\r\n* Ore no Shita de Agake - Fixed incorrect rendering and some missing text\r\n* PachiPara 13 & 14 - Fixed channel shuffles, menu graphics, motion blur, aligned effects and improved post effects\r\n* Raw Danger - Fixed menu graphics, channel shuffles and improved post-processing effects\r\n* Red Ninja: End of Honor - Fixed post-processing alignment\r\n* Silent Hill 3 - Fixed brightness menu transparency effects and text \r\n* Steambot Chronicles - Fixed menu graphics, channel shuffles and improved post-processing effect\r\n* TimeSplitters: Future Perfect - Aligned bloom of distant objects\r\n* US OPEN 2002: A USTA EVENT - Fixed broken pause menu graphics\r\n* Wacky Races - Fixed interlace wobble\r\n* Yakuza 1 & 2 - Improved brightness and banding\r\n### ControllerDB (from [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB))\r\n* 8BitDo Pro 3\r\n* 8BitDo Ultimate 2C\r\n* icedragon.io STAC Dance Pad\r\n* Logitech Cordless RumblePad\r\n* PlayStation VR2 Sense Controllers\r\n* Ultimate Atari Fight Stick\r\n* XinMo Dual Arcade\r\n* ZhiXu GuliKit D\r\n### No interlacing and Widescreen Patches (Thanks [Saramagrean](https://github.com/Saramagrean/NetherSX2-cheats)!)\r\n#### No Interlacing\r\n* Grand Theft Auto: San Andreas\r\n* Hot Shots Golf 3\r\n* Mystic Nights\r\n* Shadow Hearts\r\n* Tales of Destiny - Director's Cut\r\n#### Widescreen\r\n* Grand Theft Auto: San Andreas\r\n* Jackie Chan Adventures\r\n* Metal Gear Solid 2 - Substance\r\n* Mystic Nights\r\n* Pro Evolution Soccer 2014\r\n* The Great Escape\r\n* Tales Of The Abyss",
           "prerelease": false,
           "assets": [
             {
               "name": "NetherSX2-v2.2n-4248.apk",
               "size": 21621788,
-              "downloads": 438508,
+              "downloads": 438626,
               "url": "https://github.com/Trixarian/NetherSX2-patch/releases/download/2.2n/NetherSX2-v2.2n-4248.apk"
             }
           ],
@@ -11320,20 +11320,20 @@
       "category": "Wii U Emulator",
       "logo": "cemu.png",
       "extensions": null,
-      "downloads": 2644104,
+      "downloads": 2644316,
       "releases": [
         {
           "name": "Cemu 0.5",
           "tag": "0.5",
           "date": "2026-04-25T21:55:25Z",
-          "downloads": 191264,
+          "downloads": 191470,
           "body": "Experimental release 0.5\r\n\r\n- Implemented options to enable emulated USB devices & configure them",
           "prerelease": false,
           "assets": [
             {
               "name": "Cemu-0.5.apk",
               "size": 33124708,
-              "downloads": 191264,
+              "downloads": 191470,
               "url": "https://github.com/SSimco/Cemu/releases/download/0.5/Cemu-0.5.apk"
             }
           ],
@@ -11360,14 +11360,14 @@
           "name": "Cemu 0.3",
           "tag": "0.03",
           "date": "2025-12-14T18:53:46Z",
-          "downloads": 1388489,
+          "downloads": 1388495,
           "body": "Experimental release 0.3",
           "prerelease": false,
           "assets": [
             {
               "name": "Cemu-0.3.apk",
               "size": 32825735,
-              "downloads": 1388489,
+              "downloads": 1388495,
               "url": "https://github.com/SSimco/Cemu/releases/download/0.03/Cemu-0.3.apk"
             }
           ],
@@ -11484,20 +11484,20 @@
       "category": "Emulator PS2",
       "logo": "nethersx2.png",
       "extensions": null,
-      "downloads": 1299596,
+      "downloads": 1299614,
       "releases": [
         {
           "name": "NetherSX2 Classic v2.2n Net Dev Build",
           "tag": "2.2n",
           "date": "2025-12-25T12:22:14Z",
-          "downloads": 319156,
+          "downloads": 319174,
           "body": "Merry Christmas, Happy Holidays and a Happy New Year everyone!\r\n\r\nThis update adds experimental Online Multiplayer to NetherSX2 along with the usual updates!\r\nThanks to [IamLupo](https://github.com/IamLupo) for adding it to ARMSX2, and [zakilj3](https://www.youtube.com/user/zakilj3) for discovering the same settings work with NetherSX2!\r\n\r\n[VirusTotal Scan Report](https://www.virustotal.com/gui/file/8b502b31ce797d5a162bc6b9300b5f02351b0b6b290b8dc1390b8dfb826673ab)\r\n\r\n## How to use Online Multiplayer\r\n1. Go to your App Settings --> Settings and toggle on Enable DEV9 Ethernet\r\n2. Set API to Sockets, and Device to how you want to connect online with the default being WiFi. Set this to VPN if your phone uses a VPN, and to one of the two SIM DATA options if you want to use your Mobile Data Plan instead\r\n3. That should be enough to get you online using a guide like [this](https://youtu.be/dcOnZzzcbSc?si=WOf01r0Ln5ZVQkpf&t=278) by LogicalMacrochip\r\n\r\nYou can use the [Official List of PlayStation 2 Online Games (2024)](https://docs.google.com/spreadsheets/d/15pfhL36qmC-iKr8MNjNXNLwgacG4VOmkfvwVxV5vGzo/edit?gid=0#gid=0) to figure out what games work, get their DNAS bypass codes if needed and which private server you should be using\r\n\r\nFor more advanced options (or you want to use the second method from the guide by LogicalMacrochip), you can do the following:\r\n1. Set DNS1 Mode to Manual\r\n2. Under DNS1 select either  [PS2 Online](https://ps2online.com) (called Cristian in the Official list) or [PSRewired](https://psrewired.com)\r\nNote: This can also be changed on a Per Game Settings and more servers will be added soon\r\nTo turn it off just set DNS1 Mode to Auto and DNS1 to 0.0.0.0\r\n\r\n[zakilj3](https://www.youtube.com/user/zakilj3) created a more [comprehensive guide](https://www.youtube.com/watch?v=uZzEXvNXUUU) to make it easier for people\r\n\r\n## Changelog\r\n* Bumped version to v2.2n\r\n* Added Networking section to System Settings\r\n### GameDB (converted from [PCSX2](https://pcsx2.net))\r\n* All-Star Fighters - Fixed inverted or broken character textures\r\n* Battle Gear 3 - Fixed broken splitscreen mode\r\n* Blokus Club with Bumpy Trot - Fixed channel shuffles, menu graphics, motion blur and aligned effects\r\n* Bomberman Kart DX - Fixed specific level infinite load screen\r\n* Castlevania: Curse of Darkness - Fixed post-processing alignment\r\n* Cool Girl - Fixed post-processing alignment\r\n* Coraline - Fixed post-processing alignment\r\n* Cy Girls - Fixed post-processing alignment\r\n* Final Fantasy X-2 - Fixed broken FMVs\r\n* George of the Jungle - Fixed post-processing alignment\r\n* George of the Jungle and the Search for the Secret - Fixed post-processing alignment\r\n* Guitar Hero: Greatest Hits - Fixed broken rainbow rendering, edge garbage, shadow definition and aligns post-processing\r\n* Harley-Davidson: Race to the Rally - Fixed post-processing alignment\r\n* Heatseeker - Fixed misalignment issues\r\n* Iris no Atelier: Eternal Mana - Fixed horizontal lines in FMV and character portraits when upscaling\r\n* Killzone - Fixed internal FPS detection\r\n* Next Generation Tennis - Fixed broken pause menu graphics\r\n* Ore no Shita de Agake - Fixed incorrect rendering and some missing text\r\n* PachiPara 13 & 14 - Fixed channel shuffles, menu graphics, motion blur and aligned effects\r\n* Raw Danger - Fixed menu graphics and channel shuffles\r\n* Red Ninja: End of Honor - Fixed post-processing alignment\r\n* Steambot Chronicles - Fixed menu graphics and channel shuffles\r\n* TimeSplitters: Future Perfect - Aligned bloom of distant objects\r\n* US OPEN 2002: A USTA EVENT - Fixed broken pause menu graphics\r\n### ControllerDB (from [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB))\r\n* 8BitDo Pro 3\r\n* 8BitDo Ultimate 2C\r\n* icedragon.io STAC Dance Pad\r\n* Logitech Cordless RumblePad\r\n* PlayStation VR2 Sense Controllers\r\n* Ultimate Atari Fight Stick\r\n* XinMo Dual Arcade\r\n* ZhiXu GuliKit D\r\n### No interlacing and Widescreen Patches (Thanks [Saramagrean](https://github.com/Saramagrean/NetherSX2-cheats)!)\r\n#### No Interlacing\r\n* Grand Theft Auto: San Andreas\r\n* Hot Shots Golf 3\r\n* Mystic Nights\r\n* Shadow Hearts\r\n* Tales of Destiny: Director's Cut\r\n#### Widescreen\r\n* Grand Theft Auto: San Andreas\r\n* Jackie Chan Adventures\r\n* Metal Gear Solid 2 - Substance\r\n* Mystic Nights\r\n* Pro Evolution Soccer 2014\r\n* The Great Escape\r\n* Tales Of The Abyss",
           "prerelease": false,
           "assets": [
             {
               "name": "NetherSX2-v2.2n-3668.apk",
               "size": 19544036,
-              "downloads": 319156,
+              "downloads": 319174,
               "url": "https://github.com/Trixarian/NetherSX2-classic/releases/download/2.2n/NetherSX2-v2.2n-3668.apk"
             }
           ],
@@ -11660,32 +11660,32 @@
       "category": "GameHub",
       "logo": "gamehub.png",
       "extensions": null,
-      "downloads": 1147503,
+      "downloads": 1147549,
       "releases": [
         {
           "name": "GameHub Lite v5.1.8",
           "tag": "v5.1.8",
           "date": "2026-07-02T19:43:40Z",
-          "downloads": 98475,
+          "downloads": 98520,
           "body": "## Security: Steam token redaction in logs\r\n\r\nGameHub Lite 5.1.8 fixes a logging issue where Steam authentication-related values could appear in diagnostic logs. \r\nIn some cases, logs could include fields such as `steamToken`, `refreshToken`, or `accessToken` from Steam login/launch flows.\r\n\r\n**Publicly posted logs containing these fields should be deleted or redacted.**\r\n\r\n### IMPORTANT\r\n\r\nThis should go without saying but If you find any security issues, please reach out **PRIVATELY**. \r\nI have not checked if this issue is still present in recent GameHub versions, already ruined my one day off I was spending with my family by the person who reported this publicly and I do not plan on spending any more time on this.\r\n\r\n### Changelog\r\n\r\nThe fix adds centralized log redaction for Steam/auth token fields, Steam QR login URLs, JWT-like token strings, and launch command token arguments before logs are written. This covers the app loggers, JavaSteam logging, and the PC launch-log file writer.\r\n\r\nThis release also pins local patch builds to `apktool 2.12.1`\r\n\r\n**Full Changelog**: https://github.com/Producdevity/gamehub-lite/compare/v5.1.7...v5.1.8",
           "prerelease": false,
           "assets": [
             {
               "name": "GameHub-Lite-v5.1.8-alt-antutu.apk",
               "size": 51993473,
-              "downloads": 34756,
+              "downloads": 34757,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.8/GameHub-Lite-v5.1.8-alt-antutu.apk"
             },
             {
               "name": "GameHub-Lite-v5.1.8-antutu.apk",
               "size": 51993473,
-              "downloads": 11311,
+              "downloads": 11314,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.8/GameHub-Lite-v5.1.8-antutu.apk"
             },
             {
               "name": "GameHub-Lite-v5.1.8-ludashi.apk",
               "size": 51993473,
-              "downloads": 10159,
+              "downloads": 10160,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.8/GameHub-Lite-v5.1.8-ludashi.apk"
             },
             {
@@ -11697,7 +11697,7 @@
             {
               "name": "GameHub-Lite-v5.1.8.apk",
               "size": 51993473,
-              "downloads": 38318,
+              "downloads": 38358,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.8/GameHub-Lite-v5.1.8.apk"
             }
           ],
@@ -11707,7 +11707,7 @@
           "name": "GameHub Lite v5.1.7",
           "tag": "v5.1.7",
           "date": "2026-06-08T13:28:04Z",
-          "downloads": 89175,
+          "downloads": 89176,
           "body": "Frame generation (thank you The412Banner for your contribution.\r\n\r\nThis was the first (and last) contribution made with AI. Very thankful that Banner had the patience to deal with the amount of changes we requested for this to get merged. That said, future AI PR's will be closed automatically (and have been closed). Many are not willing to put in the effort that Banner did and I don't have the energy to review everything. **If it is not worth writing/understanding the code, it is not worth reviewing the code.**\r\n\r\n### App changes\r\n\r\n  - Added AI Frame Generation toggle + gear settings dialog to the in-game sidebar (Performance tab).\r\n  - 6 presets (Eco, Flow, Balanced, Boost, Clear, Max) and a flow-scale slider with live feedback.\r\n  - Settings persist to SharedPreferences and re-apply on every `WineActivity.onCreate`/`onResume`.\r\n  - Added a Vulkan ICD JSON writer so the framegen driver hooks correctly across all 5 package variants.\r\n  - Fixed `Locale.ROOT` formatting for float values to avoid comma-decimal issues on non-English locales.\r\n  - Fixed try/catch label collision in WineActivity smali patch — apktool rebuild now fails loudly on errors.\r\n  - Patch pipeline now auto-compiles `extension/*.java` when `EXTENSION_DEX_PATH` is unset, so future extensions are a one-step build.\r\n  - CI: pinned GitHub Actions to commit SHAs and added `extension/**` to workflow path filters.\r\n  - Build: validated `zip`/`unzip` in dependency checks.\r\n  - Bumped app version to `5.1.7`.\r\n\r\n### Backend changes\r\n\r\nWork continued in [gamehub-lite-api](https://github.com/Producdevity/gamehub-lite-api) and [gamehub-lite-worker](https://github.com/Producdevity/gamehub-lite-worker).\r\n\r\nBackend changes since `v5.1.6`:\r\n\r\n  - Removed SteamAgent2 component from downloads, games manifest, and component lists.\r\n  - Added `is_ui` property to component definitions.\r\n  - Fixed unsupported official component IDs being skipped during XML parsing.\r\n  - Extracted `assetNameFromDownloadUrl` helper for cleaner URL handling.\r\n  - Worker: refactored signature generation and API request handlers.\r\n  - Worker: `POST /simulator/executeScript` now serves generated presets from gamehub-lite-api instead of proxying.\r\n  - Worker: fixed `GET` request handling for `getComponentList` endpoint.\r\n\r\nRelevant API commits:\r\n\r\n  - [9b9dc07](https://github.com/Producdevity/gamehub-lite-api/commit/9b9dc0759f2e57b6c93d0f9a1a5d3eab8c4f3a1f) - remove SteamAgent2 component\r\n  - [bd953b9](https://github.com/Producdevity/gamehub-lite-api/commit/bd953b9282f3e5f8e4a3a9e7e0c1f2d3b4a5c6d7) - add is_ui property to components\r\n  - [74acd47](https://github.com/Producdevity/gamehub-lite-api/commit/74acd47) - skip unsupported component IDs in XML parsing\r\n  - [b694bc5](https://github.com/Producdevity/gamehub-lite-api/commit/b694bc5) - extract assetNameFromDownloadUrl function\r\n\r\nRelevant Worker commits:\r\n\r\n  - [d5408c7](https://github.com/Producdevity/gamehub-lite-worker/commit/d5408c7) - refactor worker\r\n  - [55e366f](https://github.com/Producdevity/gamehub-lite-worker/commit/55e366f) - serve generated presets from API instead of proxy\r\n  - [dc2d612](https://github.com/Producdevity/gamehub-lite-worker/commit/dc2d612) - handle GET requests for getComponentList\r\n\r\n\r\n## What's Changed\r\n* feat: AI Frame Generation menu in sidebar by @The412Banner in https://github.com/Producdevity/gamehub-lite/pull/129\r\n\r\n\r\n**Full Changelog**: https://github.com/Producdevity/gamehub-lite/compare/v5.1.6...v5.1.7",
           "prerelease": false,
           "assets": [
@@ -11738,7 +11738,7 @@
             {
               "name": "GameHub-Lite-v5.1.7.apk",
               "size": 51993473,
-              "downloads": 33800,
+              "downloads": 33801,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.7/GameHub-Lite-v5.1.7.apk"
             }
           ],
@@ -12149,20 +12149,20 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 1106152,
+      "downloads": 1106165,
       "releases": [
         {
           "name": "Ludashi 3.1 (Hotfix)",
           "tag": "v3.1.h",
           "date": "2026-06-22T12:16:20Z",
-          "downloads": 117018,
+          "downloads": 117031,
           "body": "hotfix: \r\n\\- fixed shortcuts created by wfm not working, wfm icons and background \r\n\\- fixed hud not showing in some games\r\n\\- fixed C: drive showing incorrectly xuser in file manager \r\n\\- removed white mode toggle\r\n\\- Added feature to hide the mouse cursor if the simulate touchscreen mode is enabled\r\n\r\n3.1 changes:\r\n🖥️ \\- a lot of changes for VulkanRenderer, improved compatibility and performance, also fixed wrong colors on mali devices, thanks to @Pipetto-crypto\r\n⚒️ \\- Major improvement on the UI of the app\r\n\\- improved the speed of Imagefs installation by 2x\r\n🎮 \\-  added new touch controllers and support for change colors,also fixed an bug from it random disappearing\r\n\\- implemented a service for avoid winlator crashing\r\n\\- fixed an old bug from Cmod, of which fexcore version from shortcut was getting ignored\r\n\\- update all assets, new default turnip which also supports adreno A8xx\r\n\\- updated box64 variables \r\n\\- fixed an issue where some games could crash due to reaching wrong optcode on XServer \r\n \r\n\r\n📌 This update requires reinstallation",
           "prerelease": false,
           "assets": [
             {
               "name": "bionic-vanilla.apk",
               "size": 473626011,
-              "downloads": 42068,
+              "downloads": 42079,
               "url": "https://github.com/StevenMXZ/Winlator-Ludashi/releases/download/v3.1.h/bionic-vanilla.apk"
             },
             {
@@ -12174,7 +12174,7 @@
             {
               "name": "Redmagic-build.apk",
               "size": 473626011,
-              "downloads": 6933,
+              "downloads": 6935,
               "url": "https://github.com/StevenMXZ/Winlator-Ludashi/releases/download/v3.1.h/Redmagic-build.apk"
             }
           ],
@@ -12838,26 +12838,26 @@
       "category": "GameNative",
       "logo": "gamenative.png",
       "extensions": null,
-      "downloads": 971589,
+      "downloads": 971952,
       "releases": [
         {
           "name": "v1.1.1",
           "tag": "v1.1.1",
           "date": "2026-07-26T00:16:49Z",
-          "downloads": 20337,
+          "downloads": 20670,
           "body": "## Downloads\r\n- **`gamenative-v1.1.1.apk`** — Standard build. Recommended for most users.\r\n- **`gamenative-v1.1.1-legacy-xr.apk`** — XR build for Quest headsets.\r\n\r\n\r\n## What's Changed\r\n\r\n### Added after prerelease\r\n* Updated wrapper-gamenative with leegao's latest changes (support more non-Adreno GPUs) by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1771\r\n* fix controller focus on common screens (library screen and library app screen) by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1747\r\n* fix carousel view in https://github.com/utkarshdalal/GameNative/pull/1748\r\n* Fix wrong branch size in install dialog in https://github.com/utkarshdalal/GameNative/pull/1738\r\n* Fix controllers when keyboard and mouse attached by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1770\r\n* fix: skip directinput and directinput8 components extraction by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1744\r\n* Fix Workshop Mods for YOMI:HUSTLE when using bionic steam by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1746\r\n* Let users launch past multiple pending cloud operations by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1749\r\n* Gamefix for Forza Horizon 4 by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1755\r\n* Remove Personal Nexus API Keys and Temporarily Disable Nexus Support by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1763\r\n* Add Local Mod Import Support by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1767\r\n* Fixed external storage on modern build by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1768\r\n\r\n### From prerelease\r\n- Added wrapper-gamenative to support dx12 on Mali and Exynos devices in https://github.com/utkarshdalal/GameNative/pull/1668\r\n- Add Nexus Mods support by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1545\r\n- Add Multi controller support by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1578\r\n- Fixed carousel view, allow installing branches without downloading full game first in https://github.com/utkarshdalal/GameNative/pull/1711\r\n- fix & improve bionic steam by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1687\r\n- Fix ANRs when opening sidebar in-game by consolidating PulseAudio operations by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1663\r\n- fix: large steam library crash & ANR on loading first-time Steam library by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1653\r\n- Fix achievement notifications not showing by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1670\r\n- feat: Add Steam collections by @VinceBT in https://github.com/utkarshdalal/GameNative/pull/1633\r\n- fix: Optimize GOG and EPIC download by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1649\r\n- Fix Rain World Workshop mod activation by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1662\r\n- Fix Oxygen Not Included Workshop mods by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1682\r\n- Allow uninstall of corrupted steam games in https://github.com/utkarshdalal/GameNative/pull/1681\r\n- Add an animated focus ring across the library and in-game UI by @VinceBT in https://github.com/utkarshdalal/GameNative/pull/1655\r\n- Fix clipping of the blur effect on the boot splash screen by @jonathan-dd in https://github.com/utkarshdalal/GameNative/pull/1642\r\n- feat(): achievement sound on unlock by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1671\r\n- Disable adrenotoolsTurnip for XR build in https://github.com/utkarshdalal/GameNative/pull/1679\r\n- fix: Refactor AppScreenContent optionsMenu parameter to List by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1689\r\n- Improve Shooter Mode runtime controls and settings by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1641\r\n- Fall back to English depots for unavailable languages by @VinceBT in https://github.com/utkarshdalal/GameNative/pull/1659\r\n- fix: Small adjustment to fix epic offline mode caching. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1566\r\n- Add per-control appearance customization by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1672\r\n- Recommendations/discover page by in https://github.com/utkarshdalal/GameNative/pull/1676\r\n- Fix orphaned cloud saves (ones that were never downloaded because of offline boot) by in https://github.com/utkarshdalal/GameNative/pull/1713\r\n- Improve controller editor visibility and Xbox shoulder labels by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1697\r\n\r\n## New Contributors\r\n* @jonathan-dd made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1642\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v1.1.0...v1.1.1",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v1.1.1-legacy-xr.apk",
               "size": 566180077,
-              "downloads": 4677,
+              "downloads": 4789,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.1.1/gamenative-v1.1.1-legacy-xr.apk"
             },
             {
               "name": "gamenative-v1.1.1.apk",
               "size": 566180077,
-              "downloads": 15660,
+              "downloads": 15881,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.1.1/gamenative-v1.1.1.apk"
             }
           ],
@@ -12890,20 +12890,20 @@
           "name": "v1.1.0",
           "tag": "v1.1.0",
           "date": "2026-07-01T21:58:18Z",
-          "downloads": 90461,
+          "downloads": 90483,
           "body": "## Downloads\r\n- **`gamenative-v1.1.0.apk`** — Standard build (Android 8–14). Recommended for most users.\r\n- **`gamenative-v1.1.0-xr.apk`** — Quest/VR sideload build. Legacy storage with all-files access and D drive support, forced landscape. Sideload only (not for the store).\r\n\r\n\r\n## What's Changed\r\nAdded since prerelease:\r\n* ASR: rename lib, add fence and color format conversion to prevent surfaceflinger crash by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1620\r\n* fix Steam in China: javasteam query params handling by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1652\r\n* Fix: Clear needs unpack flag for non-steam games (fixes constant mono install) by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1638\r\n* fix: GOG cloud save upload to prevent redundant transfers by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1637\r\n* Added changes to make app more navigable by controller in https://github.com/utkarshdalal/GameNative/pull/1646\r\n* apply gmem automatically for adreno 710, 720, 732 to reduce glitches in https://github.com/utkarshdalal/GameNative/pull/1656\r\n* Updated Steam/Epic/GOG notifications to correctly show background download notification in https://github.com/utkarshdalal/GameNative/pull/1621\r\n* Added default turnip driver for A12 devices (Retroid Pocket Classic) in https://github.com/utkarshdalal/GameNative/pull/1647\r\n* Added back delete container for installed games in https://github.com/utkarshdalal/GameNative/pull/1648\r\n* Prevent audio resume when exiting from QuickMenu that caused ANR by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1635\r\n* Fix recently played library sort by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1509\r\n* Fixed brightness manager in quick action menu by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1623\r\n* Add missing strings across all languages by @VinceBT in https://github.com/utkarshdalal/GameNative/pull/1625\r\n\r\nFrom prerelease:\r\n- Added more granular device compatibility data so you know which games will work well on your device in https://github.com/utkarshdalal/GameNative/pull/1568\r\n- Massive improvements to Pulse audio - now reliable and low-latency by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1574\r\n- Added SurfaceFlinger renderer option - reduces latency, increases FPS by @AndreVto (based off @StevenMXZ's work) in https://github.com/utkarshdalal/GameNative/pull/1582\r\n- Massive improvements to Bionic Steam Client - now works reliably for DRM, online connection, DLC - but only on Proton 10, and online play may not always work\r\n- Stopped infinite \"Handling DRM\" bug in https://github.com/utkarshdalal/GameNative/pull/1575\r\n- Fixed usb storage not being detected in https://github.com/utkarshdalal/GameNative/pull/1585\r\n- Added hero image to booting splash screen by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1587\r\n- Fix slowdowns faced when using onscreen controller by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1592\r\n- Created build for Quest in https://github.com/utkarshdalal/GameNative/pull/1580\r\n- Fix Slay the Spire workshop mod launching by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1589\r\n- Add custom games user-supplied cover image support by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1494\r\n- Make driver and DXVK lists searchable by @Smithsonian1974 in https://github.com/utkarshdalal/GameNative/pull/1558\r\n- Fixed case-sensitive cloud saves (eg Disco Elysium for Epic Games) by @phobos665 & me in https://github.com/utkarshdalal/GameNative/pull/1598\r\n- Fixed GOG cloud saves for games that don't have client id like Dead Cells in https://github.com/utkarshdalal/GameNative/pull/1596\r\n- fix: handle steam 0B depot download (fix recent update of Vampire Survivors DLC) by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1590\r\n- Fixed games that stopped working in v0.9.2: removed 2022 vcredists from preinstall steps in https://github.com/utkarshdalal/GameNative/pull/1571\r\n- Allow reusing active games from frontend instead of launching new ones in https://github.com/utkarshdalal/GameNative/pull/1605\r\n- Added gamefix for subnautica 2 in https://github.com/utkarshdalal/GameNative/pull/1572\r\n- Fixed several app not responding issues by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1603\r\n- add How Long To Beat stats strip to game pages by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1282\r\n- Fix keyboard Esc quick menu shortcut by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1532\r\n- Fix: add Exynos HUD fallbacks by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1573\r\n- feat: Add QAM display brightness control by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1525\r\n- Add Hold Mouse Button While Touching gesture option by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1513\r\n- Add relative touchscreen drag movement option by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1544\r\n- Fix shooter mode touch-side joystick routing by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1534\r\n- fix: steamservice crash on pic requests by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1548\r\n- feat: custom game import as Steam based on PrefManager toggle in Settings by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1531\r\n- Allow installation of full steam client after bionic client is enabled in https://github.com/utkarshdalal/GameNative/pull/1552\r\n- Updated winhandler and evshim to fix freezes in https://github.com/utkarshdalal/GameNative/pull/1553\r\n- feat: Improve Epic game download performance and reliability by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1554\r\n- fix: pulseaudio always extract, update apache-compress version by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1556\r\n- Allow ad-hoc signed builds of PRs by number in https://github.com/utkarshdalal/GameNative/pull/1561\r\n- fix: allow scrcpy motion event to move mouse by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1567\r\n- Fix installs on fresh SD cards in https://github.com/utkarshdalal/GameNative/pull/1594\r\n- Add DXVK sarek 1.12.0 by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1588\r\n- fix(l10n): complete Korean localization by @sampple-korea in https://github.com/utkarshdalal/GameNative/pull/1559\r\n- Return empty defaults when ImageFs metadata files exist but are empty by @Smuger in https://github.com/utkarshdalal/GameNative/pull/1565\r\n- Fixed capsule art for GOG games in https://github.com/utkarshdalal/GameNative/pull/1597\r\n- Add touchscreen keyboard and inverted pan actions by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1522\r\n- Repeat physical controller scroll bindings while held by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1602\r\n- Fix: Adding custom games from USB OTG drives silently fails by @sam1am in https://github.com/utkarshdalal/GameNative/pull/1520\r\n- Add dinput override by @raynoxu1337 in https://github.com/utkarshdalal/GameNative/pull/1495\r\n- Fix Exit Game ANR from rumble futex teardown race by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1607\r\n\r\n## New Contributors\r\n* @sampple-korea made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1559\r\n* @Smuger made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1565\r\n* @Smithsonian1974 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1558\r\n* @sam1am made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1520\r\n* @raynoxu1337 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1495\r\n* @VinceBT made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1625\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v1.0.0...v1.1.0",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v1.1.0-xr.apk",
               "size": 562345761,
-              "downloads": 35223,
+              "downloads": 35239,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.1.0/gamenative-v1.1.0-xr.apk"
             },
             {
               "name": "gamenative-v1.1.0.apk",
               "size": 562345761,
-              "downloads": 55238,
+              "downloads": 55244,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.1.0/gamenative-v1.1.0.apk"
             }
           ],
@@ -12936,14 +12936,14 @@
           "name": "v1.0.0",
           "tag": "v1.0.0",
           "date": "2026-06-06T16:08:43Z",
-          "downloads": 75433,
+          "downloads": 75436,
           "body": "## Downloads\r\n- **`gamenative-v1.0.0.apk`** — Standard build (Android 8–14). Recommended for most users.\r\n\r\n## What's Changed\r\n\r\n### Added after prerelease\r\n* fixed controller not working on glibc + other controller issues by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1502\r\n* Update default configs for devices so more games work out of the box by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1521\r\n* fixes for bionic steam client (remove crashes) by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1505\r\n* Fix Darkest Dungeon Workshop mod handling by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1500\r\n* Improve game pause/resume timing and synchronization by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1506\r\n* Add ALT + ENTER control action by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1498\r\n* Add more variable preset suggestions by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1497\r\n* fix Vulkan renderer scaling/screen effects by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1503 and me\r\n* Fix: Long exe game names not SIGSTOPed due to getting truncate by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1496\r\n* preserve zip payload extensions for Steam workshop by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1523\r\n* fix: update pulseaudio suspend/resume handling by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1527\r\n\r\n### From prerelease\r\n* Brought in Vulkan Renderer from Winlator Ludashi (thank you @stevenmxz) - improves performance and input latency\r\n* Updated controller implementation by @AndreVto - improves performance and input latency in https://github.com/utkarshdalal/GameNative/pull/1471\r\n* Improvements to LSFG-vk framegen - should work more reliably. @xXJSONDeruloXx brought in lsfg-vk Android layer v1.0.2\r\n* Added modern build of GameNative app for latest version of Android - for Play Store release\r\n* Added beta bionic Steam implementation for online play with no Steam client overhead (back up your saves before using it) - by @joshuatam and me\r\n* Updated controller implementation - fixes Kingdom Hearts 1.5 + 2.5 ReMIX by @AndreVto \r\n* Several pulse audio fixes, reduced latency, reliably pause and resume by @joshuatam \r\n* Improve perf HUD temperature sensor accuracy and GPU usage coverage by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1406\r\n* Automatic frontend sync for installed/uninstalled games by @vitormf in https://github.com/utkarshdalal/GameNative/pull/1454\r\n* Fix: Stuck loading screen during Mono/XAudio install by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1395\r\n* Improve shortcut icons - use clientIcon instead of icon for steam shortcuts by @Raxcoms in https://github.com/utkarshdalal/GameNative/pull/1402\r\n* Faster boots - cache Steam save file hashes between syncs by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1227\r\n* Fix steam playtime not being tracked after sleeping the device or going offline - resend steam presence after reconnect by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1278\r\n* Cap Steam DL size to installSize to avoid gigantic dl size reporting. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1482\r\n* Allow sign in with Steam Guard TOTP code by @peanut250 in https://github.com/utkarshdalal/GameNative/pull/1241\r\n* Fixed stylus handling in TouchpadView by @ppsz in https://github.com/utkarshdalal/GameNative/pull/1334\r\n* Steam cloud save fix - Two Point Museum works by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1465\r\n* Epic Offline Mode for offline launches by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1467\r\n* Fixed Steam games showing account name instead of user name by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1492\r\n* Fix games sometimes continuing to run threads in background when paused and eating battery by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1491\r\n* Fix simultaneous dpad and left stick input by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1445\r\n* Fix range button scrolling in touchmode by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1446\r\n* Fix touchscreen click-drag cursor tracking by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1449\r\n* Fix hold gesture mouse click timing by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1450\r\n* fix: clear persona state and hide status picker on sign out by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1312\r\n* Show remaining storage space in Storage Manager by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1321\r\n* fix: Exclude custom games from compatibility filter by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1412\r\n* chore: fexcore-2605 by @phobos665 and @linkq in https://github.com/utkarshdalal/GameNative/pull/1422\r\n* don't block local launch when remote runs a non-Steam shortcut by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1396\r\n* fix: update child windows when parent geometry is changed by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1436\r\n* Fix graphics glitches - Remove TU_DEBUG=deck_emu default. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1481\r\n* fix: add Korean and Romanian to language switcher, sort by ISO code by @linkq in https://github.com/utkarshdalal/GameNative/pull/1349\r\n* i18n: extract booting splash tips into translatable string resources by @linkq in https://github.com/utkarshdalal/GameNative/pull/1350\r\n* Fix RenPy workshop mod duplication by @Ivantyaj in https://github.com/utkarshdalal/GameNative/pull/1394\r\n* fix: add game fix for Danganronpa 2 (STEAM 413420) by @tlt21 in https://github.com/utkarshdalal/GameNative/pull/1301\r\n* fix(envvars): escape spaces on round-trip; fix crash on save by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1429\r\n* sync offline achievements on reconnect by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1268\r\n* fix: Cleanup/remove unused functions etc. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1362\r\n* Japanese translation by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1475\r\n* fix: Improve process handling for reliable suspend/resume by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1457\r\n* fix: Pause and resume PerformanceHudView with lifecycle by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1463\r\n* Attempted added support for USB external storage by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1476\r\n* fix Steam ForegroundServiceDidNotStartInTimeException crash by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1485\r\n* fix Steam achievement timestamps by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1473\r\n* fix(steam/download): close race that hangs Update/Verify at 0% by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1434\r\n\r\n## New Contributors\r\n* @Raxcoms made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1402\r\n* @Ivantyaj made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1394\r\n* @ppsz made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1334\r\n* @peanut250 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1241\r\n* @vitormf made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1454\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v0.9.2...v1.0.0",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v1.0.0.apk",
               "size": 561124605,
-              "downloads": 75433,
+              "downloads": 75436,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.0.0/gamenative-v1.0.0.apk"
             }
           ],
@@ -12953,14 +12953,14 @@
           "name": "v1.0.0-prerelease",
           "tag": "v1.0.0-prerelease",
           "date": "2026-05-30T18:33:03Z",
-          "downloads": 26104,
+          "downloads": 26105,
           "body": "## Downloads\r\n- **`gamenative-v1.0.0-prerelease.apk`** — Legacy build (Android 8–14). Recommended for most users.\r\n- **`gamenative-v1.0.0-prerelease-modern.apk`** — Modern build (Android 11+). Built for the latest Android, so **no security warning** about an outdated target. No D drive access and no custom game support; glibc not supported, external storage location moved.\r\n## What's Changed\r\n* Brought in Vulkan Renderer from Winlator Ludashi (thank you @stevenmxz) - improves performance and input latency\r\n* Updated controller implementation by @AndreVto - improves performance and input latency in https://github.com/utkarshdalal/GameNative/pull/1471\r\n* Improvements to LSFG-vk framegen - should work more reliably. @xXJSONDeruloXx brought in lsfg-vk Android layer v1.0.2\r\n* Added modern build of GameNative app for latest version of Android - for Play Store release\r\n* Added beta bionic Steam implementation for online play with no Steam client overhead (back up your saves before using it) - by @joshuatam and me\r\n* Updated controller implementation - fixes Kingdom Hearts 1.5 + 2.5 ReMIX by @AndreVto \r\n* Several pulse audio fixes, reduced latency, reliably pause and resume by @joshuatam \r\n* Improve perf HUD temperature sensor accuracy and GPU usage coverage by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1406\r\n* Automatic frontend sync for installed/uninstalled games by @vitormf in https://github.com/utkarshdalal/GameNative/pull/1454\r\n* Fix: Stuck loading screen during Mono/XAudio install by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1395\r\n* Improve shortcut icons - use clientIcon instead of icon for steam shortcuts by @Raxcoms in https://github.com/utkarshdalal/GameNative/pull/1402\r\n* Faster boots - cache Steam save file hashes between syncs by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1227\r\n* Fix steam playtime not being tracked after sleeping the device or going offline - resend steam presence after reconnect by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1278\r\n* Cap Steam DL size to installSize to avoid gigantic dl size reporting. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1482\r\n* Allow sign in with Steam Guard TOTP code by @peanut250 in https://github.com/utkarshdalal/GameNative/pull/1241\r\n* Fixed stylus handling in TouchpadView by @ppsz in https://github.com/utkarshdalal/GameNative/pull/1334\r\n* Steam cloud save fix - Two Point Museum works by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1465\r\n* Epic Offline Mode for offline launches by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1467\r\n* Fixed Steam games showing account name instead of user name by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1492\r\n* Fix games sometimes continuing to run threads in background when paused and eating battery by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1491\r\n* Fix simultaneous dpad and left stick input by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1445\r\n* Fix range button scrolling in touchmode by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1446\r\n* Fix touchscreen click-drag cursor tracking by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1449\r\n* Fix hold gesture mouse click timing by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1450\r\n* fix: clear persona state and hide status picker on sign out by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1312\r\n* Show remaining storage space in Storage Manager by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1321\r\n* fix: Exclude custom games from compatibility filter by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1412\r\n* chore: fexcore-2605 by @phobos665 and @linkq in https://github.com/utkarshdalal/GameNative/pull/1422\r\n* don't block local launch when remote runs a non-Steam shortcut by @ben-pearson in https://github.com/utkarshdalal/GameNative/pull/1396\r\n* fix: update child windows when parent geometry is changed by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1436\r\n* Fix graphics glitches - Remove TU_DEBUG=deck_emu default. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1481\r\n* fix: add Korean and Romanian to language switcher, sort by ISO code by @linkq in https://github.com/utkarshdalal/GameNative/pull/1349\r\n* i18n: extract booting splash tips into translatable string resources by @linkq in https://github.com/utkarshdalal/GameNative/pull/1350\r\n* Fix RenPy workshop mod duplication by @Ivantyaj in https://github.com/utkarshdalal/GameNative/pull/1394\r\n* fix: add game fix for Danganronpa 2 (STEAM 413420) by @tlt21 in https://github.com/utkarshdalal/GameNative/pull/1301\r\n* fix(envvars): escape spaces on round-trip; fix crash on save by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1429\r\n* sync offline achievements on reconnect by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1268\r\n* fix: Cleanup/remove unused functions etc. by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1362\r\n* Japanese translation by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1475\r\n* fix: Improve process handling for reliable suspend/resume by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1457\r\n* fix: Pause and resume PerformanceHudView with lifecycle by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1463\r\n* Attempted added support for USB external storage by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1476\r\n* fix Steam ForegroundServiceDidNotStartInTimeException crash by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1485\r\n* fix Steam achievement timestamps by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1473\r\n* fix(steam/download): close race that hangs Update/Verify at 0% by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1434\r\n\r\n## New Contributors\r\n* @Raxcoms made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1402\r\n* @Ivantyaj made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1394\r\n* @ppsz made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1334\r\n* @peanut250 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1241\r\n* @vitormf made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1454\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v0.9.2...v1.0.0-prerelease",
           "prerelease": true,
           "assets": [
             {
               "name": "gamenative-v1.0.0-prerelease-modern.apk",
               "size": 561001802,
-              "downloads": 8307,
+              "downloads": 8308,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.0.0-prerelease/gamenative-v1.0.0-prerelease-modern.apk"
             },
             {
@@ -12976,14 +12976,14 @@
           "name": "v0.9.2",
           "tag": "v0.9.2",
           "date": "2026-05-09T10:59:04Z",
-          "downloads": 84362,
+          "downloads": 84364,
           "body": "## What's Changed\r\n* Revert multicontroller support, fix controller issues on 0.9.1\r\n* Epic denuvo support, Hogwarts Legacy working (requires sign out of Epic and back in)\r\n* Correct half-texel offset in FSR RCAS sampling by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1386\r\n* Ensure single-depot DLCs are not filtered by language (fixes Skyrim in Japanese) by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1398\r\n* Exclude Steam China depots from download consideration (fixes Eastw ard in Chinese), requires log out and log inof Steam by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1399\r\n* Fixed games showing as 0B if deleted from storage manager, fixed Resume button, other downloading improvements\r\n* Fix disabled mouse in Glibc - allow XI2 only on bionic container by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1389\r\n\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v0.9.1...v0.9.2",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v0.9.2.apk",
               "size": 561853445,
-              "downloads": 84362,
+              "downloads": 84364,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v0.9.2/gamenative-v0.9.2.apk"
             }
           ],
@@ -13010,14 +13010,14 @@
           "name": "v0.9.1",
           "tag": "v0.9.1",
           "date": "2026-05-04T15:46:12Z",
-          "downloads": 33224,
+          "downloads": 33225,
           "body": "\r\n\r\n## What's Changed\r\n\r\n### Added since prerelease\r\n* LSFG-VK frame generation integration by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1322\r\n* Fixes for games not appearing, DLC not appearing and some games showing as 0B.\r\n* Fixes for offline launches via frontends by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1283\r\n* Fixes for frame rate cap, task manager, FSR fit scaling mode to preserve container aspect ration by @xXJSONDeruloXx\r\n* let XI2 throw error on unimplemented opcode (lets EA app install) by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/1354\r\n* Proton symlink fixes by @unbelievableflavour\r\n\r\n### From v0.9.1-prerelease\r\n* Added support for Epic EOS DRM and online play (by @phobos665 and me) in #1285\r\n* Added multi-controller support by @bllendev in #1047\r\n* Update wine-mono version to 11.0.0 in installer scripts, fixes online play for some games by @Catpotatos in #1133\r\n* Eliminate random container corruption and wine prefix overwrites by @Catpotatos and me in #1310\r\n* Fixed bug when local Steam saves could be overwritten after playing offline and going online by @jeremybernstein in #1169\r\n* Significant fixes to Steam cloud saves where game had no UFS preset by @joshuatam in #1100\r\n* Multicontroller support by @bllendev in https://github.com/utkarshdalal/GameNative/pull/1261\r\n* Added Ludashi's/Gamehub's HDR (aka \"Vivid mode\") by @xXJSONDeruloXx in #1106\r\n* Added FSR 1.0 & Scaling Modes by @xXJSONDeruloXx in #1112\r\n* Eliminated infinite booting screens by @jeremybernstein in #1136\r\n* Fixed bug introduced in 0.9.0 hiding Steam games and DLC, enhance DLC display by @joshuatam in #1191\r\n* Fixed bug introduced in 0.9.0 where redists were not downloaded for Steam games by @joshuatam in #1166\r\n* Added GameNative's new custom proton 10 builds by @AndreVto , @joshuatam in #1275\r\n* Made both Epic and GOG downloads from Asia in #1220\r\n* Massive improvements to touchscreen mode and gestures by @Nightwalker743 in #1276\r\n* Fixed audio in games like Skyrim by automatically extracting XAudio DLLs in Proton 10 by @joshuatam in #1184\r\n* Made layouts cutout/notch aware in #1299\r\n* Reduce Application Error 0000065432 by making Unpack Files more aggressive in #1300\r\n* Fix mouse movement in games that use raw mouse input and clipcursor by @AndreVto in #1084\r\n* Add ability to import Steam games via custom paths by @joshuatam in #1066\r\n* Added ability to manually set location for workshop mods by @Nightwalker743 in #1072\r\n* Added task manager in sidebar by @xXJSONDeruloXx in #1121\r\n* Added dialog for known configs with missing components rather than failing silently by @jeremybernstein in #801\r\n* added in-game FPS clamp for quick performance adjustments by @xXJSONDeruloXx in #1081\r\n* Added toggle to enable/disable showing achievements by @phobos665 in #1251\r\n* Add Steam save import and export actions by @xXJSONDeruloXx in #966\r\n* Added fexcore 2604 by @xXJSONDeruloXx in #1170\r\n* Added Box64 0.4.2 by @phobos665 in #1262\r\n* Added new turnip drivers for 8 Elite and 7xx/6xx (26.2.0, fixes UE5 DX12 games) to manifest by @utkarshdalal in #1263\r\n* Added toggle to disable Posthog analytics by @utkarshdalal in #1236\r\n* Added optional in-app game recommendations page by @utkarshdalal in #1235\r\n* Show actionable dialog when Steam session is taken by another device instead of silent crash by @ben-pearson in #1306\r\n* Fixed some Steam games showing container desktop on press play by @kiequoo in #1198\r\n* Fix wrong install size showing for some games by @jeremybernstein in #1054\r\n* Fix Steam cloud saves with unhandled UFS path types and fix save pattern parsing edge cases by @kiequoo in #1157\r\n* Preserve file timestamps during Steam Cloud download by @joshuatam in #1199\r\n* Sync cloud saves immediately after install by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1264\r\n\r\nAnd many more:\r\n\r\n* fix: prevent carousel touch loss during pagination by @xXJSONDeruloXx in #1127\r\n* fix: Download support files for gen 2 by @unbelievableflavour in #1130\r\n* gamefix: Added wine env var fix type + fix for stardew by @unbelievableflavour in #1156\r\n* Empty Wine/XDG trash on container shutdown by @jeremybernstein in #1151\r\n* fix: Added additional directory for xna msi by @unbelievableflavour in #1125\r\n* fix: match UFS save file globs case-insensitively by @AnikethanVA in #1183\r\n* feat: Added force cloud sync for GOG + made toasts consistent across platforms by @unbelievableflavour in #812\r\n* Fix library view not updating after game uninstall by @jeremybernstein in #956\r\n* Fix connection banner visibility and slow disconnect detection by @jeremybernstein in #918\r\n* Add reusable INI game fix for Imperivm by @Misazam in #1009\r\n* feat: disable IME extract UI and centralize singleLine keyboard behavior by @jeremybernstein in #1014\r\n* fix: perf hud fps fix for other wrappers by @xXJSONDeruloXx in #1164\r\n* feat: Added option to toggle button hints bar by @unbelievableflavour in #811\r\n* Fix: GOG chunk URL broken when CDN token is in query string by @unbelievableflavour in #1215\r\n* fix: skip spurious conflict when cache wiped but local matches cloud by @jeremybernstein in #1228\r\n* chore(): openApi specs for Gog, Epic & Amazon by @phobos665 in #1234\r\n* gamefix: More fallout game fixes by @unbelievableflavour in #1134\r\n* gamefix: Kingdom hearts 3 (epic) gamefix by @unbelievableflavour in #1161\r\n* fix: kill stale wine processes before launch by @xXJSONDeruloXx in #1195\r\n* fix: GOG cloud save fetch failure handling by @kiequoo in #1201\r\n* feat: Parallelize Steam cloud save downloads by @kiequoo in #1226\r\n* fix: use stored installPath in GOGManager.deleteGame to prevent uninstall failures by @xXJSONDeruloXx in #1255\r\n* Added some changes for rockstar launcher by @utkarshdalal in #1274\r\n* feat/refactor: Improve GOGDownloadManager download efficiency by @joshuatam in #1277\r\n* fix(workshop): force standard Steam UGC path for Tale of Immortal by @linkq in #1260\r\n* Move Touchscreen Mode toggle to in-game sidebar by @Nightwalker743 in #1249\r\n* fix: late release single tap in touchscreen mode to fix clicking in some games by @AndreVto in #1212\r\n* fix: gog download pause / resume handling logic by @joshuatam in #1291\r\n* fix: resolve cloud save path for Danganronpa 2 (app 413420) by @tlt21 in #1297\r\n* Fix: Rounded corners being clipped as rectangles in CompactLibraryTabBar by @sdkahal in #1293\r\n* feat: move Disable Mouse Input to in-game Quick Menu overlay by @ben-pearson in #1267\r\n* fix: keep exit button visible on ultrawide phones by making tab rail scrollable by @xXJSONDeruloXx in #1307\r\n* i18n: update and complete Chinese localizations (zh_CN & zh_TW) by @sdkahal in #1315\r\n* feat: add Show Keyboard extra binding to control editor by @Nightwalker743 in #1271\r\n* fix: Meta Quest 3/3s black screen on Turnip driver by @lvonasek in #1185\r\n* gamefix: Added jazz jack collection args fix by @unbelievableflavour in #1131\r\n* fix: persist screen effects settings per game by @xXJSONDeruloXx in #1108\r\n* refactor: Symlink imagefs_shared home in the variants + migrate old home contents by @unbelievableflavour in #1030\r\n* fix: Missing X11 keysym entries for Num and Caps Lock keys by @Unnvaldr in #1149\r\n* fix: eliminate global symlink dependency in PathType.toAbsPath by @kiequoo in #1305\r\n* Added slay the spire 2 gamefix by @unbelievableflavour in #1160\r\n* Refactor: Moved all gamefixes to gamefixes/types for clear structure by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1217\r\n* fix/feat: allow config dxvk and vkd3d version together by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1083\r\n* fix(workshop): skip ZIP extraction for games that read archives directly by @linkq in https://github.com/utkarshdalal/GameNative/pull/1316\r\n* refactor: Symlink imagefs_shared proton in the variants + migrate old proton versions by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1034\r\n\r\n## New Contributors\r\n* @AnikethanVA made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1183\r\n* @Misazam made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1009\r\n* @bllendev made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1047\r\n* @linkq made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1260\r\n* @tlt21 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1297\r\n* @sdkahal made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1293\r\n* @ben-pearson made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1267\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v0.9.0...v0.9.1",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v0.9.1.apk",
               "size": 561849349,
-              "downloads": 33224,
+              "downloads": 33225,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v0.9.1/gamenative-v0.9.1.apk"
             }
           ],
@@ -13044,14 +13044,14 @@
           "name": "v0.9.0",
           "tag": "v0.9.0",
           "date": "2026-04-08T01:14:05Z",
-          "downloads": 89054,
+          "downloads": 89055,
           "body": "## What's Changed\r\n\r\nFixes since prerelease:\r\n* Fix touchpad right-click by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1071\r\n* fix: remove 30s brightness blackout from ambient download overlay by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1086\r\n* add OpenAL Soft Audio support, added presets for WINEDLLOVERRIDES for Quick Audio fixing by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1102\r\n* BCN emulation was hidden from Proton x86_x64 by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1109\r\n* Fix old installs for storage mgr by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1111\r\n* Handle store-specific best configs by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1115\r\n* Reduce GC pressure in CaseInsensitiveFileSystem by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1120\r\n* Fix crash on game start on Meta Quest by @lvonasek in https://github.com/utkarshdalal/GameNative/pull/1105\r\n* Don't show logged out steam splash when offline by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1138\r\n* Hide local saves only setting by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/1139\r\n\r\n\r\nFixes from 0.9.0-prerelease:\r\n- Updated Wrapper - initial PowerVR (Pixel 10) GPU support - thanks to @sharpy66 and @Pipetto-crypto\r\n- Added \"use known config\" and automatic best configs for Epic, GOG and Amazon by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/892\r\n- Added Steam workshop implementation by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/977\r\n- Added support for Steam game versions/branches by @morganwalkup in https://github.com/utkarshdalal/GameNative/pull/870\r\n- Added \"compatibility\" filter by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/813\r\n- Added downloads & storage manager by @xXJSONDeruloXx and @eredisg in https://github.com/utkarshdalal/GameNative/pull/878\r\n- Added carousel layout by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/797\r\n- Fixes for launching from frontends by @jeremybernstein\r\n- Fix Steam cloud saves for games like Cult of the Lamb and Blue Revolver - apply UFS rootoverrides for Windows save paths by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/839\r\n- Screensaver for download screen OLED protection by @ObfuscatedVoid in https://github.com/utkarshdalal/GameNative/pull/1017\r\n- fix for games with Steam Input by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1026\r\n- Samsung DeX support by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/793\r\n- Upload achievements in real-time & custom achievement pop-up placements by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/975\r\n- Fix display of game playtime by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/957\r\n- Preserve settings on Steam logout by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/903\r\n- Winlator ludashi effects by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/803\r\n- Improve boot splash tip readability on dark displays by @nacl-dev in https://github.com/utkarshdalal/GameNative/pull/823\r\n- Launch games in the correct workingDir, fix some cloud saves and no launches by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/775\r\n- Reduces boot time on external storage by @giovannygb in https://github.com/utkarshdalal/GameNative/pull/747\r\n- Fix CursorWindow crash on large Steam libraries by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/961\r\n- add battery temperature metric to performance HUD by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/991\r\n- Nicer amazon images by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1021\r\n- Nicer images for in GOG detail screens by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/998\r\n- Reduce buggy game calculation size (eg in RE4) by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/929\r\n- Adjust color scheme of the External Display Input (on Thor-type devices) by @MayRedBeWithYou in https://github.com/utkarshdalal/GameNative/pull/838\r\n\r\nAnd many more:\r\n\r\n- Add connector context to XConnectorEpoll logs by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/869\r\n- Fixed a bug with steam 2017 vc redists by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/886\r\n- feat: performance hud customizability, adtl params by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/877\r\n- Fix SD card game detection after crash by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/889\r\n- Added \"not logged in\" splash screens by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/844\r\n- Update manifest.json by @utkarshdalal in https://github.com/utkarshdalal/GameNative/pull/879\r\n- Bugfix: Launch deps should be run in offline mode by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/898\r\n- fix: allow downloads over VPN connections by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/882\r\n- Fix Steam WebSocket idle disconnects by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/771\r\n- Fix cold-launch intent race, add failure feedback by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/884\r\n- Fix dpad ordinality on dpad that allows opposing directions to be pressed simultaneously by @iobg in https://github.com/utkarshdalal/GameNative/pull/805\r\n- fix(): update achievement background for better contrast by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/836\r\n- Moved image fetching to custom games by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/810\r\n- fix(): silent hill 4 reg fixes by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/926\r\n- Fix carousel external mouse scrolling and dragging by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/931\r\n- Support old manifest download size format (Assassin's Creed 1 fix) by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/924\r\n- Add Steam cloud saves browser shortcut by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/840\r\n- Feat/perf hud text outline by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/915\r\n- Added launch argument gamefixes by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/930\r\n- Fix intent launch edge cases: two-tier snackbar, offline fallback by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/912\r\n- Fix \"Resume\" button staying after completed download/update by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/923\r\n- fix: show Steam sign-in in menu after logout by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/790\r\n- refactor: poison Toast and migrate to SnackbarManager by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/851\r\n- Skip symlinks in exe search by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/900\r\n- fix: stabilize carousel cpu perf on idle by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/968\r\n- Fix expired license filtering without JSON string parsing by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/985\r\n- fix: prevent quick menu controller tab focus bounce by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/976\r\n- fix: preserve Steam session state on unexpected auth loss by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/973\r\n- fix: defer intent launches until GOG/Epic/Amazon service is ready by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/987\r\n- feat: allow disabling of cloud saves per game by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/596\r\n- fix: correct FEX_SMC_CHECKS env var to FEX_SMCCHECKS by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/990\r\n- Make images fill their container for library layout: hero by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1003\r\n- feat: add new keyboard QuickMenu navigation keys by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/946\r\n- Added Ubisoft Connect preinstall step by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/921\r\n- feat: add Xbox controller style toggle to swap A↔B and X↔Y button icons by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/958\r\n- fix: verify controller characteristics as detection by @AndreVto in https://github.com/utkarshdalal/GameNative/pull/972\r\n- Fix ControlsProfile binding deserialization by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/979\r\n- Use canonical root for dosdevices (imagefs parent safeguard) by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1029\r\n- Refactored default Proton downloads to launch deps by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/1031\r\n- fix: custom game exit quits app instead of returning to library by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1040\r\n- fix: track axis press state to avoid spurious releases by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1001\r\n- Fix case-sensitive filesystem creating duplicate directories by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/941\r\n- fix: preserve xconnector waits across suspend interrupts by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1033\r\n- fix: Steam cloud save sync fixes by @kiequoo in https://github.com/utkarshdalal/GameNative/pull/1044\r\n- fix: prevent quick menu tab debounce when controller active by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/996\r\n- Overlay: show active state on toggle icons, use per-item accent colors by @unbelievableflavour in https://github.com/utkarshdalal/GameNative/pull/873\r\n- Feat & Fix: Environment variables presets + VKD3D_SHADER_MODEL=6_0 set as default + bug fix by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/1104\r\n- fix: add app paths to goldberg config to fix games dlc detection by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1098\r\n\r\n## New Contributors\r\n* @iobg made their first contribution in https://github.com/utkarshdalal/GameNative/pull/805\r\n* @sharpy66 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/904\r\n* @nacl-dev made their first contribution in https://github.com/utkarshdalal/GameNative/pull/823\r\n* @morganwalkup made their first contribution in https://github.com/utkarshdalal/GameNative/pull/870\r\n* @MayRedBeWithYou made their first contribution in https://github.com/utkarshdalal/GameNative/pull/838\r\n* @lvonasek made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1105\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v0.8.1...v0.9.0",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v0.9.0.apk",
               "size": 551969878,
-              "downloads": 89054,
+              "downloads": 89055,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v0.9.0/gamenative-v0.9.0.apk"
             }
           ],
@@ -15519,13 +15519,13 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 789002,
+      "downloads": 789015,
       "releases": [
         {
           "name": "Winlator Cmod v13.1.1",
           "tag": "cmod_v13.1",
           "date": "2025-08-07T07:49:41Z",
-          "downloads": 378093,
+          "downloads": 378106,
           "body": "_Minor update v13.1.1 fixed custom icons, default renderer, and warning prompt handling on new installs_ \r\n\r\n------------------------------\r\n\r\n-   **`evshim` Rewrite:** The entire controller shim (`libevshim.so`) has been rewritten, **completely eliminating the use of shared memory (`mmap`)**, resulting in a massive reduction in CPU overhead and a significant performance boost, especially on lower-end devices. Box64 3.2 and 3.6 are now compatible, and have been restored.\r\n\r\n-   **ALSA-Reflector Improved** The pacer's ring buffer and reconnection logic have been refined, expect better performance and reliability.\r\n\r\n-   **Universal CPU Overhead Reduction:** I've gone through the code to find and eliminate performance bottlenecks, once again, big thanks to @Pipetto-crypto as always for the guidance and his improvements to the Graphics Wrapper. \r\n\r\n### ✨ New Feature: VkBasalt Integration\r\n\r\n-   **Per-Shortcut Sharpening & Effects:** Thanks to @Pipetto-crypto You can now enable VkBasalt on a per-shortcut basis to apply CAS and DLS to your games.\r\n\r\n### 🐞 Stability & Bug Fixes:\r\n\r\nThis update includes a huge number of fixes for a smoother experience.\r\n\r\n-   **Corrupted Shortcut Crash Fixed:** Implemented safety checks to prevent the app from crashing when parsing corrupted `.desktop` files.\r\n\r\n-   **Proton & Frontend Fixes:** Resolved issues that caused crashes when launching the frontend or using XrActivity.\r\n\r\n-   **Input Controls Fixed:** Corrected bugs with toggle switches and range buttons in the input controls overlay.\r\n\r\n-   **Gyro Zeroing Improved:** The gyroscope now has better logic for finding its origin point, resulting in more responsive and accurate motion controls.\r\n\r\n-   **Renderer Selection for DDraw:** Added a renderer selection option to fix black screens in older DDraw games, thanks to some last minute insight to **@Pipetto-Crypto**.\r\n\r\n### ⚙️ Core & Asset Updates\r\n\r\n-   **Proton 10 Support:** The codebase is now prepared for the next major Proton release. Stay tuned. (...and Wine 9.20)\r\n\r\n-   **Updated Assets:** The default Box64, Proton packs, and other core assets have been updated with the latest fixes and improvements. Additional .wcp have been added to Contents: updated DXVK (+ Stripped, Sarek for lower end devices), updated VKD3D, and Turnip. Thank you @K11MCH1 for your excellent repository.\r\n\r\nThe list goes on actually. More planned as always- now get to testing! Spin up GTA IV and watch it fly! 🫡\r\n\r\n-Alex\r\n\r\n**WARNING: _Make new Containers_.** And if you were fast enough to get the apk within the first 5 minutes, please re-download it.\r\n\r\n",
           "prerelease": false,
           "assets": [
@@ -15538,7 +15538,7 @@
             {
               "name": "Winlator-Cmod-v13.1.1.apk",
               "size": 699660031,
-              "downloads": 343232,
+              "downloads": 343245,
               "url": "https://github.com/coffincolors/winlator/releases/download/cmod_v13.1/Winlator-Cmod-v13.1.1.apk"
             }
           ],
@@ -15837,20 +15837,20 @@
       "category": "Emulator PS3",
       "logo": "rpcsx.png",
       "extensions": null,
-      "downloads": 781194,
+      "downloads": 781230,
       "releases": [
         {
           "name": "v20250425",
           "tag": "v20250425",
           "date": "2025-04-25T16:02:13Z",
-          "downloads": 684244,
+          "downloads": 684280,
           "body": "**Full Changelog**: https://github.com/RPCSX/rpcsx-ui-android/compare/v20250417...v20250425",
           "prerelease": false,
           "assets": [
             {
               "name": "rpcsx-release.apk",
               "size": 11134143,
-              "downloads": 684244,
+              "downloads": 684280,
               "url": "https://github.com/RPCSX/rpcsx-ui-android/releases/download/v20250425/rpcsx-release.apk"
             }
           ],
@@ -15899,20 +15899,20 @@
       "category": "Sega Dreamcast",
       "logo": "flycast.png",
       "extensions": null,
-      "downloads": 742783,
+      "downloads": 742826,
       "releases": [
         {
           "name": "v2.6: Per pixel with OpenGL ES, Battle cable server",
           "tag": "v2.6",
           "date": "2026-01-10T16:28:18Z",
-          "downloads": 186598,
+          "downloads": 186641,
           "body": "## What's Changed\r\n* Per pixel rendering with OpenGL ES on mobile\r\n* Match code server for battle cable games (F355, Virtual-On Oratorio Tangram and others)\r\n* Outtrigger and Power Smash online gaming support\r\n* Integer scaling and choice of filtering for output frame by @xander-will\r\n* Audio: improved frequency envelope generator\r\n* Fixed major issue with Mali GPUs when using Per-pixel rendering\r\n* DreamPicoPort fixes and enhancements by @Tails86\r\n* Combos to trigger emulator buttons (Pause, Exit, etc.)\r\n* DreamPotato support by @RikkiGibson \r\n* Configurable paths for BIOS, VMU and others,  and UWP enhancements by @danprice142\r\n* UI themes by @nexus382\r\n* Better support for Thrustmaster wheels\r\n* Panther DC controller emulation\r\n* Improved arcade box art\r\n* Improved on-screen keyboard support on Nintendo Switch\r\n* iOS is no longer supported\r\n* Texture upscaling is no longer available\r\n\r\n## Fixed games\r\n* Battle Racer (new)\r\n* Doom 64 (rendering)\r\n* Mushiking 2003 2nd (new)\r\n* Sonic Adventure\r\n* Mobile Suit Gundam: Federation vs.Zeon\r\n* Dinosaur King (inputs)\r\n* Zombie Revenge (inputs)\r\n* Virtual-On Oratorio Tangram (Naomi, VMU support)\r\n* Sega Tetris (Naomi, network)\r\n* Spawn (boot)\r\n* Block Pong-Pong (inputs)\r\n* Sega Rally 2 (crash)\r\n* Jet Set Radio (audio)\r\n* King of Route 66 (microphone support)\r\n\r\n## New Contributors\r\n* @nexus382  made their first contribution in https://github.com/flyinghead/flycast/pull/1916\r\n* @xander-will made their first contribution in https://github.com/flyinghead/flycast/pull/1976\r\n* @Shockblast made their first contribution in https://github.com/flyinghead/flycast/pull/1992\r\n* @RikkiGibson made their first contribution in https://github.com/flyinghead/flycast/pull/2000\r\n* @falsepopsky made their first contribution in https://github.com/flyinghead/flycast/pull/2006\r\n* @sonninnos made their first contribution in https://github.com/flyinghead/flycast/pull/2033\r\n* @Clownacy made their first contribution in https://github.com/flyinghead/flycast/pull/2056\r\n* @jlansing made their first contribution in https://github.com/flyinghead/flycast/pull/2089\r\n* @danprice142 made their first contribution in https://github.com/flyinghead/flycast/pull/2095\r\n* @cscd98 made their first contribution in https://github.com/flyinghead/flycast/pull/2167\r\n\r\n**Full Changelog**: https://github.com/flyinghead/flycast/compare/v2.5...v2.6",
           "prerelease": false,
           "assets": [
             {
               "name": "flycast-2.6.apk",
               "size": 31283319,
-              "downloads": 82323,
+              "downloads": 82366,
               "url": "https://github.com/flyinghead/flycast/releases/download/v2.6/flycast-2.6.apk"
             },
             {
@@ -17182,20 +17182,20 @@
       "category": "Nintendo GameCube / Wii",
       "logo": "dolphin.png",
       "extensions": null,
-      "downloads": 723798,
+      "downloads": 723799,
       "releases": [
         {
           "name": "U24.07.02-2407",
           "tag": "U24.07.02-2407",
           "date": "2025-07-20T08:56:45Z",
-          "downloads": 277952,
+          "downloads": 277953,
           "body": "Notable changes from U24.03.22-21259\r\n\r\n- Code refactoring and minor fixes\r\n- Fixed a panic alert for Def Jam: Fight for New York and Fifa Street\r\n- Numerous small optimizations to JitARM64\r\n- Small optimizations to DSP HLE audio decoding\r\n- Fixed stuttering from JIT Cache clear - mostly notable in Shadow the Hedgehog\r\n- Set OSD message color to yellow in default AMOLED theme\r\n- Updated Vulkan Memory Allocator and Vulkan Headers\r\n- Updated and optimized app icons\r\n\r\nMissing features - these features from Dolphin Official are not implemented\r\n\r\n- Android Input Overhaul and subsequent changes to Input and TAS handling\r\n- Custom GPU driver support\r\n- Skylanders portal and Infinity base support\r\n- Gamma correction\r\n\r\nThis codebase is based on the Official Dolphin dev build 2407-1 (Jul 2, 2024). For more information about what has changed check the PR history. \r\n\r\n**General information**\r\n- When I started this project, my only goal was to add the VBI Skip hack to MMJR2. At the time, I had little to no coding experience and knew nothing about Git, GitHub, or Android Studio. Looking back to 2023, I never imagined I’d come this far.\r\n- Fast forward almost a year and a half later—with over 1,100 pull requests—I’ve managed to update this codebase from Dolphin 5.0-18205 (December 2022) all the way to Dolphin 2407 (July 2024). Of course, all the credit goes to the Dolphin Team, since they did the real heavy lifting. My job has simply been figuring out how to make it all work in MMJR2.\r\n- I work on this fork in my free time, mostly for myself, but I’m genuinely happy that so many of you find it useful. The previous release has been downloaded over 150,000 times and that is honestly mind-blowing. \r\n- I’ll keep working to improve MMJR2 for as long as I’m able. Thank you all for your support! \r\n- **Android developers willing to help are welcome!**\r\n\r\n**Caution**\r\n- **Save states from older versions are, unfortunately, NOT compatible with this release. Be sure to make an in-game save before updating!**\r\n\r\n**Known Issues**\r\n- The UI in the Cheats section is broken when you try to delete multiple items in a row. This bug is present to this day in Dolphin Official. Just delete a few items, exit the cheats window, and return back.\r\n- For people using touch controls. It is possible that the core controls and touchscreen controls get out of sync. For more information check here - [https://github.com/Medard22/Dolphin-MMJR2-VBI/discussions/708](https://github.com/Medard22/Dolphin-MMJR2-VBI/discussions/708)\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "Dolphin.MMJR2-VBI-U24.07.02-2407.apk",
               "size": 13033337,
-              "downloads": 277952,
+              "downloads": 277953,
               "url": "https://github.com/Medard22/Dolphin-MMJR2-VBI/releases/download/U24.07.02-2407/Dolphin.MMJR2-VBI-U24.07.02-2407.apk"
             }
           ],
@@ -19090,20 +19090,20 @@
       "category": "Emulator PS3",
       "logo": "aps3e.png",
       "extensions": null,
-      "downloads": 533339,
+      "downloads": 533407,
       "releases": [
         {
           "name": "2.40",
           "tag": "2.40",
           "date": "2026-07-02T15:34:47Z",
-          "downloads": 30288,
+          "downloads": 30355,
           "body": "",
           "prerelease": false,
           "assets": [
             {
               "name": "2.40.apk",
               "size": 38101819,
-              "downloads": 30288,
+              "downloads": 30355,
               "url": "https://github.com/aenu1/aps3e/releases/download/2.40/2.40.apk"
             }
           ],
@@ -19130,14 +19130,14 @@
           "name": "1.37",
           "tag": "1.37",
           "date": "2026-03-21T16:32:55Z",
-          "downloads": 49849,
+          "downloads": 49850,
           "body": "",
           "prerelease": false,
           "assets": [
             {
               "name": "1.37.apk",
               "size": 36717379,
-              "downloads": 49849,
+              "downloads": 49850,
               "url": "https://github.com/aenu1/aps3e/releases/download/1.37/1.37.apk"
             }
           ],
@@ -20360,20 +20360,20 @@
       "category": "GameHub",
       "logo": "bannerlator.png",
       "extensions": null,
-      "downloads": 340123,
+      "downloads": 340124,
       "releases": [
         {
           "name": "Bannerlator 2.9",
           "tag": "2.9",
           "date": "2026-07-28T01:09:00Z",
-          "downloads": 4885,
+          "downloads": 4886,
           "body": "<p align=\"center\">\n<img src=\"https://github.com/The412Banner/Bannerlator/blob/main/logo.jpg?raw=true\" width=\"1500\" height=\"500\" alt=\"Bannerlator\" />\n</p>\n\n<p align=\"center\">\n<img src=\"https://img.shields.io/badge/release-2.9-ff3d8b?style=for-the-badge\" alt=\"2.9\" />\n&nbsp;<img src=\"https://img.shields.io/badge/versionCode-52-8b5cf6?style=for-the-badge\" alt=\"versionCode 52\" />\n&nbsp;<img src=\"https://img.shields.io/badge/update-app--side%20%C2%B7%20no%20ImageFS%20reinstall-2dd4bf?style=for-the-badge\" alt=\"app-side update\" />\n</p>\n\n# Bannerlator 2.9\n\nRun Windows apps and games on Android — no PC and no root required.\n\n**2.9 is a big feature release** — it adds a full **Power-user Performance** control set (safe boosts for everyone, plus a root-gated hardware-tuning tier) and finalizes **Virtual Controller Pro**, a complete on-screen controls overhaul. Everything from 2.8.x is included. As always it's **entirely app-side** — **no ImageFS reinstall** — your containers, themes, custom accent and per-game settings carry over untouched. Just install over any 2.8.x build.\n\n## ⚡ Power-user Performance controls (new)\n\nA new **Performance** section — reachable from **App Settings → Performance** *and* the **in-game Debug tab**, kept in two-way sync — with global defaults and optional per-game overrides.\n\n**No root required (everyone):**\n- **Sustained Performance Mode** — keeps clocks steady instead of spiking and dropping, so long sessions stay smoother.\n- **Thread Priority Boost** — raises the game's CPU-worker threads so they get more time.\n- **Prefer Big Cores** — pins the running game to your device's fastest cores.\n\n**Root-gated tier (opt-in, Magisk / KernelSU / APatch):** locked behind a **\"Grant Root\"** gate with a scroll-to-accept **\"use at your own risk\"** disclaimer —\n- CPU governor → performance, **Lock CPU frequency to max**, **Keep all cores online**, **Lock GPU to max clock**, **Disable thermal throttling**, **Fan to maximum**, and a **\"Free memory now\"** action.\n\n**Built safe by default:**\n- **Puts your device back exactly as it found it** — every changed setting is restored to its precise original value automatically when you exit a game, background the app, or if it crashes (and it self-repairs on next launch after a hard kill).\n- A device-anchored **Temperature Watchdog** — it reads your device's *own* thermal limits and rolls settings back before it overheats. Presets: **Conservative / Balanced / Aggressive / Manual**.\n- Full in-app help — a **\"?\"** on every toggle, an **\"Explain toggles\"** overview, a watchdog explainer, and live CPU/GPU temps + your device's own thermal limits shown inline.\n\nTune it before launching (App Settings) or live from the in-game Debug tab. The root tier is entirely optional and gated behind the risk disclaimer.\n\n## 🎮 Virtual Controller Pro (new)\n\nThe on-screen controls editor has been completely reworked — a redesigned editor with a dedicated **settings pane** and **toolbar**, **control scale up to 300%**, richer **visual styles**, and improved **external-controller** handling. Build and tune touch layouts far more precisely than before.\n\n*(Thanks [@arro000](https://github.com/arro000) — [#156](https://github.com/The412Banner/Bannerlator/pull/156).)*\n\n## 🐛 New: Mali GPU issue report board\n\nMali-GPU users now have a dedicated place to report games that don't work — a **structured report form** and **public forum threads** so issues are tracked and discussed instead of lost. Every report gets its own public discussion thread where the developers answer directly.\n\n<p align=\"center\">\n<a href=\"https://the412banner.github.io/Bannerlator/mali-reports/\"><img src=\"https://img.shields.io/badge/📝%20File%20a%20Mali%20report-Submit%20with%20logs-2dd4bf?style=for-the-badge\" alt=\"File a Mali report\" /></a>\n&nbsp;<a href=\"https://the412banner.github.io/Bannerlator/mali-reports/reports.html\"><img src=\"https://img.shields.io/badge/📋%20Browse%20all%20reports-See%20dev%20answers-8b5cf6?style=for-the-badge\" alt=\"Browse all Mali reports\" /></a>\n</p>\n\n- **📝 [File a Mali game report](https://the412banner.github.io/Bannerlator/mali-reports/)** — a quick form; attach your log file(s) so we can actually help.\n- **📋 [Browse all reports & dev answers](https://the412banner.github.io/Bannerlator/mali-reports/reports.html)** — see what's been reported, answered, and fixed.\n\n## ➕ Everything from 2.8.x, carried forward\n\nAll of the 2.8 line is included — the **Fusion HUD** and cross-vendor performance metrics, **frame generation** (bionic-fg / lsfg-vk) with a Performance mode, the **FPS limiter**, **Community Configs** + accounts, the **File Manager** overhaul, **Smart Game Import**, background component downloads, in-game refresh-rate unlock, custom startup services, and driver-source management.\n\n## 🙏 Credits\n\n- **[@arro000](https://github.com/arro000)** — **Virtual Controller Pro** ([#156](https://github.com/The412Banner/Bannerlator/pull/156)): the reworked on-screen controls editor.\n- Community testers who device-verified the new Performance controls on real hardware.\n\n---\n\n> ℹ️ **Root is only needed for the root-gated performance tier** (governor/clock/thermal/fan). Everything else in Bannerlator — including the non-root Performance boosts — needs no root. The root tier is opt-in, gated behind an explicit \"use at your own risk\" agreement, and every change auto-reverts when you leave the game.\n",
           "prerelease": false,
           "assets": [
             {
               "name": "Bannerlator-2.9-ludashi.apk",
               "size": 584425628,
-              "downloads": 428,
+              "downloads": 429,
               "url": "https://github.com/The412Banner/Bannerlator/releases/download/2.9/Bannerlator-2.9-ludashi.apk"
             },
             {
@@ -21843,20 +21843,37 @@
       "category": "Emulator PS2",
       "logo": "armsx2.png",
       "extensions": null,
-      "downloads": 270002,
+      "downloads": 269229,
       "releases": [
+        {
+          "name": "ARMSX2 2.6.5.9",
+          "tag": "2.6.5.9",
+          "date": "2026-07-28T16:55:40Z",
+          "downloads": 255,
+          "body": "ARMSX2 2.6.5.9\r\n\r\nWhat's new:\r\n\r\n21:9 / ultrawide display mode. Available in Settings and in the in-game menu.\r\n\r\nScreenshot is now an on-screen button. Enable SHOT in the touch layout editor\r\nnext to SAVE and LOAD. The core writes the PNG itself, so you get a clean\r\ncapture with no on-screen controls, OSD or letterboxing. \r\n\r\nCustom skins can now style the four macro buttons. Ship\r\nic_controller_macro1_button.png through macro4 in your skin (m1–m4 also works).\r\nCombined with macros being bindable to any input, including L-Stick Left and\r\nRight, you can build a proper racing layout: steer, steer, accelerate, brake.\r\n\r\nAchievement notifications queue instead of arriving all at once. Finishing a\r\ngame submits every leaderboard in the same frame, which used to bury the\r\nunlock you actually wanted to see under a wall of them. Three on screen at a\r\ntime now, and a queued one doesn't start counting down until it appears.\r\n\r\nFixed: the touch layout editor's grid showed buttons snapped while you dragged\r\nthem, then saved the unsnapped positions. It now saves what you saw.\r\n\r\nFixed: Vulkan failing to start entirely on some PowerVR devices (may help others as well) when the driver advertises a feature it doesn't actually support. It now checks\r\nfirst and does without, rather than refusing to start the renderer at all.\r\n\r\nExit is back in the library's ⋮ menu, so quitting doesn't mean opening the\r\ndrawer and scrolling to the bottom. It remains in the drawer too.\r\n\r\nSkins now sits next to Controls and Shortcuts in Settings.\r\n\r\nSmall improvements to controller navigation. ",
+          "prerelease": false,
+          "assets": [
+            {
+              "name": "ARMSX2-2.6.5.9.apk",
+              "size": 84252934,
+              "downloads": 255,
+              "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5.9/ARMSX2-2.6.5.9.apk"
+            }
+          ],
+          "htmlUrl": "https://github.com/ARMSX2/ARMSX2/releases/tag/2.6.5.9"
+        },
         {
           "name": "ARMSX2 2.6.5.8",
           "tag": "2.6.5.8",
           "date": "2026-07-28T05:44:37Z",
-          "downloads": 4018,
+          "downloads": 4515,
           "body": "ARMSX2 2.6.5.8\r\n\r\nWhat's new:\r\n\r\nDiscord RPC is now built into ARMSX2. Link your Discord account from the Friends tab to show what you're playing, including each game's cover art while in-game and the ARMSX2 logo while browsing your library. The Friends tab shows which of your Discord friends are currently using ARMSX2, along with their avatar and the game they're playing. You'll also receive console-style notifications, in the library and in-game, when a friend starts using ARMSX2. A Friends button is available from the in-game menu, so you can check without leaving your game. The feature is completely opt-in and requires you to connect your Discord account. You can disconnect at any time. ARMSX2 does not create a separate account or operate an account or presence server for this feature. While connected, ARMSX2 sends Discord the title and disc serial of the game you're running plus its cover-art address, which appear on your Discord profile. Your Discord authorization token is stored locally in the app's private storage. Discord handles sign-in and processes the integration under its own terms and privacy policy. The Discord integration runs in a separate helper process and communicates with the emulator through a simple message interface. The GPL-covered emulator process never links against or loads Discord's proprietary SDK. When the feature is disabled, the helper process is not started and the Discord library is never loaded.\r\n\r\nAdded a What's New tab: read release notes in the app, with the people each release credits shown alongside it.\r\n\r\nThe game's CRC now appears next to its serial in the pause menu, in the\r\nlong-press game details, and once again in the Info tab, the two halves of a\r\n<SERIAL>_<CRC>.pnach filename in one place. Thanks @Splaser.\r\n\r\nPatch Manager: All on / All off for files with a lot of cheats, instead of\r\nflipping a hundred switches by hand. Patch Manager also now shows the patches that ship inside ARMSX2 and apply to your game automatically. These were invisible before. A game could report \"3 game patches are active\" with an empty patch list and no way to find them. Patches with no name are always on by design, so there's a button to copy them into your own patches folder, where you can switch them off individually.\r\n\r\nFixed: pausing to change settings could crash with GS multithreading enabled.\r\nPresenting a frame was the one path that didn't wait for the GS back thread, so\r\nthe settings you were changing were never actually the cause.\r\n\r\nFixed, in the texture pack manager: the screen freezing on large collections,\r\ndeleted packs coming back as \"Installed\", and games in your library not being\r\ndetected. ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-2.6.5.8.apk",
               "size": 84232454,
-              "downloads": 4018,
+              "downloads": 4515,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5.8/ARMSX2-2.6.5.8.apk"
             }
           ],
@@ -21907,14 +21924,14 @@
           "name": "ARMSX2 2.6.5.7-1",
           "tag": "2.6.5.7-1",
           "date": "2026-07-27T14:45:15Z",
-          "downloads": 9750,
+          "downloads": 9770,
           "body": "Texture pack manager: Support for texture packs published in multiple parts. done by @sashkinbro\r\n\r\nWanted to get this out, but the team and I included need a break after the last few big updates we just had, I hope you guys take the time to enjoy and report feedback! Thanks. We will pick up again in a few days. Stay well! ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-2.6.5.7-1.apk",
               "size": 80644193,
-              "downloads": 9750,
+              "downloads": 9770,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5.7-1/ARMSX2-2.6.5.7-1.apk"
             }
           ],
@@ -21924,14 +21941,14 @@
           "name": "ARMX2 2.6.5.7 ",
           "tag": "2.6.5.7",
           "date": "2026-07-27T05:47:57Z",
-          "downloads": 5409,
+          "downloads": 5410,
           "body": "GS: fix missing draws on Adreno when texture replacements are loaded  done by @bmdhacks (fixes missing textures/textures not fully applying). Missing 2D text on Adreno with HD texture packs. Tales of the Abyss lost its entire text layer on Vulkan/Adreno with a pack loaded. Some draws read the render target while it's still bound as the color attachment, and Adreno silently drops them, a replacement texture shifts the source alpha range, which flips exactly those draws onto that path. Reading a separate copy is the only form that survives, confirmed on both Turnip and the proprietary driver. \r\n\r\nAlso fixed in 2.6.5.6 hot fix, is Lego games crashing while using VK. Thanks! Will take a rest for a few days. enjoy. ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-2.6.5.7.apk",
               "size": 80644193,
-              "downloads": 5409,
+              "downloads": 5410,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5.7/ARMSX2-2.6.5.7.apk"
             }
           ],
@@ -22016,14 +22033,14 @@
           "name": "ARMSX2 2.6.5.4 ",
           "tag": "2.6.5.4",
           "date": "2026-07-26T19:38:52Z",
-          "downloads": 5608,
+          "downloads": 5609,
           "body": "ARMSX2 2.6.5.4\r\n\r\nWhat's new: \r\n\r\nTidier UI. Fixes is now in the new Advanced tab, and absorbed the GameDB fixes from Performance plus the entire Recompiler tab. Both are debugging controls the GameDB already applies per game, so they don't belong in the tab you open to change speed. Fourteen tabs down to twelve. Search and the per-tab reset buttons moved with the settings, so searching \"Skip MPEG\" lands on Advanced, and resetting Performance no longer resets fixes it doesn't show.\r\n\r\nSettings sections fold again. The collapse had silently stopped working, so every section in Pad, Renderer, Performance and Fixes was permanently open, twenty of them. It wasn't too many options, it was every option on screen at once. Sections now expand and collapse, and the state survives rotation. Renderer opens on Display & Resolution and Performance on Speedhacks so neither greets you with a wall of headers.\r\n\r\nFixed a bug when a replacement texture failed to upload to the GPU, it was still handed to the game with undefined contents, indistinguishable on screen from a texture that never loaded. Missing cursors and cut-off fonts on Vulkan were often this. Failed uploads now fall back to the original texture and say so in the log.\r\n\r\nSkip BIOS is now on by default for fresh installs, existing users are not effected.\r\n\r\nNew texture packs download manager in the app. (done by @sashkinbro). Texture Packs now browses the community catalog maintained by @sashkinbro and installs with one tap. No game needs to be running. Each pack names the games it belongs to, so it installs itself to the right place, packs for games in your library sort to the top, and the rest stay visible so you can grab one before you own the disc. Texture replacement switches on automatically after an install, since it's off by default and the files would otherwise sit there changing nothing. Downloads are checksum-verified, check free space first, and swap into place atomically so a failed install never leaves you with a half-replaced pack. The panel links the catalog so you can see where packs come from and contribute your own. Be sure to read the contribution guidelines on the repo before doing so. https://github.com/sashkinbro/EmuCoreX-Textures \r\n\r\nThe texture pack list collapses and is searchable, search by pack name, game, serial or author.\r\n\r\nPer-driver GPU workarounds. (done by @sashkinbro). The GPU family was never enough to decide behaviour, the same Mali part behaves differently under ARM's driver than under Mesa. Driver identity, version and known defects now live in a 25-rule table with match confidence, so the next device-specific quirk is a table entry instead of another hand-written branch. Shaders gained swappable helpers for the bitwise operations some drivers miscompile. A device matching no rule renders exactly as before. An existing Mali fix was preserved and deliberately widened, Mali fixes reached through ANGLE or Panfrost previously fell outside it.\r\n\r\nYour shader cache rebuilds once on first launch this update. Every shader's source changed, so the old cache can't be reused.\r\n\r\nLibrary overflow menu trimmed from eleven rows to eight, with separators. \r\n\r\nSetup / Change Folders and Exit moved to the left side game library menu. Exit has a proper power icon and keeps its confirmation. \r\n\r\nGame names in grid moved to App settings beside cover size.\r\n\r\nAbout moved to the left side game library menu. \r\n\r\nInstalled patches and cheats can be collapsed, so a pnach with hundreds of downloaded codes folds away.",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-2.6.5.4.apk",
               "size": 84220001,
-              "downloads": 5608,
+              "downloads": 5609,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5.4/ARMSX2-2.6.5.4.apk"
             }
           ],
@@ -22190,14 +22207,14 @@
           "name": "ARMSX2 2.6.5 ",
           "tag": "2.6.5",
           "date": "2026-07-24T06:42:42Z",
-          "downloads": 10611,
+          "downloads": 10612,
           "body": "ARMSX2 2.6.5\r\n\r\nWhat's new:\r\n\r\nAdreno GPUs now default to the Vulkan renderer when the renderer is set to Auto (faster on most Snapdragon devices). \r\n\r\nA new Low Latency frame pacing setting, now the default on capable devices, with a one-time migration so existing installs get it too (low-end devices keep the queued pacing).  Thank you to @Splaser for this feature!\r\n\r\nReduced Android input latency and improved input handling for controllers, thanks @Splaser \r\n\r\nHardware ROV on mobile (experimental): the Rasterizer Order Views toggle now enables tile-native depth feedback (rasterization-order depth access) on supported mobile GPUs, (worth testing while upscaling). \r\n\r\nAdded a New experimental CPU clock hint (ADPF) toggle in Performance settings (off by default). May be useful for low-end devices that are CPU bottlenecked.\r\n\r\nAdded open/close sound cues for pop-ups (info buttons, hardcore-mode toggle, patches & cheats dialogs).\r\n\r\nRefreshed controller-navigation and slider sounds (I think these sound softer and nicer on the ears).\r\n\r\nDelta Force: Black Hawk Down (SLUS-21124 / SLES-53299): GameDB fixes for correct effects, thanks @XDarkFallenX \r\n\r\nUpdated the RA client. Stay on the latest version to keep hardcore mode working once the minimum client version is enforced (most likely sometime tomorrow).\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-2.6.5.apk",
               "size": 83826729,
-              "downloads": 10611,
+              "downloads": 10612,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.5/ARMSX2-Refresh-2.6.5.apk"
             }
           ],
@@ -22313,14 +22330,14 @@
           "name": "ARMSX2 2.6.4.8",
           "tag": "2.6.4.8",
           "date": "2026-07-23T07:04:23Z",
-          "downloads": 7623,
+          "downloads": 7626,
           "body": "Test for check on launch auto updater. ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-2.6.4.8.apk",
               "size": 80549201,
-              "downloads": 7623,
+              "downloads": 7626,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.4.8/ARMSX2-Refresh-2.6.4.8.apk"
             }
           ],
@@ -22467,14 +22484,14 @@
           "name": "ARMSX2 2.6.4.1 ",
           "tag": "2.6.4.1",
           "date": "2026-07-21T03:38:22Z",
-          "downloads": 8168,
+          "downloads": 8172,
           "body": "ARMSX2 2.6.4.1\r\n\r\nWhat's new:\r\n\r\nAnimated PlayStation-3 XMB library background. The library now has the live flowing XMB wave as its default backdrop, the way the iOS build does. Custom backgrounds still work, pick any image, GIF or WebP and it overrides the wave, reset returns to it.\r\n\r\nOn-screen stats hotkey now CYCLES instead of a plain on/off: Full --> Minimal --> Custom --> Off. The same modes are on the in-game On-Screen menu, and your choice is remembered. Hotkeys also are an option in the On-screen all settings tab.\r\n\r\nLibrary music controls: a volume slider (now defaults to 15%), and you\r\ncan now pick your own track, any audio file from your device, with a reset-to-default. \r\n\r\nDisplay Zoom (Settings --> Fixes): one slider that zooms into the picture,\r\ntrimming every edge equally so it fills more of the screen without stretching\r\nmuch simpler than the four manual crop sliders for tablets and modern screens.\r\n\r\nNetworking works again while fast-forwarding. 2.6.4 started handing the console public DNS servers it had to reach over a real network round-trip, which fast-forward outran, DNS now behaves as it did before.\r\n\r\nGames no longer come back to a black screen (with audio) when relaunched on some Qualcomm Adreno devices. The Vulkan display surface is now rebuilt cleanly instead of getting stuck.\r\n\r\nThe replacement-texture cache was too small on higher-RAM devices and kept evicting a pack that would have fit it now scales to half of RAM (up to 6 GB instead of 2GB) so big packs stay usable.\r\n\r\nAdded more downloadable controller skins: Xbox, Burnout 3, Black, and more! \r\n\r\nCredits:\r\n\r\nXMB background ported from linkev's\r\nPlayStation-3-XMB. Controller skins by @bagasromadon. ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-2.6.4.1.apk",
               "size": 79533964,
-              "downloads": 8168,
+              "downloads": 8172,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.4.1/ARMSX2-Refresh-2.6.4.1.apk"
             }
           ],
@@ -22501,14 +22518,14 @@
           "name": "ARMSX2 2.6.3 ",
           "tag": "2.6.3",
           "date": "2026-07-20T01:15:29Z",
-          "downloads": 7468,
+          "downloads": 7469,
           "body": "ARMSX2 2.6.3 \r\n\r\nWhat's new: \r\n\r\nNew EE/VU recompiler backend done by @bmdhacks\r\nThe entire CPU core rebuilt on a new ARM64 recompiler ported from upstream PCSX2. Faster and far more accurate, a whole class of \"unfixable on ARM\" bugs are simply gone. Confirmed: Ratchet: Deadlocked graphical corruption fixed, and other problem games run as they should Crash Twinsanity, NFL 2K5, VP2 and the rest of the problem list now run correctly. This update should help low-end users greatly. \r\n\r\nGS Multi-threading (optional) by @bmdhacks\r\nSplits GS onto a dedicated back thread, run 2x/3x internal resolution without the frame dips. Settings --> Renderer --> GS Multi-threading (and the in-game quick menu). Off by default, restart to apply.\r\n\r\nKnown issues, fixes being worked on:\r\n\r\nJak X: Combat Racing, slightly regressed (memory-card save hang + some in-game graphics glitches). Being worked on. For the moment, if you get stuck on it saving a memory card, restart the game and the save file will now exist. \r\n\r\nTrue Crime: New York City, fully regressed (the EE FPU accuracy fix isn't in the new backend yet). Being worked on, but I wanted to get this out now. Let us know how it is! ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-2.6.3.apk",
               "size": 71722683,
-              "downloads": 7468,
+              "downloads": 7469,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.3/ARMSX2-Refresh-2.6.3.apk"
             }
           ],
@@ -22600,7 +22617,7 @@
           "name": "ARMSX2 2.6.1.3",
           "tag": "2.6.1.3",
           "date": "2026-07-18T12:41:00Z",
-          "downloads": 9839,
+          "downloads": 9841,
           "body": "ARMSX2 2.6.1.3 \r\n\r\nGameDB fixes: \r\n\r\nSynced all GameDB PRs from @XDarkFallenX which are Ratchet & Clank 2, RE Outbreak, Mark of Kri, Crazy Frog Racer, Grandia III, Grandia Xtreme, CoD Finest Hour, RE4, Tekken, Burnout 3, Genji, DOA2, Super Dragon Ball Z, Genji (SCPS-15095), DOA2 HARD. \r\n\r\nOn-screen controls: \r\n\r\nPause button replaces the settings cog. One clean ⏸ in the top-right, a single tap opens the pause menu. The cog is gone entirely.\r\n\r\n\"Tap to reveal\" replaces the old show/hide toggle. When enabled, it's hidden-until-tapped (first tap surfaces it, second opens the menu) and the menu is always reachable, including with on-screen controls set to Never and after auto-hide. \r\n\r\nInterface: \r\n\r\nOSD now defaults to 65% (was 100%), the stats block was dominating handheld screens. Existing installs still on the old default are migrated once, custom sizes are preserved.\r\n\r\nFixed a mislabelled setting. The top slider in On-Screen read \"UI Size (borders)\" but actually drove the OSD scale, it and the real UI-size slider were sharing one label key. Renamed to \"OSD Size\" with its own description, and moved UI Size / UI Font Size up beside it so all three sizing controls are together.\r\n\r\nAdded a scroll-to-top button in Settings when scrolling through for example a huge list of cheats (like for GTA SA).\r\n\r\nPatches: \r\n\r\nPatches now show up in per-game settings when fetching from the online browser.\r\n\r\nFixed cross-game patch bleed, opening GT4 could show GTA:SA's patches and cheats, in both the browser and per-game settings.\r\n\r\nImproved UI lag on large cheat lists (collapsed sections no longer compose their rows). \r\n\r\nPatches and cheats have been split into separate collapsible sections when fetching them from the online browser.\r\n\r\nClarified widescreen patches, now \"Auto-Apply Widescreen (16:9) Patches\", with a description stating it applies automatically to every game that has one, and that non-16:9 titles can come out stretched, cropped, or missing text. It remains off by default. (I had it on and had the missing text issue in GT4, turned it off and GT4 was back to normal). \r\n\r\nRetroAchievements:\r\n\r\nAdded Encore, Spectator and Unofficial/Test modes.\r\n\r\nAchievement sounds now actually ship so they can be further modified (unlock, message, leaderboard submit), the folder was previously empty. Unlock sounds can be configured through the app as before, the rest through the folder. \r\n\r\nOther: \r\n\r\nPotential fix for a Vulkan rendering regression on Snapdragon 8 Elite devices, (please let me know). \r\n\r\nPotential fix for an issue with texture packs not loading correctly and producing garbage data, (please let me know). \r\n\r\nImproved UI lagging after choosing a skin.\r\n\r\nPer-game Graphics API, rotation and GPU driver are now per-game instead of global-only.\r\n\r\nLoad state menu slot tiles were squished due to the new Auto-save setting, they're now back to full size and should scale correctly. \r\n\r\nRetroArch shaders now render at display resolution. CRT scanlines and similar per-pixel effects were being generated at the internal resolution and then upscaled, which made them uneven. They now render at the on-screen size, matching RetroArch.\r\n\r\nPer-orientation touch layout editing, editing landscape touch layout will not impact portrait touch layout and vice versa. ",
           "prerelease": false,
           "assets": [
@@ -22625,7 +22642,7 @@
             {
               "name": "ARMSX2-Refresh-2.6.1.3.apk",
               "size": 71309140,
-              "downloads": 9368,
+              "downloads": 9370,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.1.3/ARMSX2-Refresh-2.6.1.3.apk"
             },
             {
@@ -22904,14 +22921,14 @@
           "name": "ARMSX2 2.6.0.2",
           "tag": "2.6.0.2",
           "date": "2026-07-14T16:41:00Z",
-          "downloads": 4159,
+          "downloads": 4160,
           "body": "2.6.0.2\r\n• Jak 3: per-game graphics fixes (all regions)\r\n• New game fixes: Baldur's Gate: Dark Alliance, Atelier Iris",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-2.6.0.2.apk",
               "size": 69199147,
-              "downloads": 3912,
+              "downloads": 3913,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.6.0.2/ARMSX2-2.6.0.2.apk"
             },
             {
@@ -23015,14 +23032,14 @@
           "name": "ARMSX2 Refresh V38 ",
           "tag": "2.5.7",
           "date": "2026-07-07T19:54:32Z",
-          "downloads": 20021,
+          "downloads": 20023,
           "body": "Fixed the major slowdown when loading over the disc/network with block chaining on. Battlefield 2: Modern Combat online play (and any disc-streaming load) no longer freezes for 1-2 minutes, it now loads as fast as it should without giving up the EE block-chaining speed-up. This should help the slow DEV9 HDD / OPL loads being 10s slower as well. \r\n\r\nAdded Multitap support, connect up to 8 controllers through the PS2 multitap (Pad tab ---> toggle on), extra players share Player 1's button layout.\r\n\r\nAdded an OSD Scale, new slider (in Settings ---> Overlay tab) to make the on-screen messages & performance stats bigger or smaller (50–250%).\r\n\r\nYou can now toggle Perf-Stats (OSD) with a hotkey, bindable in the Hotkeys tab to flip the on-screen stats overlay on/off in-game.\r\n\r\nRapid-fire / Turbo, per-binding Turbo toggle in the Pad tab, hold a button to auto-repeat it.\r\n\r\nYou can now Export / Import per-game profiles, save or load a game's settings as a file from the Info tab. \r\n\r\nAdded GameHub-8Elite driver source to the in-app GPU driver browser.\r\n\r\nAdded GPU-based driver recommendation, the driver browser now detects your GPU and suggests a matching driver pack, (feel free to use whatever you'd like anyways).\r\n\r\nAdded D-Pad key spacing in the Touch Layout editor, select the D-Pad to get a spacing slider that spreads the four directions apart (NetherSX2-style).\r\n\r\nAdded a Multi-touch Reach slider (in the Pad tab ---> On screen touch controls) controlling how far from a button's center a touch still counts, so multi-button presses work with more room between buttons.\r\n\r\nPorted a batch of PPSSPP + Dolphin GPU driver-bug workarounds:\r\n\r\nAdreno: color-mask-under-depth fix, GL persistent-mapped-buffer crash guard, incomplete-pipeline made non-fatal.\r\n\r\nMali: depth/stencil load-op normalization and a z==w depth nudge to prevent artifacts.\r\nPowerVR: swapchain width alignment fix.\r\n\r\nAdded Valkyrie Profile 2: Silmeria fixes to every other region version. \r\n\r\nThis will be the last version released in this format, we are planning a restructure of the project and distribution of releases for all platforms, opting in favor of more traditional Stable/Nightly releases and one unified master branch. This will take some time, so please enjoy what we've released so far! What comes next is even more exciting. Thanks! ",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-V38htfx.apk",
               "size": 82155919,
-              "downloads": 20021,
+              "downloads": 20023,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.5.7/ARMSX2-Refresh-V38htfx.apk"
             }
           ],
@@ -23202,14 +23219,14 @@
           "name": "ARMSX2 Refresh V30",
           "tag": "2.4.9",
           "date": "2026-07-01T16:01:39Z",
-          "downloads": 5800,
+          "downloads": 5804,
           "body": "Performance improvements to the recompiler: \r\n\r\nThe EE recompiler now has direct block chaining. Patchable direct-branch tails replace the LUT-indirect dispatch between blocks, cutting per-block dispatch overhead. Should help weaker CPUs.\r\n\r\nThe EE recompiler now has SIGSEGV-backpatch fastmem, extended. Fast inline memory access now covers FP and vector loads/stores (LWC1/SWC1, LQ/SQ), not just integer.\r\n\r\nThe EE recompiler now has fast-tier register cache coverage across MULT/DIV/MTHI/MTLO (fewer full register spills).\r\n\r\nAdded PGO (Profile-Guided Optimization). Shipping cores are now built with a profile trained on GoW2 / Jackie Chan / VP2 / LEGO Batman / GT4. Combined, these games are all EE, VU, or GS heavy, so it should hopefully help a bit. You can read more about PGO [here:](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.android.com/games/agde/pgo-overview&ved=2ahUKEwjh4rWF3rGVAxWak4kEHaCEKCkQFnoECBcQAQ&usg=AOvVaw3lx-OOqUE93Xjn_kr81O9y)\r\n\r\nPlease let me know if performance has improved for you! \r\n\r\nAtomic VK shader-cache fix, the pipeline cache now writes to a .tmp file and atomically renames over the real one. A swipe-kill or crash mid-write can no longer leave a half-written cache that the Adreno driver accepts and renders garbage from. The previous valid cache survives an interrupted write instead of being clobbered. (The shader index/blob cache was already crash-safe, it bounds-checks entries and appends blob-before-index, so no change was needed there.)\r\n\r\nGameDB: ported PCSX2 #14647, Gran Turismo tuning (GT2000/GT3/GT4 demo + retail blending / half-pixel / autoflush, GT4 Online-Test VU clamp) plus a new Lupo Cup 2 (PAPX-90509) entry and Burnout 3 memcard filters. \r\n\r\nMade some fixes to DEV9 Ethernet on Android. Added a public-DNS fallback (Android had no /etc/resolv.conf) and dropped the gateway gate that blocked adapter init (/proc/net/route is SELinux-restricted). Online adapter + DNS should now work correctly. (Let me know if it still does not) \r\n\r\nDEV9 DNS Host Mappings (Settings ---> Network). Map hostnames ---> IPs via the internal DNS resolver, should help some specific private/fan-server play (like RE Outbreak / obsrv). \r\n\r\nTouch gliding across control boundaries. Replaced the three regional touch layers with one unified layer, so you can slide between face buttons and triggers (X--->L1) and hold multi-touch combos (L3+R3).\r\n\r\nMemory-card self-heal. Deleting a card with an external file manager no longer leaves a stale slot that mislabels your other card.\r\n\r\nRetroAchievements: \"Softcore\" has been renamed to \"Casual\" (per RA's own rename, Hardcore unchanged).\r\n\r\nImproved Readability. Lightened the dark-blue UI text (0xFF0033CC ---> 0xFF4C8DFF) that was unreadable for some on the black background.",
           "prerelease": false,
           "assets": [
             {
               "name": "ARMSX2-Refresh-V30.apk",
               "size": 68892213,
-              "downloads": 5800,
+              "downloads": 5804,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.4.9/ARMSX2-Refresh-V30.apk"
             }
           ],
@@ -24013,23 +24030,6 @@
             }
           ],
           "htmlUrl": "https://github.com/ARMSX2/ARMSX2/releases/tag/MacOSv2.2"
-        },
-        {
-          "name": "ARMSX2 Refresh V21",
-          "tag": "2.4.0",
-          "date": "2026-06-27T17:17:41Z",
-          "downloads": 1565,
-          "body": "Performance and stability improvements this update (will vary by device). \r\n\r\nThe Getaway is fixed. It was crashing on launch before, now it boots and ran at full speed in gameplay on my RP6, (still slow in cutscenes). \r\n\r\nYou can now map each analog stick direction to any PS2 button. Open Pad settings, set a stick to Custom, tap a direction, and press the button you want it to act as. \r\n\r\nA new toggle that makes the physical D-pad drive the left analog stick at full deflection. Perfect for games that only read the analog stick and ignore the D-pad.\r\n\r\nAdded a new \"Close Game & Quit\" controller hotkey, plus: games launched from another app (ES-DE, iiSU, etc.) now return to that app when you close them instead of dropping back to the ARMSX2 library, (as long as you have the \"Exit to launcher on close\" setting enabled.)\r\n\r\nThe Setup screen for the GitHub build's app folder step is now a single \"Choose Data Location\" button instead of the SD/Internal split.\r\n\r\nAdded a toggle to turn on game titles under your cover art with the \"Aa\" button on the left side of the library. Each title now also shows a small version tag (disc version or serial), so if you've got two copies of the same game you can finally tell them apart.\r\n\r\nRestored saving states and patches (widescreen, etc.) in Hardcore mode, cheats and loading states remain disabled in Hardcore mode. ",
-          "prerelease": false,
-          "assets": [
-            {
-              "name": "ARMSX2-Refresh-V21.apk",
-              "size": 89440508,
-              "downloads": 1565,
-              "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.4.0/ARMSX2-Refresh-V21.apk"
-            }
-          ],
-          "htmlUrl": "https://github.com/ARMSX2/ARMSX2/releases/tag/2.4.0"
         }
       ],
       "repoUrl": "https://github.com/ARMSX2/ARMSX2"
@@ -24040,13 +24040,13 @@
       "category": "GameHub",
       "logo": "bannerhub.png",
       "extensions": null,
-      "downloads": 243331,
+      "downloads": 243335,
       "releases": [
         {
           "name": "Bannerhub v3.8.0",
           "tag": "v3.8.0",
           "date": "2026-06-18T01:20:43Z",
-          "downloads": 44565,
+          "downloads": 44569,
           "body": "\r\n<img width=\"1920\" height=\"1080\" alt=\"Screenshot_20260617-215956\" src=\"https://github.com/user-attachments/assets/66a6215d-8fc1-478c-a2a1-b66198fa1a70\" />\r\n<img width=\"992\" height=\"1080\" alt=\"IMG_20260617_220005\" src=\"https://github.com/user-attachments/assets/98404423-9c5c-4eea-84bf-32e38cfb80aa\" />\r\n> [!WARNING]\r\n> **Only install official stable releases** (like this one). Do NOT install pre-releases or raw CI artifacts — pre-release builds use a different package name (`com.tencent.ig`) and cannot be upgraded to stable without uninstalling first.\r\n\r\n> [!IMPORTANT]\r\n> **Microphone permission required for Voice Chat.** When you activate voice chat (dashboard → Game Configs → Voice Chat), BannerHub will prompt for the **Microphone** permission. You must allow it for in-game calls to work — without it the call falls back to opening in your browser.\r\n\r\n> [!IMPORTANT]\r\n> **Notification permission required.** BannerHub will prompt for the **Post Notifications** permission when you start your first Epic, GOG, or Amazon download. You must allow it to receive download progress and completion notifications.\r\n\r\n> [!IMPORTANT]\r\n> **Files access required for SD card storage.** To save games to your SD card, BannerHub must be granted the **Files and Media** permission (Android Settings → Apps → BannerHub → Permissions → Files and media → Allow management of all files). Without it the SD card toggle has no effect.\r\n\r\n## 🎙️ In-game voice chat (no Steam, no root)\r\n\r\nBannerHub now has a **built-in voice chat** you can use while in a game — **no Steam account, no root, no extra app**. Identity is just a **nickname** you pick plus a stable per-install id; there are no friends lists and no ringing. It's a **room model**: Create or Join a room by a short code, or share a join link.\r\n\r\n- **Two-gate activation.** A new **Voice Chat** item appears in the dashboard side menu under **Game Configs** → nickname field + **Check availability**. An **Activate** toggle stays disabled until the name is confirmed free; ticking it claims the name and turns the in-game pill on.\r\n- **In-game pill + room box.** A draggable edge pill opens a room box with the live **roster** (everyone's nickname), a call **timer**, and **Mute** / **Leave**. The pill stays pinned to the edge while the box drags freely, with a collapsible **opacity** slider.\r\n- **Cross-play with BannerHub v6.** Voice rides the **same WebRTC mesh** (BannerHub Cloudflare Worker + Cloudflare Realtime TURN) that BannerHub v6 uses, so a **BannerHub user and a BannerHub v6 user can share the same room and talk**, in either direction. Room codes use the same format on both builds. **Device-confirmed both ways across different networks.**\r\n\r\n## 🔊 Per-game PC Audio Settings (recording-compatible mode)\r\n\r\nA new **PC Audio Settings** entry in each game's popup options menu (right after **PC Vibration Settings**) fixes **silent screen recordings**.\r\n\r\nStock GameHub loads `module-aaudio-sink` with no performance-mode argument, so PulseAudio opens a `LOW_LATENCY` AAudio stream the framework grants as exclusive MMAP — which **bypasses the mixer that screen recorders tap**. The result: recordings capture video but **no game audio** whenever the in-game audio driver is PulseAudio (ALSA records fine).\r\n\r\n- **PulseAudio mode: Low latency (default) / Recording-compatible.** Recording-compatible appends `pm=0` to the sink line → `PERFORMANCE_MODE_NONE` → the stream stays on the mixer so screen recordings capture in-game sound.\r\n- The active game's `gameId` is resolved from the live `WineActivity`'s `WineActivityData` field (the 5.3.5 launch intent carries no `gameId` extra), and the setting lives in `pc_g_setting<gameId>`, so **Export / Import Config** carries it automatically.\r\n\r\n### Tracking BannerHub updates\r\n\r\n- **This repo's [Releases page](https://github.com/The412Banner/BannerHub/releases)** — watch the repo to get notified.\r\n- **[Obtainium](https://github.com/ImranR98/Obtainium)** — add `https://github.com/The412Banner/BannerHub` as an app source with **\"Reconcile version string with version detected from OS\"** enabled.\r\n\r\n### Upgrading\r\n\r\n- **v3.7.5 → v3.8.0:** install the matching variant directly over your existing install. No certificate change, no data loss.\r\n- **v3.7.0 or earlier → v3.8.0:** install normally. If the signing certificate differs, uninstall first.\r\n",
           "prerelease": false,
           "assets": [
@@ -24077,7 +24077,7 @@
             {
               "name": "BannerHub-v3.8.0-Normal.apk",
               "size": 144860099,
-              "downloads": 9497,
+              "downloads": 9501,
               "url": "https://github.com/The412Banner/BannerHub/releases/download/v3.8.0/BannerHub-v3.8.0-Normal.apk"
             },
             {
@@ -30699,20 +30699,20 @@
       "category": "All In One",
       "logo": "lemuroid.png",
       "extensions": null,
-      "downloads": 82826,
+      "downloads": 82830,
       "releases": [
         {
           "name": "1.17.0",
           "tag": "1.17.0",
           "date": "2026-04-21T08:52:05Z",
-          "downloads": 9223,
+          "downloads": 9227,
           "body": "* Added microphone support for Nintendo DS\r\n* Brand new touch controls\r\n* Add immersive mode (dynamic background color)\r\n* Slightly improved HD mode\r\n* Added quicksave/quickload gamepad shortcuts\r\n* Added support for 16Kb pages\r\n* Added best-effort saves when transitioning to background\r\n* Updated all cores and databases\r\n* Various UI/UX improvements",
           "prerelease": false,
           "assets": [
             {
               "name": "lemuroid-app-free-dynamic-release.apk",
               "size": 11985230,
-              "downloads": 9223,
+              "downloads": 9227,
               "url": "https://github.com/Swordfish90/Lemuroid/releases/download/1.17.0/lemuroid-app-free-dynamic-release.apk"
             }
           ],
@@ -35233,7 +35233,7 @@
         "name": "Proton-9-x86_64",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/Proton.9.0-x86_64.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       }
     ],
     "Wine": [
@@ -35241,13 +35241,13 @@
         "name": "proton-10-arm64ec",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/proton-10-arm64ec.wcp.xz",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       },
       {
         "name": "wine-9.20-x86_64",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/wine-9.20.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       }
     ],
     "Box64": [
@@ -35255,43 +35255,43 @@
         "name": "0.3.5",
         "version": "1",
         "url": "https://github.com/ziad9267/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.5.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       },
       {
         "name": "036fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-036fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       },
       {
         "name": "0.3.7",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.7.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.624Z"
       },
       {
         "name": "0.3.8",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.8.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.3.9",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.9.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.1-fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.4.2-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.2-fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       }
     ],
     "WOWBox64": [
@@ -35299,25 +35299,25 @@
         "name": "0.3.7-5768989",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WowBox64-0.3.7-5768989.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.3.9-056999e",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WOWBox64-0.3.9-056999e.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WOWBox64-0.4.1-fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "0.4.2",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/wowbox64-0.4.2.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       }
     ],
     "DXVK": [
@@ -35325,85 +35325,85 @@
         "name": "1.5.5",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.5.5.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "1.7.2",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.7.2.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "1.9.4",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.9.4.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "1.10.3-async",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.10.3-async.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "11.1-sarek-async",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-11.1-sarek-async.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.3.1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.3.1-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.4.1.1-gplasync-sp",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1.1-gplasync-sp.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1-fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.4.1-arm64ec-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1-arm64ec-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.5.3-1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.5.3-1-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.6-2-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.6-2-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.6.2-arm64ec-gplasync",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.6.2-arm64ec-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.7.1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.7.1-gplasync.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.7.1-arm64ec-gplasync-fix-leegao",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.7.1-arm64ec-gplasync-fix-leegao.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       }
     ],
     "FEXCore": [
@@ -35411,85 +35411,85 @@
         "name": "241214",
         "version": "1",
         "url": "https://github.com/ziad9267/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore_241214.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2505",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore-2505.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2507_fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore_2507_fix.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2508.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2508.1.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2509.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2509.1.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2510.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2510.1.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2511",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2511.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2512",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2512.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2601",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2601.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2601-aabdded-nightly",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/FEXCore-2601-aabdded.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2603",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2603.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2604",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2604.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2605",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2605.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2607",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2607.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       }
     ],
     "VKD3D": [
@@ -35497,43 +35497,43 @@
         "name": "2.7-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.7.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.9-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.9.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.12-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.12.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "2.14.1-arm64ec",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-2.14.1-arm64ec.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "proton-3.0a.wcp",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-3.0a.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "arm64ec-3.0a.wcp",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-arm64ec-3.0a.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       },
       {
         "name": "proton-3.0b-2763dd2",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-3.0b-2763dd2.wcp",
-        "date": "2026-07-28T15:25:26.647Z"
+        "date": "2026-07-28T17:39:14.625Z"
       }
     ]
   }
