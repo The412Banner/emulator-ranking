@@ -13,7 +13,7 @@ const repos = [
   { name: "BannerHub (The412Banner)", repo: "The412Banner/bannerhub", category: "GameHub", logo: "bannerhub.png" },
   { name: "BannerHub v6 (The412Banner)", repo: "The412Banner/bannerhub-revanced", category: "GameHub", logo: "bannerhub-v6.png" },
   { name: "BannerHub Lite (The412Banner)", repo: "The412Banner/Bannerhub-Lite", category: "GameHub", logo: "bannerhub-lite.png" },
-  { name: "Bannerlator (The412Banner)", repo: "The412Banner/Bannerlator", category: "GameHub", logo: "bannerlator.png" },
+  { name: "Bannerlator (The412Banner)", repo: "The412Banner/Bannerlator", category: "GameHub", logo: "bannerlator.png", excludeAssets: ["update.json"] },
 
     // DRIVERS
   { name: "Adreno Tools Drivers", repo: "K11MCH1/AdrenoToolsDrivers", category: "Drivers", logo: "drivers.png", extensions: [".zip"] },
@@ -103,7 +103,7 @@ const repos = [
 ];
 
 // ===== GitHub API =====
-async function getGitHubReleasesData(repo, releaseNamePrefix = null) {
+async function getGitHubReleasesData(repo, releaseNamePrefix = null, excludeAssets = null) {
   try {
     console.log(`  → Buscando releases de ${repo} (GitHub)...`);
 
@@ -133,7 +133,7 @@ async function getGitHubReleasesData(repo, releaseNamePrefix = null) {
       return { total: 0, releases: [] };
     }
 
-    return parseReleases(releases);
+    return parseReleases(releases, false, excludeAssets);
 
   } catch (error) {
     console.error(`  ❌ Erro ao buscar ${repo}:`, error.message);
@@ -204,7 +204,9 @@ async function fetchManifestDrivers() {
 }
 
 // ===== Parser comum para ambas as APIs =====
-function parseReleases(releases, isGitea = false) {
+// excludeAssets: file names that are not downloads of the app itself (e.g. an in-app updater's
+// update.json, fetched on every check) - left out of the asset list and the totals.
+function parseReleases(releases, isGitea = false, excludeAssets = null) {
   let total = 0;
   const releasesList = [];
 
@@ -213,6 +215,7 @@ function parseReleases(releases, isGitea = false) {
     const assets = [];
 
     for (const a of r.assets || []) {
+      if (excludeAssets && excludeAssets.includes(a.name)) continue;
       const count = isGitea ? (a.download_count || 0) : (a.download_count || 0);
       total += count;
       releaseDownloads += count;
@@ -257,7 +260,7 @@ function parseReleases(releases, isGitea = false) {
     if (r.apiType === "gitea") {
       data = await getGiteaReleasesData(r.apiHost, r.repo);
     } else {
-      data = await getGitHubReleasesData(r.repo, r.releaseNamePrefix || null);
+      data = await getGitHubReleasesData(r.repo, r.releaseNamePrefix || null, r.excludeAssets || null);
     }
 
     const repoUrl = r.apiType === "gitea"
