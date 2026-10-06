@@ -60,6 +60,7 @@ const repos = [
   { name: "XoDos", repo: "xodiosx/XoDos", category: "PC Emulator", logo: "xodos.png" },
   { name: "Mobox Patched", repo: "jaycore/mobox-patched", category: "PC Emulator", logo: "mobox.png", extensions: [".tar.gz"] },
   { name: "Pluvia", repo: "oxters168/Pluvia", category: "PC Emulator", logo: "pluvia.png" },
+  { name: "DroidDeck", repo: "Droid-Deck/DroidDeck", category: "PC Emulator", logo: "droiddeck.png" },
 
   // Wii U Emulator
   { name: "Cemu", repo: "SSimco/Cemu", category: "Wii U Emulator", logo: "cemu.png" },
