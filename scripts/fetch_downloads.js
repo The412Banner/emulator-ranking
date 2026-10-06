@@ -8,7 +8,6 @@ const repos = [
   // GAMEHUB
   { name: "GameHub Lite (Producdevity)", repo: "Producdevity/gamehub-lite", category: "GameHub", logo: "gamehub.png" },
   { name: "GameHub Lite (ItzDFPlayer)", repo: "ItzDFPlayer/gamehub-lite", category: "GameHub", logo: "gamehub.png" },
-  { name: "GameHub Brasil", repo: "winlatorbrasil/gamehub-brasil", category: "GameHub", logo: "gamehub-brasil.jpg" },
   { name: "GameHub Lite (J4MCU-builds)", repo: "J4MCU-builds/Gamehub-Lite-RedMagic", category: "GameHub", logo: "gamehub.png" },
   { name: "BannerHub (The412Banner)", repo: "The412Banner/bannerhub", category: "GameHub", logo: "bannerhub.png" },
   { name: "BannerHub v6 (The412Banner)", repo: "The412Banner/bannerhub-revanced", category: "GameHub", logo: "bannerhub-v6.png" },
@@ -27,7 +26,6 @@ const repos = [
 
   // GAMENATIVE
   { name: "GameNative", repo: "utkarshdalal/GameNative", category: "GameNative", logo: "gamenative.png" },
-  { name: "GameNative Performance", repo: "maxjivi05/GameNative-Performance", category: "GameNative", logo: "gamenative.png" },
 
   // WINLATOR
   { name: "Winlator BrunoDev", repo: "brunodev85/winlator", category: "Winlator", logo: "winlator.png" },
@@ -40,7 +38,6 @@ const repos = [
   { name: "Winlator X", repo: "JURIS-X/winlator_x", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator Bionic jhinzuo", repo: "jhinzuo/winlator", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator XR", repo: "WinlatorXR/WinlatorXR", category: "Winlator", logo: "winlator.png" },
-  { name: "Winlator Bionic cjxyz", repo: "winlator/releases", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator Bionic duckyduckG", repo: "duckyduckG/winlator", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator Bionic Stredohiri", repo: "Stredohori/Winlator-CMOD", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator Bionic Alexoqool", repo: "Alexoqool/winlator-bionic-build", category: "Winlator", logo: "winlator.png" },
@@ -49,12 +46,10 @@ const repos = [
   { name: "Wb64dev", repo: "winebox64/winlator", category: "Winlator", logo: "winlator.png" },
   { name: "Winlator Mali", repo: "Fcharan/WinlatorMali", category: "Winlator", logo: "winlator.png" },
   { name: "Star (fork)", repo: "jacojayy/star", category: "Winlator", logo: "star.png" },
-  { name: "Winlator Brasil", repo: "winlatorbrasil/Winlator-Brasil", category: "Winlator", logo: "winlator-brasil.png" },
   { name: "Steamlator", repo: "slaker222/Steamlator", category: "Winlator", logo: "winlator.png" },
   { name: "WinNative", repo: "WinNative-Emu/WinNative", category: "Winlator", logo: "winnative.jpeg" },
 
   // PC EMULATOR
-  { name: "MiceWine", repo: "KreitinnSoftware/MiceWine-Application", category: "PC Emulator", logo: "micewine.png" },
   { name: "Horizon Emu", repo: "HorizonEmuTeam/Horizon-Emu", category: "PC Emulator", logo: "horizon.png" },
   { name: "ExaGear 302", repo: "XHYN-PH/exagear-302", category: "PC Emulator", logo: "exagear.png" },
   { name: "XoDos", repo: "xodiosx/XoDos", category: "PC Emulator", logo: "xodos.png" },
@@ -69,11 +64,6 @@ const repos = [
   { name: "X1 BOX", repo: "NETHERSTRIKER/x1-box-apk-1.1.4-compiled-via-izzy2lost-source-code", category: "Xbox", logo: "x1-box.png" },
 
   // Nintendo Switch Emulator
-  { name: "Eden Emulator", repo: "eden-emulator/Releases", category: "Nintendo Switch Emulator", logo: "eden.png" },
-  { name: "Eden Emulator Nightly", repo: "Eden-CI/Nightly", category: "Nintendo Switch Emulator", logo: "eden.png" },
-  { name: "Citron Emulator", repo: "Citron/Emulator", category: "Nintendo Switch Emulator", logo: "citron.png", apiType: "gitea", apiHost: "https://git.citron-emu.org" },
-  { name: "Sumi Emulator", repo: "ovsky/sumi-emu", category: "Nintendo Switch Emulator", logo: "sumi.png" },
-  { name: "Kenji-NX Emulator", repo: "Kenji-NX/Android-Releases", category: "Nintendo Switch Emulator", logo: "kenjinx.png" },
 
   // Nintendo 3DS
   { name: "Azahar", repo: "azahar-emu/azahar", category: "Nintendo 3DS", logo: "azahar.png" },
@@ -138,6 +128,41 @@ async function getGitHubReleasesData(repo, releaseNamePrefix = null, excludeAsse
   } catch (error) {
     console.error(`  ❌ Erro ao buscar ${repo}:`, error.message);
     return { total: 0, releases: [] };
+  }
+}
+
+// ===== Repo stats (stars, forks, watchers, age) =====
+async function getGitHubRepoStats(repo) {
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}`, {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'Emulator-Battle-Arena',
+        ...(GH_TOKEN ? { 'Authorization': `Bearer ${GH_TOKEN}` } : {})
+      }
+    });
+    if (!res.ok) {
+      console.log(`  ⚠️  Repo stats: status ${res.status} for ${repo}`);
+      return null;
+    }
+    const j = await res.json();
+    return {
+      stars: j.stargazers_count || 0,
+      forks: j.forks_count || 0,
+      watchers: j.subscribers_count || 0,
+      issues: j.open_issues_count || 0,
+      description: j.description || null,
+      language: j.language || null,
+      license: j.license ? j.license.spdx_id : null,
+      pushedAt: j.pushed_at || null,
+      createdAt: j.created_at || null,
+      topics: (j.topics || []).slice(0, 6),
+      archived: !!j.archived,
+      homepage: j.homepage || null
+    };
+  } catch (error) {
+    console.error(`  ❌ Repo stats error for ${repo}:`, error.message);
+    return null;
   }
 }
 
@@ -263,6 +288,8 @@ function parseReleases(releases, isGitea = false, excludeAssets = null) {
       data = await getGitHubReleasesData(r.repo, r.releaseNamePrefix || null, r.excludeAssets || null);
     }
 
+    const repoStats = r.apiType === "gitea" ? null : await getGitHubRepoStats(r.repo);
+
     const repoUrl = r.apiType === "gitea"
       ? `${r.apiHost}/${r.repo}`
       : `https://github.com/${r.repo}`;
@@ -274,6 +301,7 @@ function parseReleases(releases, isGitea = false, excludeAssets = null) {
       logo: r.logo || null,
       extensions: r.extensions || null,
       downloads: data.total,
+      repoStats: repoStats,
       releases: data.releases,
       repoUrl: repoUrl
     });
