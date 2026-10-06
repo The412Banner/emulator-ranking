@@ -60,7 +60,7 @@ const repos = [
   { name: "XoDos", repo: "xodiosx/XoDos", category: "PC Emulator", logo: "xodos.png" },
   { name: "Mobox Patched", repo: "jaycore/mobox-patched", category: "PC Emulator", logo: "mobox.png", extensions: [".tar.gz"] },
   { name: "Pluvia", repo: "oxters168/Pluvia", category: "PC Emulator", logo: "pluvia.png" },
-  { name: "DroidDeck", repo: "Droid-Deck/DroidDeck", category: "PC Emulator", logo: "droiddeck.png" },
+  { name: "DroidDeck", repo: "Droid-Deck/DroidDeck", category: "PC Emulator", logo: "droiddeck.png", releaseNamePrefix: "DroidDeck" },
 
   // Wii U Emulator
   { name: "Cemu", repo: "SSimco/Cemu", category: "Wii U Emulator", logo: "cemu.png" },
@@ -103,7 +103,7 @@ const repos = [
 ];
 
 // ===== GitHub API =====
-async function getGitHubReleasesData(repo) {
+async function getGitHubReleasesData(repo, releaseNamePrefix = null) {
   try {
     console.log(`  → Buscando releases de ${repo} (GitHub)...`);
 
@@ -120,7 +120,13 @@ async function getGitHubReleasesData(repo) {
       return { total: 0, releases: [] };
     }
 
-    const releases = await res.json();
+    let releases = await res.json();
+
+    // Repos that also publish non-app releases (runtime components, tools) can keep only
+    // the app's own releases by name, e.g. "DroidDeck 0.3.1".
+    if (releaseNamePrefix && Array.isArray(releases)) {
+      releases = releases.filter(r => (r.name || r.tag_name || "").startsWith(releaseNamePrefix));
+    }
 
     if (!Array.isArray(releases) || releases.length === 0) {
       console.log(`  ℹ️  Nenhuma release encontrada para ${repo}`);
@@ -251,7 +257,7 @@ function parseReleases(releases, isGitea = false) {
     if (r.apiType === "gitea") {
       data = await getGiteaReleasesData(r.apiHost, r.repo);
     } else {
-      data = await getGitHubReleasesData(r.repo);
+      data = await getGitHubReleasesData(r.repo, r.releaseNamePrefix || null);
     }
 
     const repoUrl = r.apiType === "gitea"
