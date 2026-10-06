@@ -131,6 +131,111 @@ async function getGitHubReleasesData(repo, releaseNamePrefix = null, excludeAsse
   }
 }
 
+
+// ===== Nightlies README (Drivers tab: components by type, driver sources, Discord) =====
+const NIGHTLIES = "The412Banner/Nightlies";
+async function gh(path) {
+  const res = await fetch(`https://api.github.com/${path}`, {
+    headers: { 'Accept': 'application/vnd.github+json', 'User-Agent': 'Emulator-Battle-Arena', ...(GH_TOKEN ? { 'Authorization': `Bearer ${GH_TOKEN}` } : {}) }
+  });
+  if (!res.ok) throw new Error(`${res.status} ${path}`);
+  return res.json();
+}
+const mdLinks = s => [...String(s).matchAll(/\[([^\]]+)\]\(([^)\s]+)\)/g)].map(m => ({ label: m[1].replace(/\*\*/g, "").trim(), url: m[2] }));
+const plain = s => String(s).replace(/\*\*|`/g, "").trim();
+function section(md, startRe) {
+  const lines = md.split("\n"); const i = lines.findIndex(l => startRe.test(l)); if (i < 0) return [];
+  const out = []; for (let j = i + 1; j < lines.length; j++) { if (/^#{1,3} /.test(lines[j])) break; out.push(lines[j]); } return out;
+}
+const tableRows = lines => lines.filter(l => /^\|/.test(l) && !/^\|\s*:?-{2,}/.test(l)).map(l => l.split("|").slice(1, -1).map(c => c.trim()));
+const assetInfo = a => ({ name: a.name, url: a.browser_download_url, date: a.updated_at, downloads: a.download_count, size: a.size });
+// Which nightly files belong to a component type, by file name.
+function typeMatcher(name) {
+  const n = name.toLowerCase();
+  if (n.includes("binsem")) return f => /binsem/i.test(f);
+  if (n.includes("sarek")) return f => /sarek/i.test(f);
+  if (n.startsWith("dxvk")) return f => /^dxvk/i.test(f) && !/binsem|sarek/i.test(f);
+  if (n.includes("vkd3d")) return f => /vkd3d|vk3dk/i.test(f);
+  if (n.includes("d7vk")) return f => /d7vk/i.test(f);
+  if (n.includes("wowbox64")) return f => /wowbox64/i.test(f);
+  if (n.includes("box64")) return f => /^box64/i.test(f);
+  if (n.includes("fex")) return f => /^fex/i.test(f);
+  if (n.includes("proton") || n.includes("wine")) return f => /proton|wine/i.test(f);
+  if (n.includes("turnip")) return f => /turnip/i.test(f);
+  return () => false;
+}
+const baseKey = name => { const n = name.toLowerCase(); const binsem = n.includes("binsem");
+  return n.split("(")[0].replace(/binsem|·/g, " ").replace(/[^a-z0-9]+/g, " ").trim() + (binsem ? "+binsem" : ""); };
+
+async function fetchNightlies() {
+  try {
+    const raw = await fetch(`https://raw.githubusercontent.com/${NIGHTLIES}/main/README.md`).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); });
+    // Components: stable archives + nightly
+    const comp = tableRows(section(raw, /^## .*Releases/)).filter(r => r.length >= 3 && !/^Component$/i.test(plain(r[0])));
+    const nightlyBlock = (raw.split("<!-- NIGHTLY-LATEST-START -->")[1] || "").split("<!-- NIGHTLY-LATEST-END -->")[0];
+    const nightlyRows = tableRows(nightlyBlock.split("\n")).filter(r => r.length >= 2 && plain(r[0]));
+    const nightlyRelease = nightlyRows.find(r => /^release$/i.test(plain(r[0])));
+    const commits = nightlyRows.filter(r => !/^(release|files)$/i.test(plain(r[0]))).map(r => {
+      const links = mdLinks(r[1]); const note = r[1].split("—")[1];
+      return { name: plain(r[0]), version: links.length ? links.map(l => l.label.replace(/`/g, "")).join(" + ") : plain(r[1]), url: links[0] ? links[0].url : null, note: note ? plain(note) : null, key: baseKey(plain(r[0])) };
+    });
+    let nightlyDate = null, nightlyAssets = [];
+    try { const nl = await gh(`repos/${NIGHTLIES}/releases/tags/nightly-latest`); nightlyDate = nl.published_at; nightlyAssets = (nl.assets || []).map(assetInfo); } catch { }
+    const types = [];
+    for (const r of comp) {
+      const name = plain(r[0]).replace(/\*\(([^)]*)\)\*/, "").replace(/\*/g, "").trim();
+      const hint = (r[0].match(/\*\(([^)]*)\)\*/) || [])[1] || null;
+      const stable = [];
+      for (const l of mdLinks(r[1])) {
+        const tag = (l.url.match(/\/releases\/tag\/([^/?#]+)/) || [])[1];
+        const item = { label: l.label, url: l.url, tag: tag || null };
+        if (tag && l.url.includes(NIGHTLIES)) {
+          try {
+            const rel = await gh(`repos/${NIGHTLIES}/releases/tags/${tag}`);
+            const assets = (rel.assets || []).filter(a => !/\.(txt|json|sha\d*)$/i.test(a.name)).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            if (assets[0]) Object.assign(item, { file: assets[0].name, fileUrl: assets[0].browser_download_url, date: assets[0].updated_at, files: assets.length,
+              downloads: assets.reduce((n, a) => n + a.download_count, 0), assets: assets.slice(0, 80).map(assetInfo) });
+          } catch (e) { console.log(`  ⚠️  Nightlies tag ${tag}: ${e.message}`); }
+          await new Promise(res => setTimeout(res, 150));
+        }
+        stable.push(item);
+      }
+      const k = baseKey(name);
+      const match = typeMatcher(name);
+      types.push({ name, hint, stable, nightly: mdLinks(r[2])[0] ? { url: mdLinks(r[2])[0].url, date: nightlyDate, builds: commits.filter(c => c.key === k), files: nightlyAssets.filter(a => match(a.name)) } : null });
+    }
+    // Nightly-only components (e.g. Turnip): latest from the nightly block, stable from the project's latest release
+    for (const c of commits.filter(c => !types.some(tp => baseKey(tp.name) === c.key))) {
+      const match = typeMatcher(c.name);
+      const type = { name: c.name, hint: null, stable: [], nightly: { url: `https://github.com/${NIGHTLIES}/releases/tag/nightly-latest`, date: nightlyDate, builds: [c], files: nightlyAssets.filter(a => match(a.name)) } };
+      const repo = c.url && (c.url.match(/github\.com\/([^/]+\/[^/]+)\/releases/) || [])[1];
+      if (repo) {
+        try { const rel = await gh(`repos/${repo}/releases/latest`);
+          type.stable.push({ label: rel.name || rel.tag_name, url: rel.html_url, tag: rel.tag_name, date: rel.published_at,
+            files: (rel.assets || []).length, downloads: (rel.assets || []).reduce((n, a) => n + a.download_count, 0), assets: (rel.assets || []).slice(0, 80).map(assetInfo) });
+        } catch (e) { console.log(`  ⚠️  ${repo} latest: ${e.message}`); }
+      }
+      types.push(type);
+    }
+    const catalogRows = tableRows(section(raw, /^## .*Component Catalog/));
+    const catalog = { repo: mdLinks((catalogRows.find(r => /repo/i.test(r[0])) || [])[1] || "")[0] || null,
+      raw: ((catalogRows.find(r => /raw url/i.test(r[0])) || [])[1] || "").replace(/`/g, "").trim() || null };
+    const driverSources = tableRows(section(raw, /^### .*Adreno GPU Drivers/)).filter(r => mdLinks(r[0]).length)
+      .map(r => ({ ...mdLinks(r[0])[0], desc: plain(r[1]) }));
+    const mirrorLine = raw.split("\n").find(l => /<b>\s*Driver mirrors/i.test(l)) || "";
+    const mirrors = [...mirrorLine.matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(m => ({ label: m[2], url: m[1] }));
+    const discord = section(raw, /^## .*Community/).filter(l => /^\s*-\s*\[/.test(l)).map(l => {
+      const lk = mdLinks(l)[0]; const note = (l.match(/\*\(([^)]*)\)\*/) || [])[1]; return lk && { ...lk, note: note || null };
+    }).filter(Boolean);
+    const credits = section(raw, /^## .*Credits/).filter(l => /^\s*-\s*\*\*/.test(l)).map(l => ({ what: plain((l.match(/\*\*([^*]+)\*\*/) || [])[1] || "").replace(/:$/, ""), ...(mdLinks(l)[0] || {}) })).filter(c => c.url);
+    console.log(`  ✅ Nightlies: ${types.length} component types, ${driverSources.length} driver sources, ${discord.length} Discord servers`);
+    return { repo: NIGHTLIES, nightlyRelease: nightlyRelease ? mdLinks(nightlyRelease[1])[0] || null : null, nightlyDate, types, catalog, driverSources, mirrors, discord, credits };
+  } catch (e) {
+    console.log(`  ⚠️  Nightlies README: ${e.message}`);
+    return null;
+  }
+}
+
 // ===== Repo stats (stars, forks, watchers, age) =====
 async function getGitHubRepoStats(repo) {
   try {
@@ -318,6 +423,7 @@ function parseReleases(releases, isGitea = false, excludeAssets = null) {
 
   // Buscar drivers do manifest
   const manifestDrivers = await fetchManifestDrivers();
+  const nightlies = await fetchNightlies();
 
   // Ordenar por downloads (decrescente)
   results.sort((a, b) => b.downloads - a.downloads);
@@ -332,10 +438,39 @@ function parseReleases(releases, isGitea = false, excludeAssets = null) {
     projectsWithReleases: successCount,
     projectsWithoutReleases: errorCount,
     results: results,
-    manifestDrivers: manifestDrivers // Novos drivers categorizados do manifest
+    manifestDrivers: manifestDrivers, // Novos drivers categorizados do manifest
+    nightlies: nightlies
   };
 
   fs.writeFileSync("data/rankings.json", JSON.stringify(output, null, 2));
+
+  // ===== README badges: docs/badges/<owner>/<repo>.svg =====
+  const compact = n => new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(n || 0);
+  const ranked = results.filter(r => r.repoStats).sort((a, b) => b.downloads - a.downloads);
+  ranked.forEach((r, i) => {
+    const left = "emulator rankings", right = `#${i + 1} · ${compact(r.downloads)} downloads`;
+    const w = t => Math.round(t.length * 6.3 + 14), lw = w(left), rw = w(right), W = lw + rw;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="20" role="img" aria-label="${left}: ${right}"><title>${left}: ${right}</title><linearGradient id="g" x2="0" y2="100%"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="${W}" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="${lw}" height="20" fill="#1f2433"/><rect x="${lw}" width="${rw}" height="20" fill="#2f6bff"/><rect width="${W}" height="20" fill="url(#g)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11"><text x="${lw / 2}" y="15" fill="#010101" fill-opacity=".3">${left}</text><text x="${lw / 2}" y="14">${left}</text><text x="${lw + rw / 2}" y="15" fill="#010101" fill-opacity=".3">${right}</text><text x="${lw + rw / 2}" y="14">${right}</text></g></svg>`;
+    const [o, n] = r.repo.split("/");
+    fs.mkdirSync(`docs/badges/${o}`, { recursive: true });
+    fs.writeFileSync(`docs/badges/${o}/${n}.svg`, svg);
+  });
+
+  // ===== Visitor stats from GoatCounter (only when the repo secrets are set) =====
+  const GC_CODE = process.env.GOATCOUNTER_CODE, GC_TOKEN = process.env.GOATCOUNTER_TOKEN;
+  if (GC_CODE) {
+    const visitors = { code: GC_CODE, total: 0, countries: {}, updatedAt: new Date().toISOString() };
+    if (GC_TOKEN) {
+      const gc = path => fetch(`https://${GC_CODE}.goatcounter.com/api/v0/${path}`, { headers: { Authorization: `Bearer ${GC_TOKEN}`, "Content-Type": "application/json" } })
+        .then(r => { if (!r.ok) throw new Error(`${r.status} ${path}`); return r.json(); });
+      const range = `start=2020-01-01&end=${new Date().toISOString().slice(0, 10)}`;
+      try { const tot = await gc(`stats/total?${range}`); visitors.total = tot.total || 0; } catch (e) { console.log(`  ⚠️  GoatCounter total: ${e.message}`); }
+      try { const loc = await gc(`stats/locations?${range}&limit=250`); for (const st of loc.stats || []) if (st.id) visitors.countries[st.id.slice(0, 2).toUpperCase()] = (visitors.countries[st.id.slice(0, 2).toUpperCase()] || 0) + (st.count || 0); }
+      catch (e) { console.log(`  ⚠️  GoatCounter locations: ${e.message}`); }
+    }
+    fs.writeFileSync("docs/data/visitors.json", JSON.stringify(visitors));
+    console.log(`  👥 GoatCounter: ${visitors.total} visits, ${Object.keys(visitors.countries).length} countries`);
+  }
 
   // ===== Daily download history (powers the "Last 14 days" ranking) =====
   // One total per repo per UTC day; each hourly run overwrites today's value. Keeps 60 days.

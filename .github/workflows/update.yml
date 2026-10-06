@@ -34,6 +34,8 @@ jobs:
       - name: Fetch downloads
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
         run: node scripts/fetch_downloads.js
 
       - name: Move rankings to docs
@@ -47,7 +49,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add docs/data/rankings.json docs/data/history.json
+          git add docs/data docs/badges
 
           git commit -m "Update rankings (auto)" || exit 0
 
