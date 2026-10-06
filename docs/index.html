@@ -64,6 +64,8 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+/* Decorative layers must never widen the page (phones would let you zoom out). */
+html, body { overflow-x: clip; max-width: 100%; }
 body {
   overflow-x: hidden; margin: 0; background: var(--bg); color: var(--text);
   font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -122,13 +124,13 @@ nav.tabs::-webkit-scrollbar { display: none; }
 /* ── Summary ───────────────────────────────────────── */
 .hero { position: relative; padding: 28px 0 8px; isolation: isolate; }
 .hero::before {
-  content: ""; position: absolute; inset: -28px -100vw 30% -100vw; z-index: -1; pointer-events: none;
+  content: ""; position: absolute; top: -28px; bottom: 30%; inset-inline: calc(50% - 50vw); z-index: -1; pointer-events: none;
   background-image: none;
   background-size: 32px 32px; background-position: center top;
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
 }
 .hero::after {
-  content: ""; position: absolute; z-index: -1; pointer-events: none; top: -60px; inset-inline-start: -80px; width: 520px; height: 300px;
+  content: ""; position: absolute; z-index: -1; pointer-events: none; top: -60px; inset-inline-start: -80px; width: min(520px, 100vw); height: 300px;
   background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 16%, transparent), transparent), radial-gradient(closest-side at 70% 60%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent);
 }
 .hero h1 { margin: 0 0 4px; font-family: var(--display); font-size: clamp(28px, 4vw, 38px); letter-spacing: .005em; line-height: 1.1; font-weight: 700; }
