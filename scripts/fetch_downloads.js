@@ -337,6 +337,28 @@ function parseReleases(releases, isGitea = false, excludeAssets = null) {
 
   fs.writeFileSync("data/rankings.json", JSON.stringify(output, null, 2));
 
+  // ===== Daily download history (powers the "Last 14 days" ranking) =====
+  // One total per repo per UTC day; each hourly run overwrites today's value. Keeps 60 days.
+  const HISTORY_FILE = "docs/data/history.json";
+  let history = { days: [], totals: {} };
+  try { history = JSON.parse(fs.readFileSync(HISTORY_FILE)); } catch { }
+  const today = new Date().toISOString().slice(0, 10);
+  if (!history.days.includes(today)) history.days.push(today);
+  history.days = history.days.sort().slice(-60);
+  const keep = new Set(history.days);
+  const totals = {};
+  for (const r of results) {
+    const prev = history.totals[r.repo] || {};
+    const row = {};
+    for (const d of Object.keys(prev)) if (keep.has(d)) row[d] = prev[d];
+    // A failed fetch reports 0; skip it so a rate limit can't distort the 14-day numbers.
+    if (r.downloads > 0) row[today] = r.downloads;
+    totals[r.repo] = row;
+  }
+  history.totals = totals;
+  fs.mkdirSync("docs/data", { recursive: true });
+  fs.writeFileSync(HISTORY_FILE, JSON.stringify(history));
+
   console.log("\n" + "=".repeat(60));
   console.log("✅ Rankings atualizados com sucesso!");
   console.log("=".repeat(60));

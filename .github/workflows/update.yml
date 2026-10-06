@@ -47,7 +47,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add docs/data/rankings.json
+          git add docs/data/rankings.json docs/data/history.json
 
           git commit -m "Update rankings (auto)" || exit 0
 

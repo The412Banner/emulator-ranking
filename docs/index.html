@@ -8,11 +8,8 @@
 <link rel="icon" href="logos/../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/maps/world-merc.js"></script>
 <style>
 :root {
   --bg: #f6f7f9;
@@ -26,6 +23,12 @@
   --accent-strong: #1d4ed8;
   --accent-soft: #e8efff;
   --accent-text: #1e40af;
+  --accent-2: #7c3aed; --accent-3: #0891b2; --up: #16a34a;
+  --grid-line: rgba(37,99,235,.07);
+  --hex: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='56'%20height='97'%20viewBox='0%200%2056%2097'%3E%3Cpath%20fill='none'%20stroke='rgba%2837%2C99%2C235%2C0.12%29'%20stroke-width='1'%20d='M28%200%20L56%2016.2%20L56%2048.5%20L28%2064.7%20L0%2048.5%20L0%2016.2%20Z%20M28%2064.7%20L28%2097%20M0%2097%20L0%2080.8%20M56%2097%20L56%2080.8'/%3E%3C/svg%3E");
+  --glow-a: rgba(37,99,235,.16); --glow-b: rgba(124,58,237,.13); --glow-c: rgba(8,145,178,.10);
+  --cut: 9px;
+  --display: Rajdhani, Inter, system-ui, sans-serif;
   --gold: #b7791f; --silver: #6b7280; --bronze: #a0522d;
   --warn-soft: #fff4e5; --warn-text: #92400e;
   --shadow: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.06);
@@ -40,6 +43,8 @@
     --bg: #0d1117; --surface: #151b23; --surface-2: #1c232d; --border: #2a323d;
     --text: #e6e9ee; --text-2: #b3bac5; --text-3: #8b94a1;
     --accent: #4f8cff; --accent-strong: #6b9dff; --accent-soft: #1a2944; --accent-text: #9dbcff;
+    --accent-2: #a78bfa; --accent-3: #22d3ee; --up: #4ade80; --grid-line: rgba(79,140,255,.09);
+    --bg: #0a0d14; --hex: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='56'%20height='97'%20viewBox='0%200%2056%2097'%3E%3Cpath%20fill='none'%20stroke='rgba%28110%2C150%2C255%2C0.13%29'%20stroke-width='1'%20d='M28%200%20L56%2016.2%20L56%2048.5%20L28%2064.7%20L0%2048.5%20L0%2016.2%20Z%20M28%2064.7%20L28%2097%20M0%2097%20L0%2080.8%20M56%2097%20L56%2080.8'/%3E%3C/svg%3E"); --glow-a: rgba(79,140,255,.22); --glow-b: rgba(167,139,250,.17); --glow-c: rgba(34,211,238,.12);
     --gold: #e0b44c; --silver: #aab2bd; --bronze: #d08a5c;
     --warn-soft: #3a2a12; --warn-text: #f3c27a;
     --shadow: 0 1px 2px rgba(0,0,0,.4); --shadow-lg: 0 16px 40px rgba(0,0,0,.5);
@@ -50,6 +55,8 @@
   --bg: #0d1117; --surface: #151b23; --surface-2: #1c232d; --border: #2a323d;
   --text: #e6e9ee; --text-2: #b3bac5; --text-3: #8b94a1;
   --accent: #4f8cff; --accent-strong: #6b9dff; --accent-soft: #1a2944; --accent-text: #9dbcff;
+  --accent-2: #a78bfa; --accent-3: #22d3ee; --up: #4ade80; --grid-line: rgba(79,140,255,.09);
+  --bg: #0a0d14; --hex: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='56'%20height='97'%20viewBox='0%200%2056%2097'%3E%3Cpath%20fill='none'%20stroke='rgba%28110%2C150%2C255%2C0.13%29'%20stroke-width='1'%20d='M28%200%20L56%2016.2%20L56%2048.5%20L28%2064.7%20L0%2048.5%20L0%2016.2%20Z%20M28%2064.7%20L28%2097%20M0%2097%20L0%2080.8%20M56%2097%20L56%2080.8'/%3E%3C/svg%3E"); --glow-a: rgba(79,140,255,.22); --glow-b: rgba(167,139,250,.17); --glow-c: rgba(34,211,238,.12);
   --gold: #e0b44c; --silver: #aab2bd; --bronze: #d08a5c;
   --warn-soft: #3a2a12; --warn-text: #f3c27a;
   --shadow: 0 1px 2px rgba(0,0,0,.4); --shadow-lg: 0 16px 40px rgba(0,0,0,.5);
@@ -77,9 +84,15 @@ header.top {
   backdrop-filter: saturate(1.4) blur(12px); -webkit-backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--border);
 }
+header.top::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; opacity: .75;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3), var(--accent));
+  background-size: 200% 100%; animation: rgb 14s linear infinite;
+}
+@keyframes rgb { to { background-position: -200% 0; } }
 .top-row { display: flex; align-items: center; gap: 12px; height: 60px; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; letter-spacing: -.01em; white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
-.brand-mark { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); display: grid; place-items: center; color: #fff; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: .01em; letter-spacing: -.01em; white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.brand-mark { width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 35%, transparent); display: grid; place-items: center; color: #fff; }
 .brand-mark svg { width: 18px; height: 18px; }
 .top-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 .icon-btn {
@@ -103,31 +116,50 @@ nav.tabs::-webkit-scrollbar { display: none; }
 }
 .tab:hover { color: var(--text); }
 .tab[aria-selected="true"] { color: var(--text); }
-.tab[aria-selected="true"]::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: -1px; height: 2px; border-radius: 2px; background: var(--accent); }
+.tab[aria-selected="true"]::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: -1px; height: 2px; border-radius: 2px; background: var(--accent); box-shadow: 0 0 10px var(--accent); z-index: 1; }
 .tab .count { font-size: 12px; background: var(--accent-soft); color: var(--accent-text); padding: 0 7px; border-radius: 999px; font-weight: 600; }
 
 /* ── Summary ───────────────────────────────────────── */
-.hero { padding: 28px 0 8px; }
-.hero h1 { margin: 0 0 4px; font-size: clamp(22px, 3.2vw, 30px); letter-spacing: -.02em; line-height: 1.2; }
+.hero { position: relative; padding: 28px 0 8px; isolation: isolate; }
+.hero::before {
+  content: ""; position: absolute; inset: -28px -100vw 30% -100vw; z-index: -1; pointer-events: none;
+  background-image: none;
+  background-size: 32px 32px; background-position: center top;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+.hero::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; top: -60px; inset-inline-start: -80px; width: 520px; height: 300px;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 16%, transparent), transparent), radial-gradient(closest-side at 70% 60%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent);
+}
+.hero h1 { margin: 0 0 4px; font-family: var(--display); font-size: clamp(28px, 4vw, 38px); letter-spacing: .005em; line-height: 1.1; font-weight: 700; }
 .hero p { margin: 0; color: var(--text-2); }
 .status { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; }
 .updated { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-3); }
 .updated svg { width: 15px; height: 15px; }
 .updated b { color: var(--text); font-weight: 600; }
-#visitorMap { height: 380px; }
-@media (max-width: 600px) { #visitorMap { height: 240px; } }
-.jvm-tooltip { background: var(--text) !important; color: var(--surface) !important; font: 13px/1.4 Inter, system-ui, sans-serif !important; border-radius: 8px !important; padding: 6px 10px !important; box-shadow: var(--shadow-lg) !important; }
-.jvm-zoom-btn { background: var(--surface) !important; color: var(--text) !important; border: 1px solid var(--border); width: 26px !important; height: 26px !important; line-height: 22px !important; border-radius: 6px !important; }
+.treemap { position: relative; height: 460px; border-radius: var(--radius-sm); overflow: hidden; }
+@media (max-width: 600px) { .treemap { height: 520px; } }
+.tm-cat { position: absolute; box-sizing: border-box; padding: 18px 2px 2px; }
+.tm-cat > b { position: absolute; top: 2px; inset-inline-start: 6px; right: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tm-tile { position: absolute; box-sizing: border-box; border: 2px solid var(--surface); border-radius: 6px; overflow: hidden; cursor: pointer; padding: 6px 7px; color: #fff; transition: filter .15s, transform .15s var(--ease); }
+.tm-tile:hover { filter: brightness(1.12); z-index: 1; }
+.tm-tile .n { display: block; font-weight: 600; font-size: 12.5px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tm-tile .v { display: block; font-family: var(--display); font-weight: 700; font-size: 16px; line-height: 1.1; opacity: .92; }
+.tm-tile.sm .v, .tm-tile.xs .n, .tm-tile.xs .v { display: none; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 3px color-mix(in srgb, #16a34a 22%, transparent); }
 .kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 20px 0 8px; }
 @media (min-width: 768px) { .kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; } }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
-.kpi .label { overflow: hidden; white-space: nowrap; font-size: 12.5px; color: var(--text-3); font-weight: 500; display: flex; align-items: center; gap: 6px; }
-.kpi .label svg { width: 15px; height: 15px; }
-.kpi .value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: clamp(20px, 2.6vw, 26px); font-weight: 700; letter-spacing: -.02em; margin-top: 2px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.kpi .label { overflow: hidden; line-height: 1.3; min-height: 2.6em; align-items: flex-start !important; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.kpi .label svg { width: 15px; height: 15px; flex: none; margin-top: 1px; }
+@media (min-width: 768px) { .kpi .label { min-height: 0; white-space: nowrap; } }
+.kpi .value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--display); font-size: clamp(26px, 3.2vw, 34px); font-weight: 700; line-height: 1.1; margin-top: 4px; }
+.kpi { position: relative; overflow: hidden; }
+.kpi::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: 0; width: 3px; background: linear-gradient(var(--accent), var(--accent-2)); opacity: .8; }
+.kpi.hot .value { color: var(--accent-text); }
 
 /* ── Toolbar ───────────────────────────────────────── */
-.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 18px 0 12px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 14px 0 12px; }
 .search { position: relative; flex: 1 1 220px; min-width: 0; }
 .search svg { position: absolute; inset-inline-start: 12px; top: 50%; translate: 0 -50%; width: 17px; height: 17px; color: var(--text-3); }
 .search input {
@@ -150,7 +182,7 @@ select.ctl { height: 40px; border-radius: var(--radius-sm); border: 1px solid va
   display: inline-flex; align-items: center; gap: 6px; transition: all .15s var(--ease);
 }
 .chip:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
-.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 2px 10px -2px color-mix(in srgb, var(--accent) 60%, transparent); }
 .chip .n { font-size: 12px; opacity: .75; }
 
 /* ── Cards ─────────────────────────────────────────── */
@@ -163,12 +195,22 @@ select.ctl { height: 40px; border-radius: var(--radius-sm); border: 1px solid va
   transition: transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s;
   animation: rise .35s var(--ease) both;
 }
-.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg), 0 0 0 1px color-mix(in srgb, var(--accent) 30%, transparent), 0 10px 30px -12px color-mix(in srgb, var(--accent) 45%, transparent); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+.card::before, .card::after { content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--accent); opacity: 0; transition: opacity .2s var(--ease); pointer-events: none; }
+.card::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; border-top-left-radius: var(--radius); }
+.card::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; border-bottom-right-radius: var(--radius); }
+.card:hover::before, .card:hover::after { opacity: .9; }
 .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .card-head { display: flex; gap: 12px; align-items: flex-start; }
-.rank { flex: none; width: 30px; text-align: center; font-weight: 700; color: var(--text-3); font-size: 15px; padding-top: 10px; }
-.rank.r1 { color: var(--gold); } .rank.r2 { color: var(--silver); } .rank.r3 { color: var(--bronze); }
+.rank {
+  flex: none; min-width: 34px; height: 26px; margin-top: 9px; padding: 0 6px; display: grid; place-items: center;
+  font-family: var(--display); font-weight: 700; font-size: 16px; color: var(--text-2); background: var(--surface-2);
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+}
+.rank.r1 { color: #fff; background: linear-gradient(135deg, #f2c14e, #b7791f); }
+.rank.r2 { color: #fff; background: linear-gradient(135deg, #b8c0cc, #6b7280); }
+.rank.r3 { color: #fff; background: linear-gradient(135deg, #e09a6a, #a0522d); }
 .logo { flex: none; width: 44px; height: 44px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); object-fit: cover; display: grid; place-items: center; font-weight: 700; color: var(--text-3); overflow: hidden; }
 .logo img { width: 100%; height: 100%; object-fit: cover; }
 .title { min-width: 0; flex: 1; }
@@ -179,10 +221,13 @@ select.ctl { height: 40px; border-radius: var(--radius-sm); border: 1px solid va
 .badge.warn { background: var(--warn-soft); color: var(--warn-text); border-color: transparent; }
 .desc { margin: 0; color: var(--text-2); font-size: 13.5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.9em; }
 .dl-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
-.dl-big { font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.dl-big { font-family: var(--display); font-size: 27px; font-weight: 700; line-height: 1.05; }
+.dl-big.up { color: var(--up); }
+.dl-sub { font-size: 12px; color: var(--text-3); margin-top: 2px; }
 .dl-label { font-size: 12px; color: var(--text-3); }
 .spark { width: 120px; height: 34px; flex: none; }
 .spark rect { fill: var(--accent); opacity: .85; }
+.spark.up rect { fill: var(--up); }
 .share { height: 4px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
 .share > i { display: block; height: 100%; background: var(--accent); border-radius: 4px; transform-origin: left; animation: grow .6s var(--ease) both; }
 @keyframes grow { from { transform: scaleX(0); } }
@@ -264,7 +309,8 @@ details[open] > summary .chev { transform: rotate(180deg); }
 @media (min-width: 480px) { .stat-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .stat { background: var(--surface-2); border-radius: var(--radius-sm); padding: 10px 12px; }
 .stat .k { font-size: 12px; color: var(--text-3); }
-.stat .v { font-weight: 700; font-size: 17px; }
+.stat .v { font-family: var(--display); font-weight: 700; font-size: 21px; line-height: 1.15; }
+.stat.hot .v { color: var(--up); }
 .facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13.5px; margin: 12px 0 16px; }
 .facts dt { color: var(--text-3); }
 .facts dd { margin: 0; }
@@ -291,6 +337,140 @@ details.release .rbody { padding: 0 12px 12px; font-size: 13.5px; color: var(--t
 .empty { text-align: center; padding: 48px 16px; color: var(--text-3); }
 footer { color: var(--text-3); font-size: 13px; padding: 32px 0 40px; text-align: center; }
 [hidden] { display: none !important; }
+
+/* ── Gaming layer: background, dividers, buttons ───── */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background: var(--hex); background-size: 56px 97px;
+  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 0%, #000 30%, transparent 85%); mask-image: radial-gradient(ellipse 120% 90% at 50% 0%, #000 30%, transparent 85%);
+}
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(600px 420px at 8% 0%, var(--glow-a), transparent 70%), radial-gradient(520px 420px at 100% 12%, var(--glow-b), transparent 70%), radial-gradient(700px 500px at 50% 110%, var(--glow-a), transparent 70%);
+}
+main, footer { position: relative; }
+
+/* HUD divider: hairline, accent segment and a glowing diamond in the middle */
+.divider { position: relative; height: 14px; margin: 26px 0 6px; display: grid; place-items: center; }
+.divider::before { content: ""; position: absolute; inset-inline: 0; top: 50%; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border) 18%, color-mix(in srgb, var(--accent) 70%, var(--border)) 42%, var(--accent) 50%, color-mix(in srgb, var(--accent-2) 70%, var(--border)) 58%, var(--border) 82%, transparent); }
+.divider::after { content: ""; position: relative; width: 9px; height: 9px; transform: rotate(45deg); background: var(--bg); border: 2px solid var(--accent); box-shadow: 0 0 10px var(--accent); }
+
+/* Section labels: accent tick + trailing line */
+.section-title { display: flex; align-items: center; gap: 10px; }
+.section-title::before { content: ""; width: 4px; height: 12px; background: linear-gradient(var(--accent), var(--accent-2)); clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%); flex: none; }
+.section-title::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--border), transparent); }
+[dir="rtl"] .section-title::after { background: linear-gradient(-90deg, var(--border), transparent); }
+.panel h3 { display: flex; align-items: center; gap: 8px; }
+.panel h3::before { content: ""; width: 4px; height: 14px; border-radius: 1px; background: linear-gradient(var(--accent), var(--accent-2)); box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 60%, transparent); }
+.panel { position: relative; }
+.panel::after { content: ""; position: absolute; top: -1px; inset-inline-end: 18px; width: 64px; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius: 2px; opacity: .8; }
+
+/* Buttons: chamfered corners, gradient fill, glow */
+.btn { clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut)); border-radius: 0;
+  background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2))); text-transform: uppercase; letter-spacing: .05em; font-size: 12px; font-weight: 600; height: 34px; padding: 0 14px;
+  transition: filter .15s, transform .15s var(--ease); }
+.btn:hover { filter: brightness(1.12) drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 60%, transparent)); background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2))); }
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: color-mix(in srgb, var(--accent) 10%, var(--surface-2)); border: 0; color: var(--accent-text) !important; }
+.btn.ghost:hover { background: color-mix(in srgb, var(--accent) 18%, var(--surface-2)); }
+.btn:focus-visible { outline: none; filter: drop-shadow(0 0 0 var(--accent)) drop-shadow(0 0 4px var(--accent)); }
+
+.seg { border-radius: 0; clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); background: var(--surface); box-shadow: inset 0 0 0 1px var(--border); border: 0; }
+.seg button[aria-pressed="true"] { background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2))); color: #fff; }
+.seg button:not([aria-pressed="true"]):hover { color: var(--text); background: var(--surface-2); }
+
+.chip { border-radius: 0; clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%); border: 0; padding: 0 16px; background: color-mix(in srgb, var(--accent) 5%, var(--surface)); box-shadow: inset 0 0 0 1px var(--border); }
+.chip:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.chip[aria-pressed="true"] { background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--accent-2))); box-shadow: none; }
+
+.icon-btn, select.lang, select.ctl { transition: box-shadow .15s, border-color .15s; }
+.icon-btn:hover, select.lang:hover, select.ctl:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent); }
+.search input:focus, select.ctl:focus { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent), 0 0 18px -4px var(--accent); }
+
+/* Tabs: angled active plate */
+.tab[aria-selected="true"] { color: var(--accent-text); }
+.tab[aria-selected="true"]::before { content: ""; position: absolute; inset: 6px 2px 4px; z-index: -1; background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--accent) 10%, transparent)); clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
+.tab { isolation: isolate; }
+
+/* KPI tiles: cut top corner with a drawn diagonal */
+.kpi { border-radius: 0; border: 0; background: var(--border); clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%); padding: 1px; box-shadow: none; }
+.kpi > * { position: relative; }
+.kpi::after { content: ""; position: absolute; inset: 1px; z-index: 0; background: linear-gradient(160deg, var(--surface) 60%, color-mix(in srgb, var(--accent) 6%, var(--surface)));
+  clip-path: polygon(0 0, calc(100% - 15.6px) 0, 100% 15.6px, 100% 100%, 0 100%); }
+.kpi .label, .kpi .value { z-index: 1; padding-inline: 15px; }
+.kpi .label { padding-top: 13px; } .kpi .value { padding-bottom: 13px; }
+.kpi::before { z-index: 1; top: 1px; bottom: 1px; inset-inline-start: 1px; }
+
+/* Sheet header strip + themed scrollbars */
+.sheet::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; z-index: 2; background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3)); }
+* { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--accent) 45%, var(--border)) transparent; }
+::-webkit-scrollbar { width: 9px; height: 9px; } ::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--accent) 45%, var(--border)); border-radius: 9px; border: 2px solid var(--bg); } ::-webkit-scrollbar-track { background: transparent; }
+
+/* ── Gaming layer, turned up ─────────────────────────── */
+body::before { -webkit-mask-image: radial-gradient(ellipse 140% 110% at 50% 0%, #000 40%, transparent 95%); mask-image: radial-gradient(ellipse 140% 110% at 50% 0%, #000 40%, transparent 95%); }
+body::after {
+  background: radial-gradient(640px 460px at 6% 0%, var(--glow-a), transparent 70%), radial-gradient(560px 460px at 100% 10%, var(--glow-b), transparent 70%),
+              radial-gradient(520px 420px at 80% 70%, var(--glow-c), transparent 70%), radial-gradient(760px 520px at 20% 110%, var(--glow-a), transparent 70%);
+  animation: drift 26s ease-in-out infinite alternate;
+}
+@keyframes drift { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(-2%, 2%, 0) scale(1.06); } }
+header.top::after { height: 3px; opacity: 1; box-shadow: 0 0 14px color-mix(in srgb, var(--accent) 55%, transparent); }
+.brand-mark { animation: pulse 3.2s ease-in-out infinite; }
+@keyframes pulse { 50% { box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 70%, transparent), 0 0 4px var(--accent-2); } }
+.tab[aria-selected="true"] { text-shadow: 0 0 12px color-mix(in srgb, var(--accent) 55%, transparent); }
+
+/* hero: gradient title + faint scanlines */
+.hero h1 { display: inline-block; background: linear-gradient(100deg, var(--text) 25%, var(--accent) 68%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 18px color-mix(in srgb, var(--accent) 22%, transparent)); }
+.hero::before { background-image: repeating-linear-gradient(0deg, color-mix(in srgb, var(--accent) 6%, transparent) 0 1px, transparent 1px 4px); }
+.kpi .value { text-shadow: 0 0 16px color-mix(in srgb, var(--accent) 30%, transparent); }
+.kpi.hot .value { text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 55%, transparent); }
+.kpi::after { background: linear-gradient(160deg, var(--surface) 45%, color-mix(in srgb, var(--accent) 12%, var(--surface))); }
+.kpi { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 60%, var(--border)), var(--border) 40%, var(--border) 70%, color-mix(in srgb, var(--accent-2) 55%, var(--border))); }
+
+/* cards: top RGB strip, corner brackets always faintly on, podium glow */
+.card { background: linear-gradient(170deg, var(--surface) 55%, color-mix(in srgb, var(--accent) 6%, var(--surface))); }
+.card .card-head::before { content: ""; position: absolute; top: -1px; left: 18px; right: 18px; height: 2px; border-radius: 2px; background: linear-gradient(90deg, transparent, var(--accent), var(--accent-2), transparent); opacity: .85; transition: opacity .2s; pointer-events: none; }
+.card:hover .card-head::before { opacity: 1; }
+.card::before, .card::after { opacity: .4; }
+.card.top1 { border-color: color-mix(in srgb, #f2c14e 60%, var(--border)); box-shadow: var(--shadow), 0 0 24px -8px #f2c14e; }
+.card.top2 { border-color: color-mix(in srgb, #b8c0cc 60%, var(--border)); box-shadow: var(--shadow), 0 0 24px -8px #b8c0cc; }
+.card.top3 { border-color: color-mix(in srgb, #e09a6a 60%, var(--border)); box-shadow: var(--shadow), 0 0 24px -8px #e09a6a; }
+.card.top1::before, .card.top1::after { border-color: #f2c14e; } .card.top2::before, .card.top2::after { border-color: #b8c0cc; } .card.top3::before, .card.top3::after { border-color: #e09a6a; }
+.card.top1 .card-head::before { background: linear-gradient(90deg, transparent, #f2c14e, #b7791f, transparent); opacity: .9; }
+.card.top2 .card-head::before { background: linear-gradient(90deg, transparent, #d5dae2, #8a93a0, transparent); opacity: .9; }
+.card.top3 .card-head::before { background: linear-gradient(90deg, transparent, #e09a6a, #a0522d, transparent); opacity: .9; }
+.rank.r1 { box-shadow: 0 0 14px rgba(242,193,78,.6); } .rank.r2 { box-shadow: 0 0 14px rgba(184,192,204,.6); } .rank.r3 { box-shadow: 0 0 14px rgba(224,154,106,.6); }
+.dl-big { text-shadow: 0 0 14px color-mix(in srgb, var(--accent) 22%, transparent); }
+.dl-big.up { text-shadow: 0 0 16px color-mix(in srgb, var(--up) 45%, transparent); }
+
+/* in-card HUD divider + glowing bars */
+.metrics { border-top: 0; position: relative; padding-top: 12px; }
+.metrics::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, var(--accent) 0 28px, var(--border) 28px calc(100% - 28px), var(--accent-2) calc(100% - 28px)); }
+.share { box-shadow: inset 0 0 0 1px var(--border); }
+.share > i { background: linear-gradient(90deg, var(--accent), var(--accent-2)); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent); }
+.spark rect { filter: drop-shadow(0 0 2px color-mix(in srgb, var(--accent) 60%, transparent)); }
+
+/* buttons glow harder */
+.btn, .seg button[aria-pressed="true"] { box-shadow: 0 0 14px -2px color-mix(in srgb, var(--accent) 70%, transparent); }
+.seg button[aria-pressed="true"], .chip[aria-pressed="true"] { text-shadow: 0 0 8px rgba(255,255,255,.35); }
+.chip[aria-pressed="true"] { filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 55%, transparent)); }
+
+/* gaming type for headings */
+.panel h3, .section-title, .day, .sheet-head h2, .tm-cat > b { font-family: var(--display); letter-spacing: .05em; }
+.panel h3 { font-size: 18px; text-transform: uppercase; }
+.section-title, .day { font-size: 14px; }
+.sheet-head h2 { font-size: 22px; }
+.divider { margin: 30px 0 8px; }
+.divider::before { height: 2px; filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 60%, transparent)); }
+.divider::after { width: 11px; height: 11px; box-shadow: 0 0 14px var(--accent), 0 0 4px var(--accent-2); }
+.tm-tile { box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+.tm-tile:hover { box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), 0 0 16px color-mix(in srgb, var(--accent) 60%, transparent); }
+@media (prefers-reduced-motion: reduce) { body::after, .brand-mark { animation: none; } }
+.mode { display: inline-flex; }
+.panel-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+.panel-head .sub { margin: 0; }
+.mode button { font-weight: 500; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
 </head>
@@ -329,16 +509,15 @@ footer { color: var(--text-3); font-size: 13px; padding: 32px 0 40px; text-align
     <p data-i18n="heroSub">Downloads from GitHub releases, plus stars, forks and watchers for every project.</p>
     <div class="status">
       <span class="updated"><span class="dot"></span><span id="updated"></span></span>
-      <span class="updated"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg><span data-i18n="onlineNow">Online now</span><b class="num" id="onlineNow">–</b></span>
-      <span class="updated"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="totalVisits">Total visits</span><b class="num" id="totalVisits">–</b></span>
     </div>
     <div class="kpis">
       <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span data-i18n="kProjects">Projects</span></div><div class="value num" id="kProjects">–</div></div>
       <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="kDownloads">Total downloads</span></div><div class="value num" id="kDownloads">–</div></div>
       <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg><span data-i18n="kStars">GitHub stars</span></div><div class="value num" id="kStars">–</div></div>
-      <div class="kpi"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg><span data-i18n="kWeek">Releases this week</span></div><div class="value num" id="kWeek">–</div></div>
+      <div class="kpi hot"><div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span data-i18n="kGain">Downloads, last 14 days</span></div><div class="value num" id="kGain">–</div></div>
     </div>
   </section>
+  <div class="divider" aria-hidden="true"></div>
 
   <!-- Rankings -->
   <section id="tab-ranking">
@@ -355,6 +534,10 @@ footer { color: var(--text-3); font-size: 13px; padding: 32px 0 40px; text-align
         <option value="newest" data-i18n="sNewest">Newest repos</option>
         <option value="name" data-i18n="sName">Name (A–Z)</option>
       </select>
+      <div class="seg mode" role="group" aria-label="Period" id="modeSeg">
+        <button data-mode="all" aria-pressed="true" data-i18n="modeAll">All time</button>
+        <button data-mode="14d" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span data-i18n="mode14">Last 14 days</span></button>
+      </div>
       <div class="seg" role="group" aria-label="View">
         <button id="vCards" aria-pressed="true" aria-label="Cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
         <button id="vTable" aria-pressed="false" aria-label="Table"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
@@ -367,7 +550,10 @@ footer { color: var(--text-3); font-size: 13px; padding: 32px 0 40px; text-align
   <!-- Insights -->
   <section id="tab-insights" hidden>
     <div class="charts" style="margin-top:18px">
-      <div class="panel wide"><h3 data-i18n="visitors">Visitors by country</h3><p class="sub" data-i18n="visitorsSub">Where people open this page from</p><div id="visitorMap"></div></div>
+      <div class="panel wide"><div class="panel-head"><div><h3 data-i18n="dlMap">Download map</h3><p class="sub" id="dlMapSub"></p></div>
+        <div class="seg mode" role="group" aria-label="Period"><button data-mode="all" aria-pressed="true" data-i18n="modeAll">All time</button><button data-mode="14d" aria-pressed="false" data-i18n="mode14">Last 14 days</button></div></div><div id="treemap" class="treemap"></div></div>
+      <div class="panel wide"><h3 data-i18n="cGain">Trending: last 14 days</h3><p class="sub" data-i18n="cGainSub">Top 15 projects by downloads gained in the last 14 days</p><div class="chart-box tall"><canvas id="cGain"></canvas></div></div>
+      <div class="panel wide"><h3 data-i18n="cDaily">Daily downloads</h3><p class="sub" data-i18n="cDailySub">All projects combined, last 30 days</p><div class="chart-box"><canvas id="cDaily"></canvas></div></div>
       <div class="panel wide"><h3 data-i18n="cTop">Most downloaded</h3><p class="sub" data-i18n="cTopSub">Top 15 projects by total release downloads</p><div class="chart-box tall"><canvas id="cTop"></canvas></div></div>
       <div class="panel"><h3 data-i18n="cCat">Downloads by category</h3><p class="sub" data-i18n="cCatSub">Share of all counted downloads</p><div class="chart-box"><canvas id="cCat"></canvas></div></div>
       <div class="panel"><h3 data-i18n="cStars">Most starred</h3><p class="sub" data-i18n="cStarsSub">Top 10 repositories by GitHub stars</p><div class="chart-box"><canvas id="cStars"></canvas></div></div>
@@ -395,6 +581,7 @@ footer { color: var(--text-3); font-size: 13px; padding: 32px 0 40px; text-align
     <div class="drv-groups" id="drvGroups"></div>
   </section>
 
+  <div class="divider" aria-hidden="true"></div>
   <footer><span data-i18n="footer">Data from public GitHub releases, refreshed every hour.</span> · <a href="https://github.com/The412Banner/emulator-ranking" target="_blank" rel="noopener">GitHub</a></footer>
 </main>
 
@@ -417,7 +604,7 @@ const store = { get(k){ try { return localStorage.getItem(k); } catch { return n
 
 // ── i18n ────────────────────────────────────────────────
 const I18N = {
-  en: { onlineNow:"Online now", totalVisits:"Total visits", visitors:"Visitors by country", visitorsSub:"Where people open this page from", visits:"Visits", other:"Other", mapError:"The visitor map couldn't load.", copyLink:"Copy link", copied:"Copied", age:"Repo age", sOldest:"Oldest repos", sNewest:"Newest repos", brand:"Emulator Rankings", tabRanking:"Rankings", tabInsights:"Insights", tabNews:"New releases", tabDrivers:"Drivers & components",
+  en: { dlMap:"Download map", dlMapSub:"Every project sized by its all-time downloads, grouped by category", dlMapSub14:"Every project sized by its downloads in the last 14 days, grouped by category", modeAll:"All time", mode14:"Last 14 days", kGain:"Downloads, last 14 days", gainLabel:"downloads in the last 14 days", allTime:"All time", noTrend:"Not enough history yet", cGain:"Trending: last 14 days", cGainSub:"Top 15 projects by downloads gained in the last 14 days", cDaily:"Daily downloads", cDailySub:"All projects combined, last 30 days", col14:"14 days", dailyGain:"Daily downloads, last 14 days", onlineNow:"Online now", totalVisits:"Total visits", visitors:"Visitors by country", visitorsSub:"Where people open this page from", visits:"Visits", other:"Other", mapError:"The visitor map couldn't load.", copyLink:"Copy link", copied:"Copied", age:"Repo age", sOldest:"Oldest repos", sNewest:"Newest repos", brand:"Emulator Rankings", tabRanking:"Rankings", tabInsights:"Insights", tabNews:"New releases", tabDrivers:"Drivers & components",
     heroTitle:"Android emulators, ranked", heroSub:"Downloads from GitHub releases, plus stars, forks and watchers for every project.",
     updated:"Updated {t}", kProjects:"Projects", kDownloads:"Total downloads", kStars:"GitHub stars", kWeek:"Releases this week",
     search:"Search projects or owners", sDownloads:"Most downloads", sStars:"Most stars", sForks:"Most forks", sWatchers:"Most watchers", sLatest:"Latest release", sActive:"Recently active", sName:"Name (A–Z)",
@@ -432,7 +619,7 @@ const I18N = {
     about:"About", language:"Language", license:"License", created:"Created", lastPush:"Last commit", topics:"Topics", perRelease:"Downloads per release", oldest:"older", newest:"newest",
     viewRepo:"Repository", website:"Website", download:"Download", notes:"Release notes", files:"Files", showOnGithub:"View on GitHub", ago:"{t} ago",
     footer:"Data from public GitHub releases, refreshed every hour." },
-  "pt-BR": { onlineNow:"Online agora", totalVisits:"Total de visitas", visitors:"Visitantes por país", visitorsSub:"De onde as pessoas acessam esta página", visits:"Visitas", other:"Outros", mapError:"Não foi possível carregar o mapa de visitantes.", copyLink:"Copiar link", copied:"Copiado", age:"Idade do repositório", sOldest:"Repositórios mais antigos", sNewest:"Repositórios mais novos", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análises", tabNews:"Novidades", tabDrivers:"Drivers e componentes",
+  "pt-BR": { dlMap:"Mapa de downloads", dlMapSub:"Cada projeto dimensionado pelos downloads totais, agrupado por categoria", dlMapSub14:"Cada projeto dimensionado pelos downloads dos últimos 14 dias, agrupado por categoria", modeAll:"Todo o período", mode14:"Últimos 14 dias", kGain:"Downloads, últimos 14 dias", gainLabel:"downloads nos últimos 14 dias", allTime:"Todo o período", noTrend:"Histórico insuficiente", cGain:"Em alta: últimos 14 dias", cGainSub:"Top 15 projetos por downloads nos últimos 14 dias", cDaily:"Downloads por dia", cDailySub:"Todos os projetos, últimos 30 dias", col14:"14 dias", dailyGain:"Downloads por dia, últimos 14 dias", onlineNow:"Online agora", totalVisits:"Total de visitas", visitors:"Visitantes por país", visitorsSub:"De onde as pessoas acessam esta página", visits:"Visitas", other:"Outros", mapError:"Não foi possível carregar o mapa de visitantes.", copyLink:"Copiar link", copied:"Copiado", age:"Idade do repositório", sOldest:"Repositórios mais antigos", sNewest:"Repositórios mais novos", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análises", tabNews:"Novidades", tabDrivers:"Drivers e componentes",
     heroTitle:"Emuladores Android, ranqueados", heroSub:"Downloads das releases do GitHub, além de estrelas, forks e observadores de cada projeto.",
     updated:"Atualizado {t}", kProjects:"Projetos", kDownloads:"Downloads totais", kStars:"Estrelas no GitHub", kWeek:"Releases na semana",
     search:"Buscar projetos ou autores", sDownloads:"Mais downloads", sStars:"Mais estrelas", sForks:"Mais forks", sWatchers:"Mais observadores", sLatest:"Release mais recente", sActive:"Atividade recente", sName:"Nome (A–Z)",
@@ -447,7 +634,7 @@ const I18N = {
     about:"Sobre", language:"Linguagem", license:"Licença", created:"Criado", lastPush:"Último commit", topics:"Tópicos", perRelease:"Downloads por release", oldest:"mais antigas", newest:"mais recentes",
     viewRepo:"Repositório", website:"Site", download:"Baixar", notes:"Notas da release", files:"Arquivos", showOnGithub:"Ver no GitHub", ago:"há {t}",
     footer:"Dados de releases públicas do GitHub, atualizados a cada hora." },
-  "pt-PT": { onlineNow:"Online agora", totalVisits:"Total de visitas", visitors:"Visitantes por país", visitorsSub:"De onde as pessoas abrem esta página", visits:"Visitas", other:"Outros", mapError:"Não foi possível carregar o mapa de visitantes.", copyLink:"Copiar ligação", copied:"Copiado", age:"Idade do repositório", sOldest:"Repositórios mais antigos", sNewest:"Repositórios mais recentes", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análises", tabNews:"Novidades", tabDrivers:"Drivers e componentes",
+  "pt-PT": { dlMap:"Mapa de transferências", dlMapSub:"Cada projeto dimensionado pelas transferências totais, agrupado por categoria", dlMapSub14:"Cada projeto dimensionado pelas transferências dos últimos 14 dias, agrupado por categoria", modeAll:"Desde sempre", mode14:"Últimos 14 dias", kGain:"Transferências, últimos 14 dias", gainLabel:"transferências nos últimos 14 dias", allTime:"Desde sempre", noTrend:"Histórico insuficiente", cGain:"Em destaque: últimos 14 dias", cGainSub:"Top 15 projetos por transferências nos últimos 14 dias", cDaily:"Transferências por dia", cDailySub:"Todos os projetos, últimos 30 dias", col14:"14 dias", dailyGain:"Transferências por dia, últimos 14 dias", onlineNow:"Online agora", totalVisits:"Total de visitas", visitors:"Visitantes por país", visitorsSub:"De onde as pessoas abrem esta página", visits:"Visitas", other:"Outros", mapError:"Não foi possível carregar o mapa de visitantes.", copyLink:"Copiar ligação", copied:"Copiado", age:"Idade do repositório", sOldest:"Repositórios mais antigos", sNewest:"Repositórios mais recentes", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análises", tabNews:"Novidades", tabDrivers:"Drivers e componentes",
     heroTitle:"Emuladores Android, classificados", heroSub:"Transferências das releases do GitHub, mais estrelas, forks e observadores de cada projeto.",
     updated:"Atualizado {t}", kProjects:"Projetos", kDownloads:"Transferências totais", kStars:"Estrelas no GitHub", kWeek:"Releases esta semana",
     search:"Pesquisar projetos ou autores", sDownloads:"Mais transferências", sStars:"Mais estrelas", sForks:"Mais forks", sWatchers:"Mais observadores", sLatest:"Release mais recente", sActive:"Atividade recente", sName:"Nome (A–Z)",
@@ -462,7 +649,7 @@ const I18N = {
     about:"Sobre", language:"Linguagem", license:"Licença", created:"Criado", lastPush:"Último commit", topics:"Tópicos", perRelease:"Transferências por release", oldest:"mais antigas", newest:"mais recentes",
     viewRepo:"Repositório", website:"Site", download:"Transferir", notes:"Notas da release", files:"Ficheiros", showOnGithub:"Ver no GitHub", ago:"há {t}",
     footer:"Dados de releases públicas do GitHub, atualizados a cada hora." },
-  es: { onlineNow:"En línea ahora", totalVisits:"Visitas totales", visitors:"Visitantes por país", visitorsSub:"Desde dónde se abre esta página", visits:"Visitas", other:"Otros", mapError:"No se pudo cargar el mapa de visitantes.", copyLink:"Copiar enlace", copied:"Copiado", age:"Antigüedad del repositorio", sOldest:"Repositorios más antiguos", sNewest:"Repositorios más nuevos", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análisis", tabNews:"Novedades", tabDrivers:"Drivers y componentes",
+  es: { dlMap:"Mapa de descargas", dlMapSub:"Cada proyecto según sus descargas totales, agrupado por categoría", dlMapSub14:"Cada proyecto según sus descargas de los últimos 14 días, agrupado por categoría", modeAll:"Histórico", mode14:"Últimos 14 días", kGain:"Descargas, últimos 14 días", gainLabel:"descargas en los últimos 14 días", allTime:"Histórico", noTrend:"Aún no hay suficiente historial", cGain:"Tendencia: últimos 14 días", cGainSub:"Top 15 proyectos por descargas en los últimos 14 días", cDaily:"Descargas diarias", cDailySub:"Todos los proyectos, últimos 30 días", col14:"14 días", dailyGain:"Descargas diarias, últimos 14 días", onlineNow:"En línea ahora", totalVisits:"Visitas totales", visitors:"Visitantes por país", visitorsSub:"Desde dónde se abre esta página", visits:"Visitas", other:"Otros", mapError:"No se pudo cargar el mapa de visitantes.", copyLink:"Copiar enlace", copied:"Copiado", age:"Antigüedad del repositorio", sOldest:"Repositorios más antiguos", sNewest:"Repositorios más nuevos", brand:"Ranking de Emuladores", tabRanking:"Ranking", tabInsights:"Análisis", tabNews:"Novedades", tabDrivers:"Drivers y componentes",
     heroTitle:"Emuladores Android, clasificados", heroSub:"Descargas de releases de GitHub, además de estrellas, forks y seguidores de cada proyecto.",
     updated:"Actualizado {t}", kProjects:"Proyectos", kDownloads:"Descargas totales", kStars:"Estrellas en GitHub", kWeek:"Releases esta semana",
     search:"Buscar proyectos o autores", sDownloads:"Más descargas", sStars:"Más estrellas", sForks:"Más forks", sWatchers:"Más seguidores", sLatest:"Release más reciente", sActive:"Actividad reciente", sName:"Nombre (A–Z)",
@@ -477,7 +664,7 @@ const I18N = {
     about:"Acerca de", language:"Lenguaje", license:"Licencia", created:"Creado", lastPush:"Último commit", topics:"Temas", perRelease:"Descargas por release", oldest:"antiguas", newest:"recientes",
     viewRepo:"Repositorio", website:"Sitio web", download:"Descargar", notes:"Notas de la release", files:"Archivos", showOnGithub:"Ver en GitHub", ago:"hace {t}",
     footer:"Datos de releases públicas de GitHub, actualizados cada hora." },
-  fr: { onlineNow:"En ligne", totalVisits:"Visites totales", visitors:"Visiteurs par pays", visitorsSub:"D'où cette page est consultée", visits:"Visites", other:"Autres", mapError:"Impossible de charger la carte des visiteurs.", copyLink:"Copier le lien", copied:"Copié", age:"Âge du dépôt", sOldest:"Dépôts les plus anciens", sNewest:"Dépôts les plus récents", brand:"Classement des émulateurs", tabRanking:"Classement", tabInsights:"Analyses", tabNews:"Nouveautés", tabDrivers:"Pilotes et composants",
+  fr: { dlMap:"Carte des téléchargements", dlMapSub:"Chaque projet dimensionné selon ses téléchargements, groupé par catégorie", dlMapSub14:"Chaque projet dimensionné selon ses téléchargements sur 14 jours, groupé par catégorie", modeAll:"Depuis toujours", mode14:"14 derniers jours", kGain:"Téléchargements, 14 derniers jours", gainLabel:"téléchargements ces 14 derniers jours", allTime:"Depuis toujours", noTrend:"Historique insuffisant", cGain:"Tendances : 14 derniers jours", cGainSub:"Top 15 des projets par téléchargements sur 14 jours", cDaily:"Téléchargements quotidiens", cDailySub:"Tous les projets, 30 derniers jours", col14:"14 jours", dailyGain:"Téléchargements quotidiens, 14 derniers jours", onlineNow:"En ligne", totalVisits:"Visites totales", visitors:"Visiteurs par pays", visitorsSub:"D'où cette page est consultée", visits:"Visites", other:"Autres", mapError:"Impossible de charger la carte des visiteurs.", copyLink:"Copier le lien", copied:"Copié", age:"Âge du dépôt", sOldest:"Dépôts les plus anciens", sNewest:"Dépôts les plus récents", brand:"Classement des émulateurs", tabRanking:"Classement", tabInsights:"Analyses", tabNews:"Nouveautés", tabDrivers:"Pilotes et composants",
     heroTitle:"Les émulateurs Android, classés", heroSub:"Téléchargements des releases GitHub, avec étoiles, forks et abonnés pour chaque projet.",
     updated:"Mis à jour {t}", kProjects:"Projets", kDownloads:"Téléchargements", kStars:"Étoiles GitHub", kWeek:"Releases cette semaine",
     search:"Rechercher un projet ou un auteur", sDownloads:"Plus téléchargés", sStars:"Plus d'étoiles", sForks:"Plus de forks", sWatchers:"Plus d'abonnés", sLatest:"Release la plus récente", sActive:"Activité récente", sName:"Nom (A–Z)",
@@ -492,7 +679,7 @@ const I18N = {
     about:"À propos", language:"Langage", license:"Licence", created:"Créé", lastPush:"Dernier commit", topics:"Sujets", perRelease:"Téléchargements par release", oldest:"anciennes", newest:"récentes",
     viewRepo:"Dépôt", website:"Site web", download:"Télécharger", notes:"Notes de version", files:"Fichiers", showOnGithub:"Voir sur GitHub", ago:"il y a {t}",
     footer:"Données des releases publiques GitHub, actualisées toutes les heures." },
-  zh: { onlineNow:"当前在线", totalVisits:"总访问量", visitors:"各国访客", visitorsSub:"访客所在的国家和地区", visits:"访问", other:"其他", mapError:"无法加载访客地图。", copyLink:"复制链接", copied:"已复制", age:"仓库年龄", sOldest:"最早的仓库", sNewest:"最新的仓库", brand:"模拟器排行榜", tabRanking:"排行榜", tabInsights:"数据分析", tabNews:"最新发布", tabDrivers:"驱动与组件",
+  zh: { dlMap:"下载分布图", dlMapSub:"按累计下载量显示每个项目的大小，并按分类分组", dlMapSub14:"按最近 14 天下载量显示每个项目的大小，并按分类分组", modeAll:"累计", mode14:"最近 14 天", kGain:"最近 14 天下载量", gainLabel:"次下载（最近 14 天）", allTime:"累计", noTrend:"历史数据不足", cGain:"趋势：最近 14 天", cGainSub:"最近 14 天新增下载量前 15 的项目", cDaily:"每日下载量", cDailySub:"全部项目合计，最近 30 天", col14:"14 天", dailyGain:"每日下载量（最近 14 天）", onlineNow:"当前在线", totalVisits:"总访问量", visitors:"各国访客", visitorsSub:"访客所在的国家和地区", visits:"访问", other:"其他", mapError:"无法加载访客地图。", copyLink:"复制链接", copied:"已复制", age:"仓库年龄", sOldest:"最早的仓库", sNewest:"最新的仓库", brand:"模拟器排行榜", tabRanking:"排行榜", tabInsights:"数据分析", tabNews:"最新发布", tabDrivers:"驱动与组件",
     heroTitle:"安卓模拟器排行", heroSub:"统计 GitHub Release 下载量，以及每个项目的星标、复刻和关注数。",
     updated:"更新于 {t}", kProjects:"项目", kDownloads:"总下载量", kStars:"GitHub 星标", kWeek:"本周发布",
     search:"搜索项目或作者", sDownloads:"下载最多", sStars:"星标最多", sForks:"复刻最多", sWatchers:"关注最多", sLatest:"最新发布", sActive:"最近活跃", sName:"名称 (A–Z)",
@@ -507,7 +694,7 @@ const I18N = {
     about:"简介", language:"语言", license:"许可证", created:"创建于", lastPush:"最后提交", topics:"主题", perRelease:"每次发布的下载量", oldest:"较早", newest:"最新",
     viewRepo:"仓库", website:"网站", download:"下载", notes:"发布说明", files:"文件", showOnGithub:"在 GitHub 查看", ago:"{t}前",
     footer:"数据来自公开的 GitHub Release，每小时更新。" },
-  ja: { onlineNow:"現在オンライン", totalVisits:"総訪問数", visitors:"国別の訪問者", visitorsSub:"このページが開かれている国", visits:"訪問", other:"その他", mapError:"訪問者マップを読み込めませんでした。", copyLink:"リンクをコピー", copied:"コピーしました", age:"リポジトリの年数", sOldest:"古いリポジトリ順", sNewest:"新しいリポジトリ順", brand:"エミュレーターランキング", tabRanking:"ランキング", tabInsights:"分析", tabNews:"新着リリース", tabDrivers:"ドライバーとコンポーネント",
+  ja: { dlMap:"ダウンロードマップ", dlMapSub:"各プロジェクトを累計ダウンロード数の大きさで表示（カテゴリー別）", dlMapSub14:"各プロジェクトを過去 14 日間のダウンロード数の大きさで表示（カテゴリー別）", modeAll:"累計", mode14:"過去 14 日間", kGain:"過去 14 日間のダウンロード", gainLabel:"ダウンロード（過去 14 日間）", allTime:"累計", noTrend:"履歴が不足しています", cGain:"トレンド：過去 14 日間", cGainSub:"過去 14 日間のダウンロード増加数の上位 15", cDaily:"1 日あたりのダウンロード", cDailySub:"全プロジェクト合計、過去 30 日間", col14:"14 日間", dailyGain:"1 日あたりのダウンロード（過去 14 日間）", onlineNow:"現在オンライン", totalVisits:"総訪問数", visitors:"国別の訪問者", visitorsSub:"このページが開かれている国", visits:"訪問", other:"その他", mapError:"訪問者マップを読み込めませんでした。", copyLink:"リンクをコピー", copied:"コピーしました", age:"リポジトリの年数", sOldest:"古いリポジトリ順", sNewest:"新しいリポジトリ順", brand:"エミュレーターランキング", tabRanking:"ランキング", tabInsights:"分析", tabNews:"新着リリース", tabDrivers:"ドライバーとコンポーネント",
     heroTitle:"Android エミュレーターランキング", heroSub:"GitHub リリースのダウンロード数と、各プロジェクトのスター・フォーク・ウォッチ数。",
     updated:"{t} に更新", kProjects:"プロジェクト", kDownloads:"総ダウンロード", kStars:"GitHub スター", kWeek:"今週のリリース",
     search:"プロジェクトや作者を検索", sDownloads:"ダウンロード数順", sStars:"スター数順", sForks:"フォーク数順", sWatchers:"ウォッチ数順", sLatest:"最新リリース順", sActive:"最近の更新順", sName:"名前 (A–Z)",
@@ -522,11 +709,11 @@ const I18N = {
     about:"概要", language:"言語", license:"ライセンス", created:"作成", lastPush:"最終コミット", topics:"トピック", perRelease:"リリースあたりのダウンロード", oldest:"古い", newest:"新しい",
     viewRepo:"リポジトリ", website:"Web サイト", download:"ダウンロード", notes:"リリースノート", files:"ファイル", showOnGithub:"GitHub で見る", ago:"{t}前",
     footer:"公開 GitHub リリースのデータ。1 時間ごとに更新。" },
-  ru: { copyLink:"Скопировать ссылку", copied:"Скопировано", age:"Возраст репозитория", sOldest:"Самые старые репозитории", sNewest:"Самые новые репозитории", brand:"Рейтинг эмуляторов", tabRanking:"Рейтинг", tabInsights:"Аналитика", tabNews:"Новые релизы", tabDrivers:"Драйверы и компоненты", heroTitle:"Рейтинг эмуляторов для Android", heroSub:"Загрузки релизов GitHub, а также звёзды, форки и подписчики каждого проекта.", updated:"Обновлено {t}", kProjects:"Проекты", kDownloads:"Всего загрузок", kStars:"Звёзды GitHub", kWeek:"Релизов за неделю", search:"Поиск по проектам и авторам", sDownloads:"Больше всего загрузок", sStars:"Больше всего звёзд", sForks:"Больше всего форков", sWatchers:"Больше всего подписчиков", sLatest:"Последний релиз", sActive:"Недавняя активность", sName:"Название (А–Я)", all:"Все", downloads:"загрузок", stars:"Звёзды", forks:"Форки", watchers:"Подписчики", issues:"Открытые issues", releases:"Релизы", latest:"Последний", noReleases:"Релизов пока нет", unavailable:"Репозиторий недоступен", archived:"В архиве", prerelease:"Пре-релиз", shareOf:"{p}% от {c}", noResults:"Подходящих проектов нет.", project:"Проект", category:"Категория", latestRelease:"Последний релиз", cTop:"Самые загружаемые", cTopSub:"Топ-15 проектов по загрузкам", cCat:"Загрузки по категориям", cCatSub:"Доля от всех учтённых загрузок", cStars:"Больше всего звёзд", cStarsSub:"Топ-10 репозиториев по звёздам", cScatter:"Популярность и сообщество", cScatterSub:"Загрузки и звёзды (логарифмическая шкала). Размер = форки.", cAvg:"Загрузок на релиз", cAvgSub:"Среднее по релизам, топ-10", cActive:"Активность релизов", cActiveSub:"Релизов в неделю за последние 12 недель", d7:"7 дней", d14:"14 дней", d30:"30 дней", noNews:"За этот период новых релизов нет.", drvLatest:"Новые драйверы GPU", drvComponents:"Компоненты (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} шт.", about:"О проекте", language:"Язык", license:"Лицензия", created:"Создан", lastPush:"Последний коммит", topics:"Темы", perRelease:"Загрузок на релиз", oldest:"старые", newest:"новые", viewRepo:"Репозиторий", website:"Сайт", download:"Скачать", notes:"Примечания к релизу", files:"Файлы", showOnGithub:"Открыть на GitHub", ago:"{t} назад", footer:"Данные из публичных релизов GitHub, обновляются каждый час.", onlineNow:"Сейчас онлайн", totalVisits:"Всего посещений", visitors:"Посетители по странам", visitorsSub:"Откуда открывают эту страницу", visits:"Посещения", other:"Другие", mapError:"Не удалось загрузить карту посетителей." },
-  it: { copyLink:"Copia link", copied:"Copiato", age:"Età del repository", sOldest:"Repository più vecchi", sNewest:"Repository più recenti", brand:"Classifica emulatori", tabRanking:"Classifica", tabInsights:"Statistiche", tabNews:"Nuove release", tabDrivers:"Driver e componenti", heroTitle:"Emulatori Android in classifica", heroSub:"Download dalle release GitHub, più stelle, fork e osservatori di ogni progetto.", updated:"Aggiornato {t}", kProjects:"Progetti", kDownloads:"Download totali", kStars:"Stelle GitHub", kWeek:"Release questa settimana", search:"Cerca progetti o autori", sDownloads:"Più scaricati", sStars:"Più stelle", sForks:"Più fork", sWatchers:"Più osservatori", sLatest:"Release più recente", sActive:"Attività recente", sName:"Nome (A–Z)", all:"Tutti", downloads:"download", stars:"Stelle", forks:"Fork", watchers:"Osservatori", issues:"Issue aperte", releases:"Release", latest:"Ultima", noReleases:"Ancora nessuna release", unavailable:"Repository non disponibile", archived:"Archiviato", prerelease:"Pre-release", shareOf:"{p}% di {c}", noResults:"Nessun progetto corrisponde.", project:"Progetto", category:"Categoria", latestRelease:"Ultima release", cTop:"I più scaricati", cTopSub:"Top 15 progetti per download", cCat:"Download per categoria", cCatSub:"Quota dei download conteggiati", cStars:"I più stellati", cStarsSub:"Top 10 repository per stelle", cScatter:"Popolarità e community", cScatterSub:"Download rispetto alle stelle (scala log). Dimensione = fork.", cAvg:"Download per release", cAvgSub:"Media per release, top 10", cActive:"Attività delle release", cActiveSub:"Release a settimana, ultime 12 settimane", d7:"7 giorni", d14:"14 giorni", d30:"30 giorni", noNews:"Nessuna nuova release in questo periodo.", drvLatest:"Driver GPU più recenti", drvComponents:"Componenti (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} elementi", about:"Informazioni", language:"Linguaggio", license:"Licenza", created:"Creato", lastPush:"Ultimo commit", topics:"Argomenti", perRelease:"Download per release", oldest:"vecchie", newest:"recenti", viewRepo:"Repository", website:"Sito web", download:"Scarica", notes:"Note di rilascio", files:"File", showOnGithub:"Vedi su GitHub", ago:"{t} fa", footer:"Dati dalle release pubbliche di GitHub, aggiornati ogni ora.", onlineNow:"Online ora", totalVisits:"Visite totali", visitors:"Visitatori per paese", visitorsSub:"Da dove viene aperta questa pagina", visits:"Visite", other:"Altri", mapError:"Impossibile caricare la mappa dei visitatori." },
-  hi: { copyLink:"लिंक कॉपी करें", copied:"कॉपी हो गया", age:"रिपॉज़िटरी की उम्र", sOldest:"सबसे पुराने रिपॉज़िटरी", sNewest:"सबसे नए रिपॉज़िटरी", brand:"एमुलेटर रैंकिंग", tabRanking:"रैंकिंग", tabInsights:"विश्लेषण", tabNews:"नई रिलीज़", tabDrivers:"ड्राइवर और कंपोनेंट", heroTitle:"Android एमुलेटर, रैंक किए गए", heroSub:"GitHub रिलीज़ के डाउनलोड, साथ ही हर प्रोजेक्ट के स्टार, फ़ोर्क और वॉचर।", updated:"{t} अपडेट हुआ", kProjects:"प्रोजेक्ट", kDownloads:"कुल डाउनलोड", kStars:"GitHub स्टार", kWeek:"इस हफ़्ते की रिलीज़", search:"प्रोजेक्ट या लेखक खोजें", sDownloads:"सबसे ज़्यादा डाउनलोड", sStars:"सबसे ज़्यादा स्टार", sForks:"सबसे ज़्यादा फ़ोर्क", sWatchers:"सबसे ज़्यादा वॉचर", sLatest:"नवीनतम रिलीज़", sActive:"हाल में सक्रिय", sName:"नाम (A–Z)", all:"सभी", downloads:"डाउनलोड", stars:"स्टार", forks:"फ़ोर्क", watchers:"वॉचर", issues:"खुले इश्यू", releases:"रिलीज़", latest:"नवीनतम", noReleases:"अभी कोई रिलीज़ नहीं", unavailable:"रिपॉज़िटरी उपलब्ध नहीं", archived:"आर्काइव किया गया", prerelease:"प्री-रिलीज़", shareOf:"{c} का {p}%", noResults:"कोई प्रोजेक्ट नहीं मिला।", project:"प्रोजेक्ट", category:"श्रेणी", latestRelease:"नवीनतम रिलीज़", cTop:"सबसे ज़्यादा डाउनलोड", cTopSub:"कुल डाउनलोड के हिसाब से शीर्ष 15", cCat:"श्रेणी के हिसाब से डाउनलोड", cCatSub:"गिने गए डाउनलोड में हिस्सा", cStars:"सबसे ज़्यादा स्टार", cStarsSub:"स्टार के हिसाब से शीर्ष 10 रिपॉज़िटरी", cScatter:"लोकप्रियता बनाम समुदाय", cScatterSub:"डाउनलोड बनाम स्टार (लॉग स्केल)। आकार = फ़ोर्क।", cAvg:"प्रति रिलीज़ डाउनलोड", cAvgSub:"प्रति रिलीज़ औसत, शीर्ष 10", cActive:"रिलीज़ गतिविधि", cActiveSub:"पिछले 12 हफ़्तों में हर हफ़्ते की रिलीज़", d7:"7 दिन", d14:"14 दिन", d30:"30 दिन", noNews:"इस अवधि में कोई नई रिलीज़ नहीं।", drvLatest:"नवीनतम GPU ड्राइवर", drvComponents:"कंपोनेंट (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} आइटम", about:"परिचय", language:"भाषा", license:"लाइसेंस", created:"बनाया गया", lastPush:"आख़िरी कमिट", topics:"विषय", perRelease:"प्रति रिलीज़ डाउनलोड", oldest:"पुरानी", newest:"नई", viewRepo:"रिपॉज़िटरी", website:"वेबसाइट", download:"डाउनलोड करें", notes:"रिलीज़ नोट्स", files:"फ़ाइलें", showOnGithub:"GitHub पर देखें", ago:"{t} पहले", footer:"सार्वजनिक GitHub रिलीज़ से डेटा, हर घंटे अपडेट।", onlineNow:"अभी ऑनलाइन", totalVisits:"कुल विज़िट", visitors:"देश के हिसाब से विज़िटर", visitorsSub:"यह पेज कहाँ से खोला जाता है", visits:"विज़िट", other:"अन्य", mapError:"विज़िटर मैप लोड नहीं हो सका।" },
-  ar: { copyLink:"نسخ الرابط", copied:"تم النسخ", age:"عمر المستودع", sOldest:"أقدم المستودعات", sNewest:"أحدث المستودعات", brand:"ترتيب المحاكيات", tabRanking:"الترتيب", tabInsights:"الإحصاءات", tabNews:"إصدارات جديدة", tabDrivers:"التعريفات والمكوّنات", heroTitle:"ترتيب محاكيات أندرويد", heroSub:"تنزيلات إصدارات GitHub، إضافةً إلى النجوم والتفرعات والمتابعين لكل مشروع.", updated:"آخر تحديث {t}", kProjects:"المشاريع", kDownloads:"إجمالي التنزيلات", kStars:"نجوم GitHub", kWeek:"إصدارات هذا الأسبوع", search:"ابحث عن مشروع أو مطوّر", sDownloads:"الأكثر تنزيلًا", sStars:"الأكثر نجومًا", sForks:"الأكثر تفرعًا", sWatchers:"الأكثر متابعة", sLatest:"أحدث إصدار", sActive:"النشاط الأخير", sName:"الاسم (A–Z)", all:"الكل", downloads:"تنزيل", stars:"النجوم", forks:"التفرعات", watchers:"المتابعون", issues:"المشكلات المفتوحة", releases:"الإصدارات", latest:"الأحدث", noReleases:"لا توجد إصدارات بعد", unavailable:"المستودع غير متاح", archived:"مؤرشف", prerelease:"إصدار تجريبي", shareOf:"{p}% من {c}", noResults:"لا توجد مشاريع مطابقة.", project:"المشروع", category:"الفئة", latestRelease:"أحدث إصدار", cTop:"الأكثر تنزيلًا", cTopSub:"أعلى 15 مشروعًا حسب التنزيلات", cCat:"التنزيلات حسب الفئة", cCatSub:"الحصة من جميع التنزيلات المحسوبة", cStars:"الأكثر نجومًا", cStarsSub:"أعلى 10 مستودعات حسب النجوم", cScatter:"الشعبية مقابل المجتمع", cScatterSub:"التنزيلات مقابل النجوم (مقياس لوغاريتمي). الحجم = التفرعات.", cAvg:"التنزيلات لكل إصدار", cAvgSub:"المتوسط لكل إصدار، أعلى 10", cActive:"نشاط الإصدارات", cActiveSub:"الإصدارات أسبوعيًا خلال آخر 12 أسبوعًا", d7:"7 أيام", d14:"14 يومًا", d30:"30 يومًا", noNews:"لا توجد إصدارات جديدة في هذه الفترة.", drvLatest:"أحدث تعريفات GPU", drvComponents:"المكوّنات (Wine وBox64 وDXVK وVKD3D وFEX)", items:"{n} عنصر", about:"نبذة", language:"اللغة", license:"الترخيص", created:"تاريخ الإنشاء", lastPush:"آخر إيداع", topics:"المواضيع", perRelease:"التنزيلات لكل إصدار", oldest:"الأقدم", newest:"الأحدث", viewRepo:"المستودع", website:"الموقع", download:"تنزيل", notes:"ملاحظات الإصدار", files:"الملفات", showOnGithub:"عرض على GitHub", ago:"منذ {t}", footer:"بيانات من إصدارات GitHub العامة، تُحدَّث كل ساعة.", onlineNow:"متصل الآن", totalVisits:"إجمالي الزيارات", visitors:"الزوار حسب الدولة", visitorsSub:"من أين تُفتح هذه الصفحة", visits:"الزيارات", other:"أخرى", mapError:"تعذّر تحميل خريطة الزوار." },
-  he: { copyLink:"העתקת קישור", copied:"הועתק", age:"גיל המאגר", sOldest:"המאגרים הוותיקים", sNewest:"המאגרים החדשים", brand:"דירוג אמולטורים", tabRanking:"דירוג", tabInsights:"תובנות", tabNews:"גרסאות חדשות", tabDrivers:"דרייברים ורכיבים", heroTitle:"אמולטורים לאנדרואיד, מדורגים", heroSub:"הורדות מגרסאות GitHub, וגם כוכבים, פיצולים ועוקבים לכל פרויקט.", updated:"עודכן {t}", kProjects:"פרויקטים", kDownloads:"סה״כ הורדות", kStars:"כוכבים ב-GitHub", kWeek:"גרסאות השבוע", search:"חיפוש פרויקטים או מפתחים", sDownloads:"הכי הרבה הורדות", sStars:"הכי הרבה כוכבים", sForks:"הכי הרבה פיצולים", sWatchers:"הכי הרבה עוקבים", sLatest:"הגרסה האחרונה", sActive:"פעילות אחרונה", sName:"שם (A–Z)", all:"הכול", downloads:"הורדות", stars:"כוכבים", forks:"פיצולים", watchers:"עוקבים", issues:"בעיות פתוחות", releases:"גרסאות", latest:"אחרונה", noReleases:"עדיין אין גרסאות", unavailable:"המאגר אינו זמין", archived:"בארכיון", prerelease:"גרסה מקדימה", shareOf:"{p}% מתוך {c}", noResults:"לא נמצאו פרויקטים מתאימים.", project:"פרויקט", category:"קטגוריה", latestRelease:"הגרסה האחרונה", cTop:"הכי הרבה הורדות", cTopSub:"15 הפרויקטים המובילים לפי הורדות", cCat:"הורדות לפי קטגוריה", cCatSub:"החלק מכלל ההורדות שנספרו", cStars:"הכי הרבה כוכבים", cStarsSub:"10 המאגרים המובילים לפי כוכבים", cScatter:"פופולריות מול קהילה", cScatterSub:"הורדות מול כוכבים (סקאלה לוגריתמית). גודל = פיצולים.", cAvg:"הורדות לגרסה", cAvgSub:"ממוצע לגרסה, 10 המובילים", cActive:"פעילות גרסאות", cActiveSub:"גרסאות בשבוע ב-12 השבועות האחרונים", d7:"7 ימים", d14:"14 ימים", d30:"30 ימים", noNews:"אין גרסאות חדשות בתקופה זו.", drvLatest:"דרייברי GPU אחרונים", drvComponents:"רכיבים (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} פריטים", about:"אודות", language:"שפה", license:"רישיון", created:"נוצר", lastPush:"קומיט אחרון", topics:"נושאים", perRelease:"הורדות לגרסה", oldest:"ישנות", newest:"חדשות", viewRepo:"מאגר", website:"אתר", download:"הורדה", notes:"הערות גרסה", files:"קבצים", showOnGithub:"צפייה ב-GitHub", ago:"לפני {t}", footer:"נתונים מגרסאות GitHub ציבוריות, מתעדכנים כל שעה.", onlineNow:"מחוברים כעת", totalVisits:"סה״כ ביקורים", visitors:"מבקרים לפי מדינה", visitorsSub:"מאיפה פותחים את הדף הזה", visits:"ביקורים", other:"אחרות", mapError:"לא ניתן לטעון את מפת המבקרים." },
+  ru: { dlMap:"Карта загрузок", dlMapSub:"Размер каждого проекта соответствует его загрузкам за всё время, по категориям", dlMapSub14:"Размер каждого проекта соответствует его загрузкам за 14 дней, по категориям", modeAll:"За всё время", mode14:"За 14 дней", kGain:"Загрузки за 14 дней", gainLabel:"загрузок за последние 14 дней", allTime:"За всё время", noTrend:"Недостаточно истории", cGain:"В тренде: последние 14 дней", cGainSub:"Топ-15 проектов по загрузкам за 14 дней", cDaily:"Загрузки по дням", cDailySub:"Все проекты, последние 30 дней", col14:"14 дней", dailyGain:"Загрузки по дням за 14 дней", copyLink:"Скопировать ссылку", copied:"Скопировано", age:"Возраст репозитория", sOldest:"Самые старые репозитории", sNewest:"Самые новые репозитории", brand:"Рейтинг эмуляторов", tabRanking:"Рейтинг", tabInsights:"Аналитика", tabNews:"Новые релизы", tabDrivers:"Драйверы и компоненты", heroTitle:"Рейтинг эмуляторов для Android", heroSub:"Загрузки релизов GitHub, а также звёзды, форки и подписчики каждого проекта.", updated:"Обновлено {t}", kProjects:"Проекты", kDownloads:"Всего загрузок", kStars:"Звёзды GitHub", kWeek:"Релизов за неделю", search:"Поиск по проектам и авторам", sDownloads:"Больше всего загрузок", sStars:"Больше всего звёзд", sForks:"Больше всего форков", sWatchers:"Больше всего подписчиков", sLatest:"Последний релиз", sActive:"Недавняя активность", sName:"Название (А–Я)", all:"Все", downloads:"загрузок", stars:"Звёзды", forks:"Форки", watchers:"Подписчики", issues:"Открытые issues", releases:"Релизы", latest:"Последний", noReleases:"Релизов пока нет", unavailable:"Репозиторий недоступен", archived:"В архиве", prerelease:"Пре-релиз", shareOf:"{p}% от {c}", noResults:"Подходящих проектов нет.", project:"Проект", category:"Категория", latestRelease:"Последний релиз", cTop:"Самые загружаемые", cTopSub:"Топ-15 проектов по загрузкам", cCat:"Загрузки по категориям", cCatSub:"Доля от всех учтённых загрузок", cStars:"Больше всего звёзд", cStarsSub:"Топ-10 репозиториев по звёздам", cScatter:"Популярность и сообщество", cScatterSub:"Загрузки и звёзды (логарифмическая шкала). Размер = форки.", cAvg:"Загрузок на релиз", cAvgSub:"Среднее по релизам, топ-10", cActive:"Активность релизов", cActiveSub:"Релизов в неделю за последние 12 недель", d7:"7 дней", d14:"14 дней", d30:"30 дней", noNews:"За этот период новых релизов нет.", drvLatest:"Новые драйверы GPU", drvComponents:"Компоненты (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} шт.", about:"О проекте", language:"Язык", license:"Лицензия", created:"Создан", lastPush:"Последний коммит", topics:"Темы", perRelease:"Загрузок на релиз", oldest:"старые", newest:"новые", viewRepo:"Репозиторий", website:"Сайт", download:"Скачать", notes:"Примечания к релизу", files:"Файлы", showOnGithub:"Открыть на GitHub", ago:"{t} назад", footer:"Данные из публичных релизов GitHub, обновляются каждый час.", onlineNow:"Сейчас онлайн", totalVisits:"Всего посещений", visitors:"Посетители по странам", visitorsSub:"Откуда открывают эту страницу", visits:"Посещения", other:"Другие", mapError:"Не удалось загрузить карту посетителей." },
+  it: { dlMap:"Mappa dei download", dlMapSub:"Ogni progetto in proporzione ai download totali, raggruppato per categoria", dlMapSub14:"Ogni progetto in proporzione ai download degli ultimi 14 giorni, raggruppato per categoria", modeAll:"Da sempre", mode14:"Ultimi 14 giorni", kGain:"Download, ultimi 14 giorni", gainLabel:"download negli ultimi 14 giorni", allTime:"Da sempre", noTrend:"Storico insufficiente", cGain:"Di tendenza: ultimi 14 giorni", cGainSub:"Top 15 progetti per download negli ultimi 14 giorni", cDaily:"Download giornalieri", cDailySub:"Tutti i progetti, ultimi 30 giorni", col14:"14 giorni", dailyGain:"Download giornalieri, ultimi 14 giorni", copyLink:"Copia link", copied:"Copiato", age:"Età del repository", sOldest:"Repository più vecchi", sNewest:"Repository più recenti", brand:"Classifica emulatori", tabRanking:"Classifica", tabInsights:"Statistiche", tabNews:"Nuove release", tabDrivers:"Driver e componenti", heroTitle:"Emulatori Android in classifica", heroSub:"Download dalle release GitHub, più stelle, fork e osservatori di ogni progetto.", updated:"Aggiornato {t}", kProjects:"Progetti", kDownloads:"Download totali", kStars:"Stelle GitHub", kWeek:"Release questa settimana", search:"Cerca progetti o autori", sDownloads:"Più scaricati", sStars:"Più stelle", sForks:"Più fork", sWatchers:"Più osservatori", sLatest:"Release più recente", sActive:"Attività recente", sName:"Nome (A–Z)", all:"Tutti", downloads:"download", stars:"Stelle", forks:"Fork", watchers:"Osservatori", issues:"Issue aperte", releases:"Release", latest:"Ultima", noReleases:"Ancora nessuna release", unavailable:"Repository non disponibile", archived:"Archiviato", prerelease:"Pre-release", shareOf:"{p}% di {c}", noResults:"Nessun progetto corrisponde.", project:"Progetto", category:"Categoria", latestRelease:"Ultima release", cTop:"I più scaricati", cTopSub:"Top 15 progetti per download", cCat:"Download per categoria", cCatSub:"Quota dei download conteggiati", cStars:"I più stellati", cStarsSub:"Top 10 repository per stelle", cScatter:"Popolarità e community", cScatterSub:"Download rispetto alle stelle (scala log). Dimensione = fork.", cAvg:"Download per release", cAvgSub:"Media per release, top 10", cActive:"Attività delle release", cActiveSub:"Release a settimana, ultime 12 settimane", d7:"7 giorni", d14:"14 giorni", d30:"30 giorni", noNews:"Nessuna nuova release in questo periodo.", drvLatest:"Driver GPU più recenti", drvComponents:"Componenti (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} elementi", about:"Informazioni", language:"Linguaggio", license:"Licenza", created:"Creato", lastPush:"Ultimo commit", topics:"Argomenti", perRelease:"Download per release", oldest:"vecchie", newest:"recenti", viewRepo:"Repository", website:"Sito web", download:"Scarica", notes:"Note di rilascio", files:"File", showOnGithub:"Vedi su GitHub", ago:"{t} fa", footer:"Dati dalle release pubbliche di GitHub, aggiornati ogni ora.", onlineNow:"Online ora", totalVisits:"Visite totali", visitors:"Visitatori per paese", visitorsSub:"Da dove viene aperta questa pagina", visits:"Visite", other:"Altri", mapError:"Impossibile caricare la mappa dei visitatori." },
+  hi: { dlMap:"डाउनलोड मैप", dlMapSub:"हर प्रोजेक्ट का आकार उसके कुल डाउनलोड के अनुसार, श्रेणी के हिसाब से", dlMapSub14:"हर प्रोजेक्ट का आकार पिछले 14 दिनों के डाउनलोड के अनुसार, श्रेणी के हिसाब से", modeAll:"अब तक", mode14:"पिछले 14 दिन", kGain:"डाउनलोड, पिछले 14 दिन", gainLabel:"डाउनलोड (पिछले 14 दिन)", allTime:"अब तक", noTrend:"पर्याप्त इतिहास नहीं", cGain:"ट्रेंडिंग: पिछले 14 दिन", cGainSub:"पिछले 14 दिनों के डाउनलोड के हिसाब से शीर्ष 15", cDaily:"रोज़ाना डाउनलोड", cDailySub:"सभी प्रोजेक्ट मिलाकर, पिछले 30 दिन", col14:"14 दिन", dailyGain:"रोज़ाना डाउनलोड, पिछले 14 दिन", copyLink:"लिंक कॉपी करें", copied:"कॉपी हो गया", age:"रिपॉज़िटरी की उम्र", sOldest:"सबसे पुराने रिपॉज़िटरी", sNewest:"सबसे नए रिपॉज़िटरी", brand:"एमुलेटर रैंकिंग", tabRanking:"रैंकिंग", tabInsights:"विश्लेषण", tabNews:"नई रिलीज़", tabDrivers:"ड्राइवर और कंपोनेंट", heroTitle:"Android एमुलेटर, रैंक किए गए", heroSub:"GitHub रिलीज़ के डाउनलोड, साथ ही हर प्रोजेक्ट के स्टार, फ़ोर्क और वॉचर।", updated:"{t} अपडेट हुआ", kProjects:"प्रोजेक्ट", kDownloads:"कुल डाउनलोड", kStars:"GitHub स्टार", kWeek:"इस हफ़्ते की रिलीज़", search:"प्रोजेक्ट या लेखक खोजें", sDownloads:"सबसे ज़्यादा डाउनलोड", sStars:"सबसे ज़्यादा स्टार", sForks:"सबसे ज़्यादा फ़ोर्क", sWatchers:"सबसे ज़्यादा वॉचर", sLatest:"नवीनतम रिलीज़", sActive:"हाल में सक्रिय", sName:"नाम (A–Z)", all:"सभी", downloads:"डाउनलोड", stars:"स्टार", forks:"फ़ोर्क", watchers:"वॉचर", issues:"खुले इश्यू", releases:"रिलीज़", latest:"नवीनतम", noReleases:"अभी कोई रिलीज़ नहीं", unavailable:"रिपॉज़िटरी उपलब्ध नहीं", archived:"आर्काइव किया गया", prerelease:"प्री-रिलीज़", shareOf:"{c} का {p}%", noResults:"कोई प्रोजेक्ट नहीं मिला।", project:"प्रोजेक्ट", category:"श्रेणी", latestRelease:"नवीनतम रिलीज़", cTop:"सबसे ज़्यादा डाउनलोड", cTopSub:"कुल डाउनलोड के हिसाब से शीर्ष 15", cCat:"श्रेणी के हिसाब से डाउनलोड", cCatSub:"गिने गए डाउनलोड में हिस्सा", cStars:"सबसे ज़्यादा स्टार", cStarsSub:"स्टार के हिसाब से शीर्ष 10 रिपॉज़िटरी", cScatter:"लोकप्रियता बनाम समुदाय", cScatterSub:"डाउनलोड बनाम स्टार (लॉग स्केल)। आकार = फ़ोर्क।", cAvg:"प्रति रिलीज़ डाउनलोड", cAvgSub:"प्रति रिलीज़ औसत, शीर्ष 10", cActive:"रिलीज़ गतिविधि", cActiveSub:"पिछले 12 हफ़्तों में हर हफ़्ते की रिलीज़", d7:"7 दिन", d14:"14 दिन", d30:"30 दिन", noNews:"इस अवधि में कोई नई रिलीज़ नहीं।", drvLatest:"नवीनतम GPU ड्राइवर", drvComponents:"कंपोनेंट (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} आइटम", about:"परिचय", language:"भाषा", license:"लाइसेंस", created:"बनाया गया", lastPush:"आख़िरी कमिट", topics:"विषय", perRelease:"प्रति रिलीज़ डाउनलोड", oldest:"पुरानी", newest:"नई", viewRepo:"रिपॉज़िटरी", website:"वेबसाइट", download:"डाउनलोड करें", notes:"रिलीज़ नोट्स", files:"फ़ाइलें", showOnGithub:"GitHub पर देखें", ago:"{t} पहले", footer:"सार्वजनिक GitHub रिलीज़ से डेटा, हर घंटे अपडेट।", onlineNow:"अभी ऑनलाइन", totalVisits:"कुल विज़िट", visitors:"देश के हिसाब से विज़िटर", visitorsSub:"यह पेज कहाँ से खोला जाता है", visits:"विज़िट", other:"अन्य", mapError:"विज़िटर मैप लोड नहीं हो सका।" },
+  ar: { dlMap:"خريطة التنزيلات", dlMapSub:"حجم كل مشروع بحسب إجمالي تنزيلاته، مجمّعة حسب الفئة", dlMapSub14:"حجم كل مشروع بحسب تنزيلاته في آخر 14 يومًا، مجمّعة حسب الفئة", modeAll:"كل الأوقات", mode14:"آخر 14 يومًا", kGain:"التنزيلات، آخر 14 يومًا", gainLabel:"تنزيل خلال آخر 14 يومًا", allTime:"كل الأوقات", noTrend:"لا يوجد سجل كافٍ بعد", cGain:"الأكثر رواجًا: آخر 14 يومًا", cGainSub:"أعلى 15 مشروعًا حسب التنزيلات في آخر 14 يومًا", cDaily:"التنزيلات اليومية", cDailySub:"جميع المشاريع، آخر 30 يومًا", col14:"14 يومًا", dailyGain:"التنزيلات اليومية، آخر 14 يومًا", copyLink:"نسخ الرابط", copied:"تم النسخ", age:"عمر المستودع", sOldest:"أقدم المستودعات", sNewest:"أحدث المستودعات", brand:"ترتيب المحاكيات", tabRanking:"الترتيب", tabInsights:"الإحصاءات", tabNews:"إصدارات جديدة", tabDrivers:"التعريفات والمكوّنات", heroTitle:"ترتيب محاكيات أندرويد", heroSub:"تنزيلات إصدارات GitHub، إضافةً إلى النجوم والتفرعات والمتابعين لكل مشروع.", updated:"آخر تحديث {t}", kProjects:"المشاريع", kDownloads:"إجمالي التنزيلات", kStars:"نجوم GitHub", kWeek:"إصدارات هذا الأسبوع", search:"ابحث عن مشروع أو مطوّر", sDownloads:"الأكثر تنزيلًا", sStars:"الأكثر نجومًا", sForks:"الأكثر تفرعًا", sWatchers:"الأكثر متابعة", sLatest:"أحدث إصدار", sActive:"النشاط الأخير", sName:"الاسم (A–Z)", all:"الكل", downloads:"تنزيل", stars:"النجوم", forks:"التفرعات", watchers:"المتابعون", issues:"المشكلات المفتوحة", releases:"الإصدارات", latest:"الأحدث", noReleases:"لا توجد إصدارات بعد", unavailable:"المستودع غير متاح", archived:"مؤرشف", prerelease:"إصدار تجريبي", shareOf:"{p}% من {c}", noResults:"لا توجد مشاريع مطابقة.", project:"المشروع", category:"الفئة", latestRelease:"أحدث إصدار", cTop:"الأكثر تنزيلًا", cTopSub:"أعلى 15 مشروعًا حسب التنزيلات", cCat:"التنزيلات حسب الفئة", cCatSub:"الحصة من جميع التنزيلات المحسوبة", cStars:"الأكثر نجومًا", cStarsSub:"أعلى 10 مستودعات حسب النجوم", cScatter:"الشعبية مقابل المجتمع", cScatterSub:"التنزيلات مقابل النجوم (مقياس لوغاريتمي). الحجم = التفرعات.", cAvg:"التنزيلات لكل إصدار", cAvgSub:"المتوسط لكل إصدار، أعلى 10", cActive:"نشاط الإصدارات", cActiveSub:"الإصدارات أسبوعيًا خلال آخر 12 أسبوعًا", d7:"7 أيام", d14:"14 يومًا", d30:"30 يومًا", noNews:"لا توجد إصدارات جديدة في هذه الفترة.", drvLatest:"أحدث تعريفات GPU", drvComponents:"المكوّنات (Wine وBox64 وDXVK وVKD3D وFEX)", items:"{n} عنصر", about:"نبذة", language:"اللغة", license:"الترخيص", created:"تاريخ الإنشاء", lastPush:"آخر إيداع", topics:"المواضيع", perRelease:"التنزيلات لكل إصدار", oldest:"الأقدم", newest:"الأحدث", viewRepo:"المستودع", website:"الموقع", download:"تنزيل", notes:"ملاحظات الإصدار", files:"الملفات", showOnGithub:"عرض على GitHub", ago:"منذ {t}", footer:"بيانات من إصدارات GitHub العامة، تُحدَّث كل ساعة.", onlineNow:"متصل الآن", totalVisits:"إجمالي الزيارات", visitors:"الزوار حسب الدولة", visitorsSub:"من أين تُفتح هذه الصفحة", visits:"الزيارات", other:"أخرى", mapError:"تعذّر تحميل خريطة الزوار." },
+  he: { dlMap:"מפת הורדות", dlMapSub:"גודל כל פרויקט לפי סך ההורדות שלו, מקובץ לפי קטגוריה", dlMapSub14:"גודל כל פרויקט לפי ההורדות שלו ב-14 הימים האחרונים, מקובץ לפי קטגוריה", modeAll:"מאז ומעולם", mode14:"14 הימים האחרונים", kGain:"הורדות, 14 הימים האחרונים", gainLabel:"הורדות ב-14 הימים האחרונים", allTime:"מאז ומעולם", noTrend:"אין עדיין מספיק היסטוריה", cGain:"במגמה: 14 הימים האחרונים", cGainSub:"15 הפרויקטים המובילים לפי הורדות ב-14 הימים האחרונים", cDaily:"הורדות יומיות", cDailySub:"כל הפרויקטים יחד, 30 הימים האחרונים", col14:"14 ימים", dailyGain:"הורדות יומיות, 14 הימים האחרונים", copyLink:"העתקת קישור", copied:"הועתק", age:"גיל המאגר", sOldest:"המאגרים הוותיקים", sNewest:"המאגרים החדשים", brand:"דירוג אמולטורים", tabRanking:"דירוג", tabInsights:"תובנות", tabNews:"גרסאות חדשות", tabDrivers:"דרייברים ורכיבים", heroTitle:"אמולטורים לאנדרואיד, מדורגים", heroSub:"הורדות מגרסאות GitHub, וגם כוכבים, פיצולים ועוקבים לכל פרויקט.", updated:"עודכן {t}", kProjects:"פרויקטים", kDownloads:"סה״כ הורדות", kStars:"כוכבים ב-GitHub", kWeek:"גרסאות השבוע", search:"חיפוש פרויקטים או מפתחים", sDownloads:"הכי הרבה הורדות", sStars:"הכי הרבה כוכבים", sForks:"הכי הרבה פיצולים", sWatchers:"הכי הרבה עוקבים", sLatest:"הגרסה האחרונה", sActive:"פעילות אחרונה", sName:"שם (A–Z)", all:"הכול", downloads:"הורדות", stars:"כוכבים", forks:"פיצולים", watchers:"עוקבים", issues:"בעיות פתוחות", releases:"גרסאות", latest:"אחרונה", noReleases:"עדיין אין גרסאות", unavailable:"המאגר אינו זמין", archived:"בארכיון", prerelease:"גרסה מקדימה", shareOf:"{p}% מתוך {c}", noResults:"לא נמצאו פרויקטים מתאימים.", project:"פרויקט", category:"קטגוריה", latestRelease:"הגרסה האחרונה", cTop:"הכי הרבה הורדות", cTopSub:"15 הפרויקטים המובילים לפי הורדות", cCat:"הורדות לפי קטגוריה", cCatSub:"החלק מכלל ההורדות שנספרו", cStars:"הכי הרבה כוכבים", cStarsSub:"10 המאגרים המובילים לפי כוכבים", cScatter:"פופולריות מול קהילה", cScatterSub:"הורדות מול כוכבים (סקאלה לוגריתמית). גודל = פיצולים.", cAvg:"הורדות לגרסה", cAvgSub:"ממוצע לגרסה, 10 המובילים", cActive:"פעילות גרסאות", cActiveSub:"גרסאות בשבוע ב-12 השבועות האחרונים", d7:"7 ימים", d14:"14 ימים", d30:"30 ימים", noNews:"אין גרסאות חדשות בתקופה זו.", drvLatest:"דרייברי GPU אחרונים", drvComponents:"רכיבים (Wine, Box64, DXVK, VKD3D, FEX)", items:"{n} פריטים", about:"אודות", language:"שפה", license:"רישיון", created:"נוצר", lastPush:"קומיט אחרון", topics:"נושאים", perRelease:"הורדות לגרסה", oldest:"ישנות", newest:"חדשות", viewRepo:"מאגר", website:"אתר", download:"הורדה", notes:"הערות גרסה", files:"קבצים", showOnGithub:"צפייה ב-GitHub", ago:"לפני {t}", footer:"נתונים מגרסאות GitHub ציבוריות, מתעדכנים כל שעה.", onlineNow:"מחוברים כעת", totalVisits:"סה״כ ביקורים", visitors:"מבקרים לפי מדינה", visitorsSub:"מאיפה פותחים את הדף הזה", visits:"ביקורים", other:"אחרות", mapError:"לא ניתן לטעון את מפת המבקרים." },
 };
 let lang = store.get("rank.lang") || (() => {
   const n = (navigator.language || "en");
@@ -583,16 +770,32 @@ function owner(p) { return (p.repo || "").split("/")[0]; }
 
 function prepare(raw) {
   DATA = raw;
-  const catTotals = {};
-  for (const p of raw.results) catTotals[p.category] = (catTotals[p.category] || 0) + (p.downloads || 0);
   // Repos GitHub no longer serves (deleted, or blocked for legal reasons) are left out.
   raw.results = raw.results.filter(p => p.repoStats);
+  const catTotals = {};
+  for (const p of raw.results) catTotals[p.category] = (catTotals[p.category] || 0) + (p.downloads || 0);
+  const H = raw.history || { days: [], totals: {} };
+  const now = raw.updatedAt ? +new Date(raw.updatedAt) : Date.now();
+  const startDay = new Date(now - 14 * 864e5).toISOString().slice(0, 10);
+  // Baseline = the last daily snapshot taken on or before the start of the window.
+  const baseDay = [...H.days].reverse().find(d => d <= startDay) || null;
+  const windowDays = H.days.filter(d => d > (baseDay || startDay));
   P = raw.results.map(p => {
     const s = p.repoStats || null;
     const latest = (p.releases || [])[0] || null;
     const releaseCount = p.releaseCount ?? (p.releases || []).length;
     const releaseDownloads = p.releaseDownloads ?? (p.releases || []).slice(0, 24).map(r => r.downloads);
-    return { ...p, s, latest, releaseCount, releaseDownloads,
+    const tot = H.totals[p.repo] || {};
+    let gain14 = null, daily = [];
+    if (baseDay && tot[baseDay] != null) {
+      gain14 = Math.max(0, (p.downloads || 0) - tot[baseDay]);
+      let prev = tot[baseDay];
+      for (const d of windowDays) { if (tot[d] == null) continue; daily.push(Math.max(0, tot[d] - prev)); prev = tot[d]; }
+    } else if ((p.releases || []).length && (p.oldestRelease || p.releases[p.releases.length - 1].date || "").slice(0, 10) > startDay) {
+      // Not tracked 14 days ago, but every counted release is newer than that: all its downloads are in the window.
+      gain14 = p.downloads || 0;
+    }
+    return { ...p, s, latest, releaseCount, releaseDownloads, gain14, daily,
       stars: s ? s.stars : -1, forks: s ? s.forks : -1, watchers: s ? s.watchers : -1,
       age: s && s.createdAt ? Date.now() - new Date(s.createdAt) : -1,
       latestDate: latest ? +new Date(latest.date) : 0, pushed: s && s.pushedAt ? +new Date(s.pushedAt) : 0,
@@ -600,12 +803,14 @@ function prepare(raw) {
   });
   const byDl = [...P].sort((a, b) => b.downloads - a.downloads);
   byDl.forEach((p, i) => p.rank = i + 1);
+  [...P].sort((a, b) => (b.gain14 ?? -1) - (a.gain14 ?? -1)).forEach((p, i) => p.rank14 = i + 1);
+  DATA.dailyAll = H.days.slice(1).map((d, i) => ({ d, v: Object.values(H.totals).reduce((n, t) => n + (t[d] != null && t[H.days[i]] != null ? Math.max(0, t[d] - t[H.days[i]]) : 0), 0) }));
 }
 
 // ── State ──────────────────────────────────────────────
-const state = { tab: "ranking", q: "", cat: "all", sort: store.get("rank.sort") || "downloads", view: store.get("rank.view") || "cards", tableSort: null, days: 7 };
+const state = { mode: store.get("rank.mode") === "14d" ? "14d" : "all", tab: "ranking", q: "", cat: "all", sort: store.get("rank.sort") || "downloads", view: store.get("rank.view") || "cards", tableSort: null, days: 7 };
 const SORTS = {
-  downloads: (a, b) => b.downloads - a.downloads, stars: (a, b) => b.stars - a.stars, forks: (a, b) => b.forks - a.forks,
+  downloads: (a, b) => state.mode === "14d" ? (b.gain14 ?? -1) - (a.gain14 ?? -1) || b.downloads - a.downloads : b.downloads - a.downloads, stars: (a, b) => b.stars - a.stars, forks: (a, b) => b.forks - a.forks,
   watchers: (a, b) => b.watchers - a.watchers, latest: (a, b) => b.latestDate - a.latestDate, active: (a, b) => b.pushed - a.pushed,
   name: (a, b) => a.name.localeCompare(b.name, lang),
   oldest: (a, b) => b.age - a.age, newest: (a, b) => (a.age < 0) - (b.age < 0) || a.age - b.age,
@@ -619,11 +824,11 @@ function filtered() {
 const swap = fn => (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) ? document.startViewTransition(fn) : fn();
 
 // ── Rendering: rankings ────────────────────────────────
-function sparkSVG(values) {
-  const v = (values || []).slice(0, 16).reverse();
+function sparkSVG(values, oldestFirst = false, cls = "") {
+  const v = oldestFirst ? (values || []).slice(-16) : (values || []).slice(0, 16).reverse();
   if (v.length < 2) return "";
   const max = Math.max(...v, 1), w = 120, h = 34, gap = 2, bw = (w - gap * (v.length - 1)) / v.length;
-  return `<svg class="spark" viewBox="0 0 ${w} ${h}" aria-hidden="true">${v.map((x, i) => {
+  return `<svg class="spark ${cls}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${v.map((x, i) => {
     const bh = Math.max(2, (x / max) * h); return `<rect x="${(i * (bw + gap)).toFixed(1)}" y="${(h - bh).toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="1.5"/>`; }).join("")}</svg>`;
 }
 function statusBadge(p) {
@@ -635,28 +840,31 @@ function metricHTML(icon, val, label) {
   return `<span class="metric" title="${esc(label)}">${icon}<b class="num">${val < 0 ? "–" : fmtc(val)}</b></span>`;
 }
 function cardHTML(p, i) {
-  const rk = state.sort === "downloads" && state.cat === "all" && !state.q ? p.rank : i + 1;
+  const trend = state.mode === "14d";
+  const rk = state.sort === "downloads" && state.cat === "all" && !state.q ? (trend ? p.rank14 : p.rank) : i + 1;
   const desc = p.s && p.s.description ? esc(p.s.description) : `<span style="opacity:.7">${esc(p.repo)}</span>`;
-  return `<article class="card" tabindex="0" data-repo="${esc(p.repo)}" style="view-transition-name:c${P.indexOf(p)};animation-delay:${Math.min(i, 12) * 25}ms">
+  return `<article class="card${rk <= 3 && state.sort === "downloads" && state.cat === "all" && !state.q ? " top" + rk : ""}" tabindex="0" data-repo="${esc(p.repo)}" style="view-transition-name:c${P.indexOf(p)};animation-delay:${Math.min(i, 12) * 25}ms">
     <div class="card-head">
       <div class="rank r${rk}">${rk}</div>${logoHTML(p)}
       <div class="title"><h3>${esc(p.name)}</h3><div class="repo">${esc(p.repo)}</div></div>
       <span class="badge accent">${esc(p.category)}</span>
     </div>
     <p class="desc" dir="auto">${desc}</p>
-    <div class="dl-row"><div><div class="dl-big num">${fmt(p.downloads)}</div><div class="dl-label">${t("downloads")}</div></div>${sparkSVG(p.releaseDownloads)}</div>
+    <div class="dl-row">${trend
+      ? `<div><div class="dl-big num${p.gain14 ? " up" : ""}">${p.gain14 == null ? "–" : "+" + fmt(p.gain14)}</div><div class="dl-label">${p.gain14 == null ? t("noTrend") : t("gainLabel")}</div><div class="dl-sub">${t("allTime")}: <b class="num">${fmtc(p.downloads)}</b></div></div>${sparkSVG(p.daily, true, "up")}`
+      : `<div><div class="dl-big num">${fmt(p.downloads)}</div><div class="dl-label">${t("downloads")}</div></div>${sparkSVG(p.releaseDownloads)}`}</div>
     <div class="share" title="${esc(t("shareOf", { p: (p.catShare * 100).toFixed(1), c: p.category }))}"><i style="width:${Math.max(1.5, p.catShare * 100).toFixed(1)}%"></i></div>
     <div class="metrics">${metricHTML(ICON.star, p.stars, t("stars"))}${metricHTML(ICON.fork, p.forks, t("forks"))}${metricHTML(ICON.eye, p.watchers, t("watchers"))}<span class="metric" title="${esc(t("age"))}${p.s && p.s.createdAt ? " · " + esc(dateFmt(p.s.createdAt)) : ""}">${ICON.cal}<b class="num">${ageShort(p.age)}</b></span></div>
     <div class="card-foot"><span class="tag">${p.latest ? `${t("latest")}: <span class="mono">${esc(p.latest.tag || p.latest.name)}</span> · ${rel(p.latest.date)}` : t("noReleases")}</span>${statusBadge(p)}</div>
   </article>`;
 }
 function tableHTML(list) {
-  const cols = [["#", "rank", 1], [t("project"), "name"], [t("category"), "category"], [t("downloads"), "downloads", 1], [t("stars"), "stars", 1], [t("forks"), "forks", 1], [t("watchers"), "watchers", 1], [t("age"), "age", 1], [t("latestRelease"), "latestDate", 1]];
+  const cols = [["#", "rank", 1], [t("project"), "name"], [t("category"), "category"], [t("downloads"), "downloads", 1], [t("col14"), "gain", 1], [t("stars"), "stars", 1], [t("forks"), "forks", 1], [t("watchers"), "watchers", 1], [t("age"), "age", 1], [t("latestRelease"), "latestDate", 1]];
   return `<div class="table-wrap"><table><thead><tr>${cols.map(([l, k, r]) => `<th class="${r ? "r" : ""}" data-k="${k}">${esc(l)}</th>`).join("")}</tr></thead><tbody>${
     list.map((p, i) => `<tr data-repo="${esc(p.repo)}"><td class="r num">${i + 1}</td>
       <td><div class="proj">${logoHTML(p)}<div><b>${esc(p.name)}</b><div style="font-size:12px;color:var(--text-3)">${esc(p.repo)}</div></div></div></td>
       <td><span class="badge">${esc(p.category)}</span></td>
-      <td class="r num"><b>${fmt(p.downloads)}</b></td>
+      <td class="r num"><b>${fmt(p.downloads)}</b></td><td class="r num" style="color:var(--up)">${p.gain14 == null ? "–" : "+" + fmt(p.gain14)}</td>
       <td class="r num">${p.stars < 0 ? "–" : fmt(p.stars)}</td><td class="r num">${p.forks < 0 ? "–" : fmt(p.forks)}</td><td class="r num">${p.watchers < 0 ? "–" : fmt(p.watchers)}</td><td class="r num" title="${p.s && p.s.createdAt ? esc(dateFmt(p.s.createdAt)) : ""}">${ageShort(p.age)}</td>
       <td class="r">${p.latest ? `<span class="mono">${esc((p.latest.tag || "").slice(0, 24))}</span> <span style="color:var(--text-3)">· ${rel(p.latest.date)}</span>` : "–"}</td></tr>`).join("")
   }</tbody></table></div>`;
@@ -679,7 +887,8 @@ function renderKPIs() {
   const weekCount = P.reduce((n, p) => n + (p.releases || []).filter(r => +new Date(r.date) >= week).length, 0);
   const set = (id, v) => document.getElementById(id).textContent = v;
   set("kProjects", fmt(P.length)); set("kDownloads", fmtc(P.reduce((n, p) => n + (p.downloads || 0), 0)));
-  set("kStars", fmtc(P.reduce((n, p) => n + Math.max(0, p.stars), 0))); set("kWeek", fmt(weekCount));
+  set("kStars", fmtc(P.reduce((n, p) => n + Math.max(0, p.stars), 0)));
+  set("kGain", "+" + fmtc(P.reduce((n, p) => n + Math.max(0, p.gain14 || 0), 0)));
   document.getElementById("updated").textContent = t("updated", { t: rel(DATA.updatedAt) });
   const recent = Date.now() - 7 * 864e5;
   const n = P.filter(p => p.category !== "Drivers").reduce((c, p) => c + (p.releases || []).filter(r => +new Date(r.date) >= recent && appRelease(p, r)).length, 0);
@@ -724,6 +933,14 @@ function renderCharts() {
   const narrow = innerWidth < 600, short = s => narrow && s.length > 14 ? s.slice(0, 13) + "…" : s;
   const yTicks = { callback(v) { return short(this.getLabelForValue(v)); } };
   const tip = { backgroundColor: cssVar("--text"), titleColor: surface, bodyColor: surface, padding: 10, cornerRadius: 8, displayColors: false };
+  const up = cssVar("--up");
+  const g = P.filter(p => p.gain14 > 0).sort((a, b) => b.gain14 - a.gain14).slice(0, 15);
+  charts.push(new Chart(cGain, { type: "bar", data: { labels: g.map(p => p.name), datasets: [{ data: g.map(p => p.gain14), backgroundColor: up, borderRadius: 6, maxBarThickness: 22 }] },
+    options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { ...tip, callbacks: { title: c => c[0].label, label: c => "+" + fmt(c.raw) + " " + t("downloads") } } },
+      scales: { x: { ticks: { callback: v => fmtc(v) }, grid: { color: grid } }, y: { grid: { display: false }, ticks: yTicks } } } }));
+  const da = DATA.dailyAll || [];
+  charts.push(new Chart(cDaily, { type: "line", data: { labels: da.map(x => dateFmt(x.d + "T12:00:00Z")), datasets: [{ data: da.map(x => x.v), borderColor: accent, backgroundColor: `color-mix(in srgb, ${accent} 16%, transparent)`, fill: true, tension: .3, pointRadius: 2, pointBackgroundColor: accent }] },
+    options: { maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { ...tip, callbacks: { label: c => fmt(c.raw) + " " + t("downloads") } } }, scales: { y: { beginAtZero: true, ticks: { callback: v => fmtc(v) } }, x: { grid: { display: false }, ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 7 } } } } }));
   const top = [...P].sort((a, b) => b.downloads - a.downloads).slice(0, 15);
   charts.push(new Chart(cTop, { type: "bar", data: { labels: top.map(p => p.name), datasets: [{ data: top.map(p => p.downloads), backgroundColor: accent, borderRadius: 6, maxBarThickness: 22 }] },
     options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { ...tip, callbacks: { title: c => c[0].label, label: c => fmt(c.raw) + " " + t("downloads") } } },
@@ -753,48 +970,50 @@ function renderCharts() {
     options: { maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: tip }, scales: { y: { beginAtZero: true, ticks: { precision: 0 } }, x: { grid: { display: false }, ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 6 } } } } }));
 }
 
-// ── Visitors (same counters as the previous page, so totals carry over) ──
-const IS_PREVIEW = !!(document.getElementById("preview-data").textContent.trim().startsWith("{"));
-const CORS_PROXY = "https://api.codetabs.com/v1/proxy?quest=";
-const COUNTER = "https://api.counterapi.dev/v1/";
-const VISITOR_NS = "ranking-v-map-v2", HITS_NS = "ranking-emul-hub-v2";
-const MAP_COUNTRIES = ["BR","US","ES","FR","DE","IT","PT","GB","AR","MX","CL","CO","PE","RU","CN","JP","KR","IN"];
-const viaProxy = u => fetch(CORS_PROXY + encodeURIComponent(u)).then(r => r.json());
-let visitorStats = null, mapInstance = null;
-async function trackVisitor() {
-  if (IS_PREVIEW) return;
-  try {
-    const g = await (await fetch("https://ipapi.co/json/")).json();
-    if (g.country_code) await viaProxy(`${COUNTER}${VISITOR_NS}/${g.country_code}/up`);
-  } catch {
-    try { const g = await viaProxy("https://freeipapi.com/api/json"); if (g.countryCode) await viaProxy(`${COUNTER}${VISITOR_NS}/${g.countryCode}/up`); } catch {}
+// ── Download map (squarified treemap) ──────────────────
+function squarify(items, x, y, w, h) {
+  // items: [{v, ...}] sorted descending; returns items with rect {x,y,w,h}
+  const out = [], total = items.reduce((n, i) => n + i.v, 0);
+  if (!total || w <= 0 || h <= 0) return out;
+  let rest = items.map(i => ({ ...i, a: i.v / total * w * h }));
+  while (rest.length) {
+    const short = Math.min(w, h); let row = [rest[0]], i = 1;
+    const worst = r => { const s = r.reduce((n, x) => n + x.a, 0), mx = Math.max(...r.map(x => x.a)), mn = Math.min(...r.map(x => x.a)); return Math.max(short * short * mx / (s * s), (s * s) / (short * short * mn)); };
+    while (i < rest.length && worst([...row, rest[i]]) <= worst(row)) row.push(rest[i++]);
+    const s = row.reduce((n, r) => n + r.a, 0), thick = s / short;
+    let off = 0;
+    for (const r of row) { const len = r.a / thick;
+      out.push(w >= h ? { ...r, x, y: y + off, w: thick, h: len } : { ...r, x: x + off, y, w: len, h: thick }); off += len; }
+    if (w >= h) { x += thick; w -= thick; } else { y += thick; h -= thick; }
+    rest = rest.slice(row.length);
   }
+  return out;
 }
-function loadCounters() {
-  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-  const d = new Date(), win = `${d.getFullYear()}${d.getMonth() + 1}${d.getDate()}-${d.getHours()}${Math.floor(d.getMinutes() / 5) * 5}`;
-  // Both counters are incremented only by the live page; a preview just reads.
-  const verb = IS_PREVIEW ? "" : "/up";
-  viaProxy(`${COUNTER}${HITS_NS}/online-${win}${verb}`).then(j => set("onlineNow", fmt(j.count || j.value || 1))).catch(() => set("onlineNow", "1"));
-  viaProxy(`${COUNTER}${HITS_NS}/total-hits${verb}`).then(j => set("totalVisits", fmt(parseInt(j.count || j.value) || 0))).catch(() => set("totalVisits", "–"));
-}
-async function renderVisitorMap() {
-  const el = document.getElementById("visitorMap");
-  if (!el || !window.jsVectorMap) return;
-  if (!visitorStats) {
-    visitorStats = {};
-    await Promise.all(MAP_COUNTRIES.map(async c => { try { const j = await viaProxy(`${COUNTER}${VISITOR_NS}/${c}`); const n = parseInt(j && j.count) || 0; if (n > 0) visitorStats[c] = n; } catch {} }));
+function renderTreemap() {
+  const el = document.getElementById("treemap"); if (!el) return;
+  const trend = state.mode === "14d";
+  document.getElementById("dlMapSub").textContent = t(trend ? "dlMapSub14" : "dlMapSub");
+  const val = p => trend ? (p.gain14 || 0) : (p.downloads || 0);
+  const W = el.clientWidth, H = el.clientHeight;
+  const cats = {};
+  P.forEach(p => { if (val(p) > 0) (cats[p.category] = cats[p.category] || []).push(p); });
+  const catItems = Object.entries(cats).map(([c, ps]) => ({ c, ps: ps.sort((a, b) => val(b) - val(a)), v: ps.reduce((n, p) => n + val(p), 0) })).sort((a, b) => b.v - a.v);
+  const max = Math.max(...P.map(val), 1);
+  const accent = cssVar(trend ? "--up" : "--accent"), surface = cssVar("--surface");
+  let html = "";
+  for (const cr of squarify(catItems, 0, 0, W, H)) {
+    const showHead = cr.w > 70 && cr.h > 44;
+    html += `<div class="tm-cat" style="left:${cr.x}px;top:${cr.y}px;width:${cr.w}px;height:${cr.h}px;${showHead ? "" : "padding-top:2px"}">${showHead ? `<b>${esc(cr.c)}</b>` : ""}</div>`;
+    const top = showHead ? 18 : 2;
+    for (const r of squarify(cr.ps.map(p => ({ p, v: val(p) })), cr.x + 2, cr.y + top, cr.w - 4, cr.h - top - 2)) {
+      const k = 45 + 55 * Math.sqrt(r.v / max);   // larger tiles read darker
+      const size = r.w < 46 || r.h < 26 ? "xs" : r.w < 90 || r.h < 44 ? "sm" : "";
+      html += `<div class="tm-tile ${size}" data-repo="${esc(r.p.repo)}" title="${esc(r.p.name)} · ${trend ? "+" : ""}${fmt(r.v)} ${t("downloads")}"
+        style="left:${r.x}px;top:${r.y}px;width:${r.w}px;height:${r.h}px;background:color-mix(in srgb, ${accent} ${k.toFixed(0)}%, ${surface})">
+        <span class="n">${esc(r.p.name)}</span><span class="v num">${trend ? "+" : ""}${fmtc(r.v)}</span></div>`;
+    }
   }
-  try { if (mapInstance && mapInstance.destroy) mapInstance.destroy(); } catch {}
-  el.innerHTML = "";
-  try {
-    mapInstance = new jsVectorMap({
-      selector: "#visitorMap", map: "world_merc", backgroundColor: "transparent", zoomOnScroll: false,
-      regionStyle: { initial: { fill: cssVar("--surface-2"), stroke: cssVar("--border"), strokeWidth: .6, fillOpacity: 1 }, hover: { fillOpacity: .8, cursor: "pointer" } },
-      series: { regions: [{ attribute: "fill", values: visitorStats, scale: [cssVar("--accent-soft"), cssVar("--accent")], normalizeFunction: "polynomial" }] },
-      onRegionTooltipShow(e, tip, code) { tip.text(`<b>${esc(tip.text())}</b><br>${t("visits")}: ${fmt(visitorStats[code] || 0)}`, true); },
-    });
-  } catch (err) { el.innerHTML = `<div class="empty">${t("mapError")}</div>`; }
+  el.innerHTML = html;
 }
 
 // ── Detail sheet ───────────────────────────────────────
@@ -824,13 +1043,16 @@ function openSheet(repo) {
     <div class="stat"><div class="k">${t("watchers")}</div><div class="v num">${s ? fmt(s.watchers) : "–"}</div></div>
     <div class="stat"><div class="k">${t("issues")}</div><div class="v num">${s ? fmt(s.issues) : "–"}</div></div>
     <div class="stat"><div class="k">${t("releases")}</div><div class="v num">${fmt(p.releaseCount)}</div></div>
-    <div class="stat"><div class="k">${t("age")}</div><div class="v num">${ageShort(p.age)}</div></div></div>`);
+    <div class="stat"><div class="k">${t("age")}</div><div class="v num">${ageShort(p.age)}</div></div>
+    <div class="stat hot"><div class="k">${t("col14")}</div><div class="v num">${p.gain14 == null ? "–" : "+" + fmt(p.gain14)}</div></div></div>`);
   if (!s) b.push(`<p><span class="badge warn">${t("unavailable")}</span></p>`);
   if (s && s.description) b.push(`<p dir="auto" style="margin:0;color:var(--text-2)">${esc(s.description)}</p>`);
   if (s) b.push(`<dl class="facts">${s.language ? `<dt>${t("language")}</dt><dd>${esc(s.language)}</dd>` : ""}${s.license && s.license !== "NOASSERTION" ? `<dt>${t("license")}</dt><dd>${esc(s.license)}</dd>` : ""}
     ${s.createdAt ? `<dt>${t("created")}</dt><dd>${dateFmt(s.createdAt)} · ${ageLong(p.age)}</dd>` : ""}${s.pushedAt ? `<dt>${t("lastPush")}</dt><dd>${rel(s.pushedAt)}</dd>` : ""}
     ${s.topics && s.topics.length ? `<dt>${t("topics")}</dt><dd style="display:flex;flex-wrap:wrap;gap:4px">${s.topics.map(x => `<span class="badge">${esc(x)}</span>`).join("")}</dd>` : ""}</dl>`);
   b.push(`<div class="links"><a class="btn" href="${esc(p.repoUrl)}" target="_blank" rel="noopener">${ICON.ext}${t("viewRepo")}</a>${s && s.homepage ? `<a class="btn ghost" href="${esc(s.homepage)}" target="_blank" rel="noopener">${ICON.ext}${t("website")}</a>` : ""}</div>`);
+  if ((p.daily || []).length > 1) { const m = Math.max(...p.daily, 1);
+    b.push(`<div class="section-title">${t("dailyGain")}</div><div class="bars">${p.daily.map(v => `<i style="height:${Math.max(2, v / m * 100)}%;background:var(--up)" title="${fmt(v)}"></i>`).join("")}</div><div class="bars-cap"><span>${t("oldest")}</span><span>${t("newest")}</span></div>`); }
   const rd = (p.releaseDownloads || []).slice(0, 24).reverse();
   if (rd.length > 1) { const m = Math.max(...rd, 1);
     b.push(`<div class="section-title">${t("perRelease")}</div><div class="bars">${rd.map(v => `<i style="height:${Math.max(2, v / m * 100)}%" title="${fmt(v)}"></i>`).join("")}</div><div class="bars-cap"><span>${t("oldest")}</span><span>${t("newest")}</span></div>`); }
@@ -866,19 +1088,26 @@ function applyTheme(th) {
   if (th) document.documentElement.dataset.theme = th; else delete document.documentElement.dataset.theme;
   const dark = th ? th === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
   document.getElementById("ic-moon").hidden = dark; document.getElementById("ic-sun").hidden = !dark;
-  if (state.tab === "insights") { renderCharts(); renderVisitorMap(); }
+  if (state.tab === "insights") { renderCharts(); renderTreemap(); }
 }
 function setTab(tab) {
   state.tab = tab;
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
   for (const id of ["ranking", "insights", "news", "drivers"]) document.getElementById("tab-" + id).hidden = id !== tab;
-  if (tab === "insights") { renderCharts(); renderVisitorMap(); }
+  if (tab === "insights") { renderCharts(); renderTreemap(); }
   if (tab === "news") renderNews();
   if (tab === "drivers") renderDrivers();
   history.replaceState(null, "", "#" + tab);
 }
 function renderAll() { applyI18n(); renderKPIs(); renderChips(); renderList(); if (state.tab !== "ranking") setTab(state.tab); }
 
+function setMode(m, animate = true, initial = false) {
+  state.mode = m; store.set("rank.mode", m);
+  document.querySelectorAll(".mode button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
+  if (initial) return;
+  animate ? swap(renderList) : renderList();
+  if (state.tab === "insights") renderTreemap();
+}
 function bind() {
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
   let qt; document.getElementById("q").addEventListener("input", e => { clearTimeout(qt); qt = setTimeout(() => { state.q = e.target.value; swap(renderList); }, 120); });
@@ -887,15 +1116,19 @@ function bind() {
   document.getElementById("chips").onclick = e => { const c = e.target.closest(".chip"); if (!c) return; state.cat = c.dataset.cat;
     document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === c)); swap(renderList); };
   const setView = (v, animate = true) => { state.view = v; store.set("rank.view", v); document.getElementById("vCards").setAttribute("aria-pressed", v === "cards"); document.getElementById("vTable").setAttribute("aria-pressed", v === "table"); animate ? swap(renderList) : renderList(); };
+  document.querySelectorAll(".mode").forEach(g => g.onclick = e => { const b = e.target.closest("button"); if (b) setMode(b.dataset.mode); });
+  setMode(state.mode, false, true);
   document.getElementById("vCards").onclick = () => setView("cards"); document.getElementById("vTable").onclick = () => setView("table");
   setView(state.view, false);
   document.getElementById("list").addEventListener("click", e => {
     const th = e.target.closest("th[data-k]");
-    if (th) { const k = th.dataset.k; const map = { rank: "downloads", name: "name", category: "name", downloads: "downloads", stars: "stars", forks: "forks", watchers: "watchers", age: "oldest", latestDate: "latest" };
+    if (th) { const k = th.dataset.k; const map = { rank: "downloads", name: "name", category: "name", downloads: "downloads", stars: "stars", forks: "forks", watchers: "watchers", age: "oldest", latestDate: "latest", gain: "downloads" };
+      if (k === "gain") setMode("14d", false); else if (k === "downloads") setMode("all", false);
       state.sort = map[k] || "downloads"; sortEl.value = state.sort; store.set("rank.sort", state.sort); swap(renderList); return; }
     const it = e.target.closest("[data-repo]"); if (it) openSheet(it.dataset.repo);
   });
   document.getElementById("list").addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.matches(".card")) { e.preventDefault(); openSheet(e.target.dataset.repo); } });
+  document.getElementById("treemap").addEventListener("click", e => { const it = e.target.closest("[data-repo]"); if (it) openSheet(it.dataset.repo); });
   for (const id of ["news", "drvLatest"]) document.getElementById(id).addEventListener("click", e => { const it = e.target.closest("[data-repo]"); if (it) openSheet(it.dataset.repo); });
   document.getElementById("newsRange").onclick = e => { const b = e.target.closest("button"); if (!b) return; state.days = +b.dataset.days;
     document.querySelectorAll("#newsRange button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderNews(); };
@@ -908,17 +1141,22 @@ function bind() {
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => applyTheme(store.get("rank.theme")));
 }
 
-let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (state.tab === "insights") { renderCharts(); renderVisitorMap(); } }, 250); });
+let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (state.tab === "insights") { renderCharts(); renderTreemap(); } }, 250); });
 async function load() {
   const inline = document.getElementById("preview-data");
   if (inline && inline.textContent.trim().startsWith("{")) return JSON.parse(inline.textContent);
-  const res = await fetch("data/rankings.json", { cache: "no-cache" }); return res.json();
+  const [data, history] = await Promise.all([
+    fetch("data/rankings.json", { cache: "no-cache" }).then(r => r.json()),
+    fetch("data/history.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null),
+  ]);
+  if (history) data.history = history;
+  return data;
 }
 applyTheme(store.get("rank.theme"));
 const hash = location.hash.slice(1); if (["ranking", "insights", "news", "drivers"].includes(hash)) state.tab = hash;
 // #p=owner/repo opens that project's details, so a project can be linked directly.
 const deep = hash.startsWith("p=") ? decodeURIComponent(hash.slice(2)) : null;
-load().then(raw => { prepare(raw); bind(); renderAll(); setTab(state.tab); if (deep) openSheet(deep); loadCounters(); trackVisitor(); })
+load().then(raw => { prepare(raw); bind(); renderAll(); setTab(state.tab); if (deep) openSheet(deep); })
   .catch(err => { document.getElementById("list").innerHTML = `<div class="empty">Could not load data. ${esc(err.message)}</div>`; });
 })();
 </script>
