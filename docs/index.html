@@ -467,6 +467,44 @@ header.top::after { height: 3px; opacity: 1; box-shadow: 0 0 14px color-mix(in s
 .tm-tile { box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
 .tm-tile:hover { box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), 0 0 16px color-mix(in srgb, var(--accent) 60%, transparent); }
 @media (prefers-reduced-motion: reduce) { body::after, .brand-mark { animation: none; } }
+
+/* list view: desktop table, compact metric cards on phones */
+.rtable .c-meta { display: none; }
+.rtable .c-sub { display: none; }
+.rtable .rk { font-family: var(--display); font-weight: 700; font-size: 15px; }
+.rtable .rk1 { color: var(--gold); } .rtable .rk2 { color: var(--silver); } .rtable .rk3 { color: var(--bronze); }
+.rtable .pr { font-size: 12px; color: var(--text-3); }
+.rtable .c-dl b.up { color: var(--up); }
+@media (min-width: 1101px) and (max-width: 1260px) {
+  .rtable th[data-k="category"], .rtable th[data-k="latestDate"], .rtable .c-cat, .rtable .c-lt { display: none; }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .rtable tbody { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .rtable tbody tr { margin-bottom: 0 !important; }
+}
+@media (max-width: 1100px) {
+  .table-wrap { overflow: visible; background: none; border: 0; box-shadow: none; }
+  .rtable, .rtable tbody { display: block; }
+  .rtable thead { display: none; }
+  .rtable tbody tr {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: 10px; row-gap: 8px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 8px;
+  }
+  .rtable td { padding: 0; border: 0; white-space: nowrap; }
+  .rtable .c-rank { grid-row: 1; grid-column: 1; min-width: 22px; text-align: center; }
+  .rtable .c-proj { grid-row: 1; grid-column: 2; min-width: 0; }
+  .rtable .c-proj .pn { min-width: 0; } .rtable .c-proj b, .rtable .c-proj .pr { display: block; overflow: hidden; text-overflow: ellipsis; }
+  .rtable .c-dl { grid-row: 1; grid-column: 3; text-align: end; }
+  .rtable .c-dl b { font-family: var(--display); font-size: 19px; display: block; line-height: 1.1; }
+  .rtable .c-sub { display: block; font-size: 11.5px; color: var(--text-3); }
+  .rtable .c-cat, .rtable .c-gain, .rtable .c-x { display: none; }
+  .rtable .c-meta { display: flex; grid-row: 2; grid-column: 1 / -1; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 12.5px; color: var(--text-2);
+    padding-top: 8px; border-top: 1px solid var(--border); }
+  .rtable .c-meta > span { display: inline-flex; align-items: center; gap: 5px; }
+  .rtable .c-meta svg { width: 14px; height: 14px; color: var(--text-3); }
+  .rtable .c-meta b { color: var(--text); font-weight: 600; }
+  .rtable .c-meta .lt { margin-inline-start: auto; color: var(--text-3); }
+}
 .mode { display: inline-flex; }
 .panel-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
 .panel-head .sub { margin: 0; }
@@ -860,13 +898,18 @@ function cardHTML(p, i) {
 }
 function tableHTML(list) {
   const cols = [["#", "rank", 1], [t("project"), "name"], [t("category"), "category"], [t("downloads"), "downloads", 1], [t("col14"), "gain", 1], [t("stars"), "stars", 1], [t("forks"), "forks", 1], [t("watchers"), "watchers", 1], [t("age"), "age", 1], [t("latestRelease"), "latestDate", 1]];
-  return `<div class="table-wrap"><table><thead><tr>${cols.map(([l, k, r]) => `<th class="${r ? "r" : ""}" data-k="${k}">${esc(l)}</th>`).join("")}</tr></thead><tbody>${
-    list.map((p, i) => `<tr data-repo="${esc(p.repo)}"><td class="r num">${i + 1}</td>
-      <td><div class="proj">${logoHTML(p)}<div><b>${esc(p.name)}</b><div style="font-size:12px;color:var(--text-3)">${esc(p.repo)}</div></div></div></td>
-      <td><span class="badge">${esc(p.category)}</span></td>
-      <td class="r num"><b>${fmt(p.downloads)}</b></td><td class="r num" style="color:var(--up)">${p.gain14 == null ? "–" : "+" + fmt(p.gain14)}</td>
-      <td class="r num">${p.stars < 0 ? "–" : fmt(p.stars)}</td><td class="r num">${p.forks < 0 ? "–" : fmt(p.forks)}</td><td class="r num">${p.watchers < 0 ? "–" : fmt(p.watchers)}</td><td class="r num" title="${p.s && p.s.createdAt ? esc(dateFmt(p.s.createdAt)) : ""}">${ageShort(p.age)}</td>
-      <td class="r">${p.latest ? `<span class="mono">${esc((p.latest.tag || "").slice(0, 24))}</span> <span style="color:var(--text-3)">· ${rel(p.latest.date)}</span>` : "–"}</td></tr>`).join("")
+  const trend = state.mode === "14d";
+  const gainTxt = p => p.gain14 == null ? "–" : "+" + fmt(p.gain14);
+  const n = v => v < 0 ? "–" : fmt(v);
+  return `<div class="table-wrap"><table class="rtable"><thead><tr>${cols.map(([l, k, r]) => `<th class="${r ? "r" : ""}" data-k="${k}">${esc(l)}</th>`).join("")}</tr></thead><tbody>${
+    list.map((p, i) => `<tr data-repo="${esc(p.repo)}"><td class="r num c-rank"><span class="rk${i < 3 ? " rk" + (i + 1) : ""}">${i + 1}</span></td>
+      <td class="c-proj"><div class="proj">${logoHTML(p)}<div class="pn"><b>${esc(p.name)}</b><div class="pr">${esc(p.repo)}</div></div></div></td>
+      <td class="c-cat"><span class="badge">${esc(p.category)}</span></td>
+      <td class="r num c-dl"><b class="${trend && p.gain14 ? "up" : ""}">${trend ? gainTxt(p) : fmt(p.downloads)}</b><span class="c-sub">${trend ? t("allTime") + ": " + fmtc(p.downloads) : (p.gain14 == null ? "" : "+" + fmtc(p.gain14) + " · " + t("col14"))}</span></td>
+      <td class="r num c-gain" style="color:var(--up)">${gainTxt(p)}</td>
+      <td class="r num c-x">${n(p.stars)}</td><td class="r num c-x">${n(p.forks)}</td><td class="r num c-x">${n(p.watchers)}</td><td class="r num c-x" title="${p.s && p.s.createdAt ? esc(dateFmt(p.s.createdAt)) : ""}">${ageShort(p.age)}</td>
+      <td class="r c-x c-lt">${p.latest ? `<span class="mono">${esc((p.latest.tag || "").slice(0, 24))}</span> <span style="color:var(--text-3)">· ${rel(p.latest.date)}</span>` : "–"}</td>
+      <td class="c-meta"><span title="${esc(t("stars"))}">${ICON.star}<b class="num">${p.stars < 0 ? "–" : fmtc(p.stars)}</b></span><span title="${esc(t("forks"))}">${ICON.fork}<b class="num">${p.forks < 0 ? "–" : fmtc(p.forks)}</b></span><span title="${esc(t("watchers"))}">${ICON.eye}<b class="num">${p.watchers < 0 ? "–" : fmtc(p.watchers)}</b></span><span title="${esc(t("age"))}">${ICON.cal}<b class="num">${ageShort(p.age)}</b></span>${p.latest ? `<span class="lt"><span class="mono">${esc((p.latest.tag || "").slice(0, 16))}</span> · ${rel(p.latest.date)}</span>` : ""}</td></tr>`).join("")
   }</tbody></table></div>`;
 }
 function renderChips() {
