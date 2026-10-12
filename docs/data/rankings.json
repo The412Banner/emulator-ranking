@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T22:54:57.530Z",
+  "updatedAt": "2026-10-12T22:59:13.434Z",
   "totalProjects": 56,
   "projectsWithReleases": 56,
   "projectsWithoutReleases": 0,
@@ -10,10 +10,10 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 16092670,
+      "downloads": 16092675,
       "repoStats": {
         "stars": 19435,
-        "forks": 1835,
+        "forks": 1834,
         "watchers": 359,
         "issues": 403,
         "description": "Android application for running Windows applications with Wine and Box86/Box64",
@@ -98,14 +98,14 @@
           "name": "Winlator 10.0 (Hotfix)",
           "tag": "v10.0.0",
           "date": "2025-02-28T19:17:37Z",
-          "downloads": 1180215,
+          "downloads": 1180218,
           "body": "**v10.0 (Hotfix)**\r\n\r\n- Added fallback URL for Wine Mono/Gecko installation\r\n- Added fixes for Vortek\r\n- Updated/Recompiled internal programs: wfm.exe, winhandler.exe, TestD3D.exe and GPUInfo.exe\r\n\r\n**v10.0 (Final)**\r\n\r\nGeneral changelogs:\r\n\r\n- Improved Task Manager\r\n- Added GPUInfo to Start Menu (Useful for viewing GPU capabilities)\r\n- Added missing gstreamer plugins\r\n- Added configuration for Vortek\r\n\r\nVortek changelogs:\r\n\r\n- Added support for Mali devices\r\n- Implemented textureCompressionBC for devices that don't support this feature\r\n- Added fixes for vertex explosion for Mali devices\r\n- Added fixes for character animations that remains in T-Pose (D3D9 games)\r\n- Added support for some texture formats for devices that don't support them\r\n- Added fixes for some games that freeze on startup\r\n- Improved compatibility with Mesa Zink\r\n- Improved performance\r\n\r\n**v10.0 (Beta 2)**\r\n\r\n- Added missing MPEG-1 gstreamer plugin (#269)\r\n- Added workaround for Dino Crisis 1/2 video issues\r\n- Updated Box64 (v0.3.4 release) \r\n\r\n**v10.0 (Beta 1)**\r\n\r\n- Added native GLIBC for better I/O performance\r\n- Minor improvements to Vortek\r\n- Improved internal Registry Editor (Speeds up container startup)\r\n- Added option to open Android browser from Wine\r\n- Added option to use Android clipboard on Wine\r\n- Added option to capture pointer on external mouse\r\n- Added some network stuff on [Wine](https://github.com/brunodev85/wine-9.2-custom/commit/3437f8ee1617ba97550c96fb2dc4e210420aae93) (Fixes some games startup)\r\n- Implemented direct rendering on XServer and [Vulkan WSI X11](https://github.com/brunodev85/mesa3d-custom/blob/main/turnip-25.0.0/src/vulkan/wsi/wsi_common_x11.c) (Turnip)\r\n\r\nNotes: The Root FS has been restructured and each library has been compiled individually, keeping only those required by Box64/Wine",
           "prerelease": false,
           "assets": [
             {
               "name": "Winlator_10.0.apk",
               "size": 147685565,
-              "downloads": 1180215,
+              "downloads": 1180218,
               "url": "https://github.com/brunodev85/winlator/releases/download/v10.0.0/Winlator_10.0.apk"
             }
           ],
@@ -166,14 +166,14 @@
           "name": "Winlator 7.0",
           "tag": "v7.0.0",
           "date": "2024-06-10T17:40:38Z",
-          "downloads": 258225,
+          "downloads": 258227,
           "body": "- Updated Wine\r\n- Updated Box86/Box64\r\n- Updated Mesa Turnip, Zink and VirGL drivers\r\n- Improved XInput stability\r\n- Improved Input Controls\r\n- Improved Task Manager\r\n- Improved Container settings (Processor Affinity, Show FPS, GPU Name, Win Components and Environment Variables)\r\n- Added experimental WoW64 mode (Container Settings -> Advanced Tab)\r\n- Added VKD3D\r\n- Added Logs option\r\n- Fixed intro videos (Resident Evil 5, Lost Planet and others)\r\n- Performance improvements and other fixes",
           "prerelease": false,
           "assets": [
             {
               "name": "Winlator_7.0.apk",
               "size": 262944424,
-              "downloads": 258225,
+              "downloads": 258227,
               "url": "https://github.com/brunodev85/winlator/releases/download/v7.0.0/Winlator_7.0.apk"
             }
           ],
@@ -344,7 +344,7 @@
       "extensions": [
         ".zip"
       ],
-      "downloads": 10463092,
+      "downloads": 10463110,
       "repoStats": {
         "stars": 5131,
         "forks": 145,
@@ -381,14 +381,14 @@
           "name": "Qualcomm Driver v837",
           "tag": "v837",
           "date": "2026-01-14T13:17:24Z",
-          "downloads": 136508,
+          "downloads": 136512,
           "body": "Qualcomm drivers v837 extracted from Quest 3.\r\nVulkan Version: 1.3.295\r\n\r\nNOTES\r\n\r\n- For a7xx. Maybe a6xx.\r\n\r\n\r\n---\r\n\r\nUse at your own discretion.\r\n\r\nThanks:\r\n\r\nHugo\r\nStevenMX",
           "prerelease": false,
           "assets": [
             {
               "name": "Qualcomm_837_adpkg.zip",
               "size": 12715427,
-              "downloads": 136508,
+              "downloads": 136512,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v837/Qualcomm_837_adpkg.zip"
             }
           ],
@@ -398,7 +398,7 @@
           "name": "v26.0.0 - Revision 8 + super beta 8xx support",
           "tag": "v26.0.0-rc08",
           "date": "2026-01-08T01:03:08Z",
-          "downloads": 737939,
+          "downloads": 737943,
           "body": "### **UPDATE 2**: Added working a8xx Turnip. **Please read the notes below.**  - Thanks whbexium\r\n### **UPDATE**: Fixed an issue with the drivers not loading properly.\r\n\r\n## Based on latest mesa main source v26.0.0-devel.\r\n\r\n## v26.0.0 R8\r\nVulkan 1.4.335\r\nBase commit:  e9a83d530cce\r\n\r\n### NOTES\r\n\r\n## The a8xx support included is **very** beta and hacky. **Use at your own risk!**  \r\nAn example of what might happen (which happened to me) using this with Mincraft Pojav-glow-worm on a840, it will crash and the default driver won't recover causing every apps to crash afterwards. (a reboot fixed it) \r\n\r\nWhat works very well: OpenGL games through x86_64 emulators.\r\nWhat does not work: Switch emulators and non OpenGL games (so far tested. They boot but render very buggy graphics).\r\n\r\n---\r\n\r\n- This still uses Old autotuner. If you need new Autotuner, [use v25.3.0 here](https://github.com/K11MCH1/AdrenoToolsDrivers/releases/edit/v26.0.0-rc.03).\r\n\r\n- a710 and 720 can use regular or Gmem. When using regular driver on Winlator, do uncheck sysmem and check gmem from the TU_DEBUG list in the Environment Variables. For other emulators, use Gmem driver.\r\n- For users with the ONE UI bug, use the following environmental variable: `FD_DEV_FEATURES = enable_tp_ubwc_flag_hint=1`\r\n\r\n---\r\n\r\n### CHANGELOG\r\n\r\n- Merged upstream.\r\n- General optimizations and bug fixes.\r\n\r\n---\r\n\r\n### APPLIED PATCHES\r\n\r\n**Turnip_v26.0.0_R8_Gmem.zip**\r\n- Added a710/720 GPU descriptors (hacks)\r\n\r\n**Turnip_v26.0.0_R8_Autotuner.zip**\r\n- Autotuner Overhaul\r\n\r\n**a8xx_0x5_handle.zip**\r\n- Added a830v2 GPU descriptor (hack)\r\n- Added 0x5 handle (hack)\r\nThanks Hardware Union RU/ENG boys\r\n\r\n---\r\n\r\n### Thanks to ❤️\r\nRob Clark\r\nKarmjit Mahil\r\nConnor Abbott\r\nStevenMX\r\nPablo\r\nMark\r\nWeabchan\r\nJeezDisReez\r\nDanylo\r\nMesa Team",
           "prerelease": false,
           "assets": [
@@ -417,13 +417,13 @@
             {
               "name": "Turnip_v26.0.0_R8_Gmem.zip",
               "size": 3478156,
-              "downloads": 111765,
+              "downloads": 111767,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/Turnip_v26.0.0_R8_Gmem.zip"
             },
             {
               "name": "Turnip_v26.0.0_R8_Sysmem.zip",
               "size": 3478168,
-              "downloads": 75944,
+              "downloads": 75946,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/Turnip_v26.0.0_R8_Sysmem.zip"
             }
           ],
@@ -520,14 +520,14 @@
           "name": "v26.0.0 - Revision 4",
           "tag": "v26.0.0-rc04",
           "date": "2025-11-22T04:43:31Z",
-          "downloads": 93755,
+          "downloads": 93756,
           "body": "## Based on latest mesa main source v26.0.0-devel.\r\n\r\n## v26.0.0 R4\r\nVulkan 1.4.330\r\nBase commit: bcedc88f21\r\n\r\n## This still uses Old autotuner. If you need new Autotuner, [use v25.3.0 here](https://github.com/K11MCH1/AdrenoToolsDrivers/releases/edit/v26.0.0-rc.03).\r\n\r\n### Notes  \r\n\r\n- a710 and 720 can use regular or Gmem. When using regular driver on Winlator, do uncheck sysmem and check gmem from the TU_DEBUG list in the Environment Variables. For other emulators, use Gmem driver.\r\n- For users with the ONE UI bug, use the following environmental variable: `FD_DEV_FEATURES = enable_tp_ubwc_flag_hint=1`\r\n\r\n---\r\n\r\n### CHANGELOG\r\n\r\n- Merged upstream.\r\n- Merged to Main: [Fix CB overhead when running without CB being used.](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/38378) (Fixes a perf regression)\r\n- General optimizations and bug fixes.\r\n\r\n---\r\n\r\n### APPLIED PATCHES\r\n\r\n- a710/720 support hacks.\r\n\r\n---\r\n\r\n### Thanks to ❤️\r\nConnor Abbott\r\nStevenMX\r\nPablo\r\nMark\r\nWeabchan\r\nJeezDisReez\r\nDanylo\r\nMesa Team",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_v26.0.0_R4.zip",
               "size": 3442521,
-              "downloads": 63626,
+              "downloads": 63627,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc04/Turnip_v26.0.0_R4.zip"
             },
             {
@@ -917,14 +917,14 @@
           "name": "v25.3.0 - Revision 1",
           "tag": "v25.3.0-rc.01",
           "date": "2025-07-18T03:33:06Z",
-          "downloads": 65553,
+          "downloads": 65555,
           "body": "## Based on latest mesa main source v25.3.0-devel.\r\n\r\nVulkan 1.4.318\r\n\r\nBase commit: a333e7a6\r\n\r\n### Compatible with Winlator Bionic through Adrenotools settings and \"Wrapper\" graphics driver.\r\n### Compatible with Micewine.\r\n\r\n---\r\n\r\n### CHANGELOG\r\n\r\n- Merged upstream.\r\n- Bumped version to 25.3\r\n- General optimizations and bug fixes.\r\n\r\n---\r\n\r\n### MERGED PATCHES\r\n\r\n- None.\r\n\r\n---\r\n\r\n### Thanks to ❤️\r\nPablo\r\nMark\r\nWeabchan\r\nJeezDisReez\r\nDanylo\r\nMesa Team",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_v25.3.0_R1.zip",
               "size": 2514307,
-              "downloads": 65553,
+              "downloads": 65555,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.01/Turnip_v25.3.0_R1.zip"
             }
           ],
@@ -1539,14 +1539,14 @@
           "name": "Mesa Turnip driver v24.3.0 - Revision 9v2",
           "tag": "v24.3.0_r9",
           "date": "2024-09-29T12:35:27Z",
-          "downloads": 203189,
+          "downloads": 203190,
           "body": "Weekly revision, #9.\r\nBased on latest mesa main source v24.3.0-devel.\r\n\r\nBase commit: 4497ea2\r\n\r\nCHANGELOG\r\n\r\n- Bump vulkan version to 1.3.296.\r\n- Quest 3 variant support.\r\n\r\nMERGED PATCHES\r\n\r\n- Improve 2D buffer-to-image copies for A7XX. [Source](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/31401?commit_id=d1d3e19b6e3063482083a0c5693f70c08068bef8)\r\n- Disable KHR workgroup memory explicit layout. [Source](https://github.com/Weab-chan/freedreno_turnip-CI/blob/main/patches/disable_KHR_workgroup_memory_explicit_layout.patch) Should fix BOTW/TOTK crashes and other games - MAKE SURE TO CLEAR SHADER CACHE- (Thanks Weab-Chan)",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_v24.3.0_R9v2.zip",
               "size": 2236892,
-              "downloads": 203189,
+              "downloads": 203190,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r9/turnip_v24.3.0_R9v2.zip"
             }
           ],
@@ -1573,14 +1573,14 @@
           "name": "Mesa Turnip driver v24.3.0 - Revision 7",
           "tag": "v24.3.0_r7",
           "date": "2024-09-12T08:09:27Z",
-          "downloads": 41575,
+          "downloads": 41576,
           "body": "Weekly revision, #7.\r\nBased on latest mesa main source v24.3.0-devel.\r\n\r\nBase commit: 5db135f\r\n\r\n**CHANGELOG**\r\n\r\nGeneral optimizations and bug fixes.\r\n\r\n**MERGED PATCHES**\r\n\r\nNone.",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_v24.3.0_R7.zip",
               "size": 2221276,
-              "downloads": 41575,
+              "downloads": 41576,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r7/turnip_v24.3.0_R7.zip"
             }
           ],
@@ -1607,14 +1607,14 @@
           "name": "Mesa Turnip driver v24.3.0 - Revision 5",
           "tag": "v24.3.0_r5",
           "date": "2024-08-28T18:05:14Z",
-          "downloads": 48260,
+          "downloads": 48261,
           "body": "Weekly revision, #5.\r\nBased on latest mesa main source v24.3.0-devel.\r\n\r\nBase commit: 64ca0fd\r\n\r\n**CHANGELOG**\r\n\r\n- General optimizations and bug fixes.\r\n- Updated vulkan to 1.3.294.\r\n\r\n**MERGED PATCHES**\r\n\r\nNone.",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_v24.3.0_R5.zip",
               "size": 2246830,
-              "downloads": 48260,
+              "downloads": 48261,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r5/turnip_v24.3.0_R5.zip"
             }
           ],
@@ -1658,14 +1658,14 @@
           "name": "Mesa Turnip driver v24.3.0 - Revision 11",
           "tag": "v24.3.0_r11",
           "date": "2024-10-09T13:34:42Z",
-          "downloads": 37607,
+          "downloads": 37608,
           "body": "Weekly revision, #11.\r\nBased on latest mesa main source v24.3.0-devel.\r\n\r\nBase commit: 992ada2\r\n\r\nCHANGELOG\r\n\r\n- Merged \"Improve 2D buffer-to-image copies for A7XX.\" [Source](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/31401?commit_id=d1d3e19b6e3063482083a0c5693f70c08068bef8)\r\n\r\nMERGED PATCHES\r\n\r\nnone\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_v24.3.0-R11.zip",
               "size": 2242402,
-              "downloads": 37607,
+              "downloads": 37608,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r11/turnip_v24.3.0-R11.zip"
             }
           ],
@@ -1743,14 +1743,14 @@
           "name": "Qualcomm driver v762.10",
           "tag": "09072024",
           "date": "2024-09-07T06:13:08Z",
-          "downloads": 32687,
+          "downloads": 32688,
           "body": "Qualcomm drivers v762.10 extracted from Xiaomi 12.\r\n\r\nMay work on 6xx, broken on 7/8 gen 2. Can load, but will break whole Android user interface while game is running. Few games run fine without breaking Android UI.\r\nUse at your own discretion.",
           "prerelease": false,
           "assets": [
             {
               "name": "adreno-762.10-adpkg.zip",
               "size": 15001344,
-              "downloads": 32687,
+              "downloads": 32688,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/09072024/adreno-762.10-adpkg.zip"
             }
           ],
@@ -2163,14 +2163,14 @@
           "name": "Qualcomm driver v615.77",
           "tag": "v615.77",
           "date": "2023-12-21T13:31:50Z",
-          "downloads": 126189,
+          "downloads": 126191,
           "body": "Qualcomm drivers v615.77 extracted from Xiaomi 12.\r\n\r\nFor Adreno GPU 6xx series and 730 + variants.\r\nSo ONLY for 8gen1 and down\r\n\r\n\r\nSpecial thanks\r\nKirimu\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "adreno615.77.adpkg.zip",
               "size": 9956008,
-              "downloads": 126189,
+              "downloads": 126191,
               "url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.77/adreno615.77.adpkg.zip"
             }
           ],
@@ -2345,7 +2345,7 @@
       "category": "Nintendo 3DS",
       "logo": "azahar.png",
       "extensions": null,
-      "downloads": 8629768,
+      "downloads": 8629773,
       "repoStats": {
         "stars": 8327,
         "forks": 723,
@@ -2365,7 +2365,7 @@
           "name": "Azahar 2127.0 Alpha 1",
           "tag": "2127.0-alpha1",
           "date": "2026-10-10T16:09:24Z",
-          "downloads": 13022,
+          "downloads": 13025,
           "body": "<h3>⚠️Important Alpha Information⚠️</h3>\r\n\r\nAs an alpha release, this build is not yet considered stable.\r\n\r\nThis prerelease is intended for users to test upcoming features, allowing the community to provide feedback before they are distributed in a stable release.\r\nUsers interested in testing bleeding-edge software are encouraged to test out this build to help us catch any issues we may have missed during development.\r\n\r\nIf you are unwilling to tolerate potential issues, it may be better to wait for the next stable release.\r\n\r\n---\r\n\r\n> [!NOTE] \r\n> To allow public testing of the new interpreter, which allows fantastic performance on iPhones all the way back to the iPhone XS with no JIT, **we plan to distribute all of our 2127.0 prereleases on RetroArch with 2-3 days of delay** as a one-off exception to our typical release scheduling.\r\n> We hope our iOS users look forward to testing out the new version and experiencing the improved performance it brings.\r\n\r\n> [!NOTE] \r\n> This release invalidates any existing generated shader cache, so performance may temporarily be impared after updating.\r\n> Performance will improve again after playing for a while.\r\n\r\n---\r\n\r\n# Azahar 2127.0-alpha1 Changelog\r\n\r\n# License\r\n\r\n- **Azahar's license has been changed** from GPLv2+ to **GPLv3+**. All downstream projects exposed to Azahar's source code must ensure that they follow the license terms and correctly update any license metadata as necessary. | @OpenSauce04 #2626 #2635\r\n\r\n# All\r\n\r\n- Implemented a significantly faster new interpreter for JIT-less environments, named `FastInterp`, which replaces the old `DynCom` interpreter. | @warmenhoven #2376 \r\n  - This new interpreter allows greatly improved performance on iOS and tvOS devices, allowing devices as old as the iPhone XS to play games, even with playback speeds of over 200%.\r\n- Fixed inaccurate color blending behaviour in the Vulkan renderer, fixing an issue in Shin Megami Tensei IV where a black box would appear around enemies when killed. | @quickstraw #2427 \r\n- Corrected misuses of linear filtering in the video core where nearest neighbour should be used. | @OpenSauce04 #2554 \r\n  - Fixes texture rendering issues in Minecraft: New Nintendo 3DS Edition, and likely other games as well.\r\n- Implemented a previously missing audio delay/echo effect in the HLE DSP implementation. | @PabloMK7 #2473 \r\n  - Restores previously missing echo effects to many games, such as New Super Mario Bros. 2, when using HLE audio.\r\n  - Fixes a stuttering music issue in Shinobi 3D.\r\n- Implemented improvements for Azahar's texture codec, resulting in greatly improved texture handling performance and general performance improvements in many games. | @PabloMK7 #2564 \r\n- Zero-area render passes are now skipped. | @Wunkolo #2510 #2544\r\n  - This addresses certain graphical issues in 3D Thunder Blade.\r\n- Implemented null descriptors for null surfaces. | @Wunkolo #2545 \r\n- Minecraft: New Nintendo 3DS Edition now force-disables the \"Disable Right Eye Rendering\" setting while running due to causing rapidly flashing rendering issues. | @OpenSauce04 #2555 \r\n- Due to ongoing issues, the Anime4K texture filter has been limited to only be selectable when using the OpenGL renderer. | @OpenSauce04 #2654\r\n\r\n# Windows\r\n\r\n- In line with our previous deprecation, the MSYS2 build of Azahar has now been removed, with the MXE build replacing it. | @OpenSauce04 #2582\r\n- Implemented a custom scrollbar style in Azahar's Qt frontend with improved visibility. | @OpenSauce04 #2642\r\n\r\n# Desktop\r\n\r\n- Azahar now contains its own copy of FFmpeg, meaning that downloading and installing FFmpeg manually before using the Dump Video feature is no longer necessary. | @OpenSauce04 #2584\r\n\r\n# libretro\r\n\r\n- Fixed an issue with touchscreen devices where, when pressing a blank area outside of the touchscreen area, the last selected location on the touchscreen would become activated. | @OpenSauce04 #2563\r\n\r\n# Desktop\r\n\r\n- Fixed an issue where Azahar's .ini files could contain non-human-readable values. | @Wunkolo #2534 \r\n\r\n# Technical\r\n\r\n- Added additional logging when an attempted pixel format reinterpretation is unimplemented. | @Wunkolo #2508\r\n- Added new CMake options to newly allow compiling with certain system libraries. | @kreinholz #1987 \r\n- Added new CMake option `ENABLE_CCACHE`. | @crueter #2219\r\n- Added a missing include which allows Azahar to be compiled for Android with NDK r30. | @rtiangha #2622\r\n- Fixed an issue which prevented building Azahar with openal-soft version 1.25.2 and newer. | @rtiangha #2617\r\n- Cleaned up various instances of deprecated code in the Android codebase. | @OpenSauce04 #2637 \r\n- Removed Doxyfile due to lack of use, maintenance and interest. | @OpenSauce04 #2636",
           "prerelease": true,
           "assets": [
@@ -2378,7 +2378,7 @@
             {
               "name": "azahar-android-googleplay-2127.0-alpha1.apk",
               "size": 50622523,
-              "downloads": 374,
+              "downloads": 375,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2127.0-alpha1/azahar-android-googleplay-2127.0-alpha1.apk"
             },
             {
@@ -2432,7 +2432,7 @@
             {
               "name": "azahar-libretro-windows-x86_64-2127.0-alpha1.zip",
               "size": 12163607,
-              "downloads": 125,
+              "downloads": 126,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2127.0-alpha1/azahar-libretro-windows-x86_64-2127.0-alpha1.zip"
             },
             {
@@ -2486,7 +2486,7 @@
             {
               "name": "azahar-windows-msvc-2127.0-alpha1.zip",
               "size": 53678420,
-              "downloads": 285,
+              "downloads": 286,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2127.0-alpha1/azahar-windows-msvc-2127.0-alpha1.zip"
             },
             {
@@ -2675,7 +2675,7 @@
           "name": "Azahar 2126.1.2",
           "tag": "2126.1.2",
           "date": "2026-09-20T23:13:07Z",
-          "downloads": 379046,
+          "downloads": 379048,
           "body": "This an unscheduled fix release which addresses a commonly experienced issue in Azahar's libretro cores.\r\nFor other versions of Azahar, this update is identical to 2126.1.1.\r\n\r\n---\r\n\r\n# Azahar 2126.1.2 Changelog\r\n\r\n# libretro\r\n\r\n- Fixed an issue which could cause RetroArch to entirely freeze or crash when exiting a game. | @Razor221 #2572",
           "prerelease": false,
           "assets": [
@@ -2700,7 +2700,7 @@
             {
               "name": "azahar-android-vanilla-2126.1.2.apk",
               "size": 50144759,
-              "downloads": 126807,
+              "downloads": 126809,
               "url": "https://github.com/azahar-emu/azahar/releases/download/2126.1.2/azahar-android-vanilla-2126.1.2.apk"
             },
             {
@@ -13716,7 +13716,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 1533356,
+      "downloads": 1533362,
       "repoStats": {
         "stars": 1229,
         "forks": 101,
@@ -13765,14 +13765,14 @@
           "name": "Ludashi 4.0: Early Access ",
           "tag": "v4.0",
           "date": "2026-08-29T12:54:01Z",
-          "downloads": 93126,
+          "downloads": 93130,
           "body": "What's new:\r\n\r\n\r\n📲 UI\r\n\\- Completely rewrote the UI using Jetpack Compose.\r\n\r\n🖥️ Renderer Backend\r\n\r\n\\- Added a new EGLRenderer.\r\n\\- Improved the overall performance of the VulkanRenderer and added ReShade support.\r\n\r\n\\- Added DisplayX, a new implementation based on SurfaceFlinger for native composition.\r\n\\- Provides support for the Android Hardware Composer (HWC).\r\n\\- Supports the Android Performance Hint API.\r\n\\- Supports an X Server bypass, allowing DisplayX to bypass the traditional X Server composition path.\r\n\\- DisplayX is currently experimental.\r\n\r\n---\r\n\r\n🖥️ X Server\r\n\r\n\\- Fixed a long-standing issue with X resource management.\r\n\r\n\\- Reworked the DRI3 and Pixmap extensions to provide proper direct rendering support.\r\n\r\n\\- Reworked the Drawable backend to allow hardware-accelerated Xlib buffers.\r\n\r\n\\- Added the GLX extension for Zink DRI3, allowing proper GPU-accelerated OpenGL rendering.\r\n\r\n\\- Added the XComposite extension for proper offscreen rendering support.\r\n\r\n\\- Improved Zink performance for OpenGL games, benefiting non-Adreno GPUs.\r\n\r\n\\- Added support for Freedreno, the Powerful OpenGL driver for Adreno GPUs.\r\n\r\n\\- Freedreno can massively improve performance in OpenGL games.\r\n\r\n📦 Proton & Assets\r\n\r\n\\- Updated all Proton assets.\r\n\r\n\\- Added support for:\r\n \\- RandR\r\n \\- XInput2\r\n \\- XComposite\r\n\r\n\\- Added new Proton 9, Proton 10, and Proton 11 versions, Proton 10 and 11 are compatible with Fex Unixlibs\r\n\r\n\\- Playing OpenGL games using Proton 11 is currently not recommended.\r\n\r\n🎮 On-Screen Controllers\r\n\r\n\\- Added support for custom icons and fixed bugs.\r\n\r\n🖱️ Input\r\n\r\n\\- Fixed issues with relative mouse input.\r\n\r\n🔊 Audio\r\n\r\n\\- Added GameNative PulseAudio.\r\n\r\n📈 Modern HUD\r\n\r\n\\- Added GPU name detection and display.\r\n\r\n\\- Added several additional improvements and adjustments to the Modern HUD.\r\n\r\n📝 Notes\r\n\r\nAs always, delete your old Ludashi build or change the package name. This version does not install as an update.\r\n\r\nBug fixes and improvements are planned for future updates.\r\n\r\nRegarding Frame Generation and Steam support: no, they are not planned. However, I will release all the source code so other projects can use my features if they want.\r\n\r\nCredits\r\n\r\n\\- [@Pipetto-crypto](https://github.com/Pipetto-crypto)\r\n\\- [@Sidney](https://github.com/Innersargento)\r\n\\- [@Banner](https://github.com/The412Banner)\r\n\\- [@Nick](https://github.com/Xnick417x)\r\n\\- [@joshuatam](https://github.com/joshuatam)",
           "prerelease": false,
           "assets": [
             {
               "name": "ludashi-build.apk",
               "size": 560185027,
-              "downloads": 77168,
+              "downloads": 77172,
               "url": "https://github.com/StevenMXZ/Winlator-Ludashi/releases/download/v4.0/ludashi-build.apk"
             },
             {
@@ -13823,7 +13823,7 @@
           "name": "Ludashi 3.0",
           "tag": "3.0",
           "date": "2026-04-30T10:46:39Z",
-          "downloads": 236699,
+          "downloads": 236700,
           "body": "What's new:\r\n\r\nFrom Pypetto-Crypto\r\n\r\n 🖥️ XServerDisplayActivity: slight rework of the external pointer capture logic\r\n 📦 Assets: imported d8vk from Winlator 11\r\n\r\nFrom StevenMX\r\n\r\n\\- Vulkan Renderer: complete rewrite of the Winlator X Server rendering backend.\r\nThe compositor was rebuilt from scratch using Vulkan, replacing the previous OpenGL pipeline.\r\n\r\n 🖥️ Vulkan Renderer\r\n\r\n\\- GLRenderer/EffectComposer were replaced with VulkanRenderer and VulkanRendererContext\r\n\r\n\\- Rewrote GPUImage: removed GL texture uploads; now the AHB is imported as a VkImage via VK_ANDROID_external_memory_android_hardware_buffer, without CPU copies.\r\n\r\n\\- Added Android PresentModes: FIFO and Mailbox\r\n\r\nFifo is more stable \r\nMailbox has lower latency, but higher power usage\r\nIf you have issues, try using the RENDERER_SWAPCHAIN variable with values above 1\r\n\r\n\\- Added Bilinear and Nearest Neighbor filtering\r\n\r\n\\- New Refresh Rate options:\r\n\r\n60Hz: default unless forced higher\r\nDeviceRefreshRate: forces the highest refresh rate supported by the device, which may improve performance.\r\n\r\n 🖥️ XServer:\r\n\r\n\\- Minor rework on how frames are handled in PresentExtension\r\n\r\n\\- Improved the FPS limiter from GraphicEngine \r\n\r\n\\- Added support for XInput2Extension: newer versions of Wine/Proton compiled with XI2 now have proper mouse support, Thanks to Gamenative\r\n\r\n 🎮 Controller:\r\n\r\n\\- Merged latest changes from the https://github.com/Vivsi1/winlator/commits/pb_controller_fix/\r\n\r\n\\- Added support for Rumble/Vibration and fixed bugs \r\n\r\n 📦ContentManager:\r\n\r\n\\- Removed the Contents tab\r\n\r\n\\- Now each component can be downloaded/imported directly from Container/Shortcut\r\n\r\n📈 WinlatorHUD:\r\n\r\n\\- Fixed issue with saving user preferences\r\n\r\n\\- Now works on OpenGL games\r\n\r\n\\- Improved visual appearance \r\n\r\n\\- Added vertical mode\r\n\r\n\\- Added support for detecting battery charger \r\n\r\n\\- Added new fallbacks for GPU/Battery paths not found on some OEMs (may still fail in some cases)\r\n\r\n 💾Shortcuts:\r\n\r\n\\- Improved the image scraper\r\n\r\n\\- Added fallback to extract images directly from the game EXE file \r\n\r\n🚧 A future update will include the new native rendering\r\nall code is there \r\n📌 This update requires reinstallation",
           "prerelease": false,
           "assets": [
@@ -13836,7 +13836,7 @@
             {
               "name": "ludashi-bionic.apk",
               "size": 528511338,
-              "downloads": 142541,
+              "downloads": 142542,
               "url": "https://github.com/StevenMXZ/Winlator-Ludashi/releases/download/3.0/ludashi-bionic.apk"
             },
             {
@@ -13881,14 +13881,14 @@
           "name": "Ludashi 2.8.2",
           "tag": "2.8.2",
           "date": "2026-01-25T22:55:31Z",
-          "downloads": 189344,
+          "downloads": 189345,
           "body": "What's new:\r\n\r\n🛠️ devices that weren't working should now work. thanks to @kostasgangstar \r\n\r\n📦 Fixed a regression in box64 in 32bits games\r\n\r\n💾 Assets: update wrapper, turnip, and box64/fexcore to the latest versions \r\n\r\n🎮 Controller: fixed Wine 9.20, and some others issues, if input don't work, try disabling \"Exclusive\"\r\n\r\n💻 Added support for compute shaders BCn decompression as an option, improving performance for Mali Devices\r\n\r\n🖥️ GraphicsDriverConfigDialog: add option to change/spoof GPU name, device and vendor id\r\n\r\n⚙️ Container: add internal storage as a container drive\r\n  \r\n📌 reinstall from scratch before update",
           "prerelease": false,
           "assets": [
             {
               "name": "bionic-ludashi.apk",
               "size": 524103183,
-              "downloads": 139230,
+              "downloads": 139231,
               "url": "https://github.com/StevenMXZ/Winlator-Ludashi/releases/download/2.8.2/bionic-ludashi.apk"
             },
             {
@@ -14292,7 +14292,7 @@
       "category": "Emulator PS2",
       "logo": "nethersx2.png",
       "extensions": null,
-      "downloads": 1509184,
+      "downloads": 1509187,
       "repoStats": {
         "stars": 1199,
         "forks": 38,
@@ -14421,7 +14421,7 @@
           "name": "NetherSX2 Classic v2.0a",
           "tag": "2.0a",
           "date": "2025-04-08T14:49:21Z",
-          "downloads": 251148,
+          "downloads": 251150,
           "body": "Considering that it's been over a year since AetherSX2 got delisted from the Google Play Store and it's site was taken down, I'm going to attempt releasing an apk of the latest build. I doubt anyone will come along and try to enforce the license at this point, but if trouble arises from this, I will revert to the old methods\r\n\r\nHuge thanks to [Retroid](https://www.goretroid.com/) for sending me a [Retroid Pocket 5](https://www.goretroid.com/collections/retro-game-system/products/retroid-pocket-5-handheld)! It makes testing changes to EtherealSX2 and NetherSX2 a lot easier!\r\n\r\nChangelog:\r\n* This version should block the Play Store from installing 3064 over it\r\n* Bumped the internal version to enable Hardcore RetroAchievements support\r\n* Rebuilt the GameDB - based on the original 3668 with a few select fixes from NetherSX2-patch ported over\r\n* Updated the ControllerDB, Widescreen and No-Interlacing patches to their latest versions\r\n* Ported the majority of custom features from 4248 to 3668. More are in the works\r\n\r\nThis is an alpha release, so please test your games on it and give me feedback so I can add specific game fixes where possible\r\nEdit: Now Including an old controller layout version in the form of the -OL builds\r\n\r\nAlso Russ, you can stop sending the ninjas after me now. I'm running out of places to hide their bodies",
           "prerelease": false,
           "assets": [
@@ -14434,7 +14434,7 @@
             {
               "name": "15210-v2.0-3668-signed.apk",
               "size": 20888322,
-              "downloads": 195981,
+              "downloads": 195983,
               "url": "https://github.com/Trixarian/NetherSX2-classic/releases/download/2.0a/15210-v2.0-3668-signed.apk"
             }
           ],
@@ -14467,14 +14467,14 @@
           "name": "NetherSX2-Classic Resources",
           "tag": "0.0",
           "date": "2023-10-25T08:19:08Z",
-          "downloads": 57984,
+          "downloads": 57985,
           "body": "Resources files required to use NetherSX2-Classic",
           "prerelease": true,
           "assets": [
             {
               "name": "13930-v1.5-3668.apk",
               "size": 18891890,
-              "downloads": 57984,
+              "downloads": 57985,
               "url": "https://github.com/Trixarian/NetherSX2-classic/releases/download/0.0/13930-v1.5-3668.apk"
             }
           ],
@@ -14489,7 +14489,7 @@
       "category": "GameHub",
       "logo": "gamehub.png",
       "extensions": null,
-      "downloads": 1482178,
+      "downloads": 1482183,
       "repoStats": {
         "stars": 2044,
         "forks": 63,
@@ -14557,14 +14557,14 @@
           "name": "GameHub Lite v5.1.7",
           "tag": "v5.1.7",
           "date": "2026-06-08T13:28:04Z",
-          "downloads": 93939,
+          "downloads": 93940,
           "body": "Frame generation (thank you The412Banner for your contribution.\r\n\r\nThis was the first (and last) contribution made with AI. Very thankful that Banner had the patience to deal with the amount of changes we requested for this to get merged. That said, future AI PR's will be closed automatically (and have been closed). Many are not willing to put in the effort that Banner did and I don't have the energy to review everything. **If it is not worth writing/understanding the code, it is not worth reviewing the code.**\r\n\r\n### App changes\r\n\r\n  - Added AI Frame Generation toggle + gear settings dialog to the in-game sidebar (Performance tab).\r\n  - 6 presets (Eco, Flow, Balanced, Boost, Clear, Max) and a flow-scale slider with live feedback.\r\n  - Settings persist to SharedPreferences and re-apply on every `WineActivity.onCreate`/`onResume`.\r\n  - Added a Vulkan ICD JSON writer so the framegen driver hooks correctly across all 5 package variants.\r\n  - Fixed `Locale.ROOT` formatting for float values to avoid comma-decimal issues on non-English locales.\r\n  - Fixed try/catch label collision in WineActivity smali patch — apktool rebuild now fails loudly on errors.\r\n  - Patch pipeline now auto-compiles `extension/*.java` when `EXTENSION_DEX_PATH` is unset, so future extensions are a one-step build.\r\n  - CI: pinned GitHub Actions to commit SHAs and added `extension/**` to workflow path filters.\r\n  - Build: validated `zip`/`unzip` in dependency checks.\r\n  - Bumped app version to `5.1.7`.\r\n\r\n### Backend changes\r\n\r\nWork continued in [gamehub-lite-api](https://github.com/Producdevity/gamehub-lite-api) and [gamehub-lite-worker](https://github.com/Producdevity/gamehub-lite-worker).\r\n\r\nBackend changes since `v5.1.6`:\r\n\r\n  - Removed SteamAgent2 component from downloads, games manifest, and component lists.\r\n  - Added `is_ui` property to component definitions.\r\n  - Fixed unsupported official component IDs being skipped during XML parsing.\r\n  - Extracted `assetNameFromDownloadUrl` helper for cleaner URL handling.\r\n  - Worker: refactored signature generation and API request handlers.\r\n  - Worker: `POST /simulator/executeScript` now serves generated presets from gamehub-lite-api instead of proxying.\r\n  - Worker: fixed `GET` request handling for `getComponentList` endpoint.\r\n\r\nRelevant API commits:\r\n\r\n  - [9b9dc07](https://github.com/Producdevity/gamehub-lite-api/commit/9b9dc0759f2e57b6c93d0f9a1a5d3eab8c4f3a1f) - remove SteamAgent2 component\r\n  - [bd953b9](https://github.com/Producdevity/gamehub-lite-api/commit/bd953b9282f3e5f8e4a3a9e7e0c1f2d3b4a5c6d7) - add is_ui property to components\r\n  - [74acd47](https://github.com/Producdevity/gamehub-lite-api/commit/74acd47) - skip unsupported component IDs in XML parsing\r\n  - [b694bc5](https://github.com/Producdevity/gamehub-lite-api/commit/b694bc5) - extract assetNameFromDownloadUrl function\r\n\r\nRelevant Worker commits:\r\n\r\n  - [d5408c7](https://github.com/Producdevity/gamehub-lite-worker/commit/d5408c7) - refactor worker\r\n  - [55e366f](https://github.com/Producdevity/gamehub-lite-worker/commit/55e366f) - serve generated presets from API instead of proxy\r\n  - [dc2d612](https://github.com/Producdevity/gamehub-lite-worker/commit/dc2d612) - handle GET requests for getComponentList\r\n\r\n\r\n## What's Changed\r\n* feat: AI Frame Generation menu in sidebar by @The412Banner in https://github.com/Producdevity/gamehub-lite/pull/129\r\n\r\n\r\n**Full Changelog**: https://github.com/Producdevity/gamehub-lite/compare/v5.1.6...v5.1.7",
           "prerelease": false,
           "assets": [
             {
               "name": "GameHub-Lite-v5.1.7-alt-antutu.apk",
               "size": 51993473,
-              "downloads": 30424,
+              "downloads": 30425,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.7/GameHub-Lite-v5.1.7-alt-antutu.apk"
             },
             {
@@ -14801,7 +14801,7 @@
           "name": "GameHub Lite v5.1.3",
           "tag": "v5.1.3",
           "date": "2025-11-14T11:46:08Z",
-          "downloads": 391808,
+          "downloads": 391809,
           "body": "We recommend using [Obtanium](https://www.youtube.com/watch?v=7HP67K5Q6Fo) to keep your GameHub Lite up-to-date. Thank to The412Banner for making the video tutorial!\r\n\r\n\r\nPlease check [EmuReady](https://www.emuready.com) for recommended settings if a game doesn't run well before asking in the [Discord](https://discord.gg/CYhCzApXav) server for help.\r\n\r\n<img width=\"1080\" height=\"1920\" alt=\"Screenshot_20251114-041653\" src=\"https://github.com/user-attachments/assets/a4b5b44c-6758-4441-9c4b-1dd3ba79192a\" />\r\n",
           "prerelease": false,
           "assets": [
@@ -14820,7 +14820,7 @@
             {
               "name": "GameHub-Lite-v5.1.3-ludashi.apk",
               "size": 52097646,
-              "downloads": 47425,
+              "downloads": 47426,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.3/GameHub-Lite-v5.1.3-ludashi.apk"
             },
             {
@@ -14918,14 +14918,14 @@
           "name": "GameHub Lite v5.1.0",
           "tag": "v5.1.0",
           "date": "2025-11-11T14:01:07Z",
-          "downloads": 35485,
+          "downloads": 35488,
           "body": "A restoration build of GameHub Lite V4 before everything fell apart. I will publish the code for the workers and a patch very soon, for now enjoy a working GameHub Lite app again.\r\n\r\nWe'll focus on restoring the previous functionality first, before fixing and adding functionality. So please only report issues that were not present in GameHub Lite V4 or in the official GameHub app.\r\n\r\n---\r\n\r\n### Explanation for the different versions\r\n\r\nYou’ll often see an emulator distribute different versions with a name suffixed like **PUBG**, **Antutu**, **Optimized**, **Genshin**, **Ludashi** and other names. Here follows an explanation for what is what, is still has slight differences between manufacturers and even different packagenames but it should give you a rough understanding.\r\n\r\n—-\r\n\r\n*The different versions are identical. What we do is a very old android trick to gain extra performance on some devices.*\r\n\r\n**Antutu**\r\n\r\nSome manufacturers “cheat” by setting the governor to performance when they detect the Antutu package name. \r\n\r\n*Nerd explanation:*\r\n\r\nThe CPU governor essentially controls the CPU's frequency scaling. allowing it to operate at different clock speeds and voltages based on the system load. So making the CPU go fast for sustained usage, what is actually made for peak usage. This comes with a risk of overheating, but I don’t believe in this. Android does a well enough job of thermal management and makes it extremely hard for software to exceed what the hardware is capable of and damaging itself.\r\n\r\n\r\nThat said, it’s still extra heat. More heat == more bad. I just think it’s negligible, especially if your device has a fan.\r\n\r\n\r\n**PUBG**\r\n\r\nOn a high level it’s the same as Antutu, but some slight differences that only benefit games. Think of network prioritization and touch input latency improvements. The manufacturers goal when they detect Antutu is **ALL THE POWER**. Benchmarks are relatively short and it makes them look better on comparison websites.\r\n\r\n\r\nThe goal for PUBG is more like **MORE POWER**, since the intention is often to have a game running for longer it has less aggressive changes.\r\n\r\n\r\n**TLDR and summary:**\r\n\r\n**Antutu** spoofing:\r\n\r\n    •    Maximum CPU/GPU frequencies unlocked  \r\n    •    Aggressive performance governors  \r\n    •    Short-duration performance boost (benchmark workload)  \r\n    •    Thermal limits are less strict   \r\n    •    All cores available  \r\n\r\n\r\n**PUBG** and other games spoofing: \r\n\r\n    •    Sustained gaming performance profiles  \r\n    •    GPU driver optimizations (Adreno/Mali game-specific paths)  \r\n    •    Frame pacing and scheduling improvements  \r\n    •    Reduced touch latency   \r\n    •    Network QoS prioritization  \r\n    •    Different thermal management (sustained vs burst)  \r\n    •    Qualcomm “Game Performance Mode”      \r\n    •    Sometimes enables features like frame-gen\r\n\r\n\r\n**Ludashi** spoofing:\r\n\r\n    •    Similar to Antutu but slightly less aggressive    \r\n    •    Longer sustained performance boost (multi-minute tests)   \r\n    •    Memory frequency optimization   \r\n\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "GameHub-Lite-5.1.0-Alt-AnTuTu.apk",
               "size": 49592725,
-              "downloads": 8840,
+              "downloads": 8842,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.0/GameHub-Lite-5.1.0-Alt-AnTuTu.apk"
             },
             {
@@ -14949,7 +14949,7 @@
             {
               "name": "GameHub-Lite-5.1.0.apk",
               "size": 49593766,
-              "downloads": 12289,
+              "downloads": 12290,
               "url": "https://github.com/Producdevity/gamehub-lite/releases/download/v5.1.0/GameHub-Lite-5.1.0.apk"
             }
           ],
@@ -14999,7 +14999,7 @@
       "category": "GameNative",
       "logo": "gamenative.png",
       "extensions": null,
-      "downloads": 1316882,
+      "downloads": 1316886,
       "repoStats": {
         "stars": 11202,
         "forks": 454,
@@ -15024,14 +15024,14 @@
           "name": "v1.3.0-prerelease",
           "tag": "v1.3.0-prerelease",
           "date": "2026-10-04T15:49:59Z",
-          "downloads": 15482,
+          "downloads": 15483,
           "body": "## Downloads\r\n- **`gamenative-v1.3.0-prerelease.apk`** — Standard build. Recommended for most users.\r\n- **`gamenative-v1.3.0-prerelease-legacy-xr.apk`** — XR build for Quest headsets.\r\n\r\n\r\n## What's Changed\r\n* Added new Steam client in headless mode, fixing online multiplayer in several games (eg AoE II, CS), input in various games (eg No Man's Sky) and fixes DRM for games that were not working in https://github.com/utkarshdalal/GameNative/pull/1937\r\n* Added EA games support (tested with NFS: MW, Sims 4, Titanfall) - requires headless Steam client enabled\r\n* Added Rockstar games support (tested with RDR2, GTA V Legacy, GTA IV, LA Noire) - requires headless Steam enabled\r\n* Added Native Rust download engine (gn-download) + one-at-a-time download queue - should significantly speed up downloads by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1913 and a few other PRs\r\n* Significantly reduce container sizes by sharing components across containers (press Play on games to shrink their containers by up to 2GB each) in https://github.com/utkarshdalal/GameNative/pull/2024\r\n* Add native LSFG pipeline as default - should fix LSFG on most devices by @david-kalbermatten in https://github.com/utkarshdalal/GameNative/pull/1968\r\n* Added more accurate and granular compatibility labels by @Nightwalker743 and me in https://github.com/utkarshdalal/GameNative/pull/2048\r\n* Add microphone input support by @Catpotatos and @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1963\r\n* Improve Nexus mod placement and FOMOD installation by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1927\r\n* Fix EOS online multiplayer: gethostname() localhost and missing Wine root certificates by @colemccarren in https://github.com/utkarshdalal/GameNative/pull/2009\r\n* Add Import Files and Export Files to the game menu in https://github.com/utkarshdalal/GameNative/pull/1992\r\n* In-app AI support chat with automatic apply and run of recommended settings in https://github.com/utkarshdalal/GameNative/pull/2047\r\n* Fix custom games not working for some devices on modern/Play Store build in https://github.com/utkarshdalal/GameNative/pull/1977\r\n* Fix continuous scrolling with trackpad wheel bindings by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1991\r\n* Add storefront details to library game pages by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1965\r\n* Fix for custom game cover images retention.  by @Catpotatos in https://github.com/utkarshdalal/GameNative/pull/2016\r\n* Add physical controller deadzone, sensitivity, and direction tuning by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1909\r\n* Add control profile library by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1982\r\n* Add Steam Playtest support by @Smithsonian1974 in https://github.com/utkarshdalal/GameNative/pull/2034\r\n* Fix installs on adopted primary storage by @danielbuva in https://github.com/utkarshdalal/GameNative/pull/1821\r\n* Add gyro conversion styles by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/2054\r\n* Automatically configure Wine DLL overrides for game mods by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/2008\r\n* feat: add spoilers zone in HLTB section by @RomainFoucher in https://github.com/utkarshdalal/GameNative/pull/1866\r\n* Added update, verify files and language change to Epic in https://github.com/utkarshdalal/GameNative/pull/1969\r\n* add VR game filter for VR headsets by @moi952 in https://github.com/utkarshdalal/GameNative/pull/1989\r\n* Add option to keep portrait mode below the camera hole in https://github.com/utkarshdalal/GameNative/pull/2032\r\n* Hide adult games from GOG recommendations in https://github.com/utkarshdalal/GameNative/pull/2056\r\n* Allow on-screen button opacity below 10% by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1952\r\n* Reset clocks and fan after the app is force killed in https://github.com/utkarshdalal/GameNative/pull/2022\r\n* Add close/opt-out button directly to sponsor cards in addition to settings in https://github.com/utkarshdalal/GameNative/pull/2001\r\n* Improve GOG and Epic downloads by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/2007\r\n* fix: power control pserver cpu freq detection by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1934\r\n* Fix import saves for some games in https://github.com/utkarshdalal/GameNative/pull/1935\r\n* Fix Steam Cloud saves resolving to the wrong folder for some root tokens by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1957\r\n* Gamefix for Half-Life 2 with -game hl2_complete so it starts the full game, not the demo in https://github.com/utkarshdalal/GameNative/pull/1941\r\n* Gamefix for saved games for FF XII in https://github.com/utkarshdalal/GameNative/pull/1954\r\n* Gamefix for Trover Saves the Universe (Epic) by @Wavewash in https://github.com/utkarshdalal/GameNative/pull/1953\r\n* Fix hltb search api by @xXJSONDeruloXx in https://github.com/utkarshdalal/GameNative/pull/1966\r\n* Removed aspect ratio validation for custom resolution by @lennyomg in https://github.com/utkarshdalal/GameNative/pull/1950\r\n* Fix prefs deadlock when read from IO threads by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1956\r\n* Don't preload container files under Robolectric by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1964\r\n* Groundwork for improving known configs in https://github.com/utkarshdalal/GameNative/pull/2010 and several others\r\n* Fix some GOG games not launching by @butilly in https://github.com/utkarshdalal/GameNative/pull/2020\r\n* Fix GOG script interpreter on bionic - fixes \"File not found errors\" in https://github.com/utkarshdalal/GameNative/pull/2026\r\n* Fix language and offline mode for Epic games by @butilly in https://github.com/utkarshdalal/GameNative/pull/2029\r\n* Match GOG Galaxy's cloud upload format by @jeremybernstein in https://github.com/utkarshdalal/GameNative/pull/1960\r\n* Remove unsupported deck_emu from default ZINK_DEBUG by @ygordreyer in https://github.com/utkarshdalal/GameNative/pull/1987\r\n* fix: head-of-line dispatch rescue for the Steam byte-budget download deadlock by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/2039\r\n\r\n## New Contributors\r\n* @butilly made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1925\r\n* @lennyomg made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1950\r\n* @colemccarren made their first contribution in https://github.com/utkarshdalal/GameNative/pull/2009\r\n* @moi952 made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1989\r\n* @RomainFoucher made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1866\r\n* @ygordreyer made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1987\r\n* @danielbuva made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1821\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v1.2.1...v1.3.0-prerelease",
           "prerelease": true,
           "assets": [
             {
               "name": "gamenative-v1.3.0-prerelease-legacy-xr.apk",
               "size": 573779844,
-              "downloads": 1454,
+              "downloads": 1455,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.3.0-prerelease/gamenative-v1.3.0-prerelease-legacy-xr.apk"
             },
             {
@@ -15047,14 +15047,14 @@
           "name": "v1.2.1",
           "tag": "v1.2.1",
           "date": "2026-09-13T13:36:34Z",
-          "downloads": 127386,
+          "downloads": 127389,
           "body": "## Downloads\r\n- **`gamenative-v1.2.1.apk`** — Standard build. Recommended for most users.\r\n- **`gamenative-v1.2.1-legacy-xr.apk`** — XR build for Quest headsets.\r\n\r\n\r\n## What's Changed\r\n\r\n### Added after prerelease\r\n* Fix Steam Input config generation for games with an \"In Game Actions\" manifest in https://github.com/utkarshdalal/GameNative/pull/1894\r\n* Hide platform-hidden Steam and GOG games from the library by @whatobiplays in https://github.com/utkarshdalal/GameNative/pull/1796\r\n* fix: power control profile selection problem by @joshuatam in https://github.com/utkarshdalal/GameNative/pull/1900\r\n* Add relative mouse input option for Shooter Mode by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1891\r\n* Allow for choosing which steam family library copy to use (DLCs etc) by @5TXdYWK in https://github.com/utkarshdalal/GameNative/pull/1707\r\n* Persist libredirect and faster external loading in default config in https://github.com/utkarshdalal/GameNative/pull/1916\r\n* Reduce AI debugging popups in https://github.com/utkarshdalal/GameNative/pull/1917\r\n* Fix OpenComposite AppType 3 errors for XR build in https://github.com/utkarshdalal/GameNative/pull/1908\r\n* Allow a custom executable path outside the A: drive in https://github.com/utkarshdalal/GameNative/pull/1918\r\n* Fix bat launches in https://github.com/utkarshdalal/GameNative/pull/1920\r\n* Made AI debugging much more accurate in https://github.com/utkarshdalal/GameNative/pull/1922\r\n* Add a Hide AI features toggle in https://github.com/utkarshdalal/GameNative/pull/1923\r\n* Add FEX 2609 to the component manifestin https://github.com/utkarshdalal/GameNative/pull/1929\r\n* Improve data accuracy for known configs and compatibility badges in https://github.com/utkarshdalal/GameNative/pull/1928\r\n\r\n### From prerelease\r\n* Fixed performance regression from FPS limiter (in games like Mewgenics) in https://github.com/utkarshdalal/GameNative/pull/1862\r\n* Made faster external loading a toggle instead of enabled by default - fixes bugs with games launching on external storage in 1.2.0 in https://github.com/utkarshdalal/GameNative/pull/1865\r\n* Fixed controller regressions added by multicontroller change (controller marked as P2 could never become P1) in https://github.com/utkarshdalal/GameNative/pull/1864\r\n* Added opt-in AI debugging for getting games running in https://github.com/utkarshdalal/GameNative/pull/1877\r\n* Added initial support for XR games for Quest in the XR builds by @TheReal-Flo and me in https://github.com/utkarshdalal/GameNative/pull/1879\r\n* Added back Nexus Mods integration (no need to manually add mods) by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1850\r\n* Add configurable gyro aiming and tilt steering by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1882\r\n* Added optional, non-blocking sponsorships and recommendations to boot screen (can be turned off from main app settings, but keeping it on allows us to have the resources to continue building GameNative) in https://github.com/utkarshdalal/GameNative/pull/1881\r\n* Add a Curated 4:3 filter to the Steam library (for RP Nova) by @Producdevity in https://github.com/utkarshdalal/GameNative/pull/1786\r\n* Added Steam achievements viewer by @phobos665 and @VinceBT in https://github.com/utkarshdalal/GameNative/pull/1695\r\n* Fix portrait mode - game runs at top of screen by @pacoa-kdbg in https://github.com/utkarshdalal/GameNative/pull/1800\r\n* Added GOG installer for v1 (fixes registry keys, needing CD drive for older games) in https://github.com/utkarshdalal/GameNative/pull/1863\r\n* Don't treat composite HID keyboards as game controllers by @mbarchein in https://github.com/utkarshdalal/GameNative/pull/1839\r\n* Add simultaneous and sequential multi-action bindings by @Nightwalker743 in https://github.com/utkarshdalal/GameNative/pull/1833\r\n* fix(input): pair complementary Joy-Con controllers by @eve-ai-dev in https://github.com/utkarshdalal/GameNative/pull/1870\r\n* Fix issues with certain DLCs (eg Sally Face download failing when the Season Pass is selected) in https://github.com/utkarshdalal/GameNative/pull/1883\r\n* Let users customize library tabs by @jmarti326 in https://github.com/utkarshdalal/GameNative/pull/1799\r\n* fix(): resolve epic games multi-save by @phobos665 in https://github.com/utkarshdalal/GameNative/pull/1790\r\n* URI Implementation by @ShadowFungi in https://github.com/utkarshdalal/GameNative/pull/1781\r\n* Add 'Disable Epic Overlay' container setting to prevent CEF virtual memory crash on save load by @Wavewash in https://github.com/utkarshdalal/GameNative/pull/1888\r\n\r\n## New Contributors\r\n* @pacoa-kdbg made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1800\r\n* @mbarchein made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1839\r\n* @Producdevity made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1786\r\n* @eve-ai-dev made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1870\r\n* @ShadowFungi made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1781\r\n* @Wavewash made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1888\r\n* @whatobiplays made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1796\r\n* @5TXdYWK made their first contribution in https://github.com/utkarshdalal/GameNative/pull/1707\r\n\r\n**Full Changelog**: https://github.com/utkarshdalal/GameNative/compare/v1.2.0...v1.2.1",
           "prerelease": false,
           "assets": [
             {
               "name": "gamenative-v1.2.1-legacy-xr.apk",
               "size": 568589601,
-              "downloads": 21164,
+              "downloads": 21167,
               "url": "https://github.com/utkarshdalal/GameNative/releases/download/v1.2.1/gamenative-v1.2.1-legacy-xr.apk"
             },
             {
@@ -16429,7 +16429,7 @@
       "extensions": [
         ".zip"
       ],
-      "downloads": 1139663,
+      "downloads": 1139670,
       "repoStats": {
         "stars": 1004,
         "forks": 28,
@@ -16518,14 +16518,14 @@
           "name": "Turnip Gen8 V36",
           "tag": "v36",
           "date": "2026-09-08T11:07:59Z",
-          "downloads": 52866,
+          "downloads": 52868,
           "body": "build from: https://github.com/whitebelyash/mesa-unified/tree/turnip/gen8 + Mesa Upstream\r\n\r\nfor A8xx GPUs ( a840, a830, a829, a825, 810)\r\n\r\nVulkan Version 1.4.359",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_Gen8_V36.zip",
               "size": 2764598,
-              "downloads": 52866,
+              "downloads": 52868,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v36/Turnip_Gen8_V36.zip"
             }
           ],
@@ -16552,14 +16552,14 @@
           "name": "Turnip Gen8 V34",
           "tag": "v34",
           "date": "2026-08-04T08:55:45Z",
-          "downloads": 45817,
+          "downloads": 45818,
           "body": "build from: https://github.com/whitebelyash/mesa-unified/tree/turnip/gen8 + Mesa Upstream\r\n\r\n for A8xx GPUs ( a840, a830, a829, a825, 810)\r\n\r\nVulkan Version 1.4.354",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_Gen8_V34.zip",
               "size": 2800551,
-              "downloads": 45817,
+              "downloads": 45818,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v34/Turnip_Gen8_V34.zip"
             }
           ],
@@ -16839,14 +16839,14 @@
           "name": "Turnip 26.2.0 R3",
           "tag": "turnip_v26.3.0_r3",
           "date": "2026-05-01T10:31:22Z",
-          "downloads": 22677,
+          "downloads": 22678,
           "body": "for Adreno A7xx And A6xx\r\n\r\nBased on latest commits from mesa https://gitlab.freedesktop.org/mesa/mesa\r\n\r\noneui variant now for a740 users on OneUI, for fix graphic bug",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_26.2.0_R3_OneUI.zip",
               "size": 2675675,
-              "downloads": 9081,
+              "downloads": 9082,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_26.2.0_R3_OneUI.zip"
             },
             {
@@ -16964,14 +16964,14 @@
           "name": "Turnip v26.1.0 New Autotuner ",
           "tag": "v26.1.0_auto",
           "date": "2026-04-03T18:33:30Z",
-          "downloads": 21537,
+          "downloads": 21538,
           "body": "for Adreno A7xx And A6xx\r\n\r\nthere's an update on the New Autotuner (which is used to go between sysmem/gmem dynamically for potentially better performance than using tudebug system) you need to remove tu_debug for test  \r\n\r\nhttps://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/37802\r\n\r\napparently it will be merged soon So feel free to give feedback",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_New_Autotuner_v26.1.0.zip",
               "size": 3509385,
-              "downloads": 21537,
+              "downloads": 21538,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.1.0_auto/Turnip_New_Autotuner_v26.1.0.zip"
             }
           ],
@@ -17015,14 +17015,14 @@
           "name": "Turnip 26.1.0 R5",
           "tag": "v26.1.0-R5",
           "date": "2026-03-17T20:07:26Z",
-          "downloads": 14265,
+          "downloads": 14266,
           "body": "for Adreno A7xx And A6xx\r\n\r\nBased on latest mesa https://gitlab.freedesktop.org/mesa/mesa\r\nnone patchs applied\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_v26.1.0_R5.zip",
               "size": 3415025,
-              "downloads": 14265,
+              "downloads": 14266,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.1.0-R5/Turnip_v26.1.0_R5.zip"
             }
           ],
@@ -17283,14 +17283,14 @@
           "name": "Turnip (Gen8) V19",
           "tag": "v19",
           "date": "2026-01-15T22:57:22Z",
-          "downloads": 7118,
+          "downloads": 7119,
           "body": "Turnip with initial support for Adreno a8xx Series \r\n(a810/a825/a829/a830/a840) \r\n\r\nshould also works on others GPUs\r\n\r\nall upstream content from https://github.com/whitebelyash/mesa-tu8 and https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/39167\r\n\r\nUse TU_DEBUG deck_emu if you have problems starting any game,this build also contains an attempt to improve performance with DXVK 2.5+\r\n\r\nWe recommend disabling DXVK_HUD if you see artifacts; Switch emulators may also have some glitches fixed by increasing (or decreasing) the resolution, Please note that this all is still experimental",
           "prerelease": false,
           "assets": [
             {
               "name": "Turnip_Gen8_V19.zip",
               "size": 3710902,
-              "downloads": 7118,
+              "downloads": 7119,
               "url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v19/Turnip_Gen8_V19.zip"
             }
           ],
@@ -17931,7 +17931,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 1023569,
+      "downloads": 1023570,
       "repoStats": {
         "stars": 551,
         "forks": 213,
@@ -17991,14 +17991,14 @@
           "name": "Winlator 7.1.3 with Native Glibc",
           "tag": "v7.1.3",
           "date": "2024-08-29T10:18:54Z",
-          "downloads": 517427,
+          "downloads": 517428,
           "body": "## What's New\r\n#### Added\r\n- Added **MIDI** support, allowing some games to play MIDI audio. The software comes with an open-source soundfont by [default](https://musical-artifacts.com/artifacts/1517), and you can also install your preferred soundfont in the `Settings` (currently, only SF2 format is supported). Download Windows MIDI Soundfont [here](https://musical-artifacts.com/artifacts/713).\r\n- Improved **OpenXR** suooport. Many thanks to **Luboš V.** , his work making OpenXR support possible and better.\r\n- Improved Game Controller Support, you can now selectively use **XInput** or **DInput** mapping. Linear triggers now work with both mapping modes. For trigger button, if it’s not working correctly, try adjusting the trigger button mode in the `Settings` to match your controller.\r\n- Added the feature to automatically set the container's **Locale**. You can now also adjust `LC_ALL` settings in the container editing interface.\r\n- Added Landscape And **Portrait Mode** switching features. You can now switch to portrait mode using the container's resolution settings or `Toggle Orientation` button of the left-side navigation bar.\r\n- Added the ability to reconfigure containers. You can now click `Reconfigure` in the container options to reconfigure the Wine prefix on the next startup.\r\n  \r\n#### Fixed\r\n- Fixed the stuttering issue when exiting the container.\r\n- Fixed the issue where shortcuts on the desktop remained available after deleting the container.\r\n- Fixed the issue with binding gamepad analog sticks in InputControlEditor.\r\n- Fixed the issue that shortcuts sometimes lost their settings.\r\n- Fixed the issue where clicking on the screen and input controls simultaneously in touch screen simulation mode caused crashes.\r\n- Fixed the missing End key issue in InputControlEditor.\r\n- Fixed the issue when creating a new container would reset the version and preset of box64.\r\n- Fixed the issue where groups in the box64 rc file could not be disabled.\r\n- Fixed the issue where the mouse pointer was inaccurate when using simulated touch screen in full-screen mode.\r\n- Fixed the issue where the file provider did not support moving files.\r\n- Fixed the issue where reinstalling the file system sometimes skipped the opt folder.\r\n- Fixed the issue where external storage could not be added as a Wine drive.\r\n  \r\n#### Changed\r\n- Update Wine to 9.16.\r\n- File provider enabled by default.\r\n- Added gst-libav.\r\n  \r\n####  What's new about OpenXR Support?\r\n- Fixed the issue causing crashes at startup.\r\n- Fixed 3DoF support to ensure it functions correctly, rather than running in 2DoF mode.\r\n- Fixed some graphical glitches on the Meta Quest 3.\r\n- Added controller mapping functionality in the settings.\r\n- Fixed the black screen issue on QuestOS V69.\r\n  \r\n#### FAQ\r\n1. #### What is Winlator with Native Glibc?\r\n   Many thanks to **BrunoSX** for developing [Winlator](https://github.com/brunodev85/winlator), a practical and popular PC simulation software. Winlator Glibc is not an upgrade but a mod to Winlator. It uses Glibc patches from Termux-pacman to build the necessary packages, achieving the same goals as the Proot-based solution but without the I/O performance loss associated with Proot. However, due to the exclusion of Arm32 and limitations in Wine's support for wow64, its compatibility with 32-bit applications is not as good as the vanilla Winlator.\r\n1. #### Where to Get Latest Turnip Driver?\r\n   Thanks to **K11MCH1** and **JeezDisReez**, the latest Mesa Turnip drivers are available for Winlator and can be found [K11MCH1/WinlatorTurnipDrivers](https://github.com/K11MCH1/WinlatorTurnipDrivers).\r\n3. #### Why not Include the New Box64 and Drivers in App?\r\n   Box64 and the Turnip Driver are updated frequently, so installing them externally ensures they are always up to date. Therefore, the app only includes their latest release versions.\r\n4. #### Reinstall or Overwrite?\r\n   You do not need to uninstall the old Winlator Glibc before installation. However, if you have installed a different version, you must uninstall it before installing the new one due to different signatures. Please make sure to **BACK UP** your data.\r\n5. #### Game has Sound but Blank.\r\n   Try using box64 version 0.3.0 or earlier and try using wine-9.2.\r\n4. #### What is .wcp?\r\n   **.wcp** is the file extension for add-ons. It is compressed using **XZ** or **Zstd** and includes a **profile.json** file as a manifest. You can create your own add-on files containing various contents. Since these files often include executable programs, **make sure** to verify that add-ons from other sources do not contain malicious software before installation.\r\n6. #### What is .rcp?\r\n   **.rcp** is the file extension for custom Box64 configuration files. It uses a JSON data structure and can be used to generate a box64rc file that Box64 can read. You can refer to [official box64rc](https://github.com/ptitSeb/box64/blob/main/system/box64.box64rc) to configure the rcp file, but you **cannot** import it directly.\r\n  \r\n**Additional Files**:\r\n1. **box64-0.3.1-0450371.wcp**: contains `box64-0.3.1`, built from [ptitSeb/box64](https://github.com/ptitSeb/box64/commit/0450371e282bd5c4dbbceaeca590626304609036).\r\n3. **box64-0.3.1-0450371-8g2.wcp**: contains `box64-0.3.1`, built from [ptitSeb/box64](https://github.com/ptitSeb/box64/commit/0450371e282bd5c4dbbceaeca590626304609036). Disabled BAD_SIGNAL for 8gen2 and enabled the 8G2 option, which **may** improve performance.\r\n7. **box64-0.2.7.wcp**: contains `box64-0.2.7`, built from [ptitSeb/box64](https://github.com/ptitSeb/box64).\r\n8. **wine-9.2-custom.wcp**: contains `wine-9.2`. Added MIDI support and improved controller support for Wine 9.2. Please avoid using the older version of Wine 9.2.\r\n\r\n## What's Changed\r\n* OpenXR - Fix crash on init by @lvonasek in https://github.com/longjunyu2/winlator/pull/36\r\n* midi: Add midi support. by @longjunyu2 in https://github.com/longjunyu2/winlator/pull/38\r\n* OpenXR - Fix 3DoF by @lvonasek in https://github.com/longjunyu2/winlator/pull/40\r\n* controller: Try fix controller issues. by @longjunyu2 in https://github.com/longjunyu2/winlator/pull/44\r\n* OpenXR - Reopening fixed by @lvonasek in https://github.com/longjunyu2/winlator/pull/46\r\n* OpenXR - Fix 3DoF camera by @lvonasek in https://github.com/longjunyu2/winlator/pull/47\r\n* OpenXR - Workaround for graphical glitches by @lvonasek in https://github.com/longjunyu2/winlator/pull/50\r\n* OpenXR - Controller mapping in settings by @lvonasek in https://github.com/longjunyu2/winlator/pull/52\r\n* OpenXR - Crash fix by @lvonasek in https://github.com/longjunyu2/winlator/pull/53\r\n* Fixed cannot see changes of input controls until reset. by @longjunyu2 in https://github.com/longjunyu2/winlator/pull/56\r\n* OpenXR - Fix for QuestOS V69 by @lvonasek in https://github.com/longjunyu2/winlator/pull/58\r\n\r\n## New Contributors\r\n* @lvonasek made their first contribution in https://github.com/longjunyu2/winlator/pull/36\r\n\r\n**Full Changelog**: https://github.com/longjunyu2/winlator/compare/v7.1.2...v7.1.3",
           "prerelease": false,
           "assets": [
             {
               "name": "app-release.apk",
               "size": 244020641,
-              "downloads": 210650,
+              "downloads": 210651,
               "url": "https://github.com/longjunyu2/winlator/releases/download/v7.1.3/app-release.apk"
             },
             {
@@ -18130,7 +18130,7 @@
       "category": "Emulator PS2",
       "logo": "armsx2.png",
       "extensions": null,
-      "downloads": 933336,
+      "downloads": 933337,
       "repoStats": {
         "stars": 2166,
         "forks": 169,
@@ -18303,7 +18303,7 @@
           "name": "ARMSX2 2.8.2 ",
           "tag": "2.8.2",
           "date": "2026-10-07T00:57:22Z",
-          "downloads": 35196,
+          "downloads": 35197,
           "body": "# ARMSX2 2.8.2\r\n\r\nWhat's new:\r\n\r\n**Texture upscaling.** RAISR filters sharpen game textures while you play. The upscaling happens in the background, so textures sharpen a moment after they first show up. Use RAISR 2x for most games, or RAISR 4x if you play at a high internal resolution. You'll find it in All Settings > Renderer, and in the quick menu right under the internal resolution. It works on Vulkan and OpenGL, and if a game has a texture pack loaded, the pack wins. done by @bmdhacks\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b78cce3f-237c-4a1e-b93b-7e94e6f58b51\" />\r\n\r\n<img width=\"774\" height=\"725\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c01c01e3-1ed7-43cb-a8f5-11423c8b8882\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/67a28834-1342-4e94-b2d9-b9e63996d025\" />\r\n\r\n<img width=\"1669\" height=\"1214\" alt=\"image\" src=\"https://github.com/user-attachments/assets/3ec279da-da50-4f08-9d95-83bfaaf91281\" />\r\n\r\n**Two controllers, one player.** In Controls > Player & Rumble you can set your handheld's built-in controls and a Bluetooth controller both to Player 1, and both will work at the same time. Dock to a TV and keep playing without changing anything. Rumble goes to whichever one you used last. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c9025a11-c5f0-4bc1-9769-af3e16f042d3\" />\r\n\r\n**More autosaves.** You can keep up to 5 autosaves now (3 by default). Set it in the save state picker. Each new autosave pushes the older ones back, so if one gets made right before you die, you still have earlier ones to go back to. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6cc4d3ca-6f1c-435b-b71e-2edea0ea6d9b\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1506345d-fbd8-4666-b278-6bc7734e01f0\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0a51a5f4-1c1f-4f69-9bf7-71cb4a1fdcad\" />\r\n\r\n**Soul Calibur II's Conquest card.** The arcade version now sets up its Conquest card in slot 2 by itself, using SC2MAKER's blank card. Without one, the CPU opponents didn't behave right (#793). done by @jpolo1224. The Conquest card is SC2MAKER's (github.com/israpps/SC2MAKER), by @israpps\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e10c5040-52ed-43e4-976b-86a427a5b722\" />\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/942c22a4-12af-4171-ba77-2bd97df092fe\" />\r\n\r\n## Fixed\r\n\r\n**Touch controls ignoring taps (#796, #775).** With the extra stick button or the GunCon buttons turned off, the spots where they normally sit still blocked taps. That included the top of the default D-pad, part of L1, and anything you'd moved there. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/f3432818-c81e-43e5-80b3-0dc1e4db45df\" />\r\n\r\n**Save state hotkeys (#784).** Pressing one while the game was saving to its memory card did nothing. Now it waits for the memory card to finish and then saves. Also, if you let go of a button during a save or load, it no longer stays stuck down in the game. done by @jpolo1224\r\n\r\n**Stretched picture in portrait (#790).** With a screen resolution override set, the game got stretched across the whole screen in portrait. done by @jpolo1224\r\n\r\n<img width=\"1080\" height=\"1920\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7f2c28c6-78c1-49a8-aa0d-ae58505531ad\" />\r\n\r\n**ELFs from Android's file picker (#759).** An ELF in a folder you added through Android's file picker opened the BIOS browser instead of the ELF. done by @jpolo1224\r\n\r\n**Cut-off screenshots.** Screenshots taken with the hotkey sometimes landed in your gallery cut off after the first few rows, with the rest black. They were being copied over before they'd finished saving. done by @jpolo1224\r\n\r\n<img width=\"1920\" height=\"1080\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c7692275-01c2-43ee-8c5c-0f730b4e0c2b\" />\r\n\r\n**Texture pack speckling.** Some pixels that should be solid came out slightly see-through after compression, and the game skipped drawing them (Sly 1 and 3, GT4, Armored Core 3, Shin Onimusha, River King). Packs also load more reliably now, and old textures don't stick around. done by @bmdhacks\r\n\r\n**Performance.**\r\n- Texture cache updates were writing into slow upload memory, which cost about 11% of the GS thread in Metal Gear Solid 3 on a Snapdragon 865 with Turnip.\r\n- Big textures that haven't changed are no longer re-hashed every frame. That was about 8% of the GS thread in Burnout 3.\r\n- Black spends about 11% less time on its VU1 programs (#795).\r\n- The shader preset picker indexes presets once, so it opens right away.\r\n\r\ndone by @bmdhacks\r\n\r\n(A new PGO profile has also been applied, it was 6 weeks stale). \r\n\r\n<img width=\"1763\" height=\"1319\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0ad418b4-64c9-4cf8-820f-2b07841f3558\" />\r\n",
           "prerelease": false,
           "assets": [
@@ -18322,7 +18322,7 @@
             {
               "name": "ARMSX2-2.8.2-a15-armv8.2-sdk35.apk",
               "size": 68616259,
-              "downloads": 10081,
+              "downloads": 10082,
               "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.8.2/ARMSX2-2.8.2-a15-armv8.2-sdk35.apk"
             },
             {
@@ -20695,7 +20695,7 @@
       "category": "Sega Dreamcast",
       "logo": "flycast.png",
       "extensions": null,
-      "downloads": 881774,
+      "downloads": 881778,
       "repoStats": {
         "stars": 2590,
         "forks": 368,
@@ -20720,14 +20720,14 @@
           "name": "v2.7: Localization, Naomi multiscreen",
           "tag": "v2.7",
           "date": "2026-08-19T11:47:09Z",
-          "downloads": 107581,
+          "downloads": 107585,
           "body": "## New features\r\n* Frame rate detection and pacing\r\n* Localization (fr, hu, jp, pt_BR, sv)\r\n* Multiscreen support for Airline Pilot, Sega Strike Fighter and Derby Owners Club\r\n* Improved modem emulation\r\n* improved DreamPicoPort and DreamPotato support by @RikkiGibson, @Tails86 and @nexus382\r\n* Android: Google Auto Backup support for VMU saves and non-volatile memory\r\n\r\n## Fixed Games\r\n* Airline Pilot (Naomi, multiscreen)\r\n* Cyber Troopers Virtual-On: Oratorio Tangram (JP, online features)\r\n* Derby Owners Club (new)\r\n* Dinosaur King (ZH, new)\r\n* DreamParaPara by @dakrk (new)\r\n* F355 Challenge (JP, online features)\r\n* Fish Life (new)\r\n* Love & Berry 3 (ZH, new)\r\n* NFL 2K1, NFL 2K2, NBA 2K1, NBA 2K2 (freeze)\r\n* Power Smash (online lag)\r\n* Rune Jade (online features)\r\n* Samba de Amigo (Naomi, inputs)\r\n* Sega Strike Fighter (Naomi, multiscreen)\r\n\r\n## New Contributors\r\n* @Windsurf7 made their first contribution in https://github.com/flyinghead/flycast/pull/2229\r\n* @Kyuyrii made their first contribution in https://github.com/flyinghead/flycast/pull/2236\r\n* @eadmaster made their first contribution in https://github.com/flyinghead/flycast/pull/2252\r\n* @PLCodingStuff made their first contribution in https://github.com/flyinghead/flycast/pull/2274\r\n* @marcgardent made their first contribution in https://github.com/flyinghead/flycast/pull/2318\r\n* @AurisDSP made their first contribution in https://github.com/flyinghead/flycast/pull/2333\r\n* @engdyn made their first contribution in https://github.com/flyinghead/flycast/pull/2383\r\n\r\n**Full Changelog**: https://github.com/flyinghead/flycast/compare/v2.6...v2.7",
           "prerelease": false,
           "assets": [
             {
               "name": "flycast-2.7.apk",
               "size": 36280670,
-              "downloads": 61870,
+              "downloads": 61873,
               "url": "https://github.com/flyinghead/flycast/releases/download/v2.7/flycast-2.7.apk"
             },
             {
@@ -20745,7 +20745,7 @@
             {
               "name": "flycast-macOS-2.7.zip",
               "size": 19424997,
-              "downloads": 11686,
+              "downloads": 11687,
               "url": "https://github.com/flyinghead/flycast/releases/download/v2.7/flycast-macOS-2.7.zip"
             },
             {
@@ -21305,7 +21305,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 844987,
+      "downloads": 844989,
       "repoStats": {
         "stars": 1115,
         "forks": 72,
@@ -21325,20 +21325,20 @@
           "name": "Winlator Cmod v13.1.1",
           "tag": "cmod_v13.1",
           "date": "2025-08-07T07:49:41Z",
-          "downloads": 423551,
+          "downloads": 423553,
           "body": "_Minor update v13.1.1 fixed custom icons, default renderer, and warning prompt handling on new installs_ \r\n\r\n------------------------------\r\n\r\n-   **`evshim` Rewrite:** The entire controller shim (`libevshim.so`) has been rewritten, **completely eliminating the use of shared memory (`mmap`)**, resulting in a massive reduction in CPU overhead and a significant performance boost, especially on lower-end devices. Box64 3.2 and 3.6 are now compatible, and have been restored.\r\n\r\n-   **ALSA-Reflector Improved** The pacer's ring buffer and reconnection logic have been refined, expect better performance and reliability.\r\n\r\n-   **Universal CPU Overhead Reduction:** I've gone through the code to find and eliminate performance bottlenecks, once again, big thanks to @Pipetto-crypto as always for the guidance and his improvements to the Graphics Wrapper. \r\n\r\n### ✨ New Feature: VkBasalt Integration\r\n\r\n-   **Per-Shortcut Sharpening & Effects:** Thanks to @Pipetto-crypto You can now enable VkBasalt on a per-shortcut basis to apply CAS and DLS to your games.\r\n\r\n### 🐞 Stability & Bug Fixes:\r\n\r\nThis update includes a huge number of fixes for a smoother experience.\r\n\r\n-   **Corrupted Shortcut Crash Fixed:** Implemented safety checks to prevent the app from crashing when parsing corrupted `.desktop` files.\r\n\r\n-   **Proton & Frontend Fixes:** Resolved issues that caused crashes when launching the frontend or using XrActivity.\r\n\r\n-   **Input Controls Fixed:** Corrected bugs with toggle switches and range buttons in the input controls overlay.\r\n\r\n-   **Gyro Zeroing Improved:** The gyroscope now has better logic for finding its origin point, resulting in more responsive and accurate motion controls.\r\n\r\n-   **Renderer Selection for DDraw:** Added a renderer selection option to fix black screens in older DDraw games, thanks to some last minute insight to **@Pipetto-Crypto**.\r\n\r\n### ⚙️ Core & Asset Updates\r\n\r\n-   **Proton 10 Support:** The codebase is now prepared for the next major Proton release. Stay tuned. (...and Wine 9.20)\r\n\r\n-   **Updated Assets:** The default Box64, Proton packs, and other core assets have been updated with the latest fixes and improvements. Additional .wcp have been added to Contents: updated DXVK (+ Stripped, Sarek for lower end devices), updated VKD3D, and Turnip. Thank you @K11MCH1 for your excellent repository.\r\n\r\nThe list goes on actually. More planned as always- now get to testing! Spin up GTA IV and watch it fly! 🫡\r\n\r\n-Alex\r\n\r\n**WARNING: _Make new Containers_.** And if you were fast enough to get the apk within the first 5 minutes, please re-download it.\r\n\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "cmod-hotfix-checklist-08-07-2025.png",
               "size": 161893,
-              "downloads": 37724,
+              "downloads": 37725,
               "url": "https://github.com/coffincolors/winlator/releases/download/cmod_v13.1/cmod-hotfix-checklist-08-07-2025.png"
             },
             {
               "name": "Winlator-Cmod-v13.1.1.apk",
               "size": 699660031,
-              "downloads": 385827,
+              "downloads": 385828,
               "url": "https://github.com/coffincolors/winlator/releases/download/cmod_v13.1/Winlator-Cmod-v13.1.1.apk"
             }
           ],
@@ -21637,7 +21637,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 820692,
+      "downloads": 820693,
       "repoStats": {
         "stars": 698,
         "forks": 18,
@@ -21657,14 +21657,14 @@
           "name": "10.1hotfix-Amod3fix2",
           "tag": "10.1hotfix-Amod3fix2",
           "date": "2025-12-02T08:21:17Z",
-          "downloads": 70317,
+          "downloads": 70318,
           "body": "1-修复部分游戏mod失效，比如死或生5，上古卷轴五等\r\n2-提供wine-10.15.whp可以在额外内容里安装，这个wine可以播放一些视频白屏有声音的游戏\r\n3-其他更新见fix1\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "Winlator10.1-Amod3fix2.apk",
               "size": 879369555,
-              "downloads": 58456,
+              "downloads": 58457,
               "url": "https://github.com/afeimod/winlator-mod/releases/download/10.1hotfix-Amod3fix2/Winlator10.1-Amod3fix2.apk"
             },
             {
@@ -23040,7 +23040,7 @@
       "extensions": [
         ".zip"
       ],
-      "downloads": 819353,
+      "downloads": 819357,
       "repoStats": {
         "stars": 251,
         "forks": 12,
@@ -23060,14 +23060,14 @@
           "name": "Turnip - 25.3.0-devel - Oct 11, 2025",
           "tag": "25.3.0-devel_bbdd688",
           "date": "2025-10-11T23:54:12Z",
-          "downloads": 341146,
+          "downloads": 341149,
           "body": "### Base commit : [bbdd688](https://gitlab.freedesktop.org/mesa/mesa/-/commit/bbdd688)\r\n## Upstreams / Patches\r\nThese have not been merged by Mesa officially yet and may introduce bugs or\r\nwe revert stuff that breaks games but still got merged in (see --reverse)\r\n- force_sysmem_no_autotuner, ../../patches/force_sysmem_no_autotuner.patch, \r\n\r\n_Upstreams / Patches are only applied to the patched version (\\_patched.zip)_\r\n_If a patch is not present anymore, it's most likely because it got merged, is not needed anymore or was breaking something._\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_Oct-11-2025_bbdd688.zip",
               "size": 3372882,
-              "downloads": 189908,
+              "downloads": 189911,
               "url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/download/25.3.0-devel_bbdd688/turnip_Oct-11-2025_bbdd688.zip"
             },
             {
@@ -23089,14 +23089,14 @@
           "name": "Turnip - 25.3.0-devel - Sep 09, 2025",
           "tag": "25.3.0-devel_dcfa4fa",
           "date": "2025-09-09T04:23:30Z",
-          "downloads": 64053,
+          "downloads": 64054,
           "body": "### Base commit : [dcfa4fa](https://gitlab.freedesktop.org/mesa/mesa/-/commit/dcfa4fa)\r\n## Upstreams / Patches\r\nThese have not been merged by Mesa officially yet and may introduce bugs or\r\nwe revert stuff that breaks games but still got merged in (see --reverse)\r\n- force_sysmem_no_autotuner, ../../patches/force_sysmem_no_autotuner.patch, \r\n\r\n_Upstreams / Patches are only applied to the patched version (\\_patched.zip)_\r\n_If a patch is not present anymore, it's most likely because it got merged, is not needed anymore or was breaking something._\r\n### Upstreams / Patches (Experimental)\r\nInclude previously listed patches + experimental ones\r\n- disable_VK_KHR_workgroup_memory_explicit_layout, ../../patches/disable_KHR_workgroup_memory_explicit_layout.patch, \r\n\r\n_Experimental patches are only applied to the experimental version (\\_experimental.zip)_\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "turnip_Sep-09-2025_dcfa4fa.zip",
               "size": 3317969,
-              "downloads": 33084,
+              "downloads": 33085,
               "url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/download/25.3.0-devel_dcfa4fa/turnip_Sep-09-2025_dcfa4fa.zip"
             },
             {
@@ -24098,7 +24098,7 @@
       "extensions": [
         ".zip"
       ],
-      "downloads": 761095,
+      "downloads": 761103,
       "repoStats": {
         "stars": 464,
         "forks": 24,
@@ -24118,20 +24118,20 @@
           "name": "Mainline Turnip v32",
           "tag": "tu_v32",
           "date": "2026-09-19T13:30:05Z",
-          "downloads": 25477,
+          "downloads": 25482,
           "body": "Mainline Turnip Vulkan V32\r\nBuilt from: https://github.com/whitebelyash/mesa-unified (turnip/gen8 branch). Took a while.  \r\n\r\nI didn't test this this much. Contact me on MojoLauncher.en (#offtopic-non-help, requires Community role) or EmuCore discord if there are any issues.\r\n\r\n\r\n>[!WARNING]\r\n> Please don't report issues to Mesa, PLEASE\r\n          \r\nSupported GPUs:\r\n* Adreno 8XX Family: 840, 830, 829, 825, 812, 810\r\n* Adreno 7XX Family: any GPU supported by the upstream Turnip + 710/720/722 (unstable, sysmem only). Thanks, https://github.com/Vauzi-17/710.  \r\n(Upstream has more fixes, so check it too)\r\n* Adreno 6XX Family: any GPU supported by the upstream Turnip\r\n\r\n\r\nNotes:\r\n* Disable DXVK_HUD if you see weird black artifacts\r\n* Apparently there are swizzling glitches in Eden & maybe other emulators, try increasing render scale(?)\r\n* Some games may require AMD/NVIDIA GPU to run and refuse to start on Qualcomm or block some features. I've included a patch to spoof as Steam Deck - use `TU_DEBUG=deck_emu`\r\n* GMEM rendering produces glitchy picture on A830 (write page faults), disable it with `TU_DEBUG=sysmem`. It's pretty much useless for PC emulation anyway.\r\n\r\nChanges\r\n* Upstream rebase\r\n* Rebase build fixes\r\n\r\nThat's it for now. For now.\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "mainline-turnip-sync-V32.zip",
               "size": 2643854,
-              "downloads": 13443,
+              "downloads": 13445,
               "url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v32/mainline-turnip-sync-V32.zip"
             },
             {
               "name": "mainline-turnip-V32.zip",
               "size": 2640415,
-              "downloads": 12034,
+              "downloads": 12037,
               "url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v32/mainline-turnip-V32.zip"
             }
           ],
@@ -24279,14 +24279,14 @@
           "name": "Turnip A8XX v27",
           "tag": "tu_v27",
           "date": "2026-06-01T18:07:22Z",
-          "downloads": 18504,
+          "downloads": 18505,
           "body": "A8XX Turnip Vulkan V27\r\nBuilt from: https://github.com/whitebelyash/mesa-unified (turnip/gen8 branch)\r\n\r\nI didn't test this this much. Contact me on FEX (#android-wastelands) or EmuCore discord if there are any issues.\r\n\r\nFor Minecraft use MojoLauncher from this branch: https://github.com/whitebelyash/MojoLauncher/tree/feat/adrenotools (CI: https://github.com/whitebelyash/MojoLauncher/actions/runs/26694388841).\r\n\r\n\r\n>[!WARNING]\r\n> Please don't report issues to Mesa, PLEASE\r\n          \r\nSupported GPUs:\r\n* Adreno 8XX Family: 840, 830, 829, 825, 810\r\n* Adreno 7XX Family: any GPU supported by the upstream Turnip + 710/720 from Termux patches (unstable)\r\n* Adreno 6XX Family: any GPU supported by the upstream Turnip\r\n\r\nGPUs other than 830/840 can have reduced performance and/or more glitches. Can't do anything about that, sorry!  \r\nAdreno 810 is additionally very slow, I'm not sure if you even want to use Turnip there\r\n\r\nNotes:\r\n* Disable DXVK_HUD if you see weird black artifacts\r\n* Apparently there are swizzling glitches in Eden & maybe other emulators, try increasing render scale(?)\r\n* Some games may require AMD/NVIDIA GPU to run and refuse to start on Qualcomm or block some features. I've included a patch to spoof as Steam Deck - use `TU_DEBUG=deck_emu`\r\n* GMEM rendering produces glitchy picture on A830 (write page faults), disable it with `TU_DEBUG=sysmem`. It's pretty much useless for PC emulation anyway.\r\n\r\nChanges:\r\n* Import upstream changes\r\n* Start building Turnip with unmerged/draft timeline sync MR applied. This might be broken/unstable/whatever, but it's a proper sync primitives implementation that boosts (OMG!!) framerate in some cases (e.g. Zink) or straight up required for the thing to work (VulkanMod).\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "a8xx-turnip-gen8-sync-V27.zip",
               "size": 2601954,
-              "downloads": 11105,
+              "downloads": 11106,
               "url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v27/a8xx-turnip-gen8-sync-V27.zip"
             },
             {
@@ -24421,14 +24421,14 @@
           "name": "Mesa Turnip v26.1.0-git_3",
           "tag": "mesa_v26.1.0-git_3",
           "date": "2026-03-02T18:22:09Z",
-          "downloads": 30128,
+          "downloads": 30129,
           "body": "Mesa Turnip V26.1.0-git_3  \r\nBuilt from: https://gitlab.freedesktop.org/mesa/mesa\r\n\r\n>[!WARNING]\r\n> GPUs other than A830/A840 may work unstable!\r\n\r\nThis is a build of current upstream Mesa with my GPU enablement hacks applied\r\n\r\nChanges:\r\n- Import upstream as usual\r\n- Decrease reg_size on 830 to 96 - should fix Cyberpunk 2077 crashes. See the commit info.\r\n- Integrate [unmerged](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/39751) KGSL timeline sync MR - works good enough now. This is a proper replacement for old cringy vibecoded timeline sync emulation code I removed few releases ago. \r\n- Remove gmem cache offset completely as it breaks on lower-end A8XX GPUs.\r\n- due to that, change cache sizes for A825/A810. GMEM should work on A825 now.\r\n- Integrate zdobersek's patch fixing (workaround'ing) FLUSHALL. There's one build now as flushall is disabled by default and fixed.\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "mesa-turnip-main-V26.1.0-git_3.zip",
               "size": 2456917,
-              "downloads": 30128,
+              "downloads": 30129,
               "url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/mesa_v26.1.0-git_3/mesa-turnip-main-V26.1.0-git_3.zip"
             }
           ],
@@ -24518,14 +24518,14 @@
           "name": "Mesa 26.0 Turnip v2",
           "tag": "mesa26_v2",
           "date": "2026-01-30T19:58:33Z",
-          "downloads": 12398,
+          "downloads": 12399,
           "body": "Mesa 26.0 Turnip V2  \nBuilt from: https://gitlab.freedesktop.org/mesa/mesa\n\n>[!WARNING]\n> This release is not related to old A8XX Turnip builds and meant for testing upstream Mesa on A840!\n> Adreno 830/829/825/810 are not supported!\n\nThis is a build of current upstream Mesa (26.0) with my UBWC hacks applied.  \nUnlike my old Turnip builds, this one is based directly on the main repo with only essential hacks applied to boot it on Android WSI platform. As I said, it won't work on GPUs other than Adreno 840.  \n",
           "prerelease": false,
           "assets": [
             {
               "name": "mesa-turnip-main-V2.zip",
               "size": 2810413,
-              "downloads": 12398,
+              "downloads": 12399,
               "url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/mesa26_v2/mesa-turnip-main-V2.zip"
             }
           ],
@@ -24967,7 +24967,7 @@
       "category": "PC Emulator",
       "logo": "xodos.png",
       "extensions": null,
-      "downloads": 756218,
+      "downloads": 756219,
       "repoStats": {
         "stars": 740,
         "forks": 71,
@@ -25057,14 +25057,14 @@
           "name": "XoDos 5.9.0",
           "tag": "5.9.0",
           "date": "2025-09-07T10:38:48Z",
-          "downloads": 99570,
+          "downloads": 99571,
           "body": "🚀 **XoDos** Emulator (arm64) - Major Update!\r\n\r\nWelcome to a huge update for XoDos! This release packs a massive punch with refinements across the entire app, from a polished UI to powerful new under-the-hood features for both Wine and the Proot environment. Get ready for a smoother, more compatible, and more controllable experience.\r\n\r\n✨** What's New in the App?**\r\n\r\n· 🎨 Updated & Fixed App UI: A refreshed and more stable user interface for a better overall experience.\r\n· ⚙️ New Quick-Settings Menu: Added new settings for instant access to install DXVK/D3D and drivers for Wine anywhere, anytime! No more complicated commands.\r\n· 🚀 Termux-X11 Performance Boost: Updated to the latest official code! Now featuring hardware buffer support for significantly improved performance and smoothness.\r\n· 📋 Restored Start Menu & Widgets: The convenient start menu is back! Plus, we've added handy Termux widgets for quicker access.\r\n· 🍷 Wine Bionic Updated: Upgraded to Wine 10.0-rc3 x86_64 for much better application and game compatibility.\r\n· 🔧 Fixed Desktop Scripts: Fixed scripts for both Wine Glibc and Bionic. You can now properly stop the desktop from the settings with the \"Stop Desktop\" button.\r\n· 🖥️ Fixed Native Desktop Launcher: Resolved a bug in the hardware acceleration mode selector that was incorrectly choosing VIRGL mode for Linux apps.\r\n· 🐛 Fixed Proot Desktop Script: The script for launching the Proot desktop has been fixed and stabilized.\r\n· 🖱️ Fixed External Mouse Support: Improved the mouse capturing method for a more reliable external mouse experience.\r\n\r\n---\r\n\r\n🪄 What's New in the Proot System?\r\n\r\nThe integrated Proot environment has received a massive upgrade, turning it into a powerhouse for Windows applications.\r\n\r\n· 🍷 Wine 9.17: Added the latest and greatest Wine version (9.17) for cutting-edge support.\r\n· 🤖 New Box64 Integration: Added brand-new Box64 for vastly improved x86_64 Windows game and application support on ARM64 devices!\r\n· 🎯 Experimental Turnip Drivers: Added new Turnip drivers (Mesa RadV). They can be installed via .bat files for now. Once stable, they will be integrated into the quick-settings menu just like Bionic and Glibc.\r\n· ⚡ DXVK & Wined3D Installation: Added the ability to install DXVK and Wined3D directly from .bat files inside the Proot environment, same as the drivers.\r\n· 📊 MS Office Installation Fixed: MS Office can now be installed and fixed anytime directly from the desktop.\r\n· 🎮 Updated OpenGL/Zink: Updated and fixed OpenGL and Zink implementations for better graphics rendering.\r\n· 🔬 Beta VIRGL Drivers: Added VIRGL drivers for both Wine and Linux applications (marked as beta for now).\r\n· ...and more! Various under-the-hood tweaks and fixes for a rock-solid experience.\r\n\r\n---\r\n\r\n📥 Download now and experience the new level of emulation on ARM64!\r\n\r\nNote: check the checksum after downloading to make sure files are successfully downloaded 👇\r\n```\r\nFile: 5.9/XoDos_full_arm64-v8a.apk\r\nMD5: 65:dd:a5:63:5b:78:dd:5b:18:ea:ba:fa:f1:c1:54:79\r\nSHA1: 8b:ca:b0:f9:4d:85:61:25:97:d2:1f:00:e8:5e:d1:32:5f:94:bd:82\r\nSHA256: 64:0f:d3:36:0c:3e:f0:58:27:83:67:36:88:f8:d4:cc:21:82:8b:62:80:70:c6:63:1d:65:88:86:d1:cb:33:ef\r\n-------------------------------------------------------\r\nFile: 5.9/xodos-proot-5.9.tar.xz\r\nMD5: da:a5:00:bd:75:1a:41:c3:47:42:c4:36:2d:43:bd:52\r\nSHA1: 40:2f:06:68:56:4a:ee:9a:68:fe:3b:41:e2:0e:f0:b2:17:fa:be:22\r\nSHA256: 3a:06:27:1a:65:1c:7d:2a:31:d9:64:46:87:62:4f:84:8f:70:60:6b:3a:d3:3c:50:07:66:a3:fb:fc:5c:c7:2a\r\n```\r\n\r\nHappy Gaming! 🎮\r\n\r\nFor best experience download the full version APK (1.7 GB) with Bionic and Glibc wine pre-installed\r\n\r\n**Google drive download link 👇**\r\nhttps://drive.google.com/file/d/1ERgkZDNKI-jgXcN0U-DUknkW8K7DVMev/view?usp=drivesdk\r\n\r\n**Credits:**\r\nTeam: @xodiosx🇾🇪 & @DesarrolladorPrimary 🇨🇴 & @Mondo67244🇲🇫 & @Aurora0y🇧🇷 & @Chest1902🇧🇩 & @jiaxinchen-max 🇨🇳  & @Snap888🇷🇺\r\nLogo designer: @xl_v6/ashen🇮🇶\r\n\r\n**Support:**\r\nTelegram: https://t.me/xodemulatorr\r\nDiscord: https://discord.gg/d2ChVhPfnF\r\n\r\nThank you for choosing XoDos by xodios M.aleiw\r\n",
           "prerelease": false,
           "assets": [
             {
               "name": "XoDos-5.9.0-full_arm64-v8a.apk",
               "size": 1843697017,
-              "downloads": 86892,
+              "downloads": 86893,
               "url": "https://github.com/xodiosx/XoDos/releases/download/5.9.0/XoDos-5.9.0-full_arm64-v8a.apk"
             },
             {
@@ -25812,7 +25812,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 641777,
+      "downloads": 641781,
       "repoStats": {
         "stars": 440,
         "forks": 35,
@@ -25832,7 +25832,7 @@
           "name": "Winlator Mali Bionic 1.1",
           "tag": "bionic-mali-1.1",
           "date": "2026-07-09T19:05:29Z",
-          "downloads": 129602,
+          "downloads": 129606,
           "body": "Winlator Mali Bionic v1.1\r\n\r\n🚀 New Features\r\n\r\n- Added Fake HDR.\r\n- Added a Universal FPS Limiter.\r\n- Added a Sharpness option.\r\n- Added GTA V Optimization toggle in Shortcut Settings.\r\n- Added DXVK Config toggle with built-in pre-made configuration presets.\r\n- Automatically generates a dxvk.conf file for each container based on the selected preset.\r\n- Added new DXVK versions.\r\n- Added the new GameNative Vulkan Wrapper.\r\n- Added new Box64 and FEX presets.\r\n\r\n---\r\n\r\n🎮 Unreal Engine 3 Preset\r\n\r\n- Added a dedicated Unreal Engine 3 preset.\r\n- Tested with X-Men Origins: Wolverine for improved compatibility and performance.\r\n\r\n---\r\n\r\n⚙️ Hybrid x86 FEXCore\r\n\r\n- Added a custom Hybrid x86 FEXCore.\r\n\r\nWhat does it do?\r\n\r\n- Improves compatibility while maintaining high performance.\r\n- Fixes physics issues in supported games that normally require x86 Reduced Precision to be completely disabled.\r\n\r\nWhy is it better?\r\n\r\nNormally, disabling x86 Reduced Precision forces software emulation for all x86 code, which can significantly reduce performance.\r\n\r\nHybrid x86 only uses software emulation where it is actually needed (such as physics calculations), while allowing the rest of the game to run natively for much better performance.\r\n\r\nTested Games\r\n\r\n- ✅ Assassin's Creed Revelations – Physics issues fixed while using the Performance preset.\r\n- ✅ Assassin's Creed Brotherhood – Physics issues fixed while using the Performance preset.\r\n- ⚠️ Assassin's Creed III – Still requires x86 Reduced Precision to be fully disabled.\r\n\r\n«Note: Hybrid x86 improves compatibility for many games but is not a universal solution.»\r\n\r\n---\r\n\r\n⚡ Improvements\r\n\r\n- Improved ImageFS and Wine installation speeds by replacing TZST packages, resulting in significantly faster extraction and setup times.\r\n- Updated various DXVK, Box64, FEX, Vulkan Wrappers, and compatibility presets.\r\n- Improved overall compatibility, stability, and performance across supported games.\r\n\r\n---\r\n\r\n🛠️ Fixes\r\n\r\n- Fixed an issue where Community Configs could fail to import correctly.\r\n- Fixed an issue that could cause normal containers to become corrupted.\r\n- Fixed a crash that occurred when selecting certain VKD3D versions.\r\n- Fixed an issue where enabling APEX Frame Generation could randomly produce visual artifacts during gameplay.\r\n- Fixed an issue where enabling Screen Effects could cause the image to become stretched.\r\n- Fixed an issue where memory was not being released properly after closing the app, causing RAM usage to remain higher than expected.\r\n\r\n---\r\n\r\n⚠️ Important\r\n\r\n- A clean reinstall is required for this release. Existing installations are not supported due to changes in the system files and package format.\r\n\r\n---\r\n\r\n📝 Additional Changes\r\n\r\n- Added numerous other fixes, improvements, optimizations, and internal changes that are not individually listed in this changelog.\r\n- Updated various internal components to improve the overall user experience.\r\n- More game-specific presets, compatibility improvements, and optimizations will continue to be added in future releases.\r\n\r\n---\r\n\r\n❤️ Special Thanks\r\n\r\n- Winlator Bionic — Pipetto-crypto\r\n- Winlator Ludashi — StevenMxz\r\n- Controller Fixes — Vivsi1\r\n- leegao\r\n- BannerHub — the412banner\r\n\r\n---\r\n\r\n📞 Contact / Support\r\n\r\nIf you need help, want to report bugs, or would like to support the project:\r\n\r\n- Telegram Group: https://t.me/+RDjo9_ORqXgwODc1\r\n- Ko-fi: https://ko-fi.com/gunacharanteja\r\n- UPI (India): gunacharanteja@ybl\r\n\r\nNote : Ludashi Apk Has Been Updated Again Solving Incorrect Package Name.",
           "prerelease": false,
           "assets": [
@@ -25851,7 +25851,7 @@
             {
               "name": "Winlator-Mali-1.1.apk",
               "size": 789150601,
-              "downloads": 46942,
+              "downloads": 46946,
               "url": "https://github.com/GunaCharanTeja/WinlatorMali/releases/download/bionic-mali-1.1/Winlator-Mali-1.1.apk"
             }
           ],
@@ -25941,7 +25941,7 @@
       "category": "PC Emulator",
       "logo": "horizon.png",
       "extensions": null,
-      "downloads": 486959,
+      "downloads": 486961,
       "repoStats": {
         "stars": 716,
         "forks": 94,
@@ -25961,14 +25961,14 @@
           "name": "Horizon V4 - Not Connected fix",
           "tag": "v4",
           "date": "2025-02-28T07:48:56Z",
-          "downloads": 238503,
+          "downloads": 238504,
           "body": "After minor changes like Box64, Wine (all have almost the same performance), DXVK and Turnip and me not having time to do anything with this project, it's finally getting a \"Not Connected\" fix related to the usage of /tmp directory on some devices by the termux-x11 library in the app. Should work on Android 15 with this fix as well, people already reported it working",
           "prerelease": false,
           "assets": [
             {
               "name": "HorizonEmu4.NotConnectedFix.apk",
               "size": 36803150,
-              "downloads": 238503,
+              "downloads": 238504,
               "url": "https://github.com/HorizonEmuTeam/Horizon-Emu/releases/download/v4/HorizonEmu4.NotConnectedFix.apk"
             }
           ],
@@ -25978,14 +25978,14 @@
           "name": "Horizon V3.0",
           "tag": "v3",
           "date": "2024-11-01T14:12:48Z",
-          "downloads": 248456,
+          "downloads": 248457,
           "body": "",
           "prerelease": false,
           "assets": [
             {
               "name": "HorizonEmu2.0.1._src.1.apk",
               "size": 36803150,
-              "downloads": 248456,
+              "downloads": 248457,
               "url": "https://github.com/HorizonEmuTeam/Horizon-Emu/releases/download/v3/HorizonEmu2.0.1._src.1.apk"
             }
           ],
@@ -26000,7 +26000,7 @@
       "category": "GameHub",
       "logo": "bannerhub.png",
       "extensions": null,
-      "downloads": 364498,
+      "downloads": 364507,
       "repoStats": {
         "stars": 529,
         "forks": 28,
@@ -26020,20 +26020,20 @@
           "name": "Bannerhub v3.8.1",
           "tag": "v3.8.1",
           "date": "2026-09-12T01:44:41Z",
-          "downloads": 33151,
+          "downloads": 33157,
           "body": "> [!WARNING]\n> **Only install official stable releases** (like this one). Do NOT install pre-releases or raw CI artifacts — pre-release builds use a different package name (`com.tencent.ig`) and cannot be upgraded to stable without uninstalling first.\n\n> [!IMPORTANT]\n> **Microphone permission required for Voice Chat.** When you activate voice chat (dashboard → Game Configs → Voice Chat), BannerHub will prompt for the **Microphone** permission. You must allow it for in-game calls to work — without it the call falls back to opening in your browser.\n\n> [!IMPORTANT]\n> **Notification permission required.** BannerHub will prompt for the **Post Notifications** permission when you start your first Epic, GOG, or Amazon download. You must allow it to receive download progress and completion notifications.\n\n> [!IMPORTANT]\n> **Files access required for SD card storage.** To save games to your SD card, BannerHub must be granted the **Files and Media** permission (Android Settings → Apps → BannerHub → Permissions → Files and media → Allow management of all files). Without it the SD card toggle has no effect.\n\n## 🛠️ Games work on the new GameHub firmware (1.4.8 / 1.4.9)\n\nWith the **GameHub** API source, a fresh install downloads GameHub's newest firmware (1.4.8 or 1.4.9). That firmware **removes `libGameScopeVK.so`**. BannerHub points games at that graphics library, and the AI Frame Generation engine lives in it. On v3.8.0 **every game closed a few seconds after launching** (OpenGL titles crashed outright), and AI Frame Generation was gone.\n\n- **Automatic restore.** BannerHub now carries its own copy of the library (the one shipped in firmware 1.3.7 – 1.4.2) and puts it back before each game launch whenever it's missing. Games start again and **AI Frame Generation keeps working**, with the same engine as before.\n- **Future-proof.** If a later firmware removes or renames the library again, BannerHub restores it the same way. A library the firmware provides itself is never replaced.\n- **Nothing to do.** No reinstall and no settings change: update, then launch a game.\n\n**Validation:** fresh install on firmware 1.4.9 with the GameHub API source. BannerHub restored the library on the first launch, games ran, and AI Frame Generation worked.\n\n## 💾 SD card toggle works without a GHL folder\n\n**Save Store Games to External Storage (SD Card)** used to say *\"No SD card found\"* unless the card already had a `GHL` folder at its root (an old GameHub convention). BannerHub now accepts any writable SD card and creates the `bannerhub/` folder itself. That's the folder GOG, Epic and Amazon games install into (`{SD card}/bannerhub/{store}/{game}/`). Internal storage is never mistaken for the SD card, and Steam storage is unaffected.\n\n## 🧩 Component Manager: removed components stay removed\n\nRemoving a component (single remove or **Remove All**) now also clears it from GameHub's saved component registry, so it no longer comes back after the app restarts.\n\n## Credits\n\n- **SD card detection fix:** **[tirsomb](https://github.com/tirsomb)** via [PR #108 \"fix: detect writable SD card without GHL marker\"](https://github.com/The412Banner/BannerHub/pull/108), found and tested on an LG V60.\n- AI Frame Generation engine by the **GameHub team**. All v3.8.0 features (in-game voice chat, per-game PC Audio Settings) remain active.\n\n### Tracking BannerHub updates\n\n- **This repo's [Releases page](https://github.com/The412Banner/BannerHub/releases)** — watch the repo to get notified.\n- **[Obtainium](https://github.com/ImranR98/Obtainium)** — add `https://github.com/The412Banner/BannerHub` as an app source with **\"Reconcile version string with version detected from OS\"** enabled.\n\n### Upgrading\n\n- **v3.8.0 → v3.8.1:** install the matching variant directly over your existing install. No certificate change, no data loss.\n- **v3.7.0 or earlier → v3.8.1:** install normally. If the signing certificate differs, uninstall first.\n\n---\n\nFor the in-game voice chat and per-game PC Audio Settings added in v3.8.0, see the [v3.8.0 release notes](https://github.com/The412Banner/BannerHub/releases/tag/v3.8.0).\n",
           "prerelease": false,
           "assets": [
             {
               "name": "BannerHub-v3.8.1-alt-AnTuTu.apk",
               "size": 145626131,
-              "downloads": 8196,
+              "downloads": 8199,
               "url": "https://github.com/The412Banner/BannerHub/releases/download/v3.8.1/BannerHub-v3.8.1-alt-AnTuTu.apk"
             },
             {
               "name": "BannerHub-v3.8.1-AnTuTu.apk",
               "size": 145626131,
-              "downloads": 4183,
+              "downloads": 4186,
               "url": "https://github.com/The412Banner/BannerHub/releases/download/v3.8.1/BannerHub-v3.8.1-AnTuTu.apk"
             },
             {
@@ -27095,7 +27095,7 @@
           "name": "Bannerhub v3.1.0",
           "tag": "v3.1.0",
           "date": "2026-04-14T21:13:10Z",
-          "downloads": 75967,
+          "downloads": 75970,
           "body": "> [!WARNING]\n> **Only install official stable releases** (like this one). Do NOT install pre-releases or raw CI artifacts — pre-release builds use a different package name (com.tencent.ig) and cannot be upgraded to stable without uninstalling first.\n\n## New since v3.0.0\n\n### Full-screen game detail pages (GOG, Epic, Amazon)\n- Game detail dialogs replaced with dedicated full-screen activities\n- Shows cover art, description (HTML-stripped), install size, release date (GOG + Epic)\n- GOG shows community ratings\n\n### Update checker (GOG, Epic, Amazon)\n- **Check for Updates** button compares installed build vs live version\n- **Update Now** re-runs the install pipeline in-place\n- Baseline auto-sets on first check if version was never stored\n\n### DLC management (GOG, Epic, Amazon)\n- DLC section in each game detail page — list, install, and uninstall individual DLCs\n\n### Cloud saves (GOG + Epic)\n- **Browse** to pick a local save folder using the in-app folder picker (root dropdown + New Folder)\n- **Upload Saves** — pushes only files newer than the cloud version\n- **Download Saves** — fetches all cloud files, overwrites local copies\n- GOG uses a game-scoped token (clientSecret exchange) for cloudstorage API\n- Folder selection persists per-game across sessions\n\n### Epic free games redesign\n- Dedicated full-screen FreeGamesActivity with cover art and claim flow\n\n---\n\n> **Community game configs:** [the412banner.github.io/bannerhub-game-configs](https://the412banner.github.io/bannerhub-game-configs)\n> Growing collection of community-submitted Wine configs. Contributions welcome — every config shared helps others get their games running.\n\n## Installation\n\nInstall the APK matching your device CPU:\n- **arm64-v8a** — most modern Android phones (64-bit ARM)\n- **x86_64** — x86 devices / some emulators\n\nBannerHub can coexist with the original GameHub app (different package name).",
           "prerelease": false,
           "assets": [
@@ -27108,7 +27108,7 @@
             {
               "name": "BannerHub-v3.1.0-AnTuTu.apk",
               "size": 144778179,
-              "downloads": 60255,
+              "downloads": 60258,
               "url": "https://github.com/The412Banner/BannerHub/releases/download/v3.1.0/BannerHub-v3.1.0-AnTuTu.apk"
             },
             {
@@ -27479,7 +27479,7 @@
       "extensions": null,
       "downloads": 294375,
       "repoStats": {
-        "stars": 6053,
+        "stars": 6057,
         "forks": 252,
         "watchers": 57,
         "issues": 194,
@@ -30515,7 +30515,7 @@
       "category": "GameHub",
       "logo": "bannerlator.png",
       "extensions": null,
-      "downloads": 186749,
+      "downloads": 186750,
       "repoStats": {
         "stars": 408,
         "forks": 54,
@@ -30524,7 +30524,7 @@
         "description": "Bannerlator — run Windows PC games and apps on Android (Wine + Box64/86). A personal, community-driven continuation of the discontinued Winlator Star Bionic project. GitHub Actions builds + releases.",
         "language": "Kotlin",
         "license": "GPL-3.0",
-        "pushedAt": "2026-10-12T22:44:11Z",
+        "pushedAt": "2026-10-12T22:54:44Z",
         "createdAt": "2026-06-18T23:19:14Z",
         "topics": [],
         "archived": false,
@@ -30640,7 +30640,7 @@
           "name": "Bannerlator 3.1.6-pre2",
           "tag": "3.1.6-pre2",
           "date": "2026-10-05T09:14:55Z",
-          "downloads": 2796,
+          "downloads": 2797,
           "body": "<p align=\"center\">\n<img src=\"https://github.com/The412Banner/Bannerlator/blob/main/logo.jpg?raw=true\" width=\"1500\" height=\"500\" alt=\"Bannerlator\" />\n</p>\n\n<p align=\"center\">\n<img src=\"https://img.shields.io/badge/release-3.1.6--pre2-ff3d8b?style=for-the-badge\" alt=\"3.1.6-pre2\" />\n&nbsp;<img src=\"https://img.shields.io/badge/update-app--side%20%C2%B7%20no%20ImageFS%20reinstall-2dd4bf?style=for-the-badge\" alt=\"app-side update\" />\n&nbsp;<img src=\"https://img.shields.io/badge/Wayland-xdg--shell%20v3-22c55e?style=for-the-badge\" alt=\"Wayland xdg-shell v3\" />\n&nbsp;<img src=\"https://img.shields.io/badge/SteamLite-Steam%20Input-22c55e?style=for-the-badge\" alt=\"SteamLite Steam Input\" />\n&nbsp;<img src=\"https://img.shields.io/badge/pre--release-beta-f59e0b?style=for-the-badge\" alt=\"pre-release\" />\n</p>\n\n# Bannerlator 3.1.6-pre2\n\nRun Windows apps and games on Android — no PC and no root required.\n\n**3.1.6-pre2 adds Steam Input for SteamLite and a Wayland fix for the newest Wine layers.** SteamLite games can now take your controller through Valve's own **Steam Input** layer, toggled per game. On the display side, Bannerlator's Wayland compositor now speaks **xdg-shell version 3**, which the new **Proton-CachyOS 11.0-20261005** layer needs to open a window at all — so CachyOS now runs on Wayland as well as X11. Everything from 3.1.6-pre1 (Headless Steam, the server browser, Box64EC, the AnTuTu APK) is included.\n\n- **SteamLite Steam Input:** a per-game toggle and layout pick in the SteamLite launch options. Needs the **SteamLite v8** package (the app offers the update).\n- **Wayland xdg-shell v3:** windows and pop-ups from Wine builds that require it now open; older layers are unaffected.\n- **Proton-CachyOS 11.0-20261005:** a new layer on CachyOS's Proton-EM-based Wine, arm64ec and x86_64, in the catalog now.\n\n<!-- update-summary: Bannerlator 3.1.6-pre2: SteamLite Steam Input (per-game toggle, needs SteamLite v8); Wayland compositor xdg-shell v3 so the new Proton-CachyOS 11.0-20261005 layer runs on Wayland; plus everything from 3.1.6-pre1 (Headless Steam, server browser, Box64EC, AnTuTu APK). -->\n\n> ✅ **Nothing to set up.** Update the app. When you next launch a SteamLite game the app offers **SteamLite v8** — accept it to get Steam Input (games that don't use it behave exactly as before). The new CachyOS layer is in the catalog under Proton.\n\n> 📘 **Guides:** [OpenGL games now run 4 to 5 times faster](https://the412banner.github.io/Bannerlator/fast-opengl/) · [LSFG Native Made Simple](https://the412banner.github.io/Bannerlator/lsfg-native-guide.html)\n\n# What's New — everything since 3.1.5\n\n## 🆕 New in pre2\n\n## 🎮 SteamLite: Steam Input\n\nSteamLite runs Valve's Windows Steam client inside the container, and now it can hand your controller to the game the way Steam on PC does — through **Steam Input**, Valve's controller layer, with a layout applied.\n\n- **Where:** the SteamLite launch options of a Steam game have a **Steam Input** toggle and a layout pick. Off by default.\n- **When to use it:** games that only read controllers through Steam Input, or when you want Steam's remapping. **Keep it off for games that already read a controller themselves** — with it on, such a game can see two pads at once.\n- **Default layout:** a plain gamepad layout, so the pad stays a pad. The *gamepad + mouse* layout (right stick moves the mouse, buttons press keys) is there for mouse-only games.\n- **Needs SteamLite v8** — the package now carries Valve's `SDL3.dll` and four controller layouts next to the client, and the agent switches Steam Input on for the game before it starts. Without the toggle the agent behaves exactly like v7, so older app builds are unaffected by the update.\n\n> ✅ **Device-tested** on the Pocket FIT with *Left 4 Dead 2* online through SteamLite: the layout is applied, Steam confirms it, a full match played and exited cleanly.\n\n## 🪟 Wayland: xdg-shell version 3\n\nEvery window on Wayland is created through the **xdg-shell** protocol. Bannerlator's compositor offered version 1 and only pretended to support pop-ups and their positioning; the Wayland driver in the newest Wine (the CachyOS 11.0-20261005 layer) refuses anything below version 3, so it could not create a single window — the desktop died and the game reported *exited before rendering*.\n\n- The compositor now implements **positioners** (size, anchor, gravity, offset, the version-3 extras), real **pop-up windows** (placed against their parent, kept on screen, drawn above it, touchable) and **`reposition`**, and advertises version 3.\n- Layers that ask for version 1 or 2 still get exactly that, so every existing layer behaves as before.\n\n> ✅ **Device-tested** on the Pocket FIT: *Insane 2* on Wayland with the new CachyOS layer (≈1,400 fps on the menu, controller working) and, as a regression check, on the v13 Proton 11.0-2 layer.\n\n## 📦 New compatibility layer — Proton-CachyOS 11.0-20261005\n\nA new, separate **Proton-CachyOS** layer next to the 20260703 one (both stay): the Wine of CachyOS's release `cachyos-11.0-20261005-slr`, which is now **rebased on Proton-EM**, with our full Android stack ported onto it. **arm64ec and x86_64**, versionCode 13, in the in-app catalog now. Release notes: [bionic layers v13](https://github.com/The412Banner/proton-wine/releases/tag/build-bionic-layers-20261004-v13).\n\n- **Wayland needs this build** (3.1.6-pre2 or newer) — on older app builds use X11 with this layer.\n- **Controller fix** — the new upstream base made XInput skip the pads Bannerlator's *Exclusive XInput* hides from DirectInput, so the controller vanished entirely; that change is reverted in the layer.\n- **x86_64 start-up fix** — the new base looks for the 64-bit Wine launcher in a folder the Android layers don't have, so nothing could start (*failed to start wineboot*); the layer keeps the working location.\n\n> ✅ **Device-tested** on the Pocket FIT: arm64ec on X11 and Wayland, x86_64 (box64) on X11 — *Insane 2* with the controller each time.\n\n## 🧩 From 3.1.6-pre1\n\n## 🎮 Headless Steam: the app's own Steam session hosts the game\n\nSteamLite runs Valve's Windows Steam client inside the container — the real thing, VAC and all, at the cost of a Steam client under translation. **Headless Steam** takes the other road: the app already holds a signed-in Steam session for your library, so a small native host (Valve's own Android Steam library, driven by the app) signs in on the account, and the game talks to it through the Steam bridge the Proton 11 layers have carried since v9. No Steam window, nothing to install in the prefix, and every Steam call the game makes runs natively instead of through translation.\n\n- **Launch popup:** Steam shortcuts offer **Headless Steam** next to SteamLite, Goldberg and Raw; the choice is remembered per game like the others.\n- **What works, device-proven:** sign-in in about a second, the game attached to the session (Steam sees you in-game), cloud saves, stats and achievements, multiplayer servers — Counter-Strike: Source was the test case, including a live match on a community server.\n- **What it is not:** a VAC session. Valve's Android library contains only VAC *status* plumbing, no scanner — that only exists in the Windows and x86 Linux clients. Secure servers may still let you in, but you are not being VAC-scanned; for that, keep using SteamLite.\n- **Relaunches:** a quick relaunch no longer trips over the previous session's lingering port; when the port really is busy (another app's Steam client — DroidDeck's Linux Steam uses the same one), the launch now stops with a clear card instead of starting the game without Steam.\n- **Log Manager:** a **Headless Steam** toggle (same place and ? button as SteamLite) writes a per-game `headless_steam.txt` with a PASS/FAIL checklist — sign-in, bridge, session, server browser — plus the host, bridge and engine logs, redacted like the SteamLite one.\n\n## 🔎 Find Servers works — the server browser\n\nValve's Android Steam library has no working in-game server browser: the moment a Source game asks for the server list it trips over an object that was never created and hangs. Inside our host it accepts the request and returns nothing. So the **v13 layers** carry their own:\n\n- the game asks the bridge; the bridge asks the **app**, which fetches the master list through Steam's Web API with a token from your session (five thousand servers in about a second);\n- the bridge **pings every server itself** (the same query protocol the PC client uses) and feeds the game its callbacks on the game's own thread;\n- a small **x86-64 front** inside the layer answers the game's hottest lookups without leaving the emulator — the Source server browser re-reads server details tens of thousands of times a frame while sorting, and each read used to be a crossing into native code. With the front, the list refreshes at **316 to 376 fps**; before it, 0.\n\n> ✅ **Tested** on the Pocket FIT with Counter-Strike: Source on Proton 11.0-2, 11.0-1 and GE 11.0-3 (v13): full lists, the three filter boxes, latency / location / anti-cheat filters, and joining a game.\n\n## 📦 New compatibility layers — versionCode 13\n\nAll eight **Proton 11** layers (Proton 11.0-2, 11.0-1, GE-Proton 11.0-3 / 5 / 6 / 7 / 7.1, Proton-CachyOS) are rebuilt at **versionCode 13** with the server browser and its x86-64 front; the four x86_64 flavours are in the same release so the set stays together, but **they have no Steam bridge** (Headless Steam and the server browser do not apply to them) **and are unchanged** apart from the version number. The two Proton 10 layers stay at v12 — no Steam bridge there either. They install into a new coexisting `-13` slot; a container on an older build of the same layer is offered **Update layer → v13** with a revert snapshot. Release notes: [bionic layers v13](https://github.com/The412Banner/proton-wine/releases/tag/build-bionic-layers-20261004-v13).\n\n## 🧬 Box64EC — an experimental second x86-64 translator (unofficial)\n\narm64ec containers gain an **Emulator (64-bit)** picker (container settings, and per game under Advanced → Box64EC) that switches the x86-64 translator between **FEXCore** (unchanged default) and **Box64EC**. The old picker is now labelled **Emulator (32-bit)**.\n\n> ⚠️ **Box64EC components are experimental and unofficial.** They are built by The412Banner from the [box64](https://github.com/ptitSeb/box64) project's work-in-progress ARM64EC target and [airidosas252's pull request #4480](https://github.com/ptitSeb/box64/pull/4480), with our own hookup of the fast engine; they are **not** releases of the box64 project. Nothing installs by itself: the picker only appears once you install a Box64EC component from the catalog. Expect games that run slower or not at all; FEXCore remains the supported path.\n\n## 📦 A fourth APK: AnTuTu\n\nEvery release now ships four builds of the same app under different package names — **standard** (`com.winlator.banner`), **PuBG** (`com.tencent.ig`), **Ludashi** (`com.ludashi.benchmark`) and, new, **AnTuTu** (`com.antutu.ABenchMark`). Take standard unless your device gives a specific package a performance mode; the in-app updater follows whichever one you installed.\n\n## 🛠️ Fixes\n\n- A malformed container folder (for example a leftover `xuser-` directory) crashed the app on every launch; it is skipped with a log line instead.\n- Wayland HUD: a Vulkan game is no longer labelled \"OpenGL\"; the adapter's `icd.json` is written without escaped slashes.\n- Headless Steam host: a `dlopen` failure path crashed instead of reporting the error.\n\n## ⚠️ Carried over — still open\n\n- **SteamLite Steam Input:** tested on Left 4 Dead 2; games that *only* speak Steam Input have not been run through it yet.\n- **xdg-shell v3:** pop-ups take no input grab and never take keyboard focus; the \"resize to fit\" placement rule is not implemented (pop-ups slide or flip back on screen instead).\n- **Headless Steam:** not VAC-protected (by construction); Proton 10 layers have no Steam bridge; voice chat untested; only Counter-Strike: Source has been run through a full online session so far.\n- **Server browser:** LAN tab scans the common Source ports by broadcast only; the Friends tab is empty on this path.\n- **Box64EC:** experimental — no performance work yet beyond the fast-engine hookup.\n- Everything listed as open in 3.1.5 is unchanged: Cutscenes / Codecs (FFmpeg arm64ec only), X11 cursor items, save-sync device checks, Fast OpenGL's 32-bit-only setups, the Wayland items, and the Linux Steam client items from 3.1.3.\n\n<details>\n<summary><b>📦 Where to get Proton 9</b> (tap to expand)</summary>\n\nThe APK does not bundle Proton 9 — Wine installs from the in-app catalog on first run. The Linux Steam client does not use these layers at all: its games run through Valve's own ARM64 Proton.\n\n**Proton 9.0 arm64ec** — not bundled, download it if you want it:\n\n**https://github.com/The412Banner/Nightlies/releases/download/Proton/wine/proton-9.0-arm64ec.wcp**\n\n66.7 MB · sha256 `f8a99fed387f1b097009129dc49368c8f500927640a9d4c7a192d850b1b2068c`\nInstall it via **Containers → download icon → install the `.wcp`**. It also appears in the in-app catalog. *(Compiled as a wcp by **Xnick417x**.)*\n\n</details>\n\n---\n\n<details>\n<summary><b>🙏 Credits</b> (tap to expand)</summary>\n\n**The cutscene fixes** in the v12 layers: the Media Foundation series by **NelloKudo**; the media-converter gate by **GloriousEggroll**; the original shared-texture driver (`sharedgpures.sys`) by **Valve** (Derek Lesho), rewritten here for Wine 11; the bionic prefix packs and build sysroot by **GameNative**; `winedmo` from **Wine** (Rémi Bernon), with Proton's PCM filter (© 2025 Conor McCarthy for CodeWeavers) replaced by our own. Full per-layer credits are in the [v12 layer release](https://github.com/The412Banner/proton-wine/releases/tag/build-bionic-layers-20261003-v12).\n\n**The Codecs setting** is modelled on **Pipetto-crypto**'s winedmo backport for Proton 9 (winlator `a81fae78`): the pseudo-components in the Win Components list and the `WINE_USE_DMO` name. No code was copied; the Compose UI and plumbing are new.\n\n**Proton-CachyOS 11.0-20261005** is the **CachyOS** team's (wine-cachyos, rebased on **Proton-EM**) on **Valve**'s Proton; our Android stack is ported on top. **SteamLite Steam Input** drives Valve's own controller layer; `SDL3.dll` and the four controller layouts in the package are **Valve**'s, unmodified. The xdg-shell v3 compositor work is ours, following the **wayland-protocols** xdg-shell specification.\n\n**box64** is **ptitSeb**'s; the GStreamer-wrapper fix is ours and submitted upstream as [#4528](https://github.com/ptitSeb/box64/pull/4528). **FEXCore** is the FEX-Emu team's; the 2609-unix package is the catalog build with its unixlib pair.\n\n**XInput 2 raw mouse** follows what **GameNative** and **WinNative** already do in their X servers, extended with touch and stylus raw motion. **Colour cursors** came from a Discord #bugs report of black-and-white cursors in Kingdom Come and the Gothic Remake — thank you to the reporter.\n\nEverything credited in 3.1.4 still applies: Fast OpenGL (Mesa, Banners-Turnip, Wine's EGL route), the Wayland adapter (Pipetto-crypto's bionic Vulkan wrapper), winhandler.exe (Winlator by **brunodev85**), the Turnip fix (Mesa / Turnip by the Freedreno and Mesa teams), the Linux Steam client (Valve, DroidDeck, WinNative, Armada, Termux proot, Arch Linux ARM, FEX-Emu), ntsync (**Joshua Tam / joshuatam**, GameNative), the bundled Wayland drivers (Vauzi-17, the WinNative development team, StevenMXZ, whitebelyash), DXVK, VKD3D-Proton, Wine, Proton / GE-Proton, box64, SteamKit2 and Wayland.\n\n</details>\n\n---\n\n*Entirely app-side — no ImageFS reinstall. Install over 3.1.6-pre1 or any earlier 3.1.x; everything carries over. Then take the v13 layer updates from the catalog.*\n",
           "prerelease": true,
           "assets": [
@@ -30665,7 +30665,7 @@
             {
               "name": "Bannerlator-3.1.6-pre2-standard.apk",
               "size": 550884469,
-              "downloads": 2122,
+              "downloads": 2123,
               "url": "https://github.com/The412Banner/Bannerlator/releases/download/3.1.6-pre2/Bannerlator-3.1.6-pre2-standard.apk"
             }
           ],
@@ -33600,7 +33600,7 @@
       "category": "Winlator",
       "logo": "winnative.jpeg",
       "extensions": null,
-      "downloads": 140470,
+      "downloads": 140478,
       "repoStats": {
         "stars": 683,
         "forks": 88,
@@ -33627,7 +33627,7 @@
           "name": "v0.8.0-beta",
           "tag": "v0.8.0-beta",
           "date": "2026-10-12T11:19:55Z",
-          "downloads": 1125,
+          "downloads": 1130,
           "body": "## What's Changed\r\n* Add Linux Client uninstall to the Stores dialog by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/783\r\n* library: stop gamepad buttons other than A from confirming in the gam… by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/782\r\n* OpenFlow: rename the DIS frame generator, follow fast and small motio… by @qwertypower in https://github.com/WinNative-Emu/WinNative/pull/781\r\n* Performance fixes for proot/fastpath by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/786\r\n* Fix potential crash on Android <13/12 with PulseAudio. by @Juan-Antonio-Doe in https://github.com/WinNative-Emu/WinNative/pull/785\r\n* X11: keep colour game cursors by implementing the RENDER cursor subset by @kingokksa in https://github.com/WinNative-Emu/WinNative/pull/784\r\n* Gamepad identity fixes by @sl1nk3 in https://github.com/WinNative-Emu/WinNative/pull/727\r\n* Fix scrambled gamepad axes and buttons after the identity change by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/787\r\n\r\n## New Contributors\r\n* @sl1nk3 made their first contribution in https://github.com/WinNative-Emu/WinNative/pull/727\r\n\r\n**Full Changelog**: https://github.com/WinNative-Emu/WinNative/compare/v0.7.1-beta...v0.8.0-beta\r\n",
           "prerelease": false,
           "assets": [
@@ -33646,13 +33646,13 @@
             {
               "name": "WinNative-v0.8.0-beta-Pubg-signed.apk",
               "size": 609391725,
-              "downloads": 58,
+              "downloads": 59,
               "url": "https://github.com/WinNative-Emu/WinNative/releases/download/v0.8.0-beta/WinNative-v0.8.0-beta-Pubg-signed.apk"
             },
             {
               "name": "WinNative-v0.8.0-beta-Standard-signed.apk",
               "size": 609376769,
-              "downloads": 564,
+              "downloads": 568,
               "url": "https://github.com/WinNative-Emu/WinNative/releases/download/v0.8.0-beta/WinNative-v0.8.0-beta-Standard-signed.apk"
             }
           ],
@@ -33837,7 +33837,7 @@
           "name": "v0.5.0-beta",
           "tag": "v0.5.0-beta",
           "date": "2026-08-27T19:59:43Z",
-          "downloads": 21395,
+          "downloads": 21398,
           "body": "## Features\r\n* Frame Generation implemented by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/697 A special thank you to the Eden Development Team, whose original work on the Eden Emulator formed the foundation of this feature!\r\n\r\n## Bug Fixes\r\n* Fix non-ASCII game paths and ANSI code pages for shortcut launches by @kingokksa in https://github.com/WinNative-Emu/WinNative/pull/694\r\n* Center the Steam sign-in error inside the password field by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/702\r\n* Fix the Java formatting violations spotless reports by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/703\r\n* PS2 Portrait Issues by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/704\r\n* Show the frame generation input and output rate on the Mango HUD by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/705\r\n* Locate the Lossless DLL with WinNative's file picker by @maxjivi05 in https://github.com/WinNative-Emu/WinNative/pull/706\r\n\r\n## New Contributors\r\n* @kingokksa made their first contribution in https://github.com/WinNative-Emu/WinNative/pull/694\r\n\r\n**Full Changelog**: https://github.com/WinNative-Emu/WinNative/compare/v0.4.1...v0.5.0-beta",
           "prerelease": false,
           "assets": [
@@ -33856,13 +33856,13 @@
             {
               "name": "WinNative-v0.5.0-beta-Pubg-signed.apk",
               "size": 598926777,
-              "downloads": 1234,
+              "downloads": 1236,
               "url": "https://github.com/WinNative-Emu/WinNative/releases/download/v0.5.0-beta/WinNative-v0.5.0-beta-Pubg-signed.apk"
             },
             {
               "name": "WinNative-v0.5.0-beta-Standard-signed.apk",
               "size": 598911673,
-              "downloads": 10177,
+              "downloads": 10178,
               "url": "https://github.com/WinNative-Emu/WinNative/releases/download/v0.5.0-beta/WinNative-v0.5.0-beta-Standard-signed.apk"
             }
           ],
@@ -34063,7 +34063,7 @@
       "category": "Winlator",
       "logo": "star.png",
       "extensions": null,
-      "downloads": 121331,
+      "downloads": 121332,
       "repoStats": {
         "stars": 435,
         "forks": 23,
@@ -34212,14 +34212,14 @@
           "name": "Star Nightly - 1.3-preview",
           "tag": "1.3-preview",
           "date": "2026-05-29T17:51:44Z",
-          "downloads": 3263,
+          "downloads": 3264,
           "body": "<img src=\"https://github.com/jacojayy/star/blob/main/20260418_134945.png\" width=\"1500\" height=\"500\" alt=\"star\" />\r\n</p>\r\n\r\n## Changelog\r\n\r\n| Commit | Title |\r\n|--------|--------|\r\n| `7ce9a4a` | fix: replaced the proton-9-arm64ec download URL to the custom star one to fix controller issues. |",
           "prerelease": false,
           "assets": [
             {
               "name": "star-ludashi-1.3-preview.apk",
               "size": 611691831,
-              "downloads": 1646,
+              "downloads": 1647,
               "url": "https://github.com/winhub-emu/winhub/releases/download/1.3-preview/star-ludashi-1.3-preview.apk"
             },
             {
@@ -35172,7 +35172,7 @@
       "extensions": [
         ".wcp"
       ],
-      "downloads": 89082,
+      "downloads": 89083,
       "repoStats": {
         "stars": 129,
         "forks": 2,
@@ -35192,7 +35192,7 @@
           "name": "CronyX v2",
           "tag": "V2",
           "date": "2026-09-11T14:45:41Z",
-          "downloads": 8165,
+          "downloads": 8166,
           "body": "# Release notes — 67956fb..ad04ac3 (27 commits)\r\n\r\n**Project renamed!** The project has been renamed from **Winlator ref4ik** to **CronyX** — the app will now appear under the new name. All previous versions were released under the name **Winlator ref4ik**, but from now on the project will be called **CronyX**.\r\n\r\n**What's New in This Version:**\r\n\r\n- LSFG frame generation moved in-tree (`cpp/winlator/lsfg/` + DXBC): external `lsfg-vk-android` tree removed, `LsfgVkManager` replaced by `LsfgNative`\r\n- LSFG HUD shows real→shown FPS pair with live armed state\r\n- LSFG: SPIR-V cache pre-built on DLL import, apply without restart\r\n- LSFG: adaptive output FPS target (WinNative parity), credits in About\r\n- DRI3 AHB pixmaps: real size/stride, render pause for native scanout\r\n- Vulkan effects: full-res offscreen buffer (swapchain size), fixed small-screen bug\r\n- New Steam store: home/detail/search/catalog/news screens, prices/platforms/metascore, search suggest, full-text search with filters (jsoup)\r\n- Steam library: content filter menu with counts, dedupe by appId\r\n- Steam: fixed launch paths (workingDir/exe dir), download stall watchdog\r\n- Steam cloud: conflict dialog, achievements overlay/watcher, workshop mod paths, save snapshot archives + launch/exit sync, CDN ranking, speed presets\r\n- Wrappers: bundled catalog, resume downloads, tar install, reworked manager + dialog\r\n- Community: profiles, avatars, admin moderation, user numbers, self-delete, admin users screen, config favorites + download counter\r\n- Update checker via `cronyx.json` manifest (versionCode, per-package APK, error reasons)\r\n- New in-game rail menu with side panels (DS components), labels under icons, headerless panels, reordered items, FPS badge\r\n- Winetricks and Logs as side panels (log history, pause/clear)\r\n- Menu defaults: pause/winetricks/terminal hidden, UI scale 0.85\r\n- Returned GL render\r\n\r\n****Thanks to these projects — some features were taken from and implemented based on their code:****\r\n\r\n- **Winlator Bionic** — https://github.com/Pipetto-crypto/winlator\r\n- **Bannerlator** — https://github.com/The412Banner/Bannerlator\r\n- **WinNative** — https://github.com/WinNative-Emu/WinNative\r\n- **GameNative** — https://github.com/utkarshdalal/GameNative\r\n- **Winlator Ludashi** — https://github.com/StevenMXZ/Winlator-Ludashi\r\n\r\n<details>\r\n<summary>← Click here to view full previous changelog</summary>\r\n\r\n### Previous Major Updates\r\n\r\n- New loading screen for containers\r\n- Big Picture mode\r\n- Update checker — automatic GitHub release check on startup, dialog with \"What's new\" notes, APK download with progress, installation, \"Skip version\"\r\n- **Wine registry editor** — tab in container settings: key tree with search, value editing, .reg import/export\r\n- Container exit screen — return to menu without process restart, async cleanup without UI freeze\r\n- New **Customization** section:\r\n  → 13 theme presets (OLED, cyberpunk, dracula, matrix, etc.), System/Light/Dark mode, Material You, custom color via ColorPicker (HSV+HEX)\r\n  → UI/font scale, corner radius, theme export/import as JSON\r\n  → Wallpapers: image/GIF/video, blur/darken, adjust screen (pinch/pan, separate portrait and landscape), surface transparency\r\n  → Screen transition animations: 7 styles (fade/slide/zoom/scale...), duration 100–600 ms\r\n  → X-Server menu: hide unused in-game menu items via checkboxes\r\n- Controls editor fully migrated to Compose — panel with Undo/Redo, Quick Add (13 ready-made bindings), element settings (scale/opacity/rotation/color/icon), key picker (keyboard/mouse/gamepad with 16 zones)\r\n- Shortcuts screen — game version from EXE (PEParser — VS_VERSION_INFO, 12 metadata fields), green version badge, \"About game\" dialog, playtime and launch count on cards\r\n- Steam library redesign — Downloads/Steam tabs, Grid/Compact/Rows views, auto accents and initials on covers, new download cards (percent/speed/ETA), animated buttons\r\n- FPS counter — added display styles (Winlator Ludashi and GameNative)\r\n- FPS limit via WinNative PresentExtension implementation instead of MangoHud — pacer with back-pressure, \"PresentPacer\"\r\n- LSFG: some minor changes\r\n- Effects: removed the FSR effect\r\n- SensorReader: added new paths\r\n- Added 4 new selectable languages: Polish, Spanish, Japanese, Arabic\r\n- Fixed: shortcut crashes, game exit crashes, Vulkan cleanup (QueueWaitIdle), driver settings loss, resource leaks in PE parser, empty catch → logging, NPE fixes, spinners (accurate display of the selected wrapper), UI bugs\r\n\r\nFixed FPS counter\r\nFixed error in driver loading menu\r\nRemoved limitation — now all Turnip drivers are shown in every repository (not just the first 10)\r\n**AdrenoTools**: added option to export downloaded driver to device storage\r\nAdded option to hide FEX/Box config files when one is selected\r\nGame shortcut icons now load from **Steam**\r\n**Adreno Settings**: added initial parameters (work in progress)\r\nIntegrated **AdrenoTools Store** for extended driver functionality\r\nIntroduced **Wrapper v2** — improved driver selection UI\r\nAdded fast **WFM** implementation from de0ver\r\nAdded full **Russian** language support\r\nReworked input controls settings:\r\n  → Now you can add custom icons to controls\r\n  → Go to control profile editor → select icons → apply\r\n  → Long-press icon to remove\r\nAdded modular **FPS counter** in xservermenu (select parameters & save config)\r\nUpdated Task Manager: added GPU and battery temperature indicators\r\nChanged application color scheme\r\nFPS counter: fixed bugs + added dimming option\r\nInput controls: added slider for custom icon size\r\nFixed crash when adding Wine Proton\r\n**Active Windows**: now you can open/close running programs (UI/functionality to be improved later)\r\nAdded built-in **File Manager**\r\nNew screen effects\r\nSome FEX-related changes\r\nPorted components from 0.3.7.1 (Fex2508–2509)\r\nPartially updated app theme\r\nFixed multiple bugs\r\nChanges in graphics driver handling\r\nAdded **ALSA reflector**\r\nFixed frame rate issues\r\nUpdated image installer\r\nAdded gamepad detection\r\nAdded URL content support\r\nBig **\"Putre\"** button for quick game settings\r\nMoved preset frame parameters into container\r\nAdded more options in graphics driver settings\r\nAdded hotkey-based manual export\r\nFixed wallpaper adding\r\nFixed fullscreen mode\r\nFixed hotkey settings\r\nIncreased custom icon limit: 27 → 1000\r\nFixed conflict with simultaneous Termux installation\r\nControl settings: added option to disable button outline + transparency slider\r\nVarious design improvements\r\nSignificantly improved Active Windows behavior\r\nGreatly improved manual shortcut import\r\nAdded **FEX** preset\r\nAdded ability to install Windows components\r\nAdded DXVK & Turnip download into container\r\nAdded audio driver settings\r\nImproved FPS counter: new design, draggable, more size options\r\nAdded FPS limiter\r\nAdded app language selector in settings\r\nAdded Box/FEX/etc. buttons for hotkey preset creation\r\nAdded import/export for Box (.boxx) and FEX (.fexx) presets\r\n- Added my custom modified **WFM**\r\n- Added ability to download **Wine** directly into the container\r\n- Updated **Content Manager**\r\n- Updated **Credits & Acknowledgements** section\r\n- Fixed multiple issues in translations\r\n- Added **Voltage** parameter to the FPS counter\r\n- Fixed various bugs in the FPS counter\r\n- Interface improvements and polishing\r\n- Added Chinese language\r\n- Added a new HDR effect to screen effects\r\n- Improved active windows\r\n- Fixed control settings\r\n- Fixed some bugs in themes\r\n- Fixed some minor bugs\r\n- Added the ability to add your own custom repository with drivers in Adrenotools\r\n- Added gyroscope control\r\n- Icon Manager: Added support for ZIP packs and Input Bridge IPK icon packs. (experimental)\r\n- UI Update: The application has been fully migrated to Compose UI.\r\n- Theme Manager: Added a new theme manager.\r\n- Added SurfaceFlinger renderer and a choice between Vulkan/SurfaceFlinger in container settings.\r\n- Removed wrappers v2–v6.\r\n- Added Vulkan version selection to graphics settings.\r\n- Added Adreno Turbo Mode (may slightly boost FPS when enabled).\r\n- FPS Counter: Added customizable styles and color options for the FPS counter.\r\n- Shortcut Settings: Updated the shortcut menu; navigating to the edit menu now opens a Steam game info page featuring screenshots, videos, ratings, etc.\r\n- Updated the Steam interface and fixed various download bugs. Fixed Steam online status. Accelerated game downloads and increased the download queue limit. Added Steam Friends List with chat support. Added Steam Achievements viewer. Added library view modes: Grid, List, and Compact. Improved cloud saves. Fixed the \"last played game\" display in Steam.\r\n- Sped up resource extraction on the first app launch.\r\n- Removed several unused components, reducing the overall app size.\r\n- Updated various system libraries.\r\n- Integrated the MMKV library.\r\n- Fixed CPU available extensions display.\r\n- Improved Box/Fex component downloading inside container settings.\r\n- Fixed a bug where enabling any screen effect caused the screen to split into two windows.\r\n- Added an option to download drivers to the Adreno Tools store from StevenMXZ/Adreno-Tools-Drivers.\r\n- Added GPU name selection + CustomName in CPU settings.\r\n- Added Leegao wrapper.\r\n- Added on-screen controls import from Input Bridge. (experimental)\r\n- Added selection and export of community configurations (experimental)\r\n- Localization: Added Portuguese translation.\r\n- Added update check\r\n- Fixed some bugs\r\n- Added download buttons for Box and FEX in the container and in the shortcut settings\r\n- Added import and export of container settings configuration\r\n- Updated DXVK settings\r\n- Added a file manager for the container\r\n- Added animation selection\r\n- Added GPU load parameter and frame time graph to the FPS counter\r\n- Added pause functionality when minimizing the app (the container is no longer destroyed, but paused instead)\r\n\r\n**Removed Features:**\r\n- Magnifier\r\n- Touch helper function\r\n\r\n**Minor Optimizations:** Various small performance and smoothness improvements.\r\n\r\n- Viewing and removing shared installed components\r\n- Fixed touch control disappearing after 5 seconds #9\r\n- Fixed downloading and caching of game covers\r\n- Fixed UI bugs\r\n- Improved on-screen controls editor\r\n- Added frame generation. If the frame generator does not work on the first container launch, try restarting the container.\r\n- Updated FPS counter\r\n- Added experimental Steam games launch\r\n- Added support for animated covers for games\r\n- Added Relative Mouse option from the container to the control settings\r\n- Added the ability to set a custom icon for a game\r\n- Added BCn settings from implementation Winlator Bionic\r\n- Improved File Explorer — now you can create a game shortcut directly from it\r\n- Interface changes: moved menus, \"Installed Components\" section, and Gamepad Test\r\n- Removed Big Picture menu from the project and cleaned up other unused code\r\n- Created a new SystemSensorPaths class — contains all paths to the device's system sensors and centralized all sensor queries\r\n- Replaced the GL renderer with a Vulkan renderer. Old GL effects were removed, all effects were ported to custom Vulkan fragment shaders; added a Vulkan post-processing pipeline. The Vulkan renderer implementation is based on Winlator Ludashi\r\n- Added new sensor paths: hwmon/MTK\r\n- Added content provider selection in Contents (ref4ik, the412banner, and the ability to add your own custom provider)\r\n- Added \"Box/FEX Extreme\" preset\r\n- When enabling Toggle Fullscreen, the sharpness effect is now automatically enabled to improve image quality\r\n- Fixed translations\r\n- Added a slider in container settings to change text DPI\r\n- Fixed a bug when downloading Wine where other versions stopped working #4\r\n- Rebuilt some Wine ref4ik versions with additional patches\r\n- Fixed API output in the FPS counter and added GPU temperature indicator.\r\n- Fixed black screen on first container boot.\r\n- Improved shortcuts.\r\n- Improved frame generation.\r\n- Improved game import menu\r\n- Added FSR effect.\r\n- Added profiling for the selected game.\r\n- Added control profile preview.\r\n- Fixed a bug when importing Wine with x86_64 architecture where nothing would launch inside Wine.\r\n- Improved XServer.\r\n- Added Quick Panel.\r\n- Improved Task Manager.\r\n\r\n</details>\r\n\r\n**Version information:**\r\n\r\n- **Standard version** — CronyX: `com.cronyx`\r\n- **Ludashi version** — APK signature of the benchmark for locking processor frequencies at maximum: `com.ludashi.benchmark`\r\n- **Pubg version** — APK signature for launching games as PUBG: `com.tencent.ig`\r\n- **Antutu version** — APK signature of the benchmark for locking processor frequencies at maximum: `com.antutu.ABenchMark`\r\n\r\n**Join community and get the latest news, builds, and discussions:**\r\n👉 **Telegram Channel:** https://t.me/winlatorruu\r\n\r\n**If you encounter any problems, please report them here: [GitHub lssues](https://github.com/REF4IK/winlator-ref4ik-/issues)**\r\n\r\nPlease star the project if you like it! ⭐\r\nYour support helps a lot and motivates me to continue development.\r\n\r\n**This version is experimental. It may contain bugs and errors.**\r\n\r\n\r\n\r\n\r\n\r\n**Early version for testing**",
           "prerelease": false,
           "assets": [
@@ -35211,7 +35211,7 @@
             {
               "name": "CronyX_v2_lud.apk",
               "size": 625488946,
-              "downloads": 4182,
+              "downloads": 4183,
               "url": "https://github.com/REF4IK/CronyX-/releases/download/V2/CronyX_v2_lud.apk"
             }
           ],
@@ -35509,7 +35509,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 89082,
+      "downloads": 89083,
       "repoStats": {
         "stars": 129,
         "forks": 2,
@@ -35529,7 +35529,7 @@
           "name": "CronyX v2",
           "tag": "V2",
           "date": "2026-09-11T14:45:41Z",
-          "downloads": 8165,
+          "downloads": 8166,
           "body": "# Release notes — 67956fb..ad04ac3 (27 commits)\r\n\r\n**Project renamed!** The project has been renamed from **Winlator ref4ik** to **CronyX** — the app will now appear under the new name. All previous versions were released under the name **Winlator ref4ik**, but from now on the project will be called **CronyX**.\r\n\r\n**What's New in This Version:**\r\n\r\n- LSFG frame generation moved in-tree (`cpp/winlator/lsfg/` + DXBC): external `lsfg-vk-android` tree removed, `LsfgVkManager` replaced by `LsfgNative`\r\n- LSFG HUD shows real→shown FPS pair with live armed state\r\n- LSFG: SPIR-V cache pre-built on DLL import, apply without restart\r\n- LSFG: adaptive output FPS target (WinNative parity), credits in About\r\n- DRI3 AHB pixmaps: real size/stride, render pause for native scanout\r\n- Vulkan effects: full-res offscreen buffer (swapchain size), fixed small-screen bug\r\n- New Steam store: home/detail/search/catalog/news screens, prices/platforms/metascore, search suggest, full-text search with filters (jsoup)\r\n- Steam library: content filter menu with counts, dedupe by appId\r\n- Steam: fixed launch paths (workingDir/exe dir), download stall watchdog\r\n- Steam cloud: conflict dialog, achievements overlay/watcher, workshop mod paths, save snapshot archives + launch/exit sync, CDN ranking, speed presets\r\n- Wrappers: bundled catalog, resume downloads, tar install, reworked manager + dialog\r\n- Community: profiles, avatars, admin moderation, user numbers, self-delete, admin users screen, config favorites + download counter\r\n- Update checker via `cronyx.json` manifest (versionCode, per-package APK, error reasons)\r\n- New in-game rail menu with side panels (DS components), labels under icons, headerless panels, reordered items, FPS badge\r\n- Winetricks and Logs as side panels (log history, pause/clear)\r\n- Menu defaults: pause/winetricks/terminal hidden, UI scale 0.85\r\n- Returned GL render\r\n\r\n****Thanks to these projects — some features were taken from and implemented based on their code:****\r\n\r\n- **Winlator Bionic** — https://github.com/Pipetto-crypto/winlator\r\n- **Bannerlator** — https://github.com/The412Banner/Bannerlator\r\n- **WinNative** — https://github.com/WinNative-Emu/WinNative\r\n- **GameNative** — https://github.com/utkarshdalal/GameNative\r\n- **Winlator Ludashi** — https://github.com/StevenMXZ/Winlator-Ludashi\r\n\r\n<details>\r\n<summary>← Click here to view full previous changelog</summary>\r\n\r\n### Previous Major Updates\r\n\r\n- New loading screen for containers\r\n- Big Picture mode\r\n- Update checker — automatic GitHub release check on startup, dialog with \"What's new\" notes, APK download with progress, installation, \"Skip version\"\r\n- **Wine registry editor** — tab in container settings: key tree with search, value editing, .reg import/export\r\n- Container exit screen — return to menu without process restart, async cleanup without UI freeze\r\n- New **Customization** section:\r\n  → 13 theme presets (OLED, cyberpunk, dracula, matrix, etc.), System/Light/Dark mode, Material You, custom color via ColorPicker (HSV+HEX)\r\n  → UI/font scale, corner radius, theme export/import as JSON\r\n  → Wallpapers: image/GIF/video, blur/darken, adjust screen (pinch/pan, separate portrait and landscape), surface transparency\r\n  → Screen transition animations: 7 styles (fade/slide/zoom/scale...), duration 100–600 ms\r\n  → X-Server menu: hide unused in-game menu items via checkboxes\r\n- Controls editor fully migrated to Compose — panel with Undo/Redo, Quick Add (13 ready-made bindings), element settings (scale/opacity/rotation/color/icon), key picker (keyboard/mouse/gamepad with 16 zones)\r\n- Shortcuts screen — game version from EXE (PEParser — VS_VERSION_INFO, 12 metadata fields), green version badge, \"About game\" dialog, playtime and launch count on cards\r\n- Steam library redesign — Downloads/Steam tabs, Grid/Compact/Rows views, auto accents and initials on covers, new download cards (percent/speed/ETA), animated buttons\r\n- FPS counter — added display styles (Winlator Ludashi and GameNative)\r\n- FPS limit via WinNative PresentExtension implementation instead of MangoHud — pacer with back-pressure, \"PresentPacer\"\r\n- LSFG: some minor changes\r\n- Effects: removed the FSR effect\r\n- SensorReader: added new paths\r\n- Added 4 new selectable languages: Polish, Spanish, Japanese, Arabic\r\n- Fixed: shortcut crashes, game exit crashes, Vulkan cleanup (QueueWaitIdle), driver settings loss, resource leaks in PE parser, empty catch → logging, NPE fixes, spinners (accurate display of the selected wrapper), UI bugs\r\n\r\nFixed FPS counter\r\nFixed error in driver loading menu\r\nRemoved limitation — now all Turnip drivers are shown in every repository (not just the first 10)\r\n**AdrenoTools**: added option to export downloaded driver to device storage\r\nAdded option to hide FEX/Box config files when one is selected\r\nGame shortcut icons now load from **Steam**\r\n**Adreno Settings**: added initial parameters (work in progress)\r\nIntegrated **AdrenoTools Store** for extended driver functionality\r\nIntroduced **Wrapper v2** — improved driver selection UI\r\nAdded fast **WFM** implementation from de0ver\r\nAdded full **Russian** language support\r\nReworked input controls settings:\r\n  → Now you can add custom icons to controls\r\n  → Go to control profile editor → select icons → apply\r\n  → Long-press icon to remove\r\nAdded modular **FPS counter** in xservermenu (select parameters & save config)\r\nUpdated Task Manager: added GPU and battery temperature indicators\r\nChanged application color scheme\r\nFPS counter: fixed bugs + added dimming option\r\nInput controls: added slider for custom icon size\r\nFixed crash when adding Wine Proton\r\n**Active Windows**: now you can open/close running programs (UI/functionality to be improved later)\r\nAdded built-in **File Manager**\r\nNew screen effects\r\nSome FEX-related changes\r\nPorted components from 0.3.7.1 (Fex2508–2509)\r\nPartially updated app theme\r\nFixed multiple bugs\r\nChanges in graphics driver handling\r\nAdded **ALSA reflector**\r\nFixed frame rate issues\r\nUpdated image installer\r\nAdded gamepad detection\r\nAdded URL content support\r\nBig **\"Putre\"** button for quick game settings\r\nMoved preset frame parameters into container\r\nAdded more options in graphics driver settings\r\nAdded hotkey-based manual export\r\nFixed wallpaper adding\r\nFixed fullscreen mode\r\nFixed hotkey settings\r\nIncreased custom icon limit: 27 → 1000\r\nFixed conflict with simultaneous Termux installation\r\nControl settings: added option to disable button outline + transparency slider\r\nVarious design improvements\r\nSignificantly improved Active Windows behavior\r\nGreatly improved manual shortcut import\r\nAdded **FEX** preset\r\nAdded ability to install Windows components\r\nAdded DXVK & Turnip download into container\r\nAdded audio driver settings\r\nImproved FPS counter: new design, draggable, more size options\r\nAdded FPS limiter\r\nAdded app language selector in settings\r\nAdded Box/FEX/etc. buttons for hotkey preset creation\r\nAdded import/export for Box (.boxx) and FEX (.fexx) presets\r\n- Added my custom modified **WFM**\r\n- Added ability to download **Wine** directly into the container\r\n- Updated **Content Manager**\r\n- Updated **Credits & Acknowledgements** section\r\n- Fixed multiple issues in translations\r\n- Added **Voltage** parameter to the FPS counter\r\n- Fixed various bugs in the FPS counter\r\n- Interface improvements and polishing\r\n- Added Chinese language\r\n- Added a new HDR effect to screen effects\r\n- Improved active windows\r\n- Fixed control settings\r\n- Fixed some bugs in themes\r\n- Fixed some minor bugs\r\n- Added the ability to add your own custom repository with drivers in Adrenotools\r\n- Added gyroscope control\r\n- Icon Manager: Added support for ZIP packs and Input Bridge IPK icon packs. (experimental)\r\n- UI Update: The application has been fully migrated to Compose UI.\r\n- Theme Manager: Added a new theme manager.\r\n- Added SurfaceFlinger renderer and a choice between Vulkan/SurfaceFlinger in container settings.\r\n- Removed wrappers v2–v6.\r\n- Added Vulkan version selection to graphics settings.\r\n- Added Adreno Turbo Mode (may slightly boost FPS when enabled).\r\n- FPS Counter: Added customizable styles and color options for the FPS counter.\r\n- Shortcut Settings: Updated the shortcut menu; navigating to the edit menu now opens a Steam game info page featuring screenshots, videos, ratings, etc.\r\n- Updated the Steam interface and fixed various download bugs. Fixed Steam online status. Accelerated game downloads and increased the download queue limit. Added Steam Friends List with chat support. Added Steam Achievements viewer. Added library view modes: Grid, List, and Compact. Improved cloud saves. Fixed the \"last played game\" display in Steam.\r\n- Sped up resource extraction on the first app launch.\r\n- Removed several unused components, reducing the overall app size.\r\n- Updated various system libraries.\r\n- Integrated the MMKV library.\r\n- Fixed CPU available extensions display.\r\n- Improved Box/Fex component downloading inside container settings.\r\n- Fixed a bug where enabling any screen effect caused the screen to split into two windows.\r\n- Added an option to download drivers to the Adreno Tools store from StevenMXZ/Adreno-Tools-Drivers.\r\n- Added GPU name selection + CustomName in CPU settings.\r\n- Added Leegao wrapper.\r\n- Added on-screen controls import from Input Bridge. (experimental)\r\n- Added selection and export of community configurations (experimental)\r\n- Localization: Added Portuguese translation.\r\n- Added update check\r\n- Fixed some bugs\r\n- Added download buttons for Box and FEX in the container and in the shortcut settings\r\n- Added import and export of container settings configuration\r\n- Updated DXVK settings\r\n- Added a file manager for the container\r\n- Added animation selection\r\n- Added GPU load parameter and frame time graph to the FPS counter\r\n- Added pause functionality when minimizing the app (the container is no longer destroyed, but paused instead)\r\n\r\n**Removed Features:**\r\n- Magnifier\r\n- Touch helper function\r\n\r\n**Minor Optimizations:** Various small performance and smoothness improvements.\r\n\r\n- Viewing and removing shared installed components\r\n- Fixed touch control disappearing after 5 seconds #9\r\n- Fixed downloading and caching of game covers\r\n- Fixed UI bugs\r\n- Improved on-screen controls editor\r\n- Added frame generation. If the frame generator does not work on the first container launch, try restarting the container.\r\n- Updated FPS counter\r\n- Added experimental Steam games launch\r\n- Added support for animated covers for games\r\n- Added Relative Mouse option from the container to the control settings\r\n- Added the ability to set a custom icon for a game\r\n- Added BCn settings from implementation Winlator Bionic\r\n- Improved File Explorer — now you can create a game shortcut directly from it\r\n- Interface changes: moved menus, \"Installed Components\" section, and Gamepad Test\r\n- Removed Big Picture menu from the project and cleaned up other unused code\r\n- Created a new SystemSensorPaths class — contains all paths to the device's system sensors and centralized all sensor queries\r\n- Replaced the GL renderer with a Vulkan renderer. Old GL effects were removed, all effects were ported to custom Vulkan fragment shaders; added a Vulkan post-processing pipeline. The Vulkan renderer implementation is based on Winlator Ludashi\r\n- Added new sensor paths: hwmon/MTK\r\n- Added content provider selection in Contents (ref4ik, the412banner, and the ability to add your own custom provider)\r\n- Added \"Box/FEX Extreme\" preset\r\n- When enabling Toggle Fullscreen, the sharpness effect is now automatically enabled to improve image quality\r\n- Fixed translations\r\n- Added a slider in container settings to change text DPI\r\n- Fixed a bug when downloading Wine where other versions stopped working #4\r\n- Rebuilt some Wine ref4ik versions with additional patches\r\n- Fixed API output in the FPS counter and added GPU temperature indicator.\r\n- Fixed black screen on first container boot.\r\n- Improved shortcuts.\r\n- Improved frame generation.\r\n- Improved game import menu\r\n- Added FSR effect.\r\n- Added profiling for the selected game.\r\n- Added control profile preview.\r\n- Fixed a bug when importing Wine with x86_64 architecture where nothing would launch inside Wine.\r\n- Improved XServer.\r\n- Added Quick Panel.\r\n- Improved Task Manager.\r\n\r\n</details>\r\n\r\n**Version information:**\r\n\r\n- **Standard version** — CronyX: `com.cronyx`\r\n- **Ludashi version** — APK signature of the benchmark for locking processor frequencies at maximum: `com.ludashi.benchmark`\r\n- **Pubg version** — APK signature for launching games as PUBG: `com.tencent.ig`\r\n- **Antutu version** — APK signature of the benchmark for locking processor frequencies at maximum: `com.antutu.ABenchMark`\r\n\r\n**Join community and get the latest news, builds, and discussions:**\r\n👉 **Telegram Channel:** https://t.me/winlatorruu\r\n\r\n**If you encounter any problems, please report them here: [GitHub lssues](https://github.com/REF4IK/winlator-ref4ik-/issues)**\r\n\r\nPlease star the project if you like it! ⭐\r\nYour support helps a lot and motivates me to continue development.\r\n\r\n**This version is experimental. It may contain bugs and errors.**\r\n\r\n\r\n\r\n\r\n\r\n**Early version for testing**",
           "prerelease": false,
           "assets": [
@@ -35548,7 +35548,7 @@
             {
               "name": "CronyX_v2_lud.apk",
               "size": 625488946,
-              "downloads": 4182,
+              "downloads": 4183,
               "url": "https://github.com/REF4IK/CronyX-/releases/download/V2/CronyX_v2_lud.apk"
             }
           ],
@@ -35846,7 +35846,7 @@
       "category": "Winlator",
       "logo": "winlator.png",
       "extensions": null,
-      "downloads": 83167,
+      "downloads": 83168,
       "repoStats": {
         "stars": 31,
         "forks": 5,
@@ -35917,14 +35917,14 @@
           "name": "winlator_x_v3_performance_mode",
           "tag": "v3_performance_mode",
           "date": "2025-05-25T06:27:10Z",
-          "downloads": 17257,
+          "downloads": 17258,
           "body": "",
           "prerelease": true,
           "assets": [
             {
               "name": "app-debug.apk",
               "size": 446129159,
-              "downloads": 17257,
+              "downloads": 17258,
               "url": "https://github.com/JURIS-X/winlator_x/releases/download/v3_performance_mode/app-debug.apk"
             }
           ],
@@ -39388,7 +39388,7 @@
         "name": "Proton-9-x86_64",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/Proton.9.0-x86_64.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "Wine": [
@@ -39396,13 +39396,13 @@
         "name": "proton-10-arm64ec",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/proton-10-arm64ec.wcp.xz",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "wine-9.20-x86_64",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/releases/download/1.0/wine-9.20.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "Box64": [
@@ -39410,49 +39410,49 @@
         "name": "0.3.5",
         "version": "1",
         "url": "https://github.com/ziad9267/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.5.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "036fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-036fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.3.7",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.7.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.3.8",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.8.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.3.9",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.3.9.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.1-fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.2-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.2-fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.4",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.4.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "WOWBox64": [
@@ -39460,31 +39460,31 @@
         "name": "0.3.7-5768989",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WowBox64-0.3.7-5768989.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.3.9-056999e",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WOWBox64-0.3.9-056999e.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/WOWBox64-0.4.1-fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.2",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/wowbox64-0.4.2.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "0.4.4",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/WOWBox64/Wowbox64-0.4.4.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "DXVK": [
@@ -39492,103 +39492,103 @@
         "name": "1.5.5",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.5.5.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "1.7.2",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.7.2.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "1.9.4",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.9.4.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "1.10.3-async",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-1.10.3-async.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "11.1-sarek-async",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-11.1-sarek-async.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "1.12.0-sarek",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-sarek-1.12.0.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.3.1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.3.1-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.4.1.1-gplasync-sp",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1.1-gplasync-sp.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.4.1-fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1-fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.4.1-arm64ec-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.4.1-arm64ec-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.5.3-1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.5.3-1-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.6-2-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.6-2-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.6.2-arm64ec-gplasync",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.6.2-arm64ec-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.7.1-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.7.1-gplasync.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.7.1-arm64ec-gplasync-fix-leegao",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.7.1-arm64ec-gplasync-fix-leegao.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "3.1-a6xx",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-3.1-a6xx.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "3.1-arm64ec-gplasync",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-gplasync-arm64ec-3.1.1-1.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "FEXCore": [
@@ -39596,103 +39596,103 @@
         "name": "241214",
         "version": "1",
         "url": "https://github.com/ziad9267/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore_241214.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2505",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore-2505.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2507_fix",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/fexcore_2507_fix.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2508.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2508.1.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2509.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2509.1.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2510.1",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2510.1.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2511",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2511.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2512",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2512.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2601",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2601.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2601-aabdded-nightly",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/FEXCore-2601-aabdded.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2603",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2603.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2604",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2604.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2605",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2605.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2607",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2607.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2608",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2608.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2609",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2609.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2610",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/FEXCore/2610.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ],
     "VKD3D": [
@@ -39700,49 +39700,49 @@
         "name": "2.7-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.7.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.9-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.9.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.12-proton",
         "version": "1",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-2.12.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "2.14.1-arm64ec",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-2.14.1-arm64ec.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "proton-3.0a.wcp",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-3.0a.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "arm64ec-3.0a.wcp",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-arm64ec-3.0a.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "proton-3.0b-2763dd2",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-3.0b-2763dd2.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       },
       {
         "name": "3.0.1-gamesir",
         "version": "0",
         "url": "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-3.0.1-Gamesir.wcp",
-        "date": "2026-10-12T22:54:51.331Z"
+        "date": "2026-10-12T22:59:06.078Z"
       }
     ]
   },
@@ -40368,7 +40368,7 @@
             "fileUrl": "https://github.com/The412Banner/Nightlies/releases/download/Vkd3d-proton/Vk3dk-proton-3.0b-tilting.wcp",
             "date": "2026-05-08T11:08:24Z",
             "files": 9,
-            "downloads": 59075,
+            "downloads": 59076,
             "assets": [
               {
                 "name": "Vk3dk-proton-3.0b-tilting.wcp",
@@ -40409,7 +40409,7 @@
                 "name": "vkd3d-proton-2.9.wcp",
                 "url": "https://github.com/The412Banner/Nightlies/releases/download/Vkd3d-proton/vkd3d-proton-2.9.wcp",
                 "date": "2026-02-18T20:07:29Z",
-                "downloads": 4434,
+                "downloads": 4435,
                 "size": 2498177
               },
               {
@@ -41047,7 +41047,7 @@
             "fileUrl": "https://github.com/The412Banner/Nightlies/releases/download/FexCore/FEXCore-2610-PPA.wcp",
             "date": "2026-10-07T20:47:55Z",
             "files": 30,
-            "downloads": 141884,
+            "downloads": 141885,
             "assets": [
               {
                 "name": "FEXCore-2610-PPA.wcp",
@@ -41144,7 +41144,7 @@
                 "name": "FEX-2508.wcp",
                 "url": "https://github.com/The412Banner/Nightlies/releases/download/FexCore/FEX-2508.wcp",
                 "date": "2026-05-08T11:05:41Z",
-                "downloads": 5807,
+                "downloads": 5808,
                 "size": 2434024
               },
               {
