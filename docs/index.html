@@ -983,9 +983,18 @@ function prepare(raw) {
       gain14 = Math.max(0, (p.downloads || 0) - tot[baseDay]);
       let prev = tot[baseDay];
       for (const d of windowDays) { if (tot[d] == null) continue; daily.push(Math.max(0, tot[d] - prev)); prev = tot[d]; }
-    } else if ((p.releases || []).length && (p.oldestRelease || p.releases[p.releases.length - 1].date || "").slice(0, 10) > startDay) {
-      // Not tracked 14 days ago, but every counted release is newer than that: all its downloads are in the window.
-      gain14 = p.downloads || 0;
+    } else {
+      // Not tracked 14 days ago: growth since the first snapshot inside the window, so a newly added
+      // project gets a number (a slight undercount) instead of falling to the bottom until it has 14 days.
+      const firstDay = windowDays.find(d => tot[d] != null);
+      if (firstDay) {
+        gain14 = Math.max(0, (p.downloads || 0) - tot[firstDay]);
+        let prev = tot[firstDay];
+        for (const d of windowDays) { if (d <= firstDay || tot[d] == null) continue; daily.push(Math.max(0, tot[d] - prev)); prev = tot[d]; }
+      }
+      // Every counted release came out on or after the window's first day: all its downloads are in the window.
+      if ((p.releases || []).length && (p.oldestRelease || p.releases[p.releases.length - 1].date || "").slice(0, 10) >= startDay)
+        gain14 = p.downloads || 0;
     }
     return { ...p, s, latest, releaseCount, releaseDownloads, gain14, daily,
       stars: s ? s.stars : -1, forks: s ? s.forks : -1, watchers: s ? s.watchers : -1,
