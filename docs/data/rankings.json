@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-12T15:29:26.829Z",
-  "totalProjects": 56,
-  "projectsWithReleases": 56,
+  "updatedAt": "2026-10-12T21:57:55Z",
+  "totalProjects": 62,
+  "projectsWithReleases": 62,
   "projectsWithoutReleases": 0,
   "results": [
     {
@@ -39380,6 +39380,825 @@
         }
       ],
       "repoUrl": "https://github.com/deivid22srk/Winlator-Xmod"
+    },
+    {
+      "name": "Termux",
+      "repo": "termux/termux-app",
+      "category": "Terminal",
+      "logo": "termux.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 62463,
+        "forks": 7871,
+        "watchers": 1659,
+        "issues": 636,
+        "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-09-26T05:11:44Z",
+        "createdAt": "2015-10-23T09:42:46Z",
+        "topics": [
+          "android",
+          "hacktoberfest",
+          "linux",
+          "terminal",
+          "termux"
+        ],
+        "archived": false,
+        "homepage": "https://f-droid.org/en/packages/com.termux"
+      },
+      "releases": [
+        {
+          "name": "v0.119.0-beta.3",
+          "tag": "v0.119.0-beta.3",
+          "date": "2025-05-22T22:48:54Z",
+          "downloads": 2942116,
+          "body": "## v0.119.0-beta.3 - 2025-05-22 10:48\n\n**Commit history:** [`v0.119.0-beta.2...v0.119.0-beta.3`](https://github.com/termux/termux-app/compare/e3449515...v0.119.0-beta.3)\n\n## Downloads\n\n### Android `7+` only\n\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk)\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk)\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk)\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3"
+        },
+        {
+          "name": "v0.118.3",
+          "tag": "v0.118.3",
+          "date": "2025-05-22T22:47:26Z",
+          "downloads": 1982041,
+          "body": "## v0.118.3 - 2025-05-22 10:47\n\n**Commit history:** [`v0.118.2...v0.118.3`](https://github.com/termux/termux-app/compare/21c0d51f...v0.118.3)\n\n<details>\n<summary>Changelog</summary>\n\n### Changed\n\n- **!** Remove `TERMUX_APP__BUILD_DATA_DIR` as a different naming scheme will be used for build variables and rename `TERMUX__ROOTFS` to `TERMUX__ROOTFS_DIR`. ([`849e6b10`](https://github.com/termux/termux-app/commit/849e6b10))\n\n## &nbsp;\n\n&nbsp;\n\n\n\n### Fixed\n\n- Bump `org.lsposed.hiddenapibypass:hiddenapibypass` to `6.1` to fix crash on Android 16 QPR1. Related commit https://github.com/LSPosed/AndroidHiddenApiBypass/commit/9efadf06. Related commit https://android-review.googlesource.com/c/platform/libcore/+/3380841. Related commit https://cs.android.com/android/_/android/platform/libcore/+/0dc31afe. Closes [#4556](https://github.com/termux/termux-app/issues/4556). ([`fda17afa`](https://github.com/termux/termux-app/commit/fda17afa))  \n\n- Declare `MANAGE_EXTERNAL_STORAGE` as it being added in Termux:API version `0.51.0` is revoking the storage permission of Termux app after updates and sometimes later. Related issue [#4486](https://github.com/termux/termux-app/issues/4486). ([`23756528`](ht"
+        },
+        {
+          "name": "v0.119.0-beta.2",
+          "tag": "v0.119.0-beta.2",
+          "date": "2025-03-29T07:05:11Z",
+          "downloads": 341708,
+          "body": "## v0.119.0-beta.2 - 2025-03-29 07:05\n\n**Commit history:** [`v0.119.0-beta.1...v0.119.0-beta.2`](https://github.com/termux/termux-app/compare/7c5992d3...v0.119.0-beta.2)\n\n## Downloads\n\n### Android `7+` only\n\n- [`termux-app_v0.119.0-beta.2+apt-android-7-github-debug_universal.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.2/termux-app_v0.119.0-beta.2+apt-android-7-github-debug_universal.apk)\n- [`termux-app_v0.119.0-beta.2+apt-android-7-github-debug_arm64-v8a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.2/termux-app_v0.119.0-beta.2+apt-android-7-github-debug_arm64-v8a.apk)\n- [`termux-app_v0.119.0-beta.2+apt-android-7-github-debug_armeabi-v7a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.2/termux-app_v0.119.0-beta.2+apt-android-7-github-debug_armeabi-v7a.apk)\n- [`termux-app_v0.119.0-beta.2+apt-android-7-github-debug_x86_64.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.2/termux-app_v0.119.0-beta.2+apt-android-7-github-debug_x86_64.apk)\n- [`termux-app_v0.119.0-beta.2+apt-android-7-github-debug_x86.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.2"
+        },
+        {
+          "name": "v0.118.2",
+          "tag": "v0.118.2",
+          "date": "2025-03-29T07:00:23Z",
+          "downloads": 268542,
+          "body": "## v0.118.2 - 2025-03-29 07:00\n\n**Commit history:** [`v0.118.1...v0.118.2`](https://github.com/termux/termux-app/compare/43317b78...v0.118.2)\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Add package `SE_PROCESS_CONTEXT`, `SE_FILE_CONTEXT` and `SE_INFO` when generating app info markdown string. ([`999f10d7`](https://github.com/termux/termux-app/commit/999f10d7))\n\n- Add info to device info for supported ABIs for armv8l and 64-bit-only aarch64 devices and `PAGE_SIZE` for `16KB` page size devices. ([`3aa986cf`](https://github.com/termux/termux-app/commit/3aa986cf))  \n\n- Export additional primary `TERMUX_*` scoped shell environment variables, i.e `TERMUX__ROOTFS`, `TERMUX__HOME`, `TERMUX__PREFIX`, `TERMUX_APP__DATA_DIR`, `TERMUX_APP__LEGACY_DATA_DIR`, `TERMUX_APP__BUILD_DATA_DIR`, `TERMUX__SE_PROCESS_CONTEXT`, `TERMUX_APP__SE_FILE_CONTEXT`, `TERMUX_APP__SE_INFO` and `ANDROID__BUILD_VERSION_SDK`. This is also required for `libtermux-exec-*-ld-preload.so` `$LD_PRELOAD` library as well for `termux-exec` version `>= 2.0.0`. ([`b7d2a4b6`](https://github.com/termux/termux-app/commit/b7d2a4b6), [`8440a728`](https://github.com/termux/termux-app/commit/8440a728))  \n\n- Basic MIME type re"
+        },
+        {
+          "name": "v0.119.0-beta.1",
+          "tag": "v0.119.0-beta.1",
+          "date": "2024-06-18T00:11:25Z",
+          "downloads": 1034089,
+          "body": "## v0.119.0-beta.1 - 2024-06-18 00.11\n\n**Commit history:** [`v0.118.0...v0.119.0-beta.1`](https://github.com/termux/termux-app/compare/9259ef0b...v0.119.0-beta.1)\n\n## Downloads\n\n### Android `7+` only\n\n- [`termux-app_v0.119.0-beta.1+apt-android-7-github-debug_universal.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_universal.apk)\n- [`termux-app_v0.119.0-beta.1+apt-android-7-github-debug_arm64-v8a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_arm64-v8a.apk)\n- [`termux-app_v0.119.0-beta.1+apt-android-7-github-debug_armeabi-v7a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_armeabi-v7a.apk)\n- [`termux-app_v0.119.0-beta.1+apt-android-7-github-debug_x86_64.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux-app_v0.119.0-beta.1+apt-android-7-github-debug_x86_64.apk)\n- [`termux-app_v0.119.0-beta.1+apt-android-7-github-debug_x86.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.1/termux"
+        },
+        {
+          "name": "v0.118.1",
+          "tag": "v0.118.1",
+          "date": "2024-06-18T00:07:53Z",
+          "downloads": 840087,
+          "body": "## v0.118.1 - 2024-06-18 00.05\n\n**Commit history:** [`v0.118.0...v0.118.1`](https://github.com/termux/termux-app/compare/9259ef0b...v0.118.1)\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Add support for Termux bootstrap second stage by running `termux-bootstrap-second-stage.sh`. ([`2c82a558`](https://github.com/termux/termux-app/commit/2c82a558))\n\n- Request `SET_ALARM` permission to allow broadcasting an intent to set an alarm or timer in an alarm clock app. Closes [#3990](https://github.com/termux/termux-app/issues/3990). ([`9735ae28`](https://github.com/termux/termux-app/commit/9735ae28))\n\n## &nbsp;\n\n&nbsp;\n\n\n\n### Changed\n\n- Update support and donate users to `termux.dev` domain. ([`2a008d83`](https://github.com/termux/termux-app/commit/2a008d83))\n\n- Use black or white cursor color based on terminal background instead of always white if `colors.properties` didn't have cursor color set. Credit for algorithm link belong to @Jamie-Landeg-Jones. Closes [#2653](https://github.com/termux/termux-app/issues/2653). ([`160ab68e`](https://github.com/termux/termux-app/commit/160ab68e))\n\n- Update `WcWidth.java` to Unicode `15.0.0`. ([`63833d9c`](https://github.com/termux/termux-app/c"
+        },
+        {
+          "name": "v0.118.0",
+          "tag": "v0.118.0",
+          "date": "2022-01-07T22:35:50Z",
+          "downloads": 3241322,
+          "body": "## [v0.118.0] - 2022-01-07 22.35\n\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Allow users to directly open URL links in terminal transcript when clicked or tapped. The user can add `terminal-onclick-url-open=true` entry to `termux.properties` file to enable opening of URL links in terminal transcript when clicked or tapped. The default value is `false`. Running `termux-reload-settings` command will also update the behaviour instantaneously if changed. Implemented by @trygveaa in [#2146](https://github.com/termux/termux-app/pull/2146). ([`af16e79b`](https://github.com/termux/termux-app/commit/af16e79b), [`1a5a66d0`](https://github.com/termux/termux-app/commit/1a5a66d0))  \n\n- Allow users to disable auto capitalization of extra keys text. The user can add `extra-keys-text-all-caps=false` entry to `termux.properties` file to disable auto capitalization of extra keys text for both normal and popup buttons. The default value is `true`. Running `termux-reload-settings` command will also update the behaviour instantaneously if changed. ([`5c72c3ca`](https://github.com/termux/termux-app/commit/5c72c3ca))  \n\n- Allow users to adjust terminal horizontal and vertical margin. The `term"
+        },
+        {
+          "name": "v0.117 (F-Droid only)",
+          "tag": "v0.117",
+          "date": "2021-07-08T08:26:36Z",
+          "downloads": 0,
+          "body": "## [0.117] - 2021-07-08\n\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Enable split apks for debug builds. APKs for each architecture and a universal APK that is compatible for all architectures will now be available from Github Actions page from the workflow runs labeled `Build`. The APKs will be available as zips under the Artifact section named `termux-app-*`. Architecture specific APKs can be used by users with low disk space since F-Droid releases are universal (since it doesn't support split APKs #1904) and their install+bootstrap installation size is `~180MB` instead of `~120MB` if an architecture specific APK is used. This should also reduce bandwidth usage and download time for debug builds users if they download an architecture specific zip instead of the universal one. Related #2153. (dccd155b, b90d5947)\n\n- Add app and device info too for crash notification shown when bootstrap installation or setup storage fails. (56c38266)\n\n- Trigger termux library builds on jitpack on releases. (d49fd6b0)\n\n\n### Changed\n\n- Allow users to disable terminal margin adjustment from termux settings. Previously in `v0.115` (32135025) support was added with `disable-terminal-margin-adj"
+        },
+        {
+          "name": "v0.116 (F-Droid only)",
+          "tag": "v0.116",
+          "date": "2021-07-01T06:21:38Z",
+          "downloads": 0,
+          "body": "## [0.116] - 2021-07-01\n\n\n<details>\n<summary>Changelog</summary>\n\n### Fixed\n\n- Jitpack library publishing failed for initial `v0.115` release so 886e52dc was done to fix it and `v0.115` was re-released but jitpack kept building pre-fix initial release as per commit `Date` in [`build.log`](https://jitpack.io/com/github/termux/termux-app/0.115/build.log), likely due to one time download. So releasing `v0.116` so that it gets picked up. Users can import library based on entries like the following. The one mentioned in b7b12ebe are invalid.\n\n- `implementation 'com.termux.termux-app:termux-shared:0.116'`\n- `implementation 'com.termux.termux-app:termux-shared:master-SNAPSHOT'`\n- `implementation 'com.termux.termux-app:termux-shared:e547c15481'`\n- `implementation 'com.github.termux.termux-app:termux-shared:0.116'`\n\nNote that the first time someone imports a new version, it will take some time to build and you may get errors like `Unable to resolve dependency for ':app@debug/compileClasspath'`. It will take a few minutes for builds to be downloadable even after `build.log` shows them to have succeeded, run `Sync Project with Gradle Files` again to try to redownload. You can check builds and"
+        },
+        {
+          "name": "v0.115 (F-Droid only)",
+          "tag": "v0.115",
+          "date": "2021-07-01T03:40:04Z",
+          "downloads": 0,
+          "body": "## [0.115] - 2021-07-01\n\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Add support to send back or store `RUN_COMMAND` intent command results in files and provide way to fix argument splitting sent with `am` command caused by commas `,` in arguments itself. Native support has been added inside termux to store results of both foreground and background commands inside files, that also sends back internal `errmsgs` as long as result files extras are valid. This can be used to run synchronous commands from inside termux, with other apps that have `Run commands in Termux environment` (`com.termux.permission.RUN_COMMAND`) like Tasker, from pc over `adb` or inside `adb shell` if you have a rooted device, or from pc if you have setup termux `sshd`. The `RUN_COMMAND` intent can only be sent by the `termux` user itself, by an app that has the permission or by the `root` user. The `shell` user of `adb` cannot send it. A script will be provided at a later time that will automatically detect these cases to easily run `RUN_COMMAND` intent commands which will also automatically create temp directories and do cleanup. This can also be useful inside termux itself, like if you want to start "
+        },
+        {
+          "name": "v0.114 (F-Droid only)",
+          "tag": "v0.114",
+          "date": "2021-06-10T22:32:12Z",
+          "downloads": 0,
+          "body": "## [0.114] - 2021-06-11\n\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Allow users to adjust terminal transcript rows with termux.properties. The `terminal-transcript-rows` key can be used to adjust the terminal transcript rows. The user can set an integer value between `100` and `50000`. The default value is still `2000`. So adding an entry like `terminal-transcript-rows=10000` to `termux.properties` file will allow users to scroll back `~10000` lines of command output. After updating the value, termux must be restarted. You can also run `termux-reload-settings` command so that termux loads the updated value, but only new sessions will use the updated value, existing sessions will not be affected. Be advised that using large values may have a performance impact depending on your device capabilities, so use at your own risk. Closes [#2071](https://github.com/termux/termux-app/issues/2071). (0b4bbaf2)\n\n- Allow users to set terminal cursor style with termux.properties. The `terminal-cursor-style` key can be used to set the terminal cursor style. The user can set a string value to `block` for `■`, `underline` for `_` or `bar` for `|` cursor style. The default value is still `b"
+        },
+        {
+          "name": "v0.113 (F-Droid only)",
+          "tag": "v0.113",
+          "date": "2021-05-16T18:51:51Z",
+          "downloads": 0,
+          "body": "## [0.113] - 2021-05-16\n\n\n<details>\n<summary>Changelog</summary>\n\n### Added\n\n- Allow users to `enable/disable` keyboard instead of just `show/hide` with `KEYBOARD` toggle buttons. This `soft-keyboard-toggle-behaviour` key can be used to change the behaviour. The default behaviour is `show/hide`. The user can add a line `soft-keyboard-toggle-behaviour=enable/disable` in `~/termux.properties` file to change default behaviour of keyboard toggle buttons to `enable/disable`. In this mode, tapping the keyboard toggle button will disable (and hide) the keyboard and tapping on the terminal view will not open the keybaord automatically, until the keyboard toggle button is pressed again manually. This applies to split screen and floating keyboard as well. The keyboard can also be enabled from `Termux Settings` -> `Termux` -> `Terminal I/O` -> `Soft Keyboard Enabled` toggle. Running `termux-reload-settings` command will also update the behaviour instantaneously if changed. Also fixes [#1098](https://github.com/termux/termux-app/issues/1098). (e4e638bd)\n- Allow users to disable soft keyboard automatically if hardware keyboard is connected. Users can enable this behaviour by enabling the `Termu"
+        },
+        {
+          "name": "v0.112 (F-Droid only)",
+          "tag": "v0.112",
+          "date": "2021-04-22T15:03:22Z",
+          "downloads": 0,
+          "body": "## [0.112] - 2021-04-22\n\n### Fixed\n\n- Reverted the versioning logic change done in a6ae656c since that caused F-Droid bot and Github Packages to fail to pick up new releases. The versions must be bumped directly in `build.gradle` file in future and not through other files like `gradle.properties`. Thanks to @jspricke for [notifying](https://github.com/termux/termux-app/issues/2011#issuecomment-824837387) us. (0aa5a123)\n##\n\n[`Github Build` APK](https://github.com/termux/termux-app/actions/runs/774634534). Check [Installation](https://github.com/termux/termux-app#github) for more info on `Github Build` APKs.\n\n[0.112]: https://github.com/termux/termux-app/compare/v0.111...v0.112"
+        },
+        {
+          "name": "v0.111 (F-Droid only)",
+          "tag": "v0.111",
+          "date": "2021-04-21T09:11:49Z",
+          "downloads": 0,
+          "body": "## [0.111] - 2021-04-21 (**RE-RELEASED**)\n\n### Changed\n\n- Bumped gradle wrapper to 7.0. (1d06ff9b)\n\n### Fixed\n\n- Fixed `termux-reset` not working properly since v0.109. (d6eb5e35)\n- Fixed cases where bootstrap was not reinstalled even if `PREFIX` was broken, i.e if it was empty or only contained the `tmp` directory. (107927f5, b34f60b1)\n##\n\n[`Github Build` APK](https://github.com/termux/termux-app/actions/runs/770094929). Check [Installation](https://github.com/termux/termux-app#github) for more info on `Github Build` APKs.\n\n[0.111]: https://github.com/termux/termux-app/compare/v0.110...v0.111"
+        },
+        {
+          "name": "v0.110 (F-Droid only)",
+          "tag": "v0.110",
+          "date": "2021-04-15T00:24:19Z",
+          "downloads": 0,
+          "body": "## [0.110] - 2021-04-15\n\n### Added\n\n- Add support to include source jar files for libraries published by termux so that developers that import the libraries can see javadocs and comments. (3306c3c2)\n\n### Fixed\n\n- Fix Termux Settings crash for release builds. Fixes #2005 (cde0bd22)\n\n\n[0.110]: https://github.com/termux/termux-app/compare/v0.109...v0.110"
+        },
+        {
+          "name": "v0.109 (F-Droid only)",
+          "tag": "v0.109",
+          "date": "2021-04-13T14:07:52Z",
+          "downloads": 0,
+          "body": "Change Log:\n- Updated bootstrap archives.\n- Lots of fixes and improvements (see expandable list below).\n\n<details>\n<summary>Full change log</summary>\n\n### Added\n- Added `SettingsActivity` (`Termux Settings)` which can be accessed by `Long pressing terminal view` -> `More` -> `Settings`. This will allow GUI based management of settings in future, like keyboard key mapping, etc. Currently supports controlling log level, plugin errors and softkeyboard state. (d39972b3)\n- Add `SettingsActivity` to launcher shortcuts. (2b3f6817, 325a6f7d)\n- Added `ReportActivity` and `ReportInfo` to be used as base for showing reports to users. Currently supports plugin errors, app crashes and issue reports. (9d36e9ad)\n- Added centralized `Logging` framework to the entire app and `terminal-view` and `terminal-emulator` libraries which has 4 levels, `Off`, `Normal` (default), `Debug`, `Verbose` which can be used by users via `logcat` to debug problems.  Users can set the log level from `Termux Settings` -> `Debugging` -> `Log Level`. Terminal view key logging can now also be enabled with the `Terminal View Key Logging` toggle without having to recompile the app. Support for writing to files in addition t"
+        },
+        {
+          "name": "v0.108 (F-Droid only)",
+          "tag": "v0.108",
+          "date": "2021-02-19T00:00:14Z",
+          "downloads": 0,
+          "body": "Special release to fix F-Droid build issue as new build configuration (split apks) is not supported by F-Droid in way how it was introduced. Now it is reverted back to all-in-one architecture apk. Otherwise, changelog is same as unreleased v0.107."
+        },
+        {
+          "name": "v0.107 (F-Droid only)",
+          "tag": "v0.107",
+          "date": "2021-02-03T21:56:18Z",
+          "downloads": 0,
+          "body": "Changes:\n- Implement numpad arrows/home/end/pgup/pgdn/ins/del when num lock is off.\n- Extra keys: handle multiple defined special buttons and in popup. Fix for https://github.com/termux/termux-app/issues/1881.\n- `~/.termux/termux.properties`: add option `fullscreen` to toggle fullscreen mode. You may need to enable `use-fullscreen-workaround` on some devices to fix layout issues, though on some devices it still doesn't work properly. *Consider fullscreen mode as unstable for now.*\n- `~/.termux/termux.properties`: add option `default-working-directory` which allows to open Termux in a specified directory instead of home.\n- Added back PNG icons in addition to current adaptive/vector icon. This should fix issues with launchers still not supporting adaptive icons.\n- Export current application version as environment variable `TERMUX_VERSION`.\n- Update bootstrap archives.\n\n***\n\n*~~From this point Termux does split-apk builds. One APK per CPU architecture: for aarch64, arm, i686 and x86_64.~~*"
+        },
+        {
+          "name": "v0.106 (F-Droid only)",
+          "tag": "v0.106",
+          "date": "2021-01-17T17:45:48Z",
+          "downloads": 0,
+          "body": "This is actually fixed v0.105 release, so changes are same by comparing to v0.104:\n- Remove restrictions from file types viewable by `~/bin/termux-file-editor`.\n- If Termux:Styling is not installed, suggest to install it from F-Droid instead of Play Store, when attempting to change terminal font/colors.\n- Add property `ctrl-space-workaround` to enable ctrl+space usable on hardware keyboard for some devices.\n- Updated bootstrap archives."
+        },
+        {
+          "name": "v0.105 (DO NOT INSTALL: IT'S BROKEN)",
+          "tag": "v0.105",
+          "date": "2021-01-06T12:38:34Z",
+          "downloads": 0,
+          "body": "- Remove restrictions from file types viewable by `~/bin/termux-file-editor`.\n- If Termux:Styling is not installed, suggest to install it from F-Droid instead of Play Store, when attempting to change terminal font/colors.\n- Add property `ctrl-space-workaround` to enable ctrl+space usable on hardware keyboard for some devices.\n- Updated bootstrap archives.\n\n***\n\n**This release is broken, sorry.** *Use v0.104 instead!*"
+        },
+        {
+          "name": "v0.104 (F-Droid only)",
+          "tag": "v0.104",
+          "date": "2020-12-29T11:47:45Z",
+          "downloads": 0,
+          "body": "* Expose dotfiles through SAF. https://github.com/termux/termux-app/issues/1220\n* Updated bootstrap archives."
+        },
+        {
+          "name": "v0.103 (F-Droid only)",
+          "tag": "v0.103",
+          "date": "2020-11-17T18:43:25Z",
+          "downloads": 0,
+          "body": "* Added `READ_LOGS` and `WRITE_SECURE_SETTINGS` permissions for advanced users. These permissions can be enabled with ADB.\n* Updated bootstrap archives."
+        },
+        {
+          "name": "v0.102 (F-Droid only)",
+          "tag": "v0.102",
+          "date": "2020-10-12T17:48:38Z",
+          "downloads": 0,
+          "body": "* Add context menu action \"Autofill password\". Pull request https://github.com/termux/termux-app/pull/1664.\n* Update bootstrap archives."
+        },
+        {
+          "name": "v0.101",
+          "tag": "v0.101",
+          "date": "2020-09-28T00:31:45Z",
+          "downloads": 0,
+          "body": "* Terminal emulation: fix handling of DECRQM sequence. Issue https://github.com/termux/termux-app/issues/1752.\n* Fix crash when using RunCommandService and issue with foreground sessions. Pull request https://github.com/termux/termux-app/pull/1764.\n* Update bootstrap archives.\n\n*Resubmission of v0.100 but with fixed bootstrap archives.*"
+        },
+        {
+          "name": "v0.100",
+          "tag": "v0.100",
+          "date": "2020-09-27T22:04:46Z",
+          "downloads": 0,
+          "body": "* Terminal emulation: fix handling of DECRQM sequence. Issue https://github.com/termux/termux-app/issues/1752.\n* Fix crash when using RunCommandService and issue with foreground sessions. Pull request https://github.com/termux/termux-app/pull/1764.\n* Update bootstrap archives.\n\n*Note: bootstrap archives contain broken dpkg (crashes on ARM devices). Fixed app will be resubmitted as v0.101.*"
+        },
+        {
+          "name": "v0.99",
+          "tag": "v0.99",
+          "date": "2020-08-26T17:58:02Z",
+          "downloads": 0,
+          "body": "* Provide a workaround for input issues with some keyboards. Issue https://github.com/termux/termux-app/issues/686.\n* Fix linter errors. Issue https://github.com/termux/termux-app/issues/1670.\n* Always flush terminal output before closing session. Issue https://github.com/termux/termux-app/issues/1695.\n* Fix permission description for RUN_COMMAND intent. Issue https://github.com/termux/termux-app/issues/1713.\n* Updated bootstrap archives."
+        },
+        {
+          "name": "v0.98",
+          "tag": "v0.98",
+          "date": "2020-08-07T12:44:14Z",
+          "downloads": 0,
+          "body": "* Fix width of some unicode characters.\n  Some unicode characters where updated in wcwidth/libandroid-support previously, but the WcWidth.java was not, leading to some characters being detected as having the wrong width. With this the java code is in-sync with the c code in libandroid-support. Thanks @landfillbaby.\n* Update bootstrap archives."
+        },
+        {
+          "name": "v0.97",
+          "tag": "v0.97",
+          "date": "2020-08-07T11:48:25Z",
+          "downloads": 0,
+          "body": "* Fix width of some unicode characters\n\nSome unicode characters where updated in wcwidth/libandroid-support previously, but the WcWidth.java was not, leading to some characters being detected as having the wrong width. With this the java code is in-sync with the c code in libandroid-support. Thanks @landfillbaby.\n\n**Not a release due to version mismatch between this tag and value in app/build.gradle!**"
+        },
+        {
+          "name": "v0.96",
+          "tag": "v0.96",
+          "date": "2020-07-30T21:05:12Z",
+          "downloads": 0,
+          "body": "* Export environment variables specific to Android 11 if available.\n* Export environment variable `COLORTERM=truecolor` - used by certain programs when checking for True Color support. (https://github.com/termux/termux-app/pull/1610)\n* Fixed selection rendering when alternate cursor styles are used. (https://github.com/termux/termux-app/pull/1627)\n* Fixed invisible text issue on some color schemes - now colors are being inverted. (https://github.com/termux/termux-app/pull/1628)\n* Fixed notification icon. (https://github.com/termux/termux-app/pull/1649)\n* Fixed argument handling for `com.termux.RUN_COMMAND` intent action + allow background command execution. (https://github.com/termux/termux-app/pull/1679)"
+        },
+        {
+          "name": "v0.95",
+          "tag": "v0.95",
+          "date": "2020-06-09T20:04:31Z",
+          "downloads": 0,
+          "body": "* Fixed incorrect message which is shown in case when bootstrap installation fails.\n* Updated bootstrap archives.\n* Fixed issue when malformed `\\uXXXX` tokens in termux.properties lead to application crash. Issue https://github.com/termux/termux-app/issues/1589.\n* Introduced support for auto-detection of system dark theme (https://github.com/termux/termux-app/pull/1476).\n* Properly set orientation of text selection handle (https://github.com/termux/termux-app/pull/1477).\n* Update notification icon to match the launcher icon (https://github.com/termux/termux-app/pull/1478).\n* Extended extra keys configuration (https://github.com/termux/termux-app/pull/1479).\n* Support opening log files with view intent (https://github.com/termux/termux-app/pull/1502).\n* Provide a way to allow third-party applications to execute commands within Termux environment. Issue https://github.com/termux/termux-app/issues/804.\n* Use vector drawables for text selection handles."
+        }
+      ]
+    },
+    {
+      "name": "Termux JX",
+      "repo": "jiaxinchen-max/termux-app",
+      "category": "Terminal",
+      "logo": "termux-jx.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 69,
+        "forks": 11,
+        "watchers": 0,
+        "issues": 4,
+        "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-12T11:09:50Z",
+        "createdAt": "2024-02-01T08:54:18Z",
+        "topics": [],
+        "archived": false,
+        "homepage": "https://f-droid.org/en/packages/com.termux"
+      },
+      "releases": [
+        {
+          "name": "v1.0.8",
+          "tag": "1.0.8",
+          "date": "2026-06-05T11:27:23Z",
+          "downloads": 748,
+          "body": "Refactor the app, changing the X11 display service from an Activity to a reusable view component. Optimize the user experience. Fix the virtual button scaling misalignment issue in portrait mode. Optimize the floating ball experience.\n"
+        },
+        {
+          "name": "RootFS emergency prebuilt snapshot v1",
+          "tag": "rootfs-emergency-snapshot-v1",
+          "date": "2026-10-12T11:09:50Z",
+          "downloads": 0,
+          "body": "Emergency fallback snapshot of the shared RootFS base image + both wineprefix templates (hangover, box64), for use via the app's existing Restore flow if upstream (Debian snapshot archive / Hangover / Wine releases) ever breaks the live build pipeline. Produced by the app's own Backup feature from a known-good, end-to-end-verified build. SHA-256: 11b79779730ba9d9a9c942f0c425bbc53370c11df516d2a607052860bade97cd\n"
+        },
+        {
+          "name": "box64-wine Wine 11.19 ROUND_SIZE patch v1",
+          "tag": "box64-wine-11.19-patch-v1",
+          "date": "2026-10-12T08:08:00Z",
+          "downloads": 2,
+          "body": "Self-hosted patched build of upstream Wine 11.19 (Kron4ek/Wine-Builds WoW64 layout), fixing anon_mmap_alloc's page-alignment assertion that SIGABRTs box64-translated wineboot. One-line fix: wraps virtual_init()'s pages_vprot allocation size in ROUND_SIZE(0, size, host_page_mask). Not yet submitted upstream."
+        },
+        {
+          "name": "box64 0.4.5 with Android W^X mprotect fix",
+          "tag": "box64-mprotect-patch-v1",
+          "date": "2026-10-07T06:19:07Z",
+          "downloads": 14,
+          "body": "Patched build of box64 v0.4.5 (upstream main @8f6ab59) that unconditionally strips PROT_EXEC in my_mprotect() when box64_pagesize == X86_PAGE_SIZE, working around Android's targetSdkVersion>=29 W^X SELinux policy (untrusted_app denies mprotect(PROT_EXEC) on app-private-storage-backed memory). Same root cause and fix shape as termux-pacman/glibc-packages issue #49 / PR #50's libc mprotect fix. box64 never executes guest pages natively (it JITs to host ARM64), so the host mapping never needs to be genuinely executable. Not yet submitted upstream to ptitSeb/box64. See box64-wine-39bit-pitfalls writeup for the full investigation."
+        },
+        {
+          "name": "v1.0.7-beta",
+          "tag": "1.0.7",
+          "date": "2025-08-19T12:59:40Z",
+          "downloads": 1496,
+          "body": "adapt for android16\nfloat ball menu optimization\nother experience optimization"
+        },
+        {
+          "name": "v1.0.6",
+          "tag": "1.0.6",
+          "date": "2025-07-06T15:28:43Z",
+          "downloads": 262,
+          "body": "sync latest termux-x11 code\nsupport tooggle software keyboard by float ball menu\nfix dark theme\nfix termux-x11 addition keyboard click issue\nfix input controller click issue\nremap hardware mouse right button to click instead of back\nfix button position coordinate issue\nfix terminal not response on touch event issue\nexperience optimization"
+        },
+        {
+          "name": "v1.0.5",
+          "tag": "1.0.5",
+          "date": "2025-05-22T03:20:42Z",
+          "downloads": 197,
+          "body": "fix dark mode color issue by  @Waim908"
+        },
+        {
+          "name": "v1.0.4",
+          "tag": "v1.0.4",
+          "date": "2024-07-04T16:26:40Z",
+          "downloads": 443,
+          "body": "touch input optimization\nprepare to adapt for game stick \nrewrite touch control logical\ninput controller editor bug fix\nwinhandler import\ngame pad supported\nmouse button controller fix\nsimulate touch fixed\ncursor locked supported\nhide cutout white edge bug fix\nlocalization(chiness)\nrecover file provider\ncompitible with termux:x11\nexperience opti"
+        },
+        {
+          "name": "inputcontroller transplant from winlator",
+          "tag": "v1.0.3",
+          "date": "2024-05-23T15:42:37Z",
+          "downloads": 153,
+          "body": "inputcontroller transplant from winlator\nexperience optimization"
+        },
+        {
+          "name": "fix animation freeze bug in high version android system",
+          "tag": "v1.0.2",
+          "date": "2024-04-21T09:56:09Z",
+          "downloads": 244,
+          "body": "fix animation freeze bug in high version android system"
+        },
+        {
+          "name": "v1.0.1",
+          "tag": "v1.0.1",
+          "date": "2024-04-19T16:36:49Z",
+          "downloads": 93,
+          "body": "**Full Changelog**: https://github.com/jiaxinchen-max/termux-app/compare/v1.0.0...v1.0.1"
+        },
+        {
+          "name": "termux",
+          "tag": "v1.0.0",
+          "date": "2024-04-05T07:16:12Z",
+          "downloads": 223,
+          "body": "termux termux-x11 merged"
+        }
+      ]
+    },
+    {
+      "name": "Termux Ghostty",
+      "repo": "mrndstvndv/termux-ghostty",
+      "category": "Terminal",
+      "logo": "termux-ghostty.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 35,
+        "forks": 4,
+        "watchers": 0,
+        "issues": 1,
+        "description": "An experimental Android terminal app combining features from Termux and Ghostty.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-11T20:00:27Z",
+        "createdAt": "2026-03-13T03:39:07Z",
+        "topics": [
+          "ghostty",
+          "libghostty",
+          "termux"
+        ],
+        "archived": false,
+        "homepage": ""
+      },
+      "releases": [
+        {
+          "name": "Release v4.13.1",
+          "tag": "v4.13.1",
+          "date": "2026-10-07T00:08:46Z",
+          "downloads": 81,
+          "body": "# Changelog\n\n**Release: v4.13.1**\n\n## Fixes\n- **terminal**: stale view after session switch from dropped replay rebuild ([886c2581](https://github.com/mrndstvndv/termux-ghostty/commit/886c2581257017bd1a38c325b4a006a056a4acc4))"
+        },
+        {
+          "name": "Release v4.13.0",
+          "tag": "v4.13.0",
+          "date": "2026-10-05T13:00:46Z",
+          "downloads": 32,
+          "body": "# Changelog\n\n**Release: v4.13.0**\n\n## Features\n- **sftp**: render markdown files with tables, code blocks and mermaid diagrams ([d1e17a24](https://github.com/mrndstvndv/termux-ghostty/commit/d1e17a2429ea91c34667b4d880ddb541d924ef4d))\n\n## Fixes\n- **terminal**: flash on session switch from default-configured controller resize ([e45ea91f](https://github.com/mrndstvndv/termux-ghostty/commit/e45ea91f5c0a27193193045e31ec24e944f12862))"
+        },
+        {
+          "name": "Release v4.12.0",
+          "tag": "v4.12.0",
+          "date": "2026-10-03T09:22:14Z",
+          "downloads": 28,
+          "body": "# Changelog\n\n**Release: v4.12.0**\n\n## Features\n- **sftp**: add tree view toggle with inline folder expansion ([b79e3cee](https://github.com/mrndstvndv/termux-ghostty/commit/b79e3cee38b72ef9804fe16be8ba06800a1b238c))\n- **review**: add commit graph to history ([43bfb9c7](https://github.com/mrndstvndv/termux-ghostty/commit/43bfb9c7a702eadf153c0e6cc308f56cc3143054))"
+        },
+        {
+          "name": "Release v4.11.0",
+          "tag": "v4.11.0",
+          "date": "2026-10-03T00:30:33Z",
+          "downloads": 13,
+          "body": "# Changelog\n\n**Release: v4.11.0**\n\n## Features\n- **review**: add floating action pill with branch switcher, sync and commit ([55623ac7](https://github.com/mrndstvndv/termux-ghostty/commit/55623ac70de9813e39034d9796bd4d4392baee2d))\n- **sftp**: add floating action pill with search and upload ([93560053](https://github.com/mrndstvndv/termux-ghostty/commit/93560053c0baae0192146ef9a148b1b8ddc7034d))\n- **settings**: add animations toggle and animate tab switches on back ([fdbe633f](https://github.com/mrndstvndv/termux-ghostty/commit/fdbe633f740497408bc7b1ab01f06891ffb44902))\n\n## Fixes\n- **navigation**: slide the workspace in and out so leaving it is immediate ([312fda0d](https://github.com/mrndstvndv/termux-ghostty/commit/312fda0dd83429ca2723041c3ab959631bb364aa))\n- **navigation**: enable predictive back and clear terminal selection on back gestures ([52d4bcc0](https://github.com/mrndstvndv/termux-ghostty/commit/52d4bcc07e53923ca470fd59fa22d29142690dd5))\n- **sftp**: keep manual breadcrumb scroll instead of snapping back to the current folder ([93a41e3e](https://github.com/mrndstvndv/termux-ghostty/commit/93a41e3e2561a5bc20173c23f81f5512fb5f0334))\n- **ime**: keep the keyboard open when ta"
+        },
+        {
+          "name": "Release v4.10.1",
+          "tag": "v4.10.1",
+          "date": "2026-09-29T13:01:17Z",
+          "downloads": 34,
+          "body": "# Changelog\n\n**Release: v4.10.1**\n\n## Fixes\n- **keyboard**: bound the pre-applied keyboard height to one inset dispatch ([500f8e4b](https://github.com/mrndstvndv/termux-ghostty/commit/500f8e4b476095f4bd490a7f75d57499994f9160))"
+        },
+        {
+          "name": "Release v4.10.0",
+          "tag": "v4.10.0",
+          "date": "2026-09-29T12:29:17Z",
+          "downloads": 19,
+          "body": "# Changelog\n\n**Release: v4.10.0**\n\n## Features\n- **review**: add horizontal scroll handoff from diff view to tab pager ([40ece466](https://github.com/mrndstvndv/termux-ghostty/commit/40ece466e1b56a1e568eecb65aeaadfa303c8b37))\n- **diff-viewer**: respect custom app font setting ([3e4f68a5](https://github.com/mrndstvndv/termux-ghostty/commit/3e4f68a5acdb17e6a1f02f4f902dd5fd11a52b1a))\n\n## Fixes\n- **terminal**: make the viewport a per-host concern instead of session state ([05f69330](https://github.com/mrndstvndv/termux-ghostty/commit/05f693305004052cfcbe5ef8227fc1be08d6ce01))\n- **terminal**: only read the frame transport inside the publication window ([2a90670c](https://github.com/mrndstvndv/termux-ghostty/commit/2a90670cae39ba064b4f37df6547141415d2c32e))\n- **terminal**: make session removal unconditional and drop dead text-changed path ([b116df3e](https://github.com/mrndstvndv/termux-ghostty/commit/b116df3e43371f916b1a18325498110e07d7ec27))\n- **terminal**: restore session readiness signal and correct session removal ([eaaa0873](https://github.com/mrndstvndv/termux-ghostty/commit/eaaa0873e2a61d38b65feb4815cce710df283ddd))\n- **review**: clear webview focus on back navigation and coalesc"
+        },
+        {
+          "name": "Release v4.9.0",
+          "tag": "v4.9.0",
+          "date": "2026-09-27T09:43:27Z",
+          "downloads": 41,
+          "body": "# Changelog\n\n**Release: v4.9.0**\n\n## Features\n- **diff-viewer**: add collapsible file sections ([c0bd6437](https://github.com/mrndstvndv/termux-ghostty/commit/c0bd643777c7f6255132a7ec3be4bdd1152292a3))\n- **herdr**: add PiG icon for agents bottom sheet ([6d1e8d65](https://github.com/mrndstvndv/termux-ghostty/commit/6d1e8d6522c2006850fc008a7d792df9e9054ab9))\n- **review**: embed local Pierre diff viewer via WebView ([239a41c0](https://github.com/mrndstvndv/termux-ghostty/commit/239a41c025cb4c3311bf689940011b115b27eb50))\n- **terminal**: add wallpaper support with settings and picker ([5d96f3d0](https://github.com/mrndstvndv/termux-ghostty/commit/5d96f3d0dec6725a0e1ee29411d289538c12d349))\n\n## Fixes\n- **compose-app**: prefer explicit bun installs over PATH lookup ([1f45a545](https://github.com/mrndstvndv/termux-ghostty/commit/1f45a545fc49f6d1466ede64989e9f237da16b11))\n- **workspace**: stabilize pager layout against mid-swipe node replacement ([9ff58b13](https://github.com/mrndstvndv/termux-ghostty/commit/9ff58b136b5d2620e6f1f56bb57fcefd70fc64d8))\n- **compose-app**: replace removed Project.exec with install task for Gradle 9 ([cfc24427](https://github.com/mrndstvndv/termux-ghostty/commit/"
+        },
+        {
+          "name": "Release v4.8.3",
+          "tag": "v4.8.3",
+          "date": "2026-09-21T06:39:23Z",
+          "downloads": 108,
+          "body": "# Changelog\n\n**Release: v4.8.3**\n\n## Fixes\n- **ci**: gate release builds on shared terminal module changes ([6cd06c69](https://github.com/mrndstvndv/termux-ghostty/commit/6cd06c699c2d531af939feeb35cac1d1517b57d8))\n- **kitty**: isolate direct pixel buffers and harden bounds checks ([6e55e990](https://github.com/mrndstvndv/termux-ghostty/commit/6e55e99068a3df1a569ecc3cc9f560f7f4e0e756))\n- **settings**: truncate terminal font name to prevent button overlap ([2631f76f](https://github.com/mrndstvndv/termux-ghostty/commit/2631f76f5aff09773e798ac6eff8c0e47a48e88b))\n- **kitty**: eliminate JVM heap image allocations and harden buffer bounds ([0e7e53cc](https://github.com/mrndstvndv/termux-ghostty/commit/0e7e53cc10bc2ddda034ba0c1a6c294776ec2d12))\n- **kitty**: deduplicate snapshot pixel buffers and preserve texture dimensions ([e8be2f06](https://github.com/mrndstvndv/termux-ghostty/commit/e8be2f068de43ba7fe01dec7fa8531fe542bd38b))"
+        },
+        {
+          "name": "Release v4.8.2",
+          "tag": "v4.8.2",
+          "date": "2026-09-10T12:10:45Z",
+          "downloads": 92,
+          "body": "# Changelog\n\n**Release: v4.8.2**\n\n## Fixes\n- **ime**: support image paste from IME ([c7570325](https://github.com/mrndstvndv/termux-ghostty/commit/c7570325b5f8c095600df66fabe0bec9d54a90ce))"
+        },
+        {
+          "name": "Release v4.8.1",
+          "tag": "v4.8.1",
+          "date": "2026-09-10T01:11:17Z",
+          "downloads": 13,
+          "body": "# Changelog\n\n**Release: v4.8.1**\n\n## Fixes\n- **herdr**: restore pane focus controls ([08257ae8](https://github.com/mrndstvndv/termux-ghostty/commit/08257ae8c96aba2371a6d1fda0261ee0836f3dca))\n- **clipboard**: support Windows remote uploads ([c2241305](https://github.com/mrndstvndv/termux-ghostty/commit/c22413050e78244209193a68a908df43d3ad5da4))"
+        },
+        {
+          "name": "Release v4.8.0",
+          "tag": "v4.8.0",
+          "date": "2026-09-06T23:03:24Z",
+          "downloads": 82,
+          "body": "# Changelog\n\n**Release: v4.8.0**\n\n## Features\n- **compose-app**: add media and file upload actions ([956172a1](https://github.com/mrndstvndv/termux-ghostty/commit/956172a1c1a933a923d9a0da81b4ad44b2c9cb37))\n- **keyboard**: centralize IME control in terminal-compose-view ([eaa4d464](https://github.com/mrndstvndv/termux-ghostty/commit/eaa4d46438a44698697176f9c8029f19e64559b0))\n- **keyboard**: remember soft keyboard state ([b69fcf71](https://github.com/mrndstvndv/termux-ghostty/commit/b69fcf712e4e022cc7cb69843c168acc03550867))\n- **keyboard**: add tap auto-show toggle, two-finger swipe-up, and KEYBOARD extra key ([c4e614ab](https://github.com/mrndstvndv/termux-ghostty/commit/c4e614ab6c024de316e4374947125f92eb69d2fc))\n\n## Fixes\n- **compose-app**: remove duplicate paste action ([ece1ffa6](https://github.com/mrndstvndv/termux-ghostty/commit/ece1ffa6ec62dad20ec7ec8c4e73157eb66148c8))\n\n## Updates\n- **context-menu**: finalize terminal actions ([07c9f811](https://github.com/mrndstvndv/termux-ghostty/commit/07c9f811d6b2b673ad6b9681474993cd00db59ba))\n- **context-menu**: refine terminal actions ([d600db0f](https://github.com/mrndstvndv/termux-ghostty/commit/d600db0fa30493195dcd87313d594d17116a2ab"
+        },
+        {
+          "name": "Release v4.7.0",
+          "tag": "v4.7.0",
+          "date": "2026-09-06T03:53:37Z",
+          "downloads": 29,
+          "body": "# Changelog\n\n**Release: v4.7.0**\n\n## Features\n- **workspace**: add image upload action and restore terminal gestures ([7014331d](https://github.com/mrndstvndv/termux-ghostty/commit/7014331dae2e441118f9a7b82d3e7944782eb4a8))\n- **clipboard**: add image paste upload support ([f0b427a1](https://github.com/mrndstvndv/termux-ghostty/commit/f0b427a1c2de339024d280649bc5cde6e180cab2))\n- **review**: add fetch, pull and push actions to branch header ([e282acec](https://github.com/mrndstvndv/termux-ghostty/commit/e282acec2d03f1f7677b6e0ff71176f1922d7c30))\n\n## Fixes\n- **session**: clean up individual SSH disconnects ([dffb26fe](https://github.com/mrndstvndv/termux-ghostty/commit/dffb26fe9f0c08d1275a449b73f70f81d2866ddc))\n- **session**: emit finish events on disconnect-all so workspace returns to server list ([78ed965d](https://github.com/mrndstvndv/termux-ghostty/commit/78ed965d57153a99e90d1eb4f8a91e64325e4bf0))\n- **sftp**: scope breadcrumb bringIntoView to active tab ([3b00b4ff](https://github.com/mrndstvndv/termux-ghostty/commit/3b00b4ff4933a895859b06793eccb834d91d1f91))\n- **workspace**: clamp pager fling to one page ([122d2f0e](https://github.com/mrndstvndv/termux-ghostty/commit/122d2f0e0f40"
+        },
+        {
+          "name": "Release v4.6.1",
+          "tag": "v4.6.1",
+          "date": "2026-09-02T06:25:26Z",
+          "downloads": 80,
+          "body": "# Changelog\n\n**Release: v4.6.1**\n\n## Fixes\n- **gles**: trim image shader sources for Mali compilation ([276aab95](https://github.com/mrndstvndv/termux-ghostty/commit/276aab959b95e6441dd9c2fbcdb254e3fca14e25))"
+        },
+        {
+          "name": "Release v4.6.0",
+          "tag": "v4.6.0",
+          "date": "2026-09-01T22:33:44Z",
+          "downloads": 8,
+          "body": "# Changelog\n\n**Release: v4.6.0**\n\n## Features\n- **sftp**: preserve breadcrumb trail on parent navigation ([8400eca3](https://github.com/mrndstvndv/termux-ghostty/commit/8400eca35b683739de70b773cd5b8044c29fb370))\n- **notification**: navigate to target session and focus pane on tap ([aa3b5752](https://github.com/mrndstvndv/termux-ghostty/commit/aa3b5752e30599616b1bb5caecb8426ad4cfdd75))\n- **herdr**: improve remote commands and add Cargo support ([4e5ef5aa](https://github.com/mrndstvndv/termux-ghostty/commit/4e5ef5aa1f6eb3dc1865a363028bc9e7d5acc0ea))\n- **herdr**: add git icon for bottom sheet ([f627cd18](https://github.com/mrndstvndv/termux-ghostty/commit/f627cd186da2a4840aae77c21e92201712aa2668))\n\n## Fixes\n- **terminal**: allow soft keyboard enter to dismiss finished sessions ([511ae1e2](https://github.com/mrndstvndv/termux-ghostty/commit/511ae1e2f6477412c4895c1403e734edb83a3056))\n- **terminal**: separate process exit from session disposal and restore completed prompt ([6f90b859](https://github.com/mrndstvndv/termux-ghostty/commit/6f90b859138bacb0bd1d50d7feca4b2884d14e19))\n- **ci**: export release artifact verification variables ([9b634e21](https://github.com/mrndstvndv/termux-ghostt"
+        },
+        {
+          "name": "Release v4.5.0",
+          "tag": "v4.5.0",
+          "date": "2026-08-26T14:35:52Z",
+          "downloads": 112,
+          "body": "# Changelog\n\n**Release: v4.5.0**\n\n## Features\n- **terminal**: add customizable Jetpack Compose scrollbar ([378fad54](https://github.com/mrndstvndv/termux-ghostty/commit/378fad5454f1eff89414a88f76e80d7f90bd43a1))\n- **terminal**: add GLES smooth scrolling and inertial fling ([2dec6bab](https://github.com/mrndstvndv/termux-ghostty/commit/2dec6bab802cd2be7075ec3f4d463596319ab725))\n- **terminal**: add kitty unicode virtual placement support ([db1cc49d](https://github.com/mrndstvndv/termux-ghostty/commit/db1cc49d519d5d127196dce6bfb81bf8be113266))\n- **terminal**: add native Kitty graphics protocol support ([305d82c5](https://github.com/mrndstvndv/termux-ghostty/commit/305d82c5f0d9d73693ffe8218f662d0eb1ec1f24))\n\n## Fixes\n- **terminal**: resolve black screen drift on external viewport jumps ([e9f7e41d](https://github.com/mrndstvndv/termux-ghostty/commit/e9f7e41d8c57d4b2638d8bad10d753201f2208d1))\n- **terminal**: resolve blank screen on session switch and startup ([4b356bea](https://github.com/mrndstvndv/termux-ghostty/commit/4b356beadbd5c3fef5185ac35903eb1e0de99f94))\n- **terminal**: scale Kitty graphics with font resize and pinch zoom ([21d43ce6](https://github.com/mrndstvndv/termux-ghostty/"
+        },
+        {
+          "name": "Release v4.4.0",
+          "tag": "v4.4.0",
+          "date": "2026-08-24T23:20:23Z",
+          "downloads": 21,
+          "body": "# Changelog\n\n**Release: v4.4.0**\n\n## Features\n- **terminal**: add scrollback compression and state snapshots ([96b3fda3](https://github.com/mrndstvndv/termux-ghostty/commit/96b3fda3417ca92cf3ac65dff6468cdd18e513af))\n- **terminal**: add optional OpenGL ES renderer ([58816437](https://github.com/mrndstvndv/termux-ghostty/commit/58816437eef11e3dff2dcfdac025f38476832b19))\n- **sftp**: add item menu with rename and delete ([4b030e28](https://github.com/mrndstvndv/termux-ghostty/commit/4b030e28232c4961c7eef46b0426d93162a12525))\n- **sftp**: add background transfer manager ([756a1f97](https://github.com/mrndstvndv/termux-ghostty/commit/756a1f97c30df6e57e99b6ca9e17c13ef7df3f06))\n\n## Fixes\n- **terminal**: enable continuous relative pinch zoom ([04a06210](https://github.com/mrndstvndv/termux-ghostty/commit/04a062106354fdcbae50add374cfa131cf05d412))\n- **terminal**: remove artificial font size cap on zoom ([f47b53d3](https://github.com/mrndstvndv/termux-ghostty/commit/f47b53d324725b7a38dab57fa7874c16f6b7daa8))\n- **terminal**: Restore GPU cursor effects ([879032c8](https://github.com/mrndstvndv/termux-ghostty/commit/879032c840da08900767146e3f2f35555cbc0a60))\n- **selection**: align handles with vi"
+        },
+        {
+          "name": "Release v4.3.0",
+          "tag": "v4.3.0",
+          "date": "2026-08-21T09:27:45Z",
+          "downloads": 47,
+          "body": "# Changelog\n\n**Release: v4.3.0**\n\n## Features\n- **debug-hud**: enable HUD by default ([19f65f4d](https://github.com/mrndstvndv/termux-ghostty/commit/19f65f4d2030c92c5e2475d0c83e6faf0eeb7f0b))\n- **herdr**: add fx icon to agents bottom sheet ([01366bef](https://github.com/mrndstvndv/termux-ghostty/commit/01366bef772ca1c1565cde8aed190c5d5506b6e6))\n- **review**: add diff search ([891e2a02](https://github.com/mrndstvndv/termux-ghostty/commit/891e2a028c771c251b99eadea9bdbf5103720a4a))\n- **compose-app**: add CPU usage to debug HUD ([fb435b95](https://github.com/mrndstvndv/termux-ghostty/commit/fb435b9506323b24be3d975443e07ebe4d280897))\n- **keyboard**: add tmux extra-key preset ([2ff3522e](https://github.com/mrndstvndv/termux-ghostty/commit/2ff3522e3a2590fe50975fe3d0de76be0b9590e3))\n- **server-list**: add safe server actions menu ([7471be81](https://github.com/mrndstvndv/termux-ghostty/commit/7471be817c0035da323d8a6288d97ad5cfe7bbfc))\n\n## Fixes\n- **ci**: resolve apksigner from build tools ([0f94614e](https://github.com/mrndstvndv/termux-ghostty/commit/0f94614ecf89a3042344f77e99d3d94115d4e069))\n- **ci**: verify release APK signatures with apksigner ([6dcd2163](https://github.com/mrndstvndv/"
+        },
+        {
+          "name": "Release v4.2.0",
+          "tag": "v4.2.0",
+          "date": "2026-08-09T12:31:50Z",
+          "downloads": 183,
+          "body": "# Changelog\n\n**Release: v4.2.0**\n\n## Features\n- **terminal**: add tmux extra keys layout ([f8f664c1](https://github.com/mrndstvndv/termux-ghostty/commit/f8f664c167ad986aa4445014a06b9af1605237ef))\n- **herdr**: Resolve agent session titles ([cb0cfef7](https://github.com/mrndstvndv/termux-ghostty/commit/cb0cfef77299923bd61180094de571aa130bdf74))\n- **agents**: add omp icon for herdr workspace sheet ([52ce6d1d](https://github.com/mrndstvndv/termux-ghostty/commit/52ce6d1d0b6a7523dead9929c8a88b39936f450e))\n- **agents**: add bun icon for idle bun panes ([94d34d8e](https://github.com/mrndstvndv/termux-ghostty/commit/94d34d8ef3ec0b5d5c5763fc36d804d5ce5ba887))\n- **terminal**: report focus changes to herdr ([7e60d1ec](https://github.com/mrndstvndv/termux-ghostty/commit/7e60d1ec5955450cd4b1f6fcfdc7e73adf5a9497))\n\n## Fixes\n- **ssh**: Drain buffered shell output before poll ([c066c31e](https://github.com/mrndstvndv/termux-ghostty/commit/c066c31e813848bd47c34a2afba0cd251665c1df))\n- **ssh**: Include greeting in initial frame ([01f82d1d](https://github.com/mrndstvndv/termux-ghostty/commit/01f82d1d9eaa1c04bb914515966967a9f63368b3))\n- **ssh**: Preserve shell greeting before attach ([865168a2](https://"
+        },
+        {
+          "name": "Release v4.1.0",
+          "tag": "v4.1.0",
+          "date": "2026-08-08T06:27:14Z",
+          "downloads": 9,
+          "body": "# Changelog\n\n**Release: v4.1.0**\n\n## Features\n- **review**: show ahead/behind counts in branch header ([6c655a3b](https://github.com/mrndstvndv/termux-ghostty/commit/6c655a3b5376675f49d43625aa05fd2c3c17e2ca))\n- **agents**: close herdr panes from the UI ([43a54b5c](https://github.com/mrndstvndv/termux-ghostty/commit/43a54b5cce5d6ae35043d73643565d17021958f2))\n- **agents**: show fish and java process icons for idle panes ([57164c36](https://github.com/mrndstvndv/termux-ghostty/commit/57164c362430fbbf2365d024618e519fe26a270c))\n- **agents**: show process-name titles and nvim icon for idle panes ([ceb5bf72](https://github.com/mrndstvndv/termux-ghostty/commit/ceb5bf721ffcf05df07b5f92f935087951b52b40))\n- **sftp**: add FAB for file uploads ([5f06bc88](https://github.com/mrndstvndv/termux-ghostty/commit/5f06bc889601e9e7071c103f849d885364ff0313))\n- **agents**: add workspace and pane tree ([947a9894](https://github.com/mrndstvndv/termux-ghostty/commit/947a9894933c18f7c4b5b34aee5ddf449b529321))\n\n## Fixes\n- **keyboard**: restore immediate escape handling ([e44cb6a4](https://github.com/mrndstvndv/termux-ghostty/commit/e44cb6a4a9755b191bf39d099fb4ef0ee9050db9))\n- **terminal**: resize grid after fo"
+        },
+        {
+          "name": "Release v4.0.0",
+          "tag": "v4.0.0",
+          "date": "2026-08-07T07:03:13Z",
+          "downloads": 9,
+          "body": "# Changelog\n\n**Release: v4.0.0**\n\n## Features\n- **agents**: add cline icon and working status highlight ([91132fd9](https://github.com/mrndstvndv/termux-ghostty/commit/91132fd92c892ccb72fde07e98598486757e10b8))\n\n## Fixes\n- **release**: download APK artifact by exact name ([cba7d171](https://github.com/mrndstvndv/termux-ghostty/commit/cba7d1714a52afb9e3f87136953bf94419096a6d))\n- **terminal**: publish an initial idle frame ([09bdba22](https://github.com/mrndstvndv/termux-ghostty/commit/09bdba22e7524eedd48d9ae47e8390cd5e04db75))\n- **compose**: refresh terminal frames across lifecycle ([eb7a8d01](https://github.com/mrndstvndv/termux-ghostty/commit/eb7a8d0184895d32ba0f90410afbc9b7fc19fac8))\n- **herdr**: keep agent sheet above soft keyboard ([efec7a04](https://github.com/mrndstvndv/termux-ghostty/commit/efec7a04ed9b0f6f464d6c74b7c91649e81b27a9))\n\n## Updates\n- **terminal**: port ghostty pin to ec58fbc and migrate build to zig 0.16.0 ([235f7e78](https://github.com/mrndstvndv/termux-ghostty/commit/235f7e78f2a0d3c6127463556b52c330cd02a5ff))\n\n## UI Changes\n- **agents**: add spacing below agents heading ([c94d46bc](https://github.com/mrndstvndv/termux-ghostty/commit/c94d46bc92782bfa1acfa4492d6"
+        },
+        {
+          "name": "Release v3.5.0",
+          "tag": "v3.5.0",
+          "date": "2026-08-06T06:43:17Z",
+          "downloads": 13,
+          "body": "# Changelog\n\n**Release: v3.5.0**\n\n## Features\n- **herdr**: add agent list controls ([10523202](https://github.com/mrndstvndv/termux-ghostty/commit/1052320237966bafb90c5bad35d026daec9f950e))\n- **compose**: add selection handle magnifier ([5ccf5ca6](https://github.com/mrndstvndv/termux-ghostty/commit/5ccf5ca677ee2f502d4efc28bae92d74ca5d55f1))\n- **terminal**: restore compose text selection ([c24c3b22](https://github.com/mrndstvndv/termux-ghostty/commit/c24c3b224d0d468a58e291e02d711133171ec74f))\n- **terminal**: integrate reusable compose terminal view ([04a61730](https://github.com/mrndstvndv/termux-ghostty/commit/04a617303f7d94bd9e675b76aad3198af16303a0))\n- **terminal**: add reusable Compose terminal view library ([c024f571](https://github.com/mrndstvndv/termux-ghostty/commit/c024f57133817110e680444e2a5a93233c837c76))\n\n## Fixes\n- **selection**: keep floating toolbar above multiline selections ([a316b6df](https://github.com/mrndstvndv/termux-ghostty/commit/a316b6df2a326d4aad6e820a1e8752686076acad))\n- **compose**: dismiss selection magnifier on touch up ([a5dcab96](https://github.com/mrndstvndv/termux-ghostty/commit/a5dcab965ff98712cc7483dd394adde8734f2448))\n- **selection**: keep offscr"
+        },
+        {
+          "name": "Release v3.4.0",
+          "tag": "v3.4.0",
+          "date": "2026-08-04T23:44:23Z",
+          "downloads": 25,
+          "body": "# Changelog\n\n**Release: v3.4.0**\n\n## Features\n- **build**: add arm64 and universal APK variants ([3ffb470c](https://github.com/mrndstvndv/termux-ghostty/commit/3ffb470c4527aff6177e73bd093542f5dd4171d0))\n- **notification**: focus herdr workspace on notification tap ([08cea2d2](https://github.com/mrndstvndv/termux-ghostty/commit/08cea2d2a601b413c4ec92ea8d87ad66e58009db))\n- **ui**: add option to hide workspace tabs ([dd2502e4](https://github.com/mrndstvndv/termux-ghostty/commit/dd2502e4dee790311218119961cc115fdc37745c))\n- **compose-app**: extend terminal shaders and review controls ([989a501d](https://github.com/mrndstvndv/termux-ghostty/commit/989a501d2de7d0df753e2579e87e8938bb289db7))\n- **git tab**: word level diff ([0ac13066](https://github.com/mrndstvndv/termux-ghostty/commit/0ac13066de83a4e9ae95867a7b1b5131f79ce245))\n\n## Fixes\n- **terminal**: synchronize scroll position with Ghostty ([7d895447](https://github.com/mrndstvndv/termux-ghostty/commit/7d895447449f5ae1f3022bc29be3c41fecf3783c))\n- **ssh**: handle disconnected sessions cleanly ([73c90b84](https://github.com/mrndstvndv/termux-ghostty/commit/73c90b845e34823f98317b9e44de4bb9c5309af7))\n- **compose-app**: restore terminal link"
+        },
+        {
+          "name": "Release v3.3.0",
+          "tag": "v3.3.0",
+          "date": "2026-08-01T07:30:37Z",
+          "downloads": 17,
+          "body": "# Changelog\n\n**Release: v3.3.0**\n\n## Features\n- **compose-app**: rename app to Ecto ([530ae5bf](https://github.com/mrndstvndv/termux-ghostty/commit/530ae5bfca80e8cc3bdcdcf644c761ae9cba5162))\n\n## Fixes\n- **cursor-trail**: animate trails when no terminal shader is active ([efb221a3](https://github.com/mrndstvndv/termux-ghostty/commit/efb221a3e65c68b126dfe13e42da6b57c74edbd6))\n- **ui**: cursor trails not working when shaders or off ([6189968a](https://github.com/mrndstvndv/termux-ghostty/commit/6189968a575073c345af0cf88386a429d170d847))"
+        },
+        {
+          "name": "Release v3.2.0",
+          "tag": "v3.2.0",
+          "date": "2026-08-01T05:45:57Z",
+          "downloads": 7,
+          "body": "# Changelog\n\n**Release: v3.2.0**\n\n## Features\n- **shader**: add cursor trail effects ([e4202565](https://github.com/mrndstvndv/termux-ghostty/commit/e42025654cc6af388e9c5b1f196e900686771f1b))\n- **shader**: add terminal effects ([a23c5db9](https://github.com/mrndstvndv/termux-ghostty/commit/a23c5db9d8aafa006e5884a766cc52946ac3cc32))\n- **review**: add soft and hard reset options to commit menu ([f0206bb6](https://github.com/mrndstvndv/termux-ghostty/commit/f0206bb676fb300e4c6e44672a2326bf29cff513))\n- **ui**: add regex-based syntax highlighting utility ([0645c8bc](https://github.com/mrndstvndv/termux-ghostty/commit/0645c8bc48cac314cdea9b3694c4e7712d4e798e))\n- **review**: add line numbers toggle chip to diff header ([680b87c5](https://github.com/mrndstvndv/termux-ghostty/commit/680b87c5345f9bb96db5fbc08ee3254fbac83d51))\n- **workspace**: support horizontal tab swiping on terminal tab ([803e475c](https://github.com/mrndstvndv/termux-ghostty/commit/803e475c1166a9c245a99832fa1d867c365aad9c))\n- add branch switching in git tab ([bf1c82d3](https://github.com/mrndstvndv/termux-ghostty/commit/bf1c82d37248fb33a0b626320153eae780dc444b))\n- **workspace**: enable left/right swipe gesture navigation "
+        },
+        {
+          "name": "Release v3.1.0",
+          "tag": "v3.1.0",
+          "date": "2026-07-23T02:47:50Z",
+          "downloads": 71,
+          "body": "# Changelog\n\n**Release: v3.1.0**\n\n## Features\n- **ci**: add release signing config and asset naming to compose-app ([00755126](https://github.com/mrndstvndv/termux-ghostty/commit/00755126faba89a0b47238305928f1be90c82eb5))\n\n## Fixes\n- **ci**: refine breaking change regex match in changelog generator ([ab67eba5](https://github.com/mrndstvndv/termux-ghostty/commit/ab67eba5d18c2b58f98d8edbe6e7821ed40c99aa))"
+        },
+        {
+          "name": "Release v3.0.0",
+          "tag": "v3.0.0",
+          "date": "2026-07-23T02:01:40Z",
+          "downloads": 0,
+          "body": "# Changelog\n\n**Release: v3.0.0**\n\n## Features\n- **review**: add full file view and font size scaling ([ef7d71a2](https://github.com/mrndstvndv/termux-ghostty/commit/ef7d71a2097e62faa2ba55a1c19d3e90554f48d8))\n- **ci**: add compose-app release builds and module change detection ([37aef5e9](https://github.com/mrndstvndv/termux-ghostty/commit/37aef5e9ece5b530dc68326a335bd1267092dca2))\n- **compose-app**: update foreground session service and notification handling ([925180ef](https://github.com/mrndstvndv/termux-ghostty/commit/925180efad5e0f14fe9f518ab39f547016f1f655))\n- **extrakeys**: port shift support and macro improvements to app ([b9199a45](https://github.com/mrndstvndv/termux-ghostty/commit/b9199a45bec1ff3af78cae8fad2b854c028eadf6))\n- **keyboard**: add unconditional soft keyboard toggle on tap ([0261e68e](https://github.com/mrndstvndv/termux-ghostty/commit/0261e68eba18e3a320c014ff9d6921e387b82b19))\n- **terminal**: Add IME composition delta tracking and remove resize debounce ([e362764b](https://github.com/mrndstvndv/termux-ghostty/commit/e362764b9bb025b812c4657d5d30e58a9593093b))\n- **local**: add startup command support for local terminal ([355906bc](https://github.com/mrndstvndv/t"
+        },
+        {
+          "name": "Release v2.0.0",
+          "tag": "v2.0.0",
+          "date": "2026-07-16T12:40:50Z",
+          "downloads": 32,
+          "body": "# Changelog\n\n**Release: v2.0.0**\n\n## Features\n- **compose-app**: implement copy, paste, and context menu support ([5b5bdeaf](https://github.com/mrndstvndv/termux-ghostty/commit/5b5bdeaf65dd1e2dbd6e6961ae200b5a0cc316e6))\n- **compose-app**: Add custom fonts support ([d5bc588a](https://github.com/mrndstvndv/termux-ghostty/commit/d5bc588ab3bf8afa321c2b07ca7967f245f5f93b))\n- remove jvm ssh library and sftp explorer ([974c78d8](https://github.com/mrndstvndv/termux-ghostty/commit/974c78d80c4cf471774244fea0d3a435279ecb48))\n- **compose-app**: add clickable link support to terminal view ([c3e28167](https://github.com/mrndstvndv/termux-ghostty/commit/c3e2816755f6613778372adfec49801a0be9e00a))\n- **terminal**: add native SPSC ring buffer and SSH wakeup drain ([dd007b73](https://github.com/mrndstvndv/termux-ghostty/commit/dd007b735b76aa26782d6eaa4d7e7d68882f7c6e))\n- **terminal**: Sync terminal palette with Material You theme colors ([745e5101](https://github.com/mrndstvndv/termux-ghostty/commit/745e5101bc4bf32f8b34b047cfa23b218e3d85cc))\n- **theme**: Add theme chooser and Material You dynamic color support ([205ac557](https://github.com/mrndstvndv/termux-ghostty/commit/205ac5575da8595794bcd25b051"
+        },
+        {
+          "name": "Release v1.0.0",
+          "tag": "v1.0.0",
+          "date": "2026-04-02T12:28:19Z",
+          "downloads": 193,
+          "body": "# Changelog\n\n**Release: v1.0.0**\n\n## Features\n- session tabs ([6ab3c8de](https://github.com/mrndstvndv/termux-ghostty/commit/6ab3c8deddfa6381b2b7ddcac53c3786163144f1))\n- **KeyHandler**: respect modifiers with PgUp and PgDn ([c8a74dc5](https://github.com/mrndstvndv/termux-ghostty/commit/c8a74dc58898ffee1d1207a125f2b4000d20b39b))\n\n## Fixes\n- **ci**: enable split APKs for GitHub release builds ([803ea51a](https://github.com/mrndstvndv/termux-ghostty/commit/803ea51a72dc4df8337bdce034822537865f0cad))\n- **theme**: black theme preserves wallpaper-derived colors ([9ad8e963](https://github.com/mrndstvndv/termux-ghostty/commit/9ad8e963244a0fd55423cd9a393916f41cba679c))\n- **build**: ensure bootstrap download runs before native build in release ([01ea9da6](https://github.com/mrndstvndv/termux-ghostty/commit/01ea9da6de7eebbe107dc33323f28c8af8f7dbd8))\n\n## Updates\n- **Material You**: runtime reloading ([95238070](https://github.com/mrndstvndv/termux-ghostty/commit/9523807031d4afbc39f7fb69cbd7e2695c430f5a))\n\n## UI Changes\n- material you themeing support ([53f7d907](https://github.com/mrndstvndv/termux-ghostty/commit/53f7d9073219bcad92f06d1bbd33327e5dc8e615))"
+        }
+      ]
+    },
+    {
+      "name": "TermuxPlus",
+      "repo": "thejaustin/TermuxPlus",
+      "category": "Terminal",
+      "logo": "termuxplus.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 18,
+        "forks": 0,
+        "watchers": 1,
+        "issues": 6,
+        "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-04-13T20:26:08Z",
+        "createdAt": "2026-04-13T06:04:11Z",
+        "topics": [],
+        "archived": false,
+        "homepage": "https://f-droid.org/en/packages/com.termux"
+      },
+      "releases": [
+        {
+          "name": "TermuxPlus 0.118.0",
+          "tag": "v0.118.0",
+          "date": "2026-04-13T20:26:17Z",
+          "downloads": 350,
+          "body": "Release version 0.118.0"
+        }
+      ]
+    },
+    {
+      "name": "Termux Enhanced",
+      "repo": "NIK2703/termux-enhanced",
+      "category": "Terminal",
+      "logo": "termux-enhanced.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 17,
+        "forks": 3,
+        "watchers": 1,
+        "issues": 0,
+        "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-01T08:40:20Z",
+        "createdAt": "2026-02-14T14:52:02Z",
+        "topics": [],
+        "archived": false,
+        "homepage": "https://f-droid.org/en/packages/com.termux"
+      },
+      "releases": [
+        {
+          "name": "Release21",
+          "tag": "Release21",
+          "date": "2026-09-29T14:13:09Z",
+          "downloads": 37,
+          "body": "1. Added support for terminal application notifications via the kitty OSC 99 protocol (used in opencode 2.0.  However, its current notification implementation is buggy, and a notification sent from one session is duplicated by every other running opencode session. To address this, the app includes a \"Notification deduplication\" workaround, though it cannot guarantee accurate identification of the source session.)\n2. Added the option to enable the input bar above the terminal. \n3. Fixed various issues when using the bubble window. \n4. Fixed terminal rendering issues in certain scenarios (fixed color fill bugs in Vim when resizing the terminal window, and eliminated garbled output when displaying Hindi characters).\n5. Improved handling of display cutouts, and added an option to extend the window into the cutout area.\n\nHotfix: fixed input panel and extra button panel hide behaviour in some cases"
+        },
+        {
+          "name": "Release20",
+          "tag": "Release20",
+          "date": "2026-09-22T19:35:39Z",
+          "downloads": 22,
+          "body": "1. Ability to open the app in a bubble window to use the terminal on top of other apps (button in the notification, a settings option to automatically show the bubble when the app is minimized) (Android 11+)\n2. Option to display the extra keys panel compactly in landscape orientation (enabled by default on smartphones)\n3. Input panel height is limited to a quarter of the app window height\n4. Fixed translation strings"
+        },
+        {
+          "name": "Release19",
+          "tag": "Release19",
+          "date": "2026-09-19T17:11:00Z",
+          "downloads": 12,
+          "body": "1. Added the ability to assign additional buttons to open the username/password autofill menu.  \n2. Various minor fixes:  \n   - Fixed the keyboard reopening when switching between session tabs where it should be open, when opening and quickly hiding the input panel.  \n   - Fixed the terminal screen not switching away from a closed tab in some cases.  \n   - When closing tabs, selection priority is now given to the tab to the right of the closed one.  \n   - Fixed truncation of switch labels in Settings.  \n   - Added units of measurement for slider values in Settings.  \n   - Fixed string translations.\n\nHotfix: \n   - Fixed keyboard issues when switching between terminal session tabs by tapping a tab that is one or more tabs away from the currently selected tab."
+        },
+        {
+          "name": "Termux-related packages",
+          "tag": "termux-related-packages",
+          "date": "2026-09-02T07:44:47Z",
+          "downloads": 46,
+          "body": "Signed with the fork's signature for compatibility"
+        },
+        {
+          "name": "Release18",
+          "tag": "release18",
+          "date": "2026-09-15T05:54:20Z",
+          "downloads": 28,
+          "body": "1. Added the ability to create a session in a working directory from history when opening a new session by swiping right from the rightmost screen. During the gesture, slide finger upward and release it next to the desired directory. By default, a session is created in the default working directory (configured in settings).  \n2. Restructured settings  \n3. Preview of color schemes and fonts in dialogs  \n4. Updated translations (LLM-based; may contain inaccuracies)  \n5. App performance optimization and bug fixes"
+        },
+        {
+          "name": "Release17",
+          "tag": "Release17",
+          "date": "2026-09-10T09:52:54Z",
+          "downloads": 31,
+          "body": "1. Monet color schemes for the terminal (Android 12+)\n2. Option to set a transparent terminal background showing the device wallpaper\n3. Option to configure terminal background blur (Android 12+)\n4. Overscroll animation for terminal output\n5. Existing entries in the input panel text history move to the top only when they are sent again (previously, they also moved to the top when simply selected in the context menu or when the input panel was cleared)\n6. Option to disable saving cleared input panel text to history\n7. More reliable persistence of keyboard state and input panel open/closed state (no longer reset when the app is minimized or restored)\n8. App optimizations"
+        },
+        {
+          "name": "Release16",
+          "tag": "Release16",
+          "date": "2026-09-02T06:46:01Z",
+          "downloads": 48,
+          "body": "1. More responsive terminal scrolling (experience similar to scrolling lists in Android apps)\n2. Ability to assign text to a button action binding\n3. Minor animation fixes"
+        },
+        {
+          "name": "Release15",
+          "tag": "Release15",
+          "date": "2026-08-19T01:03:55Z",
+          "downloads": 36,
+          "body": "Minor fixes:\n1. Terminal window is horizontally centered; padding can be adjusted for each side separately.\n2. Fixed scroll animation in the tab bar when selecting a tab by tapping.\n3. Fixed app freezes caused by frequent tab label updates (e.g., when a loading animation is shown in the tab label).\n4. Optimized terminal rendering.\n5. Fixed scroll handle drift relative to the finger during terminal output when scrolling with it.\n6. Option to hide the keyboard when sending text from the input panel."
+        },
+        {
+          "name": "Release14",
+          "tag": "Release14",
+          "date": "2026-08-15T11:39:41Z",
+          "downloads": 29,
+          "body": "1. Extra buttons panel profiles with auto-switching based on session prefix — the ability to set own button layout for individual processes\n2. Ability to set custom labels for buttons (by long-pressing in the extra buttons editor)\n3. Pasting from the clipboard into the input panel by swiping down on the input panel toggle button\n4. Fixed status bar and navigation bar dimming for AOSP-based roms\n5. Fixed application of terminal padding\n\nExample extra button panel profile for opencode attached."
+        },
+        {
+          "name": "Release13",
+          "tag": "Release13",
+          "date": "2026-08-08T13:02:45Z",
+          "downloads": 22,
+          "body": "Minor fixes:\n1. Fixed the autocomplete list not expanding when deleting characters one by one in the input panel\n2. Fixed the auto-scroll-to-bottom behavior when new output appears while scrolling with the slider\n3. Fixed the notification updating too frequently during container backup"
+        },
+        {
+          "name": "Release12",
+          "tag": "Release12",
+          "date": "2026-08-02T05:48:53Z",
+          "downloads": 17,
+          "body": "1. Fixed scroll view drift when the terminal buffer is truncated\n"
+        },
+        {
+          "name": "Release11",
+          "tag": "Release11",
+          "date": "2026-07-28T09:02:18Z",
+          "downloads": 9,
+          "body": "1. The Bootstrap package has been extracted from the app, 8x reducing the APK size. It is downloaded on first launch or can be specified as a local file (download https://github.com/termux/termux-packages/releases/tag/bootstrap-2026.07.26-r1%2Bapt.android-7)\n2. Fixes for the extra buttons panel editor\n3. Ability to backup and restore app settings"
+        },
+        {
+          "name": "Release10",
+          "tag": "Release10",
+          "date": "2026-07-23T01:28:04Z",
+          "downloads": 19,
+          "body": "1. Extra buttons panel editor, with the ability to assign actions to button gestures and key combinations to actions\n2. Moving settings from the termux.properties file into the settings interface"
+        },
+        {
+          "name": "Release9",
+          "tag": "Release9",
+          "date": "2026-07-20T07:59:12Z",
+          "downloads": 9,
+          "body": "1. Settings restructuring\n2. Horizontal swipe gestures on autocomplete suggestions in the input panel to restore only a few words from the hint\n3. Tab bar animations when adding or closing tabs"
+        },
+        {
+          "name": "Release8",
+          "tag": "Release8",
+          "date": "2026-07-16T12:12:53Z",
+          "downloads": 12,
+          "body": "1. Swiping through and adding terminal tabs with horizontal gestures\n2. A terminal vertical scroll slider indicator that lets you quickly navigate through history\n3. Autocomplete for the input panel by typing the beginning of a message saved in history\n4. Translation of the app into the following languages: Arabic, German, Spanish, French, Hindi, Indonesian, Japanese, Korean, Portuguese, Russian, Turkish, Chinese. Based on an LLM. If you are a native speaker of one of these languages and encounter translation inaccuracies, please edit the inaccurate strings in https://github.com/NIK2703/termux-enhanced/tree/master/app/src/main/res/ and submit a pull request\n5. Various user experience improvements\n\nAttached a backup of the Termux container with fish and opencode installed for a quick start. To restore, open the context menu by long-tapping on the terminal, then More... > Settings > Termux Settings > Restore Termux Data."
+        },
+        {
+          "name": "Release7",
+          "tag": "Release7",
+          "date": "2026-07-12T14:49:00Z",
+          "downloads": 9,
+          "body": "1. Added context menus for directory history and messages by swiping up from the add tab and open input panel buttons, for quickly opening a session tab in the desired directory and restoring a recent message, respectively.\n2. Screen orientation setting in the app.\n3. Setting to remember tabs when exiting the app, so they are restored on the next launch."
+        },
+        {
+          "name": "Release6",
+          "tag": "Release6",
+          "date": "2026-07-11T18:45:32Z",
+          "downloads": 0,
+          "body": "1. Improved user experience with the input panel\n2. More reliable backup creation and restoration process that is not interrupted when the app is minimized"
+        },
+        {
+          "name": "release5",
+          "tag": "release5",
+          "date": "2026-07-11T03:54:56Z",
+          "downloads": 6,
+          "body": "1. Added the ability to switch between light and dark app themes, auto-switch theme according to the system theme, and assign Termux Style color schemes separately for light and dark themes.\n2. Added the ability to backup/restore the Termux container to/from a tar.gz file.\n3. User interface fixes.\n4. Fixed the issue of not requesting permissions during termux-setup-storage. \n\nBuilt Termux Boot and Termux Style with my own signature so they are compatible with the app."
+        },
+        {
+          "name": "release4",
+          "tag": "release4",
+          "date": "2026-03-04T06:56:52Z",
+          "downloads": 50,
+          "body": "- fixed a bug that caused the additional buttons panel to disappear in some cases (for example, when changing the system theme)"
+        },
+        {
+          "name": "add background for extra buttons",
+          "tag": "release3",
+          "date": "2026-02-15T15:18:55Z",
+          "downloads": 20,
+          "body": ""
+        },
+        {
+          "name": "add input field toogler on tab panel",
+          "tag": "release2",
+          "date": "2026-02-15T02:54:22Z",
+          "downloads": 13,
+          "body": ""
+        },
+        {
+          "name": "release",
+          "tag": "release",
+          "date": "2026-02-14T15:34:51Z",
+          "downloads": 14,
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "Termux-Aether",
+      "repo": "wallentx/termux-aether-app",
+      "category": "Terminal",
+      "logo": "termux-aether.png",
+      "extensions": null,
+      "downloads": 0,
+      "repoStats": {
+        "stars": 8,
+        "forks": 0,
+        "watchers": 0,
+        "issues": 3,
+        "description": "Termux-Aether: modern Android terminal with Pacman, bundled native glibc compatibility, optimized text/sixel paths, and an optional Arch AVF workspace.",
+        "language": "Java",
+        "license": "NOASSERTION",
+        "pushedAt": "2026-10-10T22:32:03Z",
+        "createdAt": "2023-11-26T18:19:19Z",
+        "topics": [],
+        "archived": false,
+        "homepage": "https://github.com/wallentx/termux-aether-app#readme"
+      },
+      "releases": [
+        {
+          "name": "Termux-Aether 1000.0.0",
+          "tag": "v1000.0.0",
+          "date": "2026-09-20T17:38:48Z",
+          "downloads": 64,
+          "body": "## Pacman suite (packaging revision 2)\n\nDownload **`termux-aether-suite-aarch64.pkg.tar.xz`** and its `.sha256` file. This is a real Pacman package:\n\n```sh\nsha256sum -c termux-aether-suite-aarch64.pkg.tar.xz.sha256\npacman -U ./termux-aether-suite-aarch64.pkg.tar.xz\n```\n\nIt directly owns the native runtime and API commands and stages both APKs under `$PREFIX/share/termux-aether-suite`. Update Android apps using `aether-apks api`, then `aether-apks app`; Android confirms these updates. Existing app IDs, signatures and data paths are preserved. Shizuku and Arch images remain optional.\n\nIf you previously installed Aether commands manually, download `aether-install.py` and its checksum too:\n\n```sh\nsha256sum -c aether-install.py.sha256\npython aether-install.py --adopt-legacy ./termux-aether-suite-aarch64.pkg.tar.xz\n```\n\nThis backs up only the nine known unowned legacy commands and transfers ownership to Pacman. Unrelated files/packages are refused. No wildcard overwrite or editing of checksum-protected scripts is needed. Use `aether-update` for later protected upgrades, or install new suite packages with `pacman -U` directly.\n\nThe older **`termux-aether-suite-aarch64.tar.xz`** is an arch"
+        },
+        {
+          "name": "v0.119.0-beta.3.1",
+          "tag": "v0.119.0-beta.3.1",
+          "date": "2026-02-07T04:17:03Z",
+          "downloads": 49,
+          "body": "## What's Changed\n* feat: Add sixel and iTerm image support by @wallentx in https://github.com/wallentx/termux-app/pull/5\n* Replace `hub` with `gh` CLI in release workflow by @Copilot in https://github.com/wallentx/termux-app/pull/6\n* Add repository-wide Copilot instructions by @Copilot in https://github.com/wallentx/termux-app/pull/8\n\n## New Contributors\n* @wallentx made their first contribution in https://github.com/wallentx/termux-app/pull/5\n* @Copilot made their first contribution in https://github.com/wallentx/termux-app/pull/6\n\n**Full Changelog**: https://github.com/wallentx/termux-app/commits/v0.119.0-beta.3.1"
+        }
+      ]
     }
   ],
   "manifestDrivers": {
